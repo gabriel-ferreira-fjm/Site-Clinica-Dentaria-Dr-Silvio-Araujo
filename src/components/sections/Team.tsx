@@ -1,0 +1,93 @@
+import { Award, GraduationCap, Heart } from 'lucide-react';
+
+const Team = () => {
+  const teamMembers = [
+    {
+      name: 'Dr. Sílvio Araújo',
+      role: 'Diretor Clínico',
+      specialty: 'Odontologia Geral e Ortodontia',
+      description: 'Especialista em odontologia geral e ortodontia, com vasta experiência e dedicação ao cuidado de cada paciente. Formado pela Faculdade de Medicina Dentária, lidera a equipa com profissionalismo e empatia.',
+      achievements: [
+        'Membro da Ordem dos Médicos Dentistas',
+        'Especialização em Ortodontia',
+        'Formação contínua em implantologia',
+      ],
+    },
+  ];
+
+  return (
+    <section id="equipa" className="py-24 bg-secondary/30">
+      <div className="container">
+        {/* Header */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <span className="inline-block px-4 py-2 bg-primary/10 rounded-full text-primary font-medium text-sm mb-4">
+            A Nossa Equipa
+          </span>
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">
+            Profissionais <span className="text-primary">dedicados</span> ao seu sorriso
+          </h2>
+          <p className="text-muted-foreground text-lg">
+            Conheça a equipa que cuida de si e da sua família com profissionalismo, 
+            experiência e um toque de carinho.
+          </p>
+        </div>
+
+        {/* Team Member */}
+        <div className="max-w-4xl mx-auto">
+          {teamMembers.map((member) => (
+            <div
+              key={member.name}
+              className="bg-background rounded-3xl shadow-dental-lg overflow-hidden"
+            >
+              <div className="grid md:grid-cols-2">
+                {/* Image Side */}
+                <div className="relative bg-gradient-to-br from-primary to-primary-dark p-12 flex items-center justify-center min-h-[400px]">
+                  <div className="text-center text-primary-foreground">
+                    <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-primary-foreground/20 flex items-center justify-center">
+                      <span className="font-heading text-5xl font-bold">SA</span>
+                    </div>
+                    <h3 className="font-heading text-2xl font-bold mb-2">{member.name}</h3>
+                    <p className="text-primary-foreground/80 mb-1">{member.role}</p>
+                    <p className="text-primary-foreground/60 text-sm">{member.specialty}</p>
+                  </div>
+                  
+                  {/* Decorative elements */}
+                  <div className="absolute top-8 left-8 w-16 h-16 border-2 border-primary-foreground/20 rounded-full" />
+                  <div className="absolute bottom-8 right-8 w-24 h-24 border-2 border-primary-foreground/10 rounded-full" />
+                </div>
+
+                {/* Content Side */}
+                <div className="p-8 md:p-12 flex flex-col justify-center">
+                  <p className="text-muted-foreground leading-relaxed mb-8">
+                    {member.description}
+                  </p>
+
+                  <div className="space-y-4">
+                    {member.achievements.map((achievement, index) => (
+                      <div key={index} className="flex items-center gap-3">
+                        <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                          {index === 0 && <Award className="w-4 h-4 text-primary" />}
+                          {index === 1 && <GraduationCap className="w-4 h-4 text-primary" />}
+                          {index === 2 && <Heart className="w-4 h-4 text-primary" />}
+                        </div>
+                        <span className="text-sm text-foreground">{achievement}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Quote */}
+                  <blockquote className="mt-8 pl-4 border-l-4 border-primary italic text-muted-foreground">
+                    "O nosso compromisso é proporcionar o melhor cuidado dentário, 
+                    com tecnologia avançada e um atendimento humano e personalizado."
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Team;
