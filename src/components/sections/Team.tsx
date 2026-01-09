@@ -7,7 +7,7 @@ const Team = () => {
       role: 'Diretor Clínico',
       specialty: 'Odontologia Geral e Ortodontia',
       description: 'Especialista em odontologia geral e ortodontia, com vasta experiência e dedicação ao cuidado de cada paciente. Formado pela Faculdade de Medicina Dentária, lidera a equipa com profissionalismo e empatia.',
-      image: '/dr-silvio.jpeg',
+      image: '/dr-silvio.jpg',
       achievements: [
         'Membro da Ordem dos Médicos Dentistas',
         'Especialização em Ortodontia',
