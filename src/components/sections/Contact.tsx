@@ -6,23 +6,23 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Morada',
-      content: 'Quinta do Conde, Sesimbra, Portugal',
+      content: 'Rua D Sebastião 2050, Quinta do Conde, Sesimbra, Portugal',
       action: 'Ver no Mapa',
       href: 'https://maps.google.com/?q=Quinta+do+Conde+Sesimbra+Portugal',
     },
     {
       icon: Phone,
       title: 'Telefone',
-      content: '+351 210 851 266',
+      content: '924 123 784',
       action: 'Ligar Agora',
-      href: 'tel:+351210851266',
+      href: 'tel:924123784',
     },
     {
       icon: Mail,
       title: 'Email',
-      content: 'info@wildsmile.pt',
+      content: 'geral@silvioaraujo.com',
       action: 'Enviar Email',
-      href: 'mailto:info@wildsmile.pt',
+      href: 'mailto:geral@wildsmile.pt',
     },
     {
       icon: Clock,

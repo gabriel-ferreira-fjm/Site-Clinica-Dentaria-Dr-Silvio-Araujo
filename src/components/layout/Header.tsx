@@ -39,11 +39,11 @@ const Header = () => {
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-2">
               <MapPin className="w-4 h-4" />
-              Quinta do Conde, Portugal
+              Rua D Sebastião 2050, Quinta do Conde, Portugal
             </span>
             <span className="flex items-center gap-2">
               <Phone className="w-4 h-4" />
-              +351 210 851 266
+              924 123 784
             </span>
           </div>
           <div className="text-primary-foreground/80">
