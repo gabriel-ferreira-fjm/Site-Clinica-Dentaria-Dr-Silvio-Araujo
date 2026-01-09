@@ -75,13 +75,13 @@ const Hero = () => {
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
-                <span className="font-medium">+351 210 851 266</span>
+                <span className="font-medium">924 123 784</span>
               </a>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                   <MapPin className="w-5 h-5 text-primary" />
                 </div>
-                <span>Quinta do Conde, Portugal</span>
+                <span>Rua D Sebastião 2050, Quinta do Conde</span>
               </div>
             </div>
           </div>

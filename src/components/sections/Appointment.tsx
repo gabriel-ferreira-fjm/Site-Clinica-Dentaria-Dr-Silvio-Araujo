@@ -99,11 +99,11 @@ const Appointment = () => {
               <div className="space-y-3">
                 <a href="tel:+351210851266" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
                   <Phone className="w-5 h-5" />
-                  <span>+351 210 851 266</span>
+                  <span>924 123 784</span>
                 </a>
                 <a href="mailto:info@wildsmile.pt" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
                   <Mail className="w-5 h-5" />
-                  <span>info@wildsmile.pt</span>
+                  <span>geral@silvioaraujo.com</span>
                 </a>
               </div>
             </div>

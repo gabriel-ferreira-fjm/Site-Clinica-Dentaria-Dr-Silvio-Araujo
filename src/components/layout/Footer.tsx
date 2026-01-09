@@ -31,12 +31,12 @@ const Footer = () => {
               <img
                 src={`${import.meta.env.BASE_URL}logo-clinica.png`}
                 alt="Logo Clínica Dentária Dr. Sílvio Araújo"
-                className="h-10 w-auto block"
+                className="h-20 w-auto block"
               />
 
 
               <div>
-                <h3 className="font-heading font-bold text-lg">
+                <h3 className="text-sm text-background/60">
                   Dr. Sílvio Araújo
                 </h3>
                 <p className="text-sm text-background/60">
@@ -120,7 +120,7 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <span className="text-background/70 text-sm">
-                  Quinta do Conde, Sesimbra
+                  Rua D Sebastião 2050, Quinta do Conde, Sesimbra, Portugal.
                   <br />
                   Portugal
                 </span>
@@ -129,20 +129,20 @@ const Footer = () => {
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                 <a
-                  href="tel:+351210851266"
+                  href="tel:924 123 784"
                   className="text-background/70 hover:text-primary text-sm transition-colors"
                 >
-                  +351 210 851 266
+                  924 123 784
                 </a>
               </li>
 
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                 <a
-                  href="mailto:info@wildsmile.pt"
+                  href="mailto:geral@silvioaraujo.com"
                   className="text-background/70 hover:text-primary text-sm transition-colors"
                 >
-                  info@wildsmile.pt
+                  geral@silvioaraujo.com
                 </a>
               </li>
 
