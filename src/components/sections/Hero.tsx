@@ -29,16 +29,17 @@ const Hero = () => {
           <div className="space-y-8 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary font-medium text-sm animate-fade-in">
               <span className="w-2 h-2 bg-primary rounded-full animate-pulse-soft" />
-              Bem-vindo à Wildsmile
+              Bem-vindo (a) ao nosso site!
             </div>
             
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight animate-fade-in stagger-1">
               Clínica Dentária{' '}
+              <br />
               <span className="text-primary">Dr. Sílvio Araújo</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground font-light leading-relaxed animate-fade-in stagger-2">
-              Sorriso saudável, cuidado especializado
+              Sorrisos saudáveis com cuidado especializado.
             </p>
             
             <p className="text-muted-foreground max-w-xl mx-auto lg:mx-0 animate-fade-in stagger-3">

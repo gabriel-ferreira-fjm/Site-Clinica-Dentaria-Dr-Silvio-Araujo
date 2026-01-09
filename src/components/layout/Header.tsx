@@ -63,9 +63,12 @@ const Header = () => {
         <div className="container flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-heading font-bold text-xl">W</span>
-            </div>
+            <img
+              src={`${import.meta.env.BASE_URL}logo-clinica.png`}
+              alt="Logo Clínica Dentária Dr. Sílvio Araújo"
+              className="h-20 w-auto block"
+            />
+
             <div className="hidden sm:block">
               <h1 className="font-heading font-bold text-lg text-foreground leading-tight">
                 Dr. Sílvio Araújo

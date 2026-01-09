@@ -7,6 +7,7 @@ const Team = () => {
       role: 'Diretor Clínico',
       specialty: 'Odontologia Geral e Ortodontia',
       description: 'Especialista em odontologia geral e ortodontia, com vasta experiência e dedicação ao cuidado de cada paciente. Formado pela Faculdade de Medicina Dentária, lidera a equipa com profissionalismo e empatia.',
+      image: '/dr-silvio.jpeg',
       achievements: [
         'Membro da Ordem dos Médicos Dentistas',
         'Especialização em Ortodontia',
@@ -41,19 +42,19 @@ const Team = () => {
             >
               <div className="grid md:grid-cols-2">
                 {/* Image Side */}
-                <div className="relative bg-gradient-to-br from-primary to-primary-dark p-12 flex items-center justify-center min-h-[400px]">
-                  <div className="text-center text-primary-foreground">
-                    <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-primary-foreground/20 flex items-center justify-center">
-                      <span className="font-heading text-5xl font-bold">SA</span>
-                    </div>
-                    <h3 className="font-heading text-2xl font-bold mb-2">{member.name}</h3>
-                    <p className="text-primary-foreground/80 mb-1">{member.role}</p>
-                    <p className="text-primary-foreground/60 text-sm">{member.specialty}</p>
+                <div className="relative min-h-[400px] overflow-hidden">
+                  <img 
+                    src={member.image} 
+                    alt={member.name}
+                    className="absolute inset-0 w-full h-full object-cover object-[center_40%]"
+                  />
+                  {/* Overlay com informações */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-8 text-primary-foreground">
+                    <h3 className="font-heading text-2xl font-bold mb-1">{member.name}</h3>
+                    <p className="text-primary-foreground/90 mb-1">{member.role}</p>
+                    <p className="text-primary-foreground/70 text-sm">{member.specialty}</p>
                   </div>
-                  
-                  {/* Decorative elements */}
-                  <div className="absolute top-8 left-8 w-16 h-16 border-2 border-primary-foreground/20 rounded-full" />
-                  <div className="absolute bottom-8 right-8 w-24 h-24 border-2 border-primary-foreground/10 rounded-full" />
                 </div>
 
                 {/* Content Side */}

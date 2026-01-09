@@ -24,20 +24,31 @@ const Footer = () => {
       {/* Main Footer */}
       <div className="container py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          
           {/* Brand Column */}
           <div className="space-y-6">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-heading font-bold text-xl">W</span>
-              </div>
+              <img
+                src={`${import.meta.env.BASE_URL}logo-clinica.png`}
+                alt="Logo Clínica Dentária Dr. Sílvio Araújo"
+                className="h-10 w-auto block"
+              />
+
+
               <div>
-                <h3 className="font-heading font-bold text-lg">Dr. Sílvio Araújo</h3>
-                <p className="text-sm text-background/60">Clínica Dentária</p>
+                <h3 className="font-heading font-bold text-lg">
+                  Dr. Sílvio Araújo
+                </h3>
+                <p className="text-sm text-background/60">
+                  Clínica Dentária
+                </p>
               </div>
             </div>
+
             <p className="text-background/70 text-sm leading-relaxed">
               Cuidamos do seu sorriso com dedicação, tecnologia moderna e tratamentos personalizados para toda a família.
             </p>
+
             <div className="flex gap-3">
               <a
                 href="#"
@@ -46,6 +57,7 @@ const Footer = () => {
               >
                 <Facebook className="w-5 h-5" />
               </a>
+
               <a
                 href="#"
                 className="w-10 h-10 rounded-lg bg-background/10 hover:bg-primary flex items-center justify-center transition-colors"
@@ -53,6 +65,7 @@ const Footer = () => {
               >
                 <Instagram className="w-5 h-5" />
               </a>
+
               <a
                 href="#"
                 className="w-10 h-10 rounded-lg bg-background/10 hover:bg-primary flex items-center justify-center transition-colors"
@@ -65,7 +78,9 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-heading font-semibold text-lg mb-6">Links Rápidos</h4>
+            <h4 className="font-heading font-semibold text-lg mb-6">
+              Links Rápidos
+            </h4>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.href}>
@@ -82,11 +97,15 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="font-heading font-semibold text-lg mb-6">Serviços</h4>
+            <h4 className="font-heading font-semibold text-lg mb-6">
+              Serviços
+            </h4>
             <ul className="space-y-3">
               {services.map((service) => (
                 <li key={service}>
-                  <span className="text-background/70 text-sm">{service}</span>
+                  <span className="text-background/70 text-sm">
+                    {service}
+                  </span>
                 </li>
               ))}
             </ul>
@@ -94,35 +113,50 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-heading font-semibold text-lg mb-6">Contactos</h4>
+            <h4 className="font-heading font-semibold text-lg mb-6">
+              Contactos
+            </h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <span className="text-background/70 text-sm">
-                  Quinta do Conde, Sesimbra<br />Portugal
+                  Quinta do Conde, Sesimbra
+                  <br />
+                  Portugal
                 </span>
               </li>
+
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                <a href="tel:+351210851266" className="text-background/70 hover:text-primary text-sm transition-colors">
+                <a
+                  href="tel:+351210851266"
+                  className="text-background/70 hover:text-primary text-sm transition-colors"
+                >
                   +351 210 851 266
                 </a>
               </li>
+
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />
-                <a href="mailto:info@wildsmile.pt" className="text-background/70 hover:text-primary text-sm transition-colors">
+                <a
+                  href="mailto:info@wildsmile.pt"
+                  className="text-background/70 hover:text-primary text-sm transition-colors"
+                >
                   info@wildsmile.pt
                 </a>
               </li>
+
               <li className="flex items-start gap-3">
                 <Clock className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <span className="text-background/70 text-sm">
-                  Seg - Sex: 9h - 19h<br />
+                  Seg - Sex: 9h - 19h
+                  <br />
                   Sábado: 9h - 13h
                 </span>
               </li>
             </ul>
           </div>
+
         </div>
       </div>
 
@@ -132,11 +166,18 @@ const Footer = () => {
           <p className="text-background/60 text-sm text-center md:text-left">
             © {currentYear} Clínica Dentária Dr. Sílvio Araújo. Todos os direitos reservados.
           </p>
+
           <div className="flex gap-6 text-sm">
-            <a href="#" className="text-background/60 hover:text-primary transition-colors">
+            <a
+              href="#"
+              className="text-background/60 hover:text-primary transition-colors"
+            >
               Política de Privacidade
             </a>
-            <a href="#" className="text-background/60 hover:text-primary transition-colors">
+            <a
+              href="#"
+              className="text-background/60 hover:text-primary transition-colors"
+            >
               Termos de Uso
             </a>
           </div>
@@ -147,3 +188,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

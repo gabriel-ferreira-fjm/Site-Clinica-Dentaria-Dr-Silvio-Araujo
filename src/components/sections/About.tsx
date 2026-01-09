@@ -45,7 +45,7 @@ const About = () => {
                       <path d="M12 2C10.8 2 9.7 2.4 8.8 3.1C8.1 3.6 7.5 4.3 7.1 5.1C6.4 4.5 5.5 4.2 4.5 4.5C3.1 4.9 2 6.2 2 7.8C2 9.1 2.6 10.3 3.5 11.2C4.3 12 5.4 12.5 6.5 12.5C6.8 12.5 7 12.5 7.3 12.4C7.1 13.4 7 14.5 7 15.5C7 18.5 8.3 21 10.5 22.4C11 22.8 11.5 23 12 23C12.5 23 13 22.8 13.5 22.4C15.7 21 17 18.5 17 15.5C17 14.5 16.9 13.4 16.7 12.4C17 12.5 17.2 12.5 17.5 12.5C18.6 12.5 19.7 12 20.5 11.2C21.4 10.3 22 9.1 22 7.8C22 6.2 20.9 4.9 19.5 4.5C18.5 4.2 17.6 4.5 16.9 5.1C16.5 4.3 15.9 3.6 15.2 3.1C14.3 2.4 13.2 2 12 2Z"/>
                     </svg>
                   </div>
-                  <h3 className="font-heading text-3xl font-bold mb-2">Wildsmile</h3>
+                  <h3 className="font-heading text-3xl font-bold mb-2">Clínica Dentária Dr. Sílvio Araújo</h3>
                   <p className="text-primary-foreground/80">A sua clínica de confiança</p>
                 </div>
               </div>
