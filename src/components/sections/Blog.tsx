@@ -1,34 +1,37 @@
+import { useTranslation } from 'react-i18next';
 import { ArrowRight, Calendar } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Blog = () => {
+  const { t } = useTranslation();
+
   const articles = [
     {
-      title: 'Como manter uma boa higiene oral diária',
-      excerpt: 'Descubra as melhores práticas para escovar os dentes corretamente e manter a sua boca saudável todos os dias.',
+      title: t('blog.articles.article1.title'),
+      excerpt: t('blog.articles.article1.excerpt'),
       date: '20 Dez 2024',
-      category: 'Higiene Oral',
+      category: t('blog.articles.article1.category'),
       readTime: '5 min',
     },
     {
-      title: 'Tudo sobre branqueamento dentário',
-      excerpt: 'Conheça os diferentes tipos de branqueamento e qual é o mais indicado para o seu caso.',
+      title: t('blog.articles.article2.title'),
+      excerpt: t('blog.articles.article2.excerpt'),
       date: '15 Dez 2024',
-      category: 'Estética',
+      category: t('blog.articles.article2.category'),
       readTime: '7 min',
     },
     {
-      title: 'Quando levar as crianças ao dentista?',
-      excerpt: 'Saiba qual a idade ideal para a primeira consulta e como preparar os mais pequenos para a visita.',
+      title: t('blog.articles.article3.title'),
+      excerpt: t('blog.articles.article3.excerpt'),
       date: '10 Dez 2024',
-      category: 'Odontopediatria',
+      category: t('blog.articles.article3.category'),
       readTime: '4 min',
     },
     {
-      title: 'Implantes dentários: guia completo',
-      excerpt: 'Tudo o que precisa saber sobre implantes dentários, desde o procedimento até à recuperação.',
+      title: t('blog.articles.article4.title'),
+      excerpt: t('blog.articles.article4.excerpt'),
       date: '5 Dez 2024',
-      category: 'Implantes',
+      category: t('blog.articles.article4.category'),
       readTime: '10 min',
     },
   ];
@@ -40,14 +43,14 @@ const Blog = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
             <span className="inline-block px-4 py-2 bg-primary/10 rounded-full text-primary font-medium text-sm mb-4">
-              Blog
+              {t('blog.tag')}
             </span>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
-              Dicas de <span className="text-primary">Saúde Oral</span>
+              {t('blog.title')} <span className="text-primary">{t('blog.titleHighlight')}</span>
             </h2>
           </div>
           <Button variant="outline" className="w-fit">
-            Ver Todos os Artigos
+            {t('blog.viewAll')}
             <ArrowRight className="w-4 h-4 ml-2" />
           </Button>
         </div>
@@ -81,7 +84,7 @@ const Blog = () => {
                     {article.date}
                   </span>
                   <span>•</span>
-                  <span>{article.readTime} leitura</span>
+                  <span>{article.readTime} {t('blog.readTime')}</span>
                 </div>
 
                 <h3 className="font-heading font-semibold text-foreground mb-2 group-hover:text-primary transition-colors line-clamp-2">
@@ -93,7 +96,7 @@ const Blog = () => {
                 </p>
 
                 <button className="text-sm font-medium text-primary flex items-center gap-1 group-hover:gap-2 transition-all">
-                  Ler Mais
+                  {t('blog.readMore')}
                   <ArrowRight className="w-4 h-4" />
                 </button>
               </div>

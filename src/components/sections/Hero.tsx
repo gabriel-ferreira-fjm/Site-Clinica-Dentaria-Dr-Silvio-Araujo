@@ -1,7 +1,10 @@
+import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { Phone, MapPin, ArrowRight } from 'lucide-react';
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
@@ -29,22 +32,21 @@ const Hero = () => {
           <div className="space-y-8 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary font-medium text-sm animate-fade-in">
               <span className="w-2 h-2 bg-primary rounded-full animate-pulse-soft" />
-              Bem-vindo (a) ao nosso site!
+              {t('hero.welcome')}
             </div>
             
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight animate-fade-in stagger-1">
-              Clínica Dentária{' '}
+              {t('hero.title')}
               <br />
-              <span className="text-primary">Dr. Sílvio Araújo</span>
+              <span className="text-primary">{t('hero.titleHighlight')}</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground font-light leading-relaxed animate-fade-in stagger-2">
-              Sorrisos saudáveis com cuidado especializado.
+              {t('hero.subtitle')}
             </p>
             
             <p className="text-muted-foreground max-w-xl mx-auto lg:mx-0 animate-fade-in stagger-3">
-              Combinamos experiência, tecnologia moderna e atenção personalizada para oferecer 
-              o melhor cuidado dentário para toda a família.
+              {t('hero.description')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in stagger-4">
@@ -54,7 +56,7 @@ const Hero = () => {
                 onClick={() => scrollToSection('#marcacao')}
                 className="group"
               >
-                Marcar Consulta Agora
+                {t('hero.bookNow')}
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button
@@ -62,26 +64,26 @@ const Hero = () => {
                 size="xl"
                 onClick={() => scrollToSection('#servicos')}
               >
-                Ver Serviços
+                {t('hero.viewServices')}
               </Button>
             </div>
             
             {/* Contact Info */}
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 pt-4 animate-fade-in stagger-5">
               <a
-                href="tel:+351210851266"
+                href="tel:924123784"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
               >
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
-                <span className="font-medium">924 123 784</span>
+                <span className="font-medium">{t('header.phone')}</span>
               </a>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                   <MapPin className="w-5 h-5 text-primary" />
                 </div>
-                <span>Rua D Sebastião 2050, Quinta do Conde</span>
+                <span>Rua D Sebastião 2050, Quinta do Conde, Portugal</span>
               </div>
             </div>
           </div>
@@ -101,10 +103,10 @@ const Hero = () => {
                     </svg>
                   </div>
                   <h3 className="font-heading font-bold text-xl text-foreground mb-2">
-                    Cuidado Profissional
+                    {t('hero.professionalCare')}
                   </h3>
                   <p className="text-muted-foreground text-sm">
-                    +15 anos de experiência
+                    {t('hero.yearsExperience')}
                   </p>
                 </div>
               </div>
@@ -119,7 +121,7 @@ const Hero = () => {
                   </div>
                   <div>
                     <p className="font-heading font-semibold text-foreground">+5000</p>
-                    <p className="text-xs text-muted-foreground">Pacientes Felizes</p>
+                    <p className="text-xs text-muted-foreground">{t('hero.happyPatients')}</p>
                   </div>
                 </div>
               </div>
@@ -133,7 +135,7 @@ const Hero = () => {
                   </div>
                   <div>
                     <p className="font-heading font-semibold text-foreground">4.9/5</p>
-                    <p className="text-xs text-muted-foreground">Avaliação Média</p>
+                    <p className="text-xs text-muted-foreground">{t('hero.averageRating')}</p>
                   </div>
                 </div>
               </div>

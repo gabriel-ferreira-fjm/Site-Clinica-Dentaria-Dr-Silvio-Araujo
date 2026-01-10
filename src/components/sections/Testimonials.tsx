@@ -1,40 +1,43 @@
+import { useTranslation } from 'react-i18next';
 import { Star, Quote } from 'lucide-react';
 
 const Testimonials = () => {
+  const { t } = useTranslation();
+
   const testimonials = [
     {
-      name: 'Maria Santos',
-      role: 'Paciente há 5 anos',
+      name: t('testimonials.reviews.review1.name'),
+      role: t('testimonials.reviews.review1.role'),
       rating: 5,
-      text: 'Excelente atendimento! O Dr. Sílvio é muito profissional e atencioso. Sempre me senti à vontade durante os tratamentos. Recomendo a todos!',
+      text: t('testimonials.reviews.review1.text'),
       initials: 'MS',
     },
     {
-      name: 'João Ferreira',
-      role: 'Paciente há 3 anos',
+      name: t('testimonials.reviews.review2.name'),
+      role: t('testimonials.reviews.review2.role'),
       rating: 5,
-      text: 'Fiz o meu tratamento de ortodontia aqui e estou muito satisfeito com os resultados. Equipa muito simpática e competente.',
+      text: t('testimonials.reviews.review2.text'),
       initials: 'JF',
     },
     {
-      name: 'Ana Costa',
-      role: 'Paciente há 2 anos',
+      name: t('testimonials.reviews.review3.name'),
+      role: t('testimonials.reviews.review3.role'),
       rating: 5,
-      text: 'A clínica é muito moderna e acolhedora. Os preços são justos e o atendimento é sempre pontual. A minha família toda é seguida aqui.',
+      text: t('testimonials.reviews.review3.text'),
       initials: 'AC',
     },
     {
-      name: 'Pedro Oliveira',
-      role: 'Paciente há 4 anos',
+      name: t('testimonials.reviews.review4.name'),
+      role: t('testimonials.reviews.review4.role'),
       rating: 5,
-      text: 'Tinha muito medo de ir ao dentista, mas o Dr. Sílvio fez-me sentir completamente à vontade. Agora venho às consultas sem qualquer receio.',
+      text: t('testimonials.reviews.review4.text'),
       initials: 'PO',
     },
     {
-      name: 'Sofia Martins',
-      role: 'Paciente há 1 ano',
+      name: t('testimonials.reviews.review5.name'),
+      role: t('testimonials.reviews.review5.role'),
       rating: 5,
-      text: 'Fiz um implante dentário e correu tudo na perfeição. Processo bem explicado e acompanhamento excelente. Muito satisfeita!',
+      text: t('testimonials.reviews.review5.text'),
       initials: 'SM',
     },
   ];
@@ -45,14 +48,13 @@ const Testimonials = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-4 py-2 bg-primary/10 rounded-full text-primary font-medium text-sm mb-4">
-            Testemunhos
+            {t('testimonials.tag')}
           </span>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">
-            O que dizem os nossos <span className="text-primary">pacientes</span>
+            {t('testimonials.title')} <span className="text-primary">{t('testimonials.titleHighlight')}</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            A satisfação dos nossos pacientes é a nossa maior recompensa. 
-            Veja o que dizem sobre a experiência na nossa clínica.
+            {t('testimonials.description')}
           </p>
         </div>
 
@@ -130,10 +132,10 @@ const Testimonials = () => {
         {/* Stats */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { value: '4.9', label: 'Avaliação Média', suffix: '/5' },
-            { value: '5000', label: 'Pacientes Satisfeitos', suffix: '+' },
-            { value: '98', label: 'Taxa de Satisfação', suffix: '%' },
-            { value: '15', label: 'Anos de Experiência', suffix: '+' },
+            { value: '4.9', label: t('testimonials.stats.averageRating'), suffix: '/5' },
+            { value: '5000', label: t('testimonials.stats.happyPatients'), suffix: '+' },
+            { value: '98', label: t('testimonials.stats.satisfactionRate'), suffix: '%' },
+            { value: '15', label: t('testimonials.stats.yearsExperience'), suffix: '+' },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <p className="font-heading text-4xl md:text-5xl font-bold text-primary">

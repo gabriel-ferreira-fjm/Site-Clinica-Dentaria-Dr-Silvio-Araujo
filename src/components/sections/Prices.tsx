@@ -1,42 +1,45 @@
+import { useTranslation } from 'react-i18next';
 import { Check, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Prices = () => {
+  const { t } = useTranslation();
+
   const priceItems = [
     {
-      service: 'Consulta dentária',
+      service: t('prices.treatments.consultation'),
       regular: '30 €',
       member: '0 €',
       popular: false,
     },
     {
-      service: 'Destartarização',
+      service: t('prices.treatments.cleaning'),
       regular: '15 €',
       member: '0 €',
       popular: false,
     },
     {
-      service: 'Branqueamento dentário',
+      service: t('prices.treatments.whitening'),
       regular: '400 €',
-      member: 'desde 180 €',
+      member: '180 €',
       popular: true,
     },
     {
-      service: 'Aparelho metálico (por arcada)',
+      service: t('prices.treatments.braces'),
       regular: '610 €',
-      member: 'desde 256 €',
+      member: '256 €',
       popular: true,
     },
     {
-      service: 'Implante dentário',
+      service: t('prices.treatments.implant'),
       regular: '750 €',
-      member: 'desde 473 €',
+      member: '473 €',
       popular: true,
     },
     {
-      service: 'Prótese resina acrílica (3 dentes)',
+      service: t('prices.treatments.prosthesis'),
       regular: '225 €',
-      member: 'desde 86 €',
+      member: '86 €',
       popular: false,
     },
   ];
@@ -54,14 +57,13 @@ const Prices = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-4 py-2 bg-primary/10 rounded-full text-primary font-medium text-sm mb-4">
-            Tabela de Preços
+            {t('prices.tag')}
           </span>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Tratamentos <span className="text-primary">acessíveis</span> para todos
+            {t('prices.title')} <span className="text-primary">{t('prices.titleHighlight')}</span> {t('prices.titleEnd')}
           </h2>
           <p className="text-muted-foreground text-lg">
-            Oferecemos preços competitivos e descontos especiais para membros. 
-            Cuidar do seu sorriso nunca foi tão acessível.
+            {t('prices.description')}
           </p>
         </div>
 
@@ -70,10 +72,11 @@ const Prices = () => {
           <div className="bg-background rounded-2xl shadow-dental-lg overflow-hidden border border-border">
             {/* Table Header */}
             <div className="grid grid-cols-3 bg-primary text-primary-foreground">
-              <div className="p-4 md:p-6 font-heading font-semibold">Tratamento</div>
-              <div className="p-4 md:p-6 text-center font-heading font-semibold">Preço Regular</div>
+              <div className="p-4 md:p-6 font-heading font-semibold">{t('prices.table.treatment')}</div>
+              <div className="p-4 md:p-6 text-center font-heading font-semibold">{t('prices.table.regularPrice')}</div>
               <div className="p-4 md:p-6 text-center font-heading font-semibold bg-primary-dark">
-                <span className="hidden sm:inline">Preço </span>Membro
+                <span className="hidden sm:inline">{t('prices.table.memberPrice')}</span>
+                <span className="sm:hidden">Membro</span>
               </div>
             </div>
 
@@ -108,18 +111,17 @@ const Prices = () => {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <h3 className="font-heading text-2xl font-bold mb-4">
-                  Torne-se Membro e Poupe
+                  {t('prices.membership.title')}
                 </h3>
                 <p className="text-primary-foreground/80 mb-6">
-                  Com o nosso plano de membro, tem acesso a descontos exclusivos 
-                  em todos os tratamentos, consultas gratuitas e prioridade no agendamento.
+                  {t('prices.membership.description')}
                 </p>
                 <ul className="space-y-3 mb-6">
                   {[
-                    'Consultas de rotina gratuitas',
-                    'Descontos até 60% em tratamentos',
-                    'Agendamento prioritário',
-                    'Pagamento flexível',
+                    t('prices.membership.benefits.freeConsultations'),
+                    t('prices.membership.benefits.discounts'),
+                    t('prices.membership.benefits.priority'),
+                    t('prices.membership.benefits.flexiblePayment'),
                   ].map((benefit) => (
                     <li key={benefit} className="flex items-center gap-3">
                       <div className="w-5 h-5 rounded-full bg-primary-foreground/20 flex items-center justify-center">
@@ -131,16 +133,16 @@ const Prices = () => {
                 </ul>
               </div>
               <div className="text-center">
-                <p className="text-primary-foreground/60 text-sm mb-2">A partir de</p>
+                <p className="text-primary-foreground/60 text-sm mb-2">{t('prices.membership.startingFrom')}</p>
                 <p className="font-heading text-5xl font-bold mb-2">9,90€</p>
-                <p className="text-primary-foreground/60 mb-6">por mês</p>
+                <p className="text-primary-foreground/60 mb-6">{t('prices.membership.perMonth')}</p>
                 <Button
                   variant="cta-outline"
                   size="xl"
                   onClick={scrollToAppointment}
                   className="w-full sm:w-auto"
                 >
-                  Saber Mais
+                  {t('prices.membership.learnMore')}
                 </Button>
               </div>
             </div>
@@ -148,8 +150,7 @@ const Prices = () => {
 
           {/* Note */}
           <p className="text-center text-muted-foreground text-sm mt-6">
-            * Os preços apresentados são indicativos e podem variar conforme a complexidade do tratamento. 
-            Consulte-nos para um orçamento personalizado.
+            {t('prices.note')}
           </p>
         </div>
       </div>

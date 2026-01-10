@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { Calendar, X } from 'lucide-react';
 
 const FloatingCTA = () => {
+  const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
   const [isDismissed, setIsDismissed] = useState(false);
 
@@ -34,7 +36,7 @@ const FloatingCTA = () => {
         className="shadow-dental-lg"
       >
         <Calendar className="w-5 h-5 mr-2" />
-        Marcar Consulta Hoje!
+        {t('floatingCTA.button')}
       </Button>
       <button
         onClick={() => setIsDismissed(true)}

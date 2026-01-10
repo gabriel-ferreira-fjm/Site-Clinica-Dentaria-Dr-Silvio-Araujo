@@ -1,33 +1,36 @@
+import { useTranslation } from 'react-i18next';
 import { Phone, Mail, MapPin, Clock, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   const contactInfo = [
     {
       icon: MapPin,
-      title: 'Morada',
-      content: 'Rua D Sebastião 2050, Quinta do Conde, Sesimbra, Portugal',
-      action: 'Ver no Mapa',
-      href: 'https://maps.google.com/?q=Quinta+do+Conde+Sesimbra+Portugal',
+      title: t('contact.info.address.title'),
+      content: t('contact.info.address.content'),
+      action: t('contact.info.address.action'),
+      href: 'https://www.google.com/maps/place//data=!4m2!3m1!1s0xd1948d9fdd90711:0x73f4b7664e5a18bc?sa=X&ved=1t:8290&ictx=111',
     },
     {
       icon: Phone,
-      title: 'Telefone',
-      content: '924 123 784',
-      action: 'Ligar Agora',
-      href: 'tel:924123784',
+      title: t('contact.info.phone.title'),
+      content: t('contact.info.phone.content'),
+      action: t('contact.info.phone.action'),
+      href: 'tel:924 123 784',
     },
     {
       icon: Mail,
-      title: 'Email',
-      content: 'geral@silvioaraujo.com',
-      action: 'Enviar Email',
-      href: 'mailto:geral@wildsmile.pt',
+      title: t('contact.info.email.title'),
+      content: t('contact.info.email.content'),
+      action: t('contact.info.email.action'),
+      href: 'mailto:geral@silvioaraujo.com',
     },
     {
       icon: Clock,
-      title: 'Horário',
-      content: 'Seg-Sex: 9h-19h | Sáb: 9h-13h',
+      title: t('contact.info.schedule.title'),
+      content: t('contact.info.schedule.content'),
       action: null,
       href: null,
     },
@@ -39,14 +42,13 @@ const Contact = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-4 py-2 bg-primary/10 rounded-full text-primary font-medium text-sm mb-4">
-            Contactos
+            {t('contact.tag')}
           </span>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Venha <span className="text-primary">visitar-nos</span>
+            {t('contact.title')} <span className="text-primary">{t('contact.titleHighlight')}</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Estamos localizados na Quinta do Conde, com fácil acesso e estacionamento próximo. 
-            Entre em contacto connosco.
+            {t('contact.description')}
           </p>
         </div>
 
@@ -98,11 +100,10 @@ const Contact = () => {
             {/* CTA */}
             <div className="bg-primary rounded-2xl p-8 text-primary-foreground">
               <h3 className="font-heading text-xl font-bold mb-3">
-                Marque a sua Consulta Hoje!
+                {t('contact.cta.title')}
               </h3>
               <p className="text-primary-foreground/80 mb-6">
-                Não espere mais para cuidar do seu sorriso. 
-                A nossa equipa está pronta para recebê-lo.
+                {t('contact.cta.description')}
               </p>
               <Button
                 variant="cta-outline"
@@ -114,7 +115,7 @@ const Contact = () => {
                   }
                 }}
               >
-                Marcar Consulta
+                {t('contact.cta.button')}
               </Button>
             </div>
           </div>

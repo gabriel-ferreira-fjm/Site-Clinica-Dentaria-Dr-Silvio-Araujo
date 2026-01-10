@@ -1,0 +1,368 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "team": "Team",
+    "prices": "Prices",
+    "contacts": "Contact",
+    "bookAppointment": "Book Appointment",
+    "location": "Rua D Sebastião 2050, Quinta do Conde, Portugal",
+    "phone": "924 123 784",
+    "schedule": "Mon - Fri: 9am - 7pm | Sat: 9am - 1pm"
+  },
+  "hero": {
+    "welcome": "Welcome to our website!",
+    "title": "Dental Clinic",
+    "titleHighlight": "Dr. Sílvio Araújo",
+    "subtitle": "Healthy smile, specialized care",
+    "description": "We combine experience, modern technology and personalized attention to offer the best dental care for the whole family.",
+    "bookNow": "Book Appointment Now",
+    "viewServices": "View Services",
+    "happyPatients": "Happy Patients",
+    "averageRating": "Average Rating",
+    "professionalCare": "Professional Care",
+    "yearsExperience": "+15 years of experience"
+  },
+  "about": {
+    "tag": "About Us",
+    "title": "We care for your smile with",
+    "titleHighlight": "dedication",
+    "description": "Dr. Sílvio Araújo Dental Clinic combines experience, modern technology and personalized attention to offer the best dental care. Led by Dr. Sílvio Araújo, our team ensures effective and affordable treatments for the whole family.",
+    "features": {
+      "experience": {
+        "title": "Proven Experience",
+        "description": "More than 15 years dedicated to oral health"
+      },
+      "team": {
+        "title": "Specialized Team",
+        "description": "Qualified professionals in continuous training"
+      },
+      "care": {
+        "title": "Personalized Care",
+        "description": "Treatments adapted to each patient's needs"
+      }
+    },
+    "highlights": {
+      "technology": "Latest generation technology",
+      "environment": "Welcoming and modern environment",
+      "prices": "Affordable prices",
+      "family": "Care for the whole family",
+      "emergency": "Dental emergencies",
+      "payment": "Flexible payment options"
+    },
+    "stats": {
+      "patients": "Patients",
+      "years": "Years"
+    }
+  },
+  "services": {
+    "tag": "Our Services",
+    "title": "Complete dental",
+    "titleHighlight": "treatments",
+    "description": "We offer a complete range of dental services to care for your family's oral health, with modern technology and qualified professionals.",
+    "categories": {
+      "consultation": {
+        "title": "Consultation and Diagnosis",
+        "description": "Complete oral health assessment",
+        "services": ["Dental consultation", "Digital X-rays", "Dental emergencies"]
+      },
+      "prevention": {
+        "title": "Prevention & Hygiene",
+        "description": "Essential preventive care",
+        "services": ["Teeth cleaning", "Dental polishing", "Preventive dentistry"]
+      },
+      "aesthetics": {
+        "title": "Aesthetics and Orthodontics",
+        "description": "Perfect and aligned smile",
+        "services": ["Teeth whitening", "Metal braces", "Invisible orthodontics"]
+      },
+      "implants": {
+        "title": "Implants and Prosthetics",
+        "description": "Solutions for missing teeth",
+        "services": ["Dental implants", "Fixed prosthetics", "Removable prosthetics"]
+      },
+      "specialized": {
+        "title": "Specialized Treatments",
+        "description": "Advanced and specific care",
+        "services": ["Endodontics", "Oral surgery", "Periodontics"]
+      },
+      "pediatric": {
+        "title": "Pediatric Dentistry",
+        "description": "Dental care for children",
+        "services": ["Pediatric consultation", "Sealants", "Oral hygiene education"]
+      }
+    },
+    "tmj": {
+      "title": "Temporomandibular Dysfunction Treatment",
+      "description": "Specialized treatment for jaw joint pain, headaches and muscle tension related to dental problems.",
+      "learnMore": "Learn More",
+      "quickConsultations": "Quick Consultations",
+      "guaranteedResults": "Guaranteed Results"
+    }
+  },
+  "prices": {
+    "tag": "Price List",
+    "title": "Affordable",
+    "titleHighlight": "treatments",
+    "titleEnd": "for everyone",
+    "description": "We offer competitive prices and special discounts for members. Taking care of your smile has never been so affordable.",
+    "table": {
+      "treatment": "Treatment",
+      "regularPrice": "Regular Price",
+      "memberPrice": "Member Price"
+    },
+    "treatments": {
+      "consultation": "Dental consultation",
+      "cleaning": "Teeth cleaning",
+      "whitening": "Teeth whitening",
+      "braces": "Metal braces (per arch)",
+      "implant": "Dental implant",
+      "prosthesis": "Acrylic resin prosthesis (3 teeth)"
+    },
+    "membership": {
+      "title": "Become a Member and Save",
+      "description": "With our membership plan, you have access to exclusive discounts on all treatments, free consultations and priority scheduling.",
+      "benefits": {
+        "freeConsultations": "Free routine consultations",
+        "discounts": "Discounts up to 60% on treatments",
+        "priority": "Priority scheduling",
+        "flexiblePayment": "Flexible payment"
+      },
+      "startingFrom": "Starting from",
+      "perMonth": "per month",
+      "learnMore": "Learn More"
+    },
+    "note": "* Prices shown are indicative and may vary according to treatment complexity. Contact us for a personalized quote."
+  },
+  "team": {
+    "tag": "Our Team",
+    "title": "Professionals",
+    "titleHighlight": "dedicated",
+    "titleEnd": "to your smile",
+    "description": "Meet the team that takes care of you and your family with professionalism, experience and a touch of affection.",
+    "member": {
+      "name": "Dr. Sílvio Araújo",
+      "role": "Clinical Director",
+      "specialty": "General Dentistry and Orthodontics",
+      "description": "Specialist in general dentistry and orthodontics, with extensive experience and dedication to each patient's care. Graduated from the Faculty of Dental Medicine, he leads the team with professionalism and empathy.",
+      "achievements": [
+        "Member of the Portuguese Dental Association",
+        "Specialization in Orthodontics",
+        "Continuous training in implantology"
+      ],
+      "quote": "Our commitment is to provide the best dental care, with advanced technology and humane, personalized service."
+    }
+  },
+  "amenities": {
+    "tag": "Amenities",
+    "title": "We think about your",
+    "titleHighlight": "comfort",
+    "description": "Our clinic offers various amenities to make your visit as pleasant as possible.",
+    "items": {
+      "wifi": {
+        "title": "Free Wi-Fi",
+        "description": "Free internet during your visit"
+      },
+      "parking": {
+        "title": "Nearby Parking",
+        "description": "Parking spaces just a few meters away"
+      },
+      "climate": {
+        "title": "Air Conditioned",
+        "description": "Pleasant temperature all year round"
+      },
+      "waitingRoom": {
+        "title": "Comfortable Waiting Room",
+        "description": "Cozy and relaxing space"
+      },
+      "kids": {
+        "title": "Kids Area",
+        "description": "Entertainment area for children"
+      },
+      "card": {
+        "title": "Card Payment",
+        "description": "Card payment available"
+      },
+      "transport": {
+        "title": "Public Transport",
+        "description": "Bus stops nearby"
+      },
+      "accessibility": {
+        "title": "Accessibility",
+        "description": "Facilities adapted for reduced mobility"
+      }
+    }
+  },
+  "appointment": {
+    "tag": "Book Appointment",
+    "title": "Schedule your appointment",
+    "titleHighlight": "today",
+    "description": "Fill out the form and our team will contact you to confirm your appointment.",
+    "benefits": {
+      "response": "Response in less than 24 hours",
+      "flexible": "Flexible hours",
+      "personalized": "Personalized service"
+    },
+    "directContact": {
+      "title": "Prefer to contact us directly?",
+      "phone": "924 123 784",
+      "email": "geral@silvioaraujo.com"
+    },
+    "form": {
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+351 XXX XXX XXX",
+      "consultationType": "Consultation Type",
+      "consultationTypePlaceholder": "Select consultation type",
+      "preferredDate": "Preferred Date",
+      "preferredTime": "Preferred Time",
+      "preferredTimePlaceholder": "Select time",
+      "preferredDentist": "Preferred Dentist (optional)",
+      "noPreference": "No preference",
+      "submit": "Book Appointment",
+      "privacyNote": "By submitting, you agree to our privacy policy."
+    },
+    "consultationTypes": {
+      "general": "General Consultation",
+      "cleaning": "Cleaning/Scaling",
+      "orthodontics": "Orthodontics",
+      "implants": "Implants",
+      "whitening": "Whitening",
+      "emergency": "Emergency",
+      "other": "Other"
+    },
+    "toast": {
+      "title": "Appointment Request Sent!",
+      "description": "We will contact you shortly to confirm your appointment."
+    }
+  },
+  "testimonials": {
+    "tag": "Testimonials",
+    "title": "What our",
+    "titleHighlight": "patients say",
+    "description": "Our patients' satisfaction is our greatest reward. See what they say about their experience at our clinic.",
+    "stats": {
+      "averageRating": "Average Rating",
+      "happyPatients": "Happy Patients",
+      "satisfactionRate": "Satisfaction Rate",
+      "yearsExperience": "Years of Experience"
+    },
+    "reviews": {
+      "review1": {
+        "name": "Maria Santos",
+        "role": "Patient for 5 years",
+        "text": "Excellent service! Dr. Sílvio is very professional and attentive. I always felt comfortable during treatments. I recommend to everyone!"
+      },
+      "review2": {
+        "name": "João Ferreira",
+        "role": "Patient for 3 years",
+        "text": "I did my orthodontic treatment here and I'm very satisfied with the results. Very friendly and competent team."
+      },
+      "review3": {
+        "name": "Ana Costa",
+        "role": "Patient for 2 years",
+        "text": "The clinic is very modern and welcoming. Prices are fair and service is always punctual. My whole family is treated here."
+      },
+      "review4": {
+        "name": "Pedro Oliveira",
+        "role": "Patient for 4 years",
+        "text": "I was very afraid of going to the dentist, but Dr. Sílvio made me feel completely at ease. Now I come to appointments without any fear."
+      },
+      "review5": {
+        "name": "Sofia Martins",
+        "role": "Patient for 1 year",
+        "text": "I had a dental implant and everything went perfectly. Process well explained and excellent follow-up. Very satisfied!"
+      }
+    }
+  },
+  "blog": {
+    "tag": "Blog",
+    "title": "Oral Health",
+    "titleHighlight": "Tips",
+    "viewAll": "View All Articles",
+    "readMore": "Read More",
+    "readTime": "read",
+    "articles": {
+      "article1": {
+        "title": "How to maintain good daily oral hygiene",
+        "excerpt": "Discover the best practices for brushing your teeth correctly and keeping your mouth healthy every day.",
+        "category": "Oral Hygiene"
+      },
+      "article2": {
+        "title": "Everything about teeth whitening",
+        "excerpt": "Learn about the different types of whitening and which one is best for your case.",
+        "category": "Aesthetics"
+      },
+      "article3": {
+        "title": "When to take children to the dentist?",
+        "excerpt": "Find out the ideal age for the first consultation and how to prepare children for the visit.",
+        "category": "Pediatric Dentistry"
+      },
+      "article4": {
+        "title": "Dental implants: complete guide",
+        "excerpt": "Everything you need to know about dental implants, from the procedure to recovery.",
+        "category": "Implants"
+      }
+    }
+  },
+  "contact": {
+    "tag": "Contact",
+    "title": "Come",
+    "titleHighlight": "visit us",
+    "description": "We are located in Quinta do Conde, with easy access and nearby parking. Get in touch with us.",
+    "info": {
+      "address": {
+        "title": "Address",
+        "content": "Quinta do Conde, Sesimbra, Portugal",
+        "action": "View on Map"
+      },
+      "phone": {
+        "title": "Phone",
+        "content": "924 123 784",
+        "action": "Call Now"
+      },
+      "email": {
+        "title": "Email",
+        "content": "geral@silvioaraujo.com",
+        "action": "Send Email"
+      },
+      "schedule": {
+        "title": "Schedule",
+        "content": "Mon-Fri: 9am-7pm | Sat: 9am-1pm"
+      }
+    },
+    "cta": {
+      "title": "Book Your Appointment Today!",
+      "description": "Don't wait any longer to take care of your smile. Our team is ready to welcome you.",
+      "button": "Book Appointment"
+    }
+  },
+  "footer": {
+    "description": "We care for your smile with dedication, modern technology and personalized treatments for the whole family.",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "contacts": "Contact",
+    "servicesList": {
+      "consultation": "Dental Consultation",
+      "orthodontics": "Orthodontics",
+      "implants": "Dental Implants",
+      "whitening": "Whitening",
+      "cleaning": "Teeth Cleaning"
+    },
+    "copyright": "Dr. Sílvio Araújo Dental Clinic. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
+  "floatingCTA": {
+    "button": "Book Appointment Today!"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Oops! Page not found",
+    "backHome": "Return to Home"
+  }
+}

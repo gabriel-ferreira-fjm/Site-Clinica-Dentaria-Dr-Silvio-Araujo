@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Phone, MapPin } from 'lucide-react';
+import LanguageSelector from '@/components/LanguageSelector';
 
 const Header = () => {
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -15,12 +18,12 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { href: '#home', label: 'Home' },
-    { href: '#sobre', label: 'Sobre Nós' },
-    { href: '#servicos', label: 'Serviços' },
-    { href: '#equipa', label: 'Equipa' },
-    { href: '#precos', label: 'Preços' },
-    { href: '#contactos', label: 'Contactos' },
+    { href: '#home', label: t('header.home') },
+    { href: '#sobre', label: t('header.about') },
+    { href: '#servicos', label: t('header.services') },
+    { href: '#equipa', label: t('header.team') },
+    { href: '#precos', label: t('header.prices') },
+    { href: '#contactos', label: t('header.contacts') },
   ];
 
   const scrollToSection = (href: string) => {
@@ -39,15 +42,15 @@ const Header = () => {
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-2">
               <MapPin className="w-4 h-4" />
-              Rua D Sebastião 2050, Quinta do Conde, Portugal
+              {t('header.location')}
             </span>
             <span className="flex items-center gap-2">
               <Phone className="w-4 h-4" />
-              924 123 784
+              {t('header.phone')}
             </span>
           </div>
           <div className="text-primary-foreground/80">
-            Seg - Sex: 9h - 19h | Sáb: 9h - 13h
+            {t('header.schedule')}
           </div>
         </div>
       </div>
@@ -63,12 +66,11 @@ const Header = () => {
         <div className="container flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-3">
-            <img
-              src={`${import.meta.env.BASE_URL}logo-clinica.png`}
-              alt="Logo Clínica Dentária Dr. Sílvio Araújo"
-              className="h-20 w-auto block"
+            <img 
+              src="/logo-clinica.png" 
+              alt="Logo Clínica Dentária Dr. Sílvio Araújo" 
+              className="h-20 w-auto"
             />
-
             <div className="hidden sm:block">
               <h1 className="font-heading font-bold text-lg text-foreground leading-tight">
                 Dr. Sílvio Araújo
@@ -90,25 +92,29 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden lg:block">
+          {/* Language Selector & CTA Button */}
+          <div className="hidden lg:flex items-center gap-4">
+            <LanguageSelector />
             <Button
               variant="cta"
               size="lg"
               onClick={() => scrollToSection('#marcacao')}
             >
-              Marcar Consulta
+              {t('header.bookAppointment')}
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden p-2 text-foreground"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          <div className="flex lg:hidden items-center gap-2">
+            <LanguageSelector />
+            <button
+              className="p-2 text-foreground"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
@@ -130,7 +136,7 @@ const Header = () => {
                 className="mt-4"
                 onClick={() => scrollToSection('#marcacao')}
               >
-                Marcar Consulta
+                {t('header.bookAppointment')}
               </Button>
             </nav>
           </div>

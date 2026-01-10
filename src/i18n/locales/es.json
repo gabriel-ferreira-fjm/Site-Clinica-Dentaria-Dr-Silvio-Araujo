@@ -1,0 +1,368 @@
+{
+  "header": {
+    "home": "Inicio",
+    "about": "Sobre Nosotros",
+    "services": "Servicios",
+    "team": "Equipo",
+    "prices": "Precios",
+    "contacts": "Contacto",
+    "bookAppointment": "Reservar Cita",
+    "location": "Rua D Sebastião 2050, Quinta do Conde, Portugal",
+    "phone": "924 123 784",
+    "schedule": "Lun - Vie: 9h - 19h | Sáb: 9h - 13h"
+  },
+  "hero": {
+    "welcome": "¡Bienvenido(a) a nuestro sitio!",
+    "title": "Clínica Dental",
+    "titleHighlight": "Dr. Sílvio Araújo",
+    "subtitle": "Sonrisa saludable, cuidado especializado",
+    "description": "Combinamos experiencia, tecnología moderna y atención personalizada para ofrecer el mejor cuidado dental para toda la familia.",
+    "bookNow": "Reservar Cita Ahora",
+    "viewServices": "Ver Servicios",
+    "happyPatients": "Pacientes Felices",
+    "averageRating": "Valoración Media",
+    "professionalCare": "Cuidado Profesional",
+    "yearsExperience": "+15 años de experiencia"
+  },
+  "about": {
+    "tag": "Sobre Nosotros",
+    "title": "Cuidamos tu sonrisa con",
+    "titleHighlight": "dedicación",
+    "description": "La Clínica Dental Dr. Sílvio Araújo combina experiencia, tecnología moderna y atención personalizada para ofrecer el mejor cuidado dental. Liderada por el Dr. Sílvio Araújo, nuestro equipo garantiza tratamientos eficaces y accesibles para toda la familia.",
+    "features": {
+      "experience": {
+        "title": "Experiencia Comprobada",
+        "description": "Más de 15 años dedicados a la salud oral"
+      },
+      "team": {
+        "title": "Equipo Especializado",
+        "description": "Profesionales cualificados en formación continua"
+      },
+      "care": {
+        "title": "Cuidado Personalizado",
+        "description": "Tratamientos adaptados a las necesidades de cada paciente"
+      }
+    },
+    "highlights": {
+      "technology": "Tecnología de última generación",
+      "environment": "Ambiente acogedor y moderno",
+      "prices": "Precios accesibles",
+      "family": "Atención para toda la familia",
+      "emergency": "Urgencias dentales",
+      "payment": "Facilidades de pago"
+    },
+    "stats": {
+      "patients": "Pacientes",
+      "years": "Años"
+    }
+  },
+  "services": {
+    "tag": "Nuestros Servicios",
+    "title": "Tratamientos dentales",
+    "titleHighlight": "completos",
+    "description": "Ofrecemos una gama completa de servicios dentales para cuidar la salud oral de toda su familia, con tecnología moderna y profesionales cualificados.",
+    "categories": {
+      "consultation": {
+        "title": "Consulta y Diagnóstico",
+        "description": "Evaluación completa de la salud oral",
+        "services": ["Consulta dental", "Radiografías digitales", "Urgencias dentales"]
+      },
+      "prevention": {
+        "title": "Prevención e Higiene",
+        "description": "Cuidados preventivos esenciales",
+        "services": ["Limpieza dental", "Pulido dental", "Odontología preventiva"]
+      },
+      "aesthetics": {
+        "title": "Estética y Ortodoncia",
+        "description": "Sonrisa perfecta y alineada",
+        "services": ["Blanqueamiento dental", "Brackets metálicos", "Ortodoncia invisible"]
+      },
+      "implants": {
+        "title": "Implantes y Prótesis",
+        "description": "Soluciones para dientes faltantes",
+        "services": ["Implantes dentales", "Prótesis fijas", "Prótesis removibles"]
+      },
+      "specialized": {
+        "title": "Tratamientos Especializados",
+        "description": "Cuidados avanzados y específicos",
+        "services": ["Endodoncia", "Cirugía oral", "Periodoncia"]
+      },
+      "pediatric": {
+        "title": "Odontopediatría",
+        "description": "Cuidados dentales para niños",
+        "services": ["Consulta pediátrica", "Sellantes", "Educación en higiene oral"]
+      }
+    },
+    "tmj": {
+      "title": "Tratamiento de Disfunción Temporomandibular",
+      "description": "Tratamiento especializado para dolores en la articulación de la mandíbula, dolores de cabeza y tensión muscular relacionada con problemas dentales.",
+      "learnMore": "Saber Más",
+      "quickConsultations": "Consultas Rápidas",
+      "guaranteedResults": "Resultados Garantizados"
+    }
+  },
+  "prices": {
+    "tag": "Lista de Precios",
+    "title": "Tratamientos",
+    "titleHighlight": "accesibles",
+    "titleEnd": "para todos",
+    "description": "Ofrecemos precios competitivos y descuentos especiales para miembros. Cuidar tu sonrisa nunca fue tan accesible.",
+    "table": {
+      "treatment": "Tratamiento",
+      "regularPrice": "Precio Regular",
+      "memberPrice": "Precio Miembro"
+    },
+    "treatments": {
+      "consultation": "Consulta dental",
+      "cleaning": "Limpieza dental",
+      "whitening": "Blanqueamiento dental",
+      "braces": "Brackets metálicos (por arcada)",
+      "implant": "Implante dental",
+      "prosthesis": "Prótesis de resina acrílica (3 dientes)"
+    },
+    "membership": {
+      "title": "Hazte Miembro y Ahorra",
+      "description": "Con nuestro plan de membresía, tienes acceso a descuentos exclusivos en todos los tratamientos, consultas gratuitas y programación prioritaria.",
+      "benefits": {
+        "freeConsultations": "Consultas de rutina gratuitas",
+        "discounts": "Descuentos hasta 60% en tratamientos",
+        "priority": "Programación prioritaria",
+        "flexiblePayment": "Pago flexible"
+      },
+      "startingFrom": "Desde",
+      "perMonth": "por mes",
+      "learnMore": "Saber Más"
+    },
+    "note": "* Los precios mostrados son indicativos y pueden variar según la complejidad del tratamiento. Contáctenos para un presupuesto personalizado."
+  },
+  "team": {
+    "tag": "Nuestro Equipo",
+    "title": "Profesionales",
+    "titleHighlight": "dedicados",
+    "titleEnd": "a tu sonrisa",
+    "description": "Conoce al equipo que cuida de ti y de tu familia con profesionalismo, experiencia y un toque de cariño.",
+    "member": {
+      "name": "Dr. Sílvio Araújo",
+      "role": "Director Clínico",
+      "specialty": "Odontología General y Ortodoncia",
+      "description": "Especialista en odontología general y ortodoncia, con amplia experiencia y dedicación al cuidado de cada paciente. Graduado de la Facultad de Medicina Dental, lidera el equipo con profesionalismo y empatía.",
+      "achievements": [
+        "Miembro del Colegio de Dentistas de Portugal",
+        "Especialización en Ortodoncia",
+        "Formación continua en implantología"
+      ],
+      "quote": "Nuestro compromiso es proporcionar el mejor cuidado dental, con tecnología avanzada y un servicio humano y personalizado."
+    }
+  },
+  "amenities": {
+    "tag": "Comodidades",
+    "title": "Pensamos en tu",
+    "titleHighlight": "comodidad",
+    "description": "Nuestra clínica ofrece varias comodidades para hacer tu visita lo más agradable posible.",
+    "items": {
+      "wifi": {
+        "title": "Wi-Fi Gratis",
+        "description": "Internet gratuito durante tu visita"
+      },
+      "parking": {
+        "title": "Estacionamiento Cercano",
+        "description": "Plazas de estacionamiento a pocos metros"
+      },
+      "climate": {
+        "title": "Ambiente Climatizado",
+        "description": "Temperatura agradable todo el año"
+      },
+      "waitingRoom": {
+        "title": "Sala de Espera Confortable",
+        "description": "Espacio acogedor y relajante"
+      },
+      "kids": {
+        "title": "Espacio para Niños",
+        "description": "Área de entretenimiento para los más pequeños"
+      },
+      "card": {
+        "title": "Pago con Tarjeta",
+        "description": "Pago con tarjeta disponible"
+      },
+      "transport": {
+        "title": "Transporte Público",
+        "description": "Paradas de autobús cercanas"
+      },
+      "accessibility": {
+        "title": "Accesibilidad",
+        "description": "Instalaciones adaptadas para movilidad reducida"
+      }
+    }
+  },
+  "appointment": {
+    "tag": "Reservar Cita",
+    "title": "Agenda tu cita",
+    "titleHighlight": "hoy",
+    "description": "Completa el formulario y nuestro equipo se pondrá en contacto contigo para confirmar tu cita.",
+    "benefits": {
+      "response": "Respuesta en menos de 24 horas",
+      "flexible": "Horarios flexibles",
+      "personalized": "Atención personalizada"
+    },
+    "directContact": {
+      "title": "¿Prefieres contactarnos directamente?",
+      "phone": "924 123 784",
+      "email": "geral@silvioaraujo.com"
+    },
+    "form": {
+      "fullName": "Nombre Completo",
+      "fullNamePlaceholder": "Tu nombre",
+      "email": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "phone": "Teléfono",
+      "phonePlaceholder": "+351 XXX XXX XXX",
+      "consultationType": "Tipo de Consulta",
+      "consultationTypePlaceholder": "Selecciona el tipo de consulta",
+      "preferredDate": "Fecha Preferida",
+      "preferredTime": "Hora Preferida",
+      "preferredTimePlaceholder": "Selecciona la hora",
+      "preferredDentist": "Dentista Preferido (opcional)",
+      "noPreference": "Sin preferencia",
+      "submit": "Reservar Cita",
+      "privacyNote": "Al enviar, aceptas nuestra política de privacidad."
+    },
+    "consultationTypes": {
+      "general": "Consulta General",
+      "cleaning": "Limpieza/Detartraje",
+      "orthodontics": "Ortodoncia",
+      "implants": "Implantes",
+      "whitening": "Blanqueamiento",
+      "emergency": "Urgencia",
+      "other": "Otro"
+    },
+    "toast": {
+      "title": "¡Solicitud de Cita Enviada!",
+      "description": "Nos pondremos en contacto contigo pronto para confirmar tu cita."
+    }
+  },
+  "testimonials": {
+    "tag": "Testimonios",
+    "title": "Lo que dicen nuestros",
+    "titleHighlight": "pacientes",
+    "description": "La satisfacción de nuestros pacientes es nuestra mayor recompensa. Mira lo que dicen sobre su experiencia en nuestra clínica.",
+    "stats": {
+      "averageRating": "Valoración Media",
+      "happyPatients": "Pacientes Satisfechos",
+      "satisfactionRate": "Tasa de Satisfacción",
+      "yearsExperience": "Años de Experiencia"
+    },
+    "reviews": {
+      "review1": {
+        "name": "Maria Santos",
+        "role": "Paciente hace 5 años",
+        "text": "¡Excelente servicio! El Dr. Sílvio es muy profesional y atento. Siempre me sentí cómoda durante los tratamientos. ¡Lo recomiendo a todos!"
+      },
+      "review2": {
+        "name": "João Ferreira",
+        "role": "Paciente hace 3 años",
+        "text": "Hice mi tratamiento de ortodoncia aquí y estoy muy satisfecho con los resultados. Equipo muy simpático y competente."
+      },
+      "review3": {
+        "name": "Ana Costa",
+        "role": "Paciente hace 2 años",
+        "text": "La clínica es muy moderna y acogedora. Los precios son justos y el servicio siempre es puntual. Toda mi familia se atiende aquí."
+      },
+      "review4": {
+        "name": "Pedro Oliveira",
+        "role": "Paciente hace 4 años",
+        "text": "Tenía mucho miedo de ir al dentista, pero el Dr. Sílvio me hizo sentir completamente cómodo. Ahora vengo a las citas sin ningún temor."
+      },
+      "review5": {
+        "name": "Sofia Martins",
+        "role": "Paciente hace 1 año",
+        "text": "Me hice un implante dental y todo salió perfecto. Proceso bien explicado y excelente seguimiento. ¡Muy satisfecha!"
+      }
+    }
+  },
+  "blog": {
+    "tag": "Blog",
+    "title": "Consejos de",
+    "titleHighlight": "Salud Oral",
+    "viewAll": "Ver Todos los Artículos",
+    "readMore": "Leer Más",
+    "readTime": "lectura",
+    "articles": {
+      "article1": {
+        "title": "Cómo mantener una buena higiene oral diaria",
+        "excerpt": "Descubre las mejores prácticas para cepillarte los dientes correctamente y mantener tu boca saludable todos los días.",
+        "category": "Higiene Oral"
+      },
+      "article2": {
+        "title": "Todo sobre el blanqueamiento dental",
+        "excerpt": "Conoce los diferentes tipos de blanqueamiento y cuál es el más indicado para tu caso.",
+        "category": "Estética"
+      },
+      "article3": {
+        "title": "¿Cuándo llevar a los niños al dentista?",
+        "excerpt": "Descubre la edad ideal para la primera consulta y cómo preparar a los niños para la visita.",
+        "category": "Odontopediatría"
+      },
+      "article4": {
+        "title": "Implantes dentales: guía completa",
+        "excerpt": "Todo lo que necesitas saber sobre implantes dentales, desde el procedimiento hasta la recuperación.",
+        "category": "Implantes"
+      }
+    }
+  },
+  "contact": {
+    "tag": "Contacto",
+    "title": "Ven a",
+    "titleHighlight": "visitarnos",
+    "description": "Estamos ubicados en Quinta do Conde, con fácil acceso y estacionamiento cercano. Ponte en contacto con nosotros.",
+    "info": {
+      "address": {
+        "title": "Dirección",
+        "content": "Quinta do Conde, Sesimbra, Portugal",
+        "action": "Ver en Mapa"
+      },
+      "phone": {
+        "title": "Teléfono",
+        "content": "924 123 784",
+        "action": "Llamar Ahora"
+      },
+      "email": {
+        "title": "Email",
+        "content": "geral@silvioaraujo.com",
+        "action": "Enviar Email"
+      },
+      "schedule": {
+        "title": "Horario",
+        "content": "Lun-Vie: 9h-19h | Sáb: 9h-13h"
+      }
+    },
+    "cta": {
+      "title": "¡Reserva tu Cita Hoy!",
+      "description": "No esperes más para cuidar tu sonrisa. Nuestro equipo está listo para recibirte.",
+      "button": "Reservar Cita"
+    }
+  },
+  "footer": {
+    "description": "Cuidamos tu sonrisa con dedicación, tecnología moderna y tratamientos personalizados para toda la familia.",
+    "quickLinks": "Enlaces Rápidos",
+    "services": "Servicios",
+    "contacts": "Contacto",
+    "servicesList": {
+      "consultation": "Consulta Dental",
+      "orthodontics": "Ortodoncia",
+      "implants": "Implantes Dentales",
+      "whitening": "Blanqueamiento",
+      "cleaning": "Limpieza Dental"
+    },
+    "copyright": "Clínica Dental Dr. Sílvio Araújo. Todos los derechos reservados.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Uso"
+  },
+  "floatingCTA": {
+    "button": "¡Reservar Cita Hoy!"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "¡Ups! Página no encontrada",
+    "backHome": "Volver al Inicio"
+  }
+}

@@ -29,7 +29,7 @@ const Index = () => {
         <link rel="canonical" href="https://wildsmile.pt" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Clínica Dentária Dr. Sílvio Araújo | Wildsmile" />
+        <meta property="og:title" content="Clínica Dentária Dr. Sílvio Araújo." />
         <meta property="og:description" content="Sorriso saudável, cuidado especializado. Tratamentos dentários de qualidade em Quinta do Conde." />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="pt_PT" />
@@ -40,7 +40,7 @@ const Index = () => {
             "@context": "https://schema.org",
             "@type": "Dentist",
             "name": "Clínica Dentária Dr. Sílvio Araújo",
-            "alternateName": "Wildsmile",
+            "alternateName": "Clínica Dentária Dr. Sílvio Araújo",
             "description": "Clínica dentária em Quinta do Conde com tratamentos acessíveis e equipa especializada.",
             "address": {
               "@type": "PostalAddress",
@@ -48,8 +48,8 @@ const Index = () => {
               "addressRegion": "Sesimbra",
               "addressCountry": "PT"
             },
-            "telephone": "+351210851266",
-            "email": "info@wildsmile.pt",
+            "telephone": "924123784",
+            "email": "geral@silvioaraujo.com",
             "openingHours": ["Mo-Fr 09:00-19:00", "Sa 09:00-13:00"],
             "priceRange": "€€",
             "aggregateRating": {

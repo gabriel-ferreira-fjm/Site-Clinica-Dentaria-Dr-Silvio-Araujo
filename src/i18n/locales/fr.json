@@ -1,0 +1,368 @@
+{
+  "header": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "services": "Services",
+    "team": "Équipe",
+    "prices": "Tarifs",
+    "contacts": "Contact",
+    "bookAppointment": "Prendre RDV",
+    "location": "Rua D Sebastião 2050, Quinta do Conde, Portugal",
+    "phone": "924 123 784",
+    "schedule": "Lun - Ven: 9h - 19h | Sam: 9h - 13h"
+  },
+  "hero": {
+    "welcome": "Bienvenue sur notre site !",
+    "title": "Clinique Dentaire",
+    "titleHighlight": "Dr. Sílvio Araújo",
+    "subtitle": "Sourire sain, soins spécialisés",
+    "description": "Nous combinons expérience, technologie moderne et attention personnalisée pour offrir les meilleurs soins dentaires à toute la famille.",
+    "bookNow": "Prendre RDV Maintenant",
+    "viewServices": "Voir les Services",
+    "happyPatients": "Patients Satisfaits",
+    "averageRating": "Note Moyenne",
+    "professionalCare": "Soins Professionnels",
+    "yearsExperience": "+15 ans d'expérience"
+  },
+  "about": {
+    "tag": "À Propos",
+    "title": "Nous prenons soin de votre sourire avec",
+    "titleHighlight": "dévouement",
+    "description": "La Clinique Dentaire Dr. Sílvio Araújo combine expérience, technologie moderne et attention personnalisée pour offrir les meilleurs soins dentaires. Dirigée par le Dr. Sílvio Araújo, notre équipe garantit des traitements efficaces et abordables pour toute la famille.",
+    "features": {
+      "experience": {
+        "title": "Expérience Prouvée",
+        "description": "Plus de 15 ans dédiés à la santé bucco-dentaire"
+      },
+      "team": {
+        "title": "Équipe Spécialisée",
+        "description": "Professionnels qualifiés en formation continue"
+      },
+      "care": {
+        "title": "Soins Personnalisés",
+        "description": "Traitements adaptés aux besoins de chaque patient"
+      }
+    },
+    "highlights": {
+      "technology": "Technologie de dernière génération",
+      "environment": "Environnement accueillant et moderne",
+      "prices": "Prix abordables",
+      "family": "Soins pour toute la famille",
+      "emergency": "Urgences dentaires",
+      "payment": "Facilités de paiement"
+    },
+    "stats": {
+      "patients": "Patients",
+      "years": "Ans"
+    }
+  },
+  "services": {
+    "tag": "Nos Services",
+    "title": "Traitements dentaires",
+    "titleHighlight": "complets",
+    "description": "Nous offrons une gamme complète de services dentaires pour prendre soin de la santé bucco-dentaire de toute votre famille, avec une technologie moderne et des professionnels qualifiés.",
+    "categories": {
+      "consultation": {
+        "title": "Consultation et Diagnostic",
+        "description": "Évaluation complète de la santé bucco-dentaire",
+        "services": ["Consultation dentaire", "Radiographies numériques", "Urgences dentaires"]
+      },
+      "prevention": {
+        "title": "Prévention et Hygiène",
+        "description": "Soins préventifs essentiels",
+        "services": ["Détartrage", "Polissage dentaire", "Dentisterie préventive"]
+      },
+      "aesthetics": {
+        "title": "Esthétique et Orthodontie",
+        "description": "Sourire parfait et aligné",
+        "services": ["Blanchiment dentaire", "Appareils métalliques", "Orthodontie invisible"]
+      },
+      "implants": {
+        "title": "Implants et Prothèses",
+        "description": "Solutions pour dents manquantes",
+        "services": ["Implants dentaires", "Prothèses fixes", "Prothèses amovibles"]
+      },
+      "specialized": {
+        "title": "Traitements Spécialisés",
+        "description": "Soins avancés et spécifiques",
+        "services": ["Endodontie", "Chirurgie buccale", "Parodontologie"]
+      },
+      "pediatric": {
+        "title": "Dentisterie Pédiatrique",
+        "description": "Soins dentaires pour enfants",
+        "services": ["Consultation pédiatrique", "Scellants", "Éducation à l'hygiène bucco-dentaire"]
+      }
+    },
+    "tmj": {
+      "title": "Traitement des Dysfonctions Temporo-Mandibulaires",
+      "description": "Traitement spécialisé pour les douleurs de l'articulation de la mâchoire, maux de tête et tensions musculaires liées aux problèmes dentaires.",
+      "learnMore": "En Savoir Plus",
+      "quickConsultations": "Consultations Rapides",
+      "guaranteedResults": "Résultats Garantis"
+    }
+  },
+  "prices": {
+    "tag": "Grille Tarifaire",
+    "title": "Traitements",
+    "titleHighlight": "abordables",
+    "titleEnd": "pour tous",
+    "description": "Nous offrons des prix compétitifs et des réductions spéciales pour les membres. Prendre soin de votre sourire n'a jamais été aussi abordable.",
+    "table": {
+      "treatment": "Traitement",
+      "regularPrice": "Prix Normal",
+      "memberPrice": "Prix Membre"
+    },
+    "treatments": {
+      "consultation": "Consultation dentaire",
+      "cleaning": "Détartrage",
+      "whitening": "Blanchiment dentaire",
+      "braces": "Appareil métallique (par arcade)",
+      "implant": "Implant dentaire",
+      "prosthesis": "Prothèse en résine acrylique (3 dents)"
+    },
+    "membership": {
+      "title": "Devenez Membre et Économisez",
+      "description": "Avec notre plan membre, vous avez accès à des réductions exclusives sur tous les traitements, consultations gratuites et programmation prioritaire.",
+      "benefits": {
+        "freeConsultations": "Consultations de routine gratuites",
+        "discounts": "Réductions jusqu'à 60% sur les traitements",
+        "priority": "Programmation prioritaire",
+        "flexiblePayment": "Paiement flexible"
+      },
+      "startingFrom": "À partir de",
+      "perMonth": "par mois",
+      "learnMore": "En Savoir Plus"
+    },
+    "note": "* Les prix indiqués sont indicatifs et peuvent varier selon la complexité du traitement. Contactez-nous pour un devis personnalisé."
+  },
+  "team": {
+    "tag": "Notre Équipe",
+    "title": "Professionnels",
+    "titleHighlight": "dévoués",
+    "titleEnd": "à votre sourire",
+    "description": "Rencontrez l'équipe qui prend soin de vous et de votre famille avec professionnalisme, expérience et une touche d'affection.",
+    "member": {
+      "name": "Dr. Sílvio Araújo",
+      "role": "Directeur Clinique",
+      "specialty": "Dentisterie Générale et Orthodontie",
+      "description": "Spécialiste en dentisterie générale et orthodontie, avec une vaste expérience et un dévouement aux soins de chaque patient. Diplômé de la Faculté de Médecine Dentaire, il dirige l'équipe avec professionnalisme et empathie.",
+      "achievements": [
+        "Membre de l'Ordre des Dentistes du Portugal",
+        "Spécialisation en Orthodontie",
+        "Formation continue en implantologie"
+      ],
+      "quote": "Notre engagement est de fournir les meilleurs soins dentaires, avec une technologie avancée et un service humain et personnalisé."
+    }
+  },
+  "amenities": {
+    "tag": "Commodités",
+    "title": "Nous pensons à votre",
+    "titleHighlight": "confort",
+    "description": "Notre clinique offre diverses commodités pour rendre votre visite aussi agréable que possible.",
+    "items": {
+      "wifi": {
+        "title": "Wi-Fi Gratuit",
+        "description": "Internet gratuit pendant votre visite"
+      },
+      "parking": {
+        "title": "Parking à Proximité",
+        "description": "Places de stationnement à quelques mètres"
+      },
+      "climate": {
+        "title": "Climatisation",
+        "description": "Température agréable toute l'année"
+      },
+      "waitingRoom": {
+        "title": "Salle d'Attente Confortable",
+        "description": "Espace accueillant et relaxant"
+      },
+      "kids": {
+        "title": "Espace Enfants",
+        "description": "Aire de divertissement pour les plus petits"
+      },
+      "card": {
+        "title": "Paiement par Carte",
+        "description": "Paiement par carte disponible"
+      },
+      "transport": {
+        "title": "Transports en Commun",
+        "description": "Arrêts de bus à proximité"
+      },
+      "accessibility": {
+        "title": "Accessibilité",
+        "description": "Installations adaptées aux personnes à mobilité réduite"
+      }
+    }
+  },
+  "appointment": {
+    "tag": "Prendre RDV",
+    "title": "Planifiez votre rendez-vous",
+    "titleHighlight": "aujourd'hui",
+    "description": "Remplissez le formulaire et notre équipe vous contactera pour confirmer votre rendez-vous.",
+    "benefits": {
+      "response": "Réponse en moins de 24 heures",
+      "flexible": "Horaires flexibles",
+      "personalized": "Service personnalisé"
+    },
+    "directContact": {
+      "title": "Vous préférez nous contacter directement ?",
+      "phone": "924 123 784",
+      "email": "geral@silvioaraujo.com"
+    },
+    "form": {
+      "fullName": "Nom Complet",
+      "fullNamePlaceholder": "Votre nom",
+      "email": "Email",
+      "emailPlaceholder": "votre@email.com",
+      "phone": "Téléphone",
+      "phonePlaceholder": "+351 XXX XXX XXX",
+      "consultationType": "Type de Consultation",
+      "consultationTypePlaceholder": "Sélectionnez le type de consultation",
+      "preferredDate": "Date Préférée",
+      "preferredTime": "Heure Préférée",
+      "preferredTimePlaceholder": "Sélectionnez l'heure",
+      "preferredDentist": "Dentiste Préféré (optionnel)",
+      "noPreference": "Sans préférence",
+      "submit": "Prendre RDV",
+      "privacyNote": "En soumettant, vous acceptez notre politique de confidentialité."
+    },
+    "consultationTypes": {
+      "general": "Consultation Générale",
+      "cleaning": "Nettoyage/Détartrage",
+      "orthodontics": "Orthodontie",
+      "implants": "Implants",
+      "whitening": "Blanchiment",
+      "emergency": "Urgence",
+      "other": "Autre"
+    },
+    "toast": {
+      "title": "Demande de RDV Envoyée !",
+      "description": "Nous vous contacterons bientôt pour confirmer votre rendez-vous."
+    }
+  },
+  "testimonials": {
+    "tag": "Témoignages",
+    "title": "Ce que disent nos",
+    "titleHighlight": "patients",
+    "description": "La satisfaction de nos patients est notre plus grande récompense. Découvrez ce qu'ils disent de leur expérience dans notre clinique.",
+    "stats": {
+      "averageRating": "Note Moyenne",
+      "happyPatients": "Patients Satisfaits",
+      "satisfactionRate": "Taux de Satisfaction",
+      "yearsExperience": "Années d'Expérience"
+    },
+    "reviews": {
+      "review1": {
+        "name": "Maria Santos",
+        "role": "Patiente depuis 5 ans",
+        "text": "Excellent service ! Le Dr. Sílvio est très professionnel et attentionné. Je me suis toujours sentie à l'aise pendant les traitements. Je recommande à tous !"
+      },
+      "review2": {
+        "name": "João Ferreira",
+        "role": "Patient depuis 3 ans",
+        "text": "J'ai fait mon traitement orthodontique ici et je suis très satisfait des résultats. Équipe très sympathique et compétente."
+      },
+      "review3": {
+        "name": "Ana Costa",
+        "role": "Patiente depuis 2 ans",
+        "text": "La clinique est très moderne et accueillante. Les prix sont justes et le service est toujours ponctuel. Toute ma famille est suivie ici."
+      },
+      "review4": {
+        "name": "Pedro Oliveira",
+        "role": "Patient depuis 4 ans",
+        "text": "J'avais très peur d'aller chez le dentiste, mais le Dr. Sílvio m'a fait me sentir complètement à l'aise. Maintenant je viens aux rendez-vous sans aucune crainte."
+      },
+      "review5": {
+        "name": "Sofia Martins",
+        "role": "Patiente depuis 1 an",
+        "text": "J'ai fait un implant dentaire et tout s'est parfaitement passé. Processus bien expliqué et excellent suivi. Très satisfaite !"
+      }
+    }
+  },
+  "blog": {
+    "tag": "Blog",
+    "title": "Conseils de",
+    "titleHighlight": "Santé Bucco-Dentaire",
+    "viewAll": "Voir Tous les Articles",
+    "readMore": "Lire Plus",
+    "readTime": "lecture",
+    "articles": {
+      "article1": {
+        "title": "Comment maintenir une bonne hygiène bucco-dentaire quotidienne",
+        "excerpt": "Découvrez les meilleures pratiques pour vous brosser les dents correctement et garder votre bouche saine tous les jours.",
+        "category": "Hygiène Bucco-Dentaire"
+      },
+      "article2": {
+        "title": "Tout sur le blanchiment dentaire",
+        "excerpt": "Découvrez les différents types de blanchiment et lequel est le plus adapté à votre cas.",
+        "category": "Esthétique"
+      },
+      "article3": {
+        "title": "Quand emmener les enfants chez le dentiste ?",
+        "excerpt": "Découvrez l'âge idéal pour la première consultation et comment préparer les enfants à la visite.",
+        "category": "Dentisterie Pédiatrique"
+      },
+      "article4": {
+        "title": "Implants dentaires : guide complet",
+        "excerpt": "Tout ce que vous devez savoir sur les implants dentaires, de la procédure à la récupération.",
+        "category": "Implants"
+      }
+    }
+  },
+  "contact": {
+    "tag": "Contact",
+    "title": "Venez nous",
+    "titleHighlight": "rendre visite",
+    "description": "Nous sommes situés à Quinta do Conde, avec un accès facile et un parking à proximité. Contactez-nous.",
+    "info": {
+      "address": {
+        "title": "Adresse",
+        "content": "Quinta do Conde, Sesimbra, Portugal",
+        "action": "Voir sur la Carte"
+      },
+      "phone": {
+        "title": "Téléphone",
+        "content": "924 123 784",
+        "action": "Appeler Maintenant"
+      },
+      "email": {
+        "title": "Email",
+        "content": "geral@silvioaraujo.com",
+        "action": "Envoyer Email"
+      },
+      "schedule": {
+        "title": "Horaires",
+        "content": "Lun-Ven: 9h-19h | Sam: 9h-13h"
+      }
+    },
+    "cta": {
+      "title": "Prenez Votre RDV Aujourd'hui !",
+      "description": "N'attendez plus pour prendre soin de votre sourire. Notre équipe est prête à vous accueillir.",
+      "button": "Prendre RDV"
+    }
+  },
+  "footer": {
+    "description": "Nous prenons soin de votre sourire avec dévouement, technologie moderne et traitements personnalisés pour toute la famille.",
+    "quickLinks": "Liens Rapides",
+    "services": "Services",
+    "contacts": "Contact",
+    "servicesList": {
+      "consultation": "Consultation Dentaire",
+      "orthodontics": "Orthodontie",
+      "implants": "Implants Dentaires",
+      "whitening": "Blanchiment",
+      "cleaning": "Détartrage"
+    },
+    "copyright": "Clinique Dentaire Dr. Sílvio Araújo. Tous droits réservés.",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation"
+  },
+  "floatingCTA": {
+    "button": "Prendre RDV Aujourd'hui !"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Oups ! Page non trouvée",
+    "backHome": "Retour à l'Accueil"
+  }
+}

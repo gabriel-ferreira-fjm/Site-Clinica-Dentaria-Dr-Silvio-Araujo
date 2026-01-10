@@ -1,53 +1,56 @@
+import { useTranslation } from 'react-i18next';
 import { Stethoscope, Sparkles, Shield, Heart, Smile, Baby, Activity, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Services = () => {
+  const { t } = useTranslation();
+
   const categories = [
     {
       icon: Stethoscope,
-      title: 'Consulta e Diagnóstico',
-      description: 'Avaliação completa da saúde oral',
-      services: ['Consulta dentária', 'Radiografias digitais', 'Urgências dentárias'],
+      title: t('services.categories.consultation.title'),
+      description: t('services.categories.consultation.description'),
+      services: t('services.categories.consultation.services', { returnObjects: true }) as string[],
       color: 'bg-blue-50',
       iconColor: 'text-blue-600',
     },
     {
       icon: Shield,
-      title: 'Prevenção & Higiene',
-      description: 'Cuidados preventivos essenciais',
-      services: ['Destartarização', 'Polimento dentário', 'Odontologia preventiva'],
+      title: t('services.categories.prevention.title'),
+      description: t('services.categories.prevention.description'),
+      services: t('services.categories.prevention.services', { returnObjects: true }) as string[],
       color: 'bg-green-50',
       iconColor: 'text-green-600',
     },
     {
       icon: Sparkles,
-      title: 'Estética e Ortodontia',
-      description: 'Sorriso perfeito e alinhado',
-      services: ['Branqueamento dentário', 'Aparelhos metálicos', 'Ortodontia invisível'],
+      title: t('services.categories.aesthetics.title'),
+      description: t('services.categories.aesthetics.description'),
+      services: t('services.categories.aesthetics.services', { returnObjects: true }) as string[],
       color: 'bg-purple-50',
       iconColor: 'text-purple-600',
     },
     {
       icon: Heart,
-      title: 'Implantes e Próteses',
-      description: 'Soluções para dentes em falta',
-      services: ['Implantes dentários', 'Próteses fixas', 'Próteses removíveis'],
+      title: t('services.categories.implants.title'),
+      description: t('services.categories.implants.description'),
+      services: t('services.categories.implants.services', { returnObjects: true }) as string[],
       color: 'bg-red-50',
       iconColor: 'text-red-600',
     },
     {
       icon: Activity,
-      title: 'Tratamentos Especializados',
-      description: 'Cuidados avançados e específicos',
-      services: ['Endodontia', 'Cirurgia oral', 'Periodontologia'],
+      title: t('services.categories.specialized.title'),
+      description: t('services.categories.specialized.description'),
+      services: t('services.categories.specialized.services', { returnObjects: true }) as string[],
       color: 'bg-amber-50',
       iconColor: 'text-amber-600',
     },
     {
       icon: Baby,
-      title: 'Odontopediatria',
-      description: 'Cuidados dentários para crianças',
-      services: ['Consulta pediátrica', 'Selantes', 'Educação para higiene oral'],
+      title: t('services.categories.pediatric.title'),
+      description: t('services.categories.pediatric.description'),
+      services: t('services.categories.pediatric.services', { returnObjects: true }) as string[],
       color: 'bg-pink-50',
       iconColor: 'text-pink-600',
     },
@@ -66,15 +69,14 @@ const Services = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-4 py-2 bg-primary/10 rounded-full text-primary font-medium text-sm mb-4">
-            Os Nossos Serviços
+            {t('services.tag')}
           </span>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Tratamentos dentários{' '}
-            <span className="text-primary">completos</span>
+            {t('services.title')}{' '}
+            <span className="text-primary">{t('services.titleHighlight')}</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Oferecemos uma gama completa de serviços dentários para cuidar da saúde oral 
-            de toda a sua família, com tecnologia moderna e profissionais qualificados.
+            {t('services.description')}
           </p>
         </div>
 
@@ -114,18 +116,17 @@ const Services = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="font-heading text-2xl md:text-3xl font-bold text-primary-foreground mb-4">
-                Tratamento de Disfunção Temporo-Mandibular
+                {t('services.tmj.title')}
               </h3>
               <p className="text-primary-foreground/80 mb-6">
-                Tratamento especializado para dores na articulação da mandíbula, 
-                dores de cabeça e tensão muscular relacionada com problemas dentários.
+                {t('services.tmj.description')}
               </p>
               <Button
                 variant="cta-outline"
                 size="lg"
                 onClick={scrollToAppointment}
               >
-                Saber Mais
+                {t('services.tmj.learnMore')}
               </Button>
             </div>
             <div className="flex items-center justify-center">
@@ -134,13 +135,13 @@ const Services = () => {
                   <div className="w-16 h-16 rounded-full bg-primary-foreground/20 flex items-center justify-center mb-2">
                     <Clock className="w-8 h-8 text-primary-foreground" />
                   </div>
-                  <p className="text-primary-foreground/80 text-sm">Consultas<br />Rápidas</p>
+                  <p className="text-primary-foreground/80 text-sm">{t('services.tmj.quickConsultations')}</p>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 rounded-full bg-primary-foreground/20 flex items-center justify-center mb-2">
                     <Smile className="w-8 h-8 text-primary-foreground" />
                   </div>
-                  <p className="text-primary-foreground/80 text-sm">Resultados<br />Garantidos</p>
+                  <p className="text-primary-foreground/80 text-sm">{t('services.tmj.guaranteedResults')}</p>
                 </div>
               </div>
             </div>

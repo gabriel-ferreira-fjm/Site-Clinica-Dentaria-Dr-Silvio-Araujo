@@ -1,46 +1,49 @@
+import { useTranslation } from 'react-i18next';
 import { Wifi, Car, Snowflake, Armchair, Baby, CreditCard, Bus, Accessibility } from 'lucide-react';
 
 const Amenities = () => {
+  const { t } = useTranslation();
+
   const amenities = [
     {
       icon: Wifi,
-      title: 'Wi-Fi Grátis',
-      description: 'Internet gratuita durante a sua visita',
+      title: t('amenities.items.wifi.title'),
+      description: t('amenities.items.wifi.description'),
     },
     {
       icon: Car,
-      title: 'Estacionamento Próximo',
-      description: 'Lugares de estacionamento a poucos metros',
+      title: t('amenities.items.parking.title'),
+      description: t('amenities.items.parking.description'),
     },
     {
       icon: Snowflake,
-      title: 'Ambiente Climatizado',
-      description: 'Temperatura agradável todo o ano',
+      title: t('amenities.items.climate.title'),
+      description: t('amenities.items.climate.description'),
     },
     {
       icon: Armchair,
-      title: 'Sala de Espera Confortável',
-      description: 'Espaço acolhedor e relaxante',
+      title: t('amenities.items.waitingRoom.title'),
+      description: t('amenities.items.waitingRoom.description'),
     },
     {
       icon: Baby,
-      title: 'Espaço para Crianças',
-      description: 'Área de entretenimento para os mais pequenos',
+      title: t('amenities.items.kids.title'),
+      description: t('amenities.items.kids.description'),
     },
     {
       icon: CreditCard,
-      title: 'Multibanco',
-      description: 'Pagamento por cartão disponível',
+      title: t('amenities.items.card.title'),
+      description: t('amenities.items.card.description'),
     },
     {
       icon: Bus,
-      title: 'Transportes Públicos',
-      description: 'Paragens de autocarro próximas',
+      title: t('amenities.items.transport.title'),
+      description: t('amenities.items.transport.description'),
     },
     {
       icon: Accessibility,
-      title: 'Acessibilidade',
-      description: 'Instalações adaptadas a mobilidade reduzida',
+      title: t('amenities.items.accessibility.title'),
+      description: t('amenities.items.accessibility.description'),
     },
   ];
 
@@ -50,14 +53,13 @@ const Amenities = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-4 py-2 bg-primary/10 rounded-full text-primary font-medium text-sm mb-4">
-            Comodidades
+            {t('amenities.tag')}
           </span>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Pensamos no seu <span className="text-primary">conforto</span>
+            {t('amenities.title')} <span className="text-primary">{t('amenities.titleHighlight')}</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            A nossa clínica oferece várias comodidades para tornar a sua visita 
-            o mais agradável possível.
+            {t('amenities.description')}
           </p>
         </div>
 

@@ -1,10 +1,12 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Calendar, Clock, User, Mail, Phone, Stethoscope, UserCircle } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const Appointment = () => {
+  const { t } = useTranslation();
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: '',
@@ -17,13 +19,13 @@ const Appointment = () => {
   });
 
   const consultationTypes = [
-    'Consulta Geral',
-    'Limpeza/Destartarização',
-    'Ortodontia',
-    'Implantes',
-    'Branqueamento',
-    'Urgência',
-    'Outro',
+    { value: 'general', label: t('appointment.consultationTypes.general') },
+    { value: 'cleaning', label: t('appointment.consultationTypes.cleaning') },
+    { value: 'orthodontics', label: t('appointment.consultationTypes.orthodontics') },
+    { value: 'implants', label: t('appointment.consultationTypes.implants') },
+    { value: 'whitening', label: t('appointment.consultationTypes.whitening') },
+    { value: 'emergency', label: t('appointment.consultationTypes.emergency') },
+    { value: 'other', label: t('appointment.consultationTypes.other') },
   ];
 
   const timeSlots = [
@@ -34,8 +36,8 @@ const Appointment = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Pedido de Marcação Enviado!",
-      description: "Entraremos em contacto consigo brevemente para confirmar a sua consulta.",
+      title: t('appointment.toast.title'),
+      description: t('appointment.toast.description'),
     });
     setFormData({
       name: '',
@@ -63,24 +65,23 @@ const Appointment = () => {
           <div className="space-y-8">
             <div>
               <span className="inline-block px-4 py-2 bg-primary/10 rounded-full text-primary font-medium text-sm mb-4">
-                Marcar Consulta
+                {t('appointment.tag')}
               </span>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Agende a sua consulta{' '}
-                <span className="text-primary">hoje</span>
+                {t('appointment.title')}{' '}
+                <span className="text-primary">{t('appointment.titleHighlight')}</span>
               </h2>
               <p className="text-muted-foreground text-lg">
-                Preencha o formulário e a nossa equipa entrará em contacto para 
-                confirmar o agendamento da sua consulta.
+                {t('appointment.description')}
               </p>
             </div>
 
             {/* Benefits */}
             <div className="space-y-4">
               {[
-                { icon: Clock, text: 'Resposta em menos de 24 horas' },
-                { icon: Calendar, text: 'Horários flexíveis' },
-                { icon: User, text: 'Atendimento personalizado' },
+                { icon: Clock, text: t('appointment.benefits.response') },
+                { icon: Calendar, text: t('appointment.benefits.flexible') },
+                { icon: User, text: t('appointment.benefits.personalized') },
               ].map((item) => (
                 <div key={item.text} className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
@@ -94,16 +95,16 @@ const Appointment = () => {
             {/* Contact Info */}
             <div className="bg-primary rounded-2xl p-8 text-primary-foreground">
               <h3 className="font-heading font-semibold text-xl mb-4">
-                Prefere contactar-nos diretamente?
+                {t('appointment.directContact.title')}
               </h3>
               <div className="space-y-3">
-                <a href="tel:+351210851266" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                <a href="tel:924123784" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
                   <Phone className="w-5 h-5" />
-                  <span>924 123 784</span>
+                  <span>{t('appointment.directContact.phone')}</span>
                 </a>
-                <a href="mailto:info@wildsmile.pt" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                <a href="mailto:geral@silvioaraujo.com" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
                   <Mail className="w-5 h-5" />
-                  <span>geral@silvioaraujo.com</span>
+                  <span>{t('appointment.directContact.email')}</span>
                 </a>
               </div>
             </div>
@@ -116,14 +117,14 @@ const Appointment = () => {
               <div className="space-y-2">
                 <label className="text-sm font-medium text-foreground flex items-center gap-2">
                   <User className="w-4 h-4 text-primary" />
-                  Nome Completo
+                  {t('appointment.form.fullName')}
                 </label>
                 <Input
                   type="text"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="O seu nome"
+                  placeholder={t('appointment.form.fullNamePlaceholder')}
                   required
                   className="h-12"
                 />
@@ -134,14 +135,14 @@ const Appointment = () => {
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-foreground flex items-center gap-2">
                     <Mail className="w-4 h-4 text-primary" />
-                    Email
+                    {t('appointment.form.email')}
                   </label>
                   <Input
                     type="email"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="seu@email.com"
+                    placeholder={t('appointment.form.emailPlaceholder')}
                     required
                     className="h-12"
                   />
@@ -149,14 +150,14 @@ const Appointment = () => {
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-foreground flex items-center gap-2">
                     <Phone className="w-4 h-4 text-primary" />
-                    Telefone
+                    {t('appointment.form.phone')}
                   </label>
                   <Input
                     type="tel"
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="+351 XXX XXX XXX"
+                    placeholder={t('appointment.form.phonePlaceholder')}
                     required
                     className="h-12"
                   />
@@ -167,7 +168,7 @@ const Appointment = () => {
               <div className="space-y-2">
                 <label className="text-sm font-medium text-foreground flex items-center gap-2">
                   <Stethoscope className="w-4 h-4 text-primary" />
-                  Tipo de Consulta
+                  {t('appointment.form.consultationType')}
                 </label>
                 <select
                   name="consultationType"
@@ -176,9 +177,9 @@ const Appointment = () => {
                   required
                   className="w-full h-12 px-4 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                 >
-                  <option value="">Selecione o tipo de consulta</option>
+                  <option value="">{t('appointment.form.consultationTypePlaceholder')}</option>
                   {consultationTypes.map((type) => (
-                    <option key={type} value={type}>{type}</option>
+                    <option key={type.value} value={type.value}>{type.label}</option>
                   ))}
                 </select>
               </div>
@@ -188,7 +189,7 @@ const Appointment = () => {
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-foreground flex items-center gap-2">
                     <Calendar className="w-4 h-4 text-primary" />
-                    Data Preferida
+                    {t('appointment.form.preferredDate')}
                   </label>
                   <Input
                     type="date"
@@ -202,7 +203,7 @@ const Appointment = () => {
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-foreground flex items-center gap-2">
                     <Clock className="w-4 h-4 text-primary" />
-                    Hora Preferida
+                    {t('appointment.form.preferredTime')}
                   </label>
                   <select
                     name="time"
@@ -211,7 +212,7 @@ const Appointment = () => {
                     required
                     className="w-full h-12 px-4 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                   >
-                    <option value="">Selecione a hora</option>
+                    <option value="">{t('appointment.form.preferredTimePlaceholder')}</option>
                     {timeSlots.map((slot) => (
                       <option key={slot} value={slot}>{slot}</option>
                     ))}
@@ -223,7 +224,7 @@ const Appointment = () => {
               <div className="space-y-2">
                 <label className="text-sm font-medium text-foreground flex items-center gap-2">
                   <UserCircle className="w-4 h-4 text-primary" />
-                  Dentista Preferido (opcional)
+                  {t('appointment.form.preferredDentist')}
                 </label>
                 <select
                   name="dentist"
@@ -231,18 +232,18 @@ const Appointment = () => {
                   onChange={handleChange}
                   className="w-full h-12 px-4 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                 >
-                  <option value="">Sem preferência</option>
+                  <option value="">{t('appointment.form.noPreference')}</option>
                   <option value="dr-silvio">Dr. Sílvio Araújo</option>
                 </select>
               </div>
 
               {/* Submit */}
               <Button type="submit" variant="cta" size="xl" className="w-full">
-                Marcar Consulta
+                {t('appointment.form.submit')}
               </Button>
 
               <p className="text-center text-xs text-muted-foreground">
-                Ao submeter, concorda com a nossa política de privacidade.
+                {t('appointment.form.privacyNote')}
               </p>
             </form>
           </div>
