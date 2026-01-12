@@ -360,6 +360,9 @@
   "floatingCTA": {
     "button": "¡Reservar Cita Hoy!"
   },
+  "whatsapp": {
+    "tooltip": "Chatea con nosotros en WhatsApp"
+  },
   "notFound": {
     "title": "404",
     "message": "¡Ups! Página no encontrada",

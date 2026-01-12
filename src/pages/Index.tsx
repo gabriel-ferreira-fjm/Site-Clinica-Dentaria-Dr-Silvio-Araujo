@@ -12,6 +12,7 @@ import Testimonials from '@/components/sections/Testimonials';
 import Blog from '@/components/sections/Blog';
 import Contact from '@/components/sections/Contact';
 import FloatingCTA from '@/components/FloatingCTA';
+import WhatsappButton from '@/components/WhatsappButton';
 
 const Index = () => {
   return (
@@ -77,6 +78,7 @@ const Index = () => {
         </main>
         <Footer />
         <FloatingCTA />
+        <WhatsappButton />
       </div>
     </>
   );
