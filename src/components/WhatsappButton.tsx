@@ -7,9 +7,9 @@ const WhatsAppButton = () => {
   
   const getWhatsAppMessage = () => {
     const messages = {
-      pt: 'Olá! Gostaria de marcar uma consulta na Clínica Dentária Dr. Sílvio Araújo.',
-      en: 'Hello! I would like to schedule an appointment at Dr. Sílvio Araújo Dental Clinic.',
-      es: '¡Hola! Me gustaría programar una cita en la Clínica Dental Dr. Sílvio Araújo.',
+      pt: 'Olá! Gostaria de entrar em contacto com a Clínica Dentária Dr. Sílvio Araújo para [motivo do contacto].',
+      en: 'Hello! I would like to contact Dr. Sílvio Araújo Dental Clinic regarding [reason for contact].',
+      es: '¡Hola! Me gustaría contactar con la Clínica Dental del Dr. Sílvio Araújo en relación con [motivo del contacto].',
       fr: 'Bonjour! Je voudrais prendre rendez-vous à la Clinique Dentaire Dr. Sílvio Araújo.'
     };
     
