@@ -10,7 +10,7 @@ const WhatsAppButton = () => {
       pt: 'Olá! 😊 Vim pelo site e gostaria de falar com a clínica. Podem responder por aqui para me ajudarem a marcar e/ou receber informação?',
       en: 'Hello! 😊 I came through the website and would like to speak with the clinic. Can you reply here to help me schedule and/or receive information?',
       es: '¡Hola! 😊 Vine a través del sitio web y me gustaría hablar con la clínica. ¿Pueden responder por aquí para ayudarme a programar y/o recibir información?',
-      fr: 'Bonjour ! 😊 Je suis arrivé(e) par le site web et j'aimerais parler avec la clinique. Pouvez-vous répondre ici pour m'aider à prendre rendez-vous et/ou recevoir des informations ?'
+      fr: 'Bonjour ! 😊 Je suis arrive par le site web et je voudrais parler avec la clinique. Pouvez-vous repondre ici pour me aider a prendre rendez-vous et/ou recevoir des informations?'
     };
     
     const currentLang = localStorage.getItem('i18nextLng') || 'pt';
