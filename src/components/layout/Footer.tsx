@@ -44,21 +44,21 @@ const Footer = () => {
             </p>
             <div className="flex gap-3">
               <a
-                href="#"
+                href="https://www.facebook.com/share/1AFgDBR4vv/?mibextid=wwXIfr"
                 className="w-10 h-10 rounded-lg bg-background/10 hover:bg-primary flex items-center justify-center transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/clinicasilvioaraujo?igsh=bDZhNHhmZDVlamxm"
                 className="w-10 h-10 rounded-lg bg-background/10 hover:bg-primary flex items-center justify-center transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/silvio-ara%C3%BAjo-b6592b167?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                 className="w-10 h-10 rounded-lg bg-background/10 hover:bg-primary flex items-center justify-center transition-colors"
                 aria-label="LinkedIn"
               >
