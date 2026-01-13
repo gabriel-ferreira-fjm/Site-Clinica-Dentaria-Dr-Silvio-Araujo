@@ -7,10 +7,10 @@ import { HelmetProvider } from "react-helmet-async";
 import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import HigieneOral from "./pages/blog/HigieneOral";
-import Estetica from "./pages/blog/Estetica";
-import Odontopediatria from "./pages/blog/Odontopediatria";
-import Implantes from "./pages/blog/Implantes";
+import HigieneOral from "./components/sections/HigieneOral";
+import Estetica from "./components/sections/Estetica";
+import Odontopediatria from "./components/sections/Odontopediatria";
+import Implantes from "./components/sections/Implantes";
 
 const queryClient = new QueryClient();
 

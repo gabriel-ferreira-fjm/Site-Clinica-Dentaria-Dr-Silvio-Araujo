@@ -195,6 +195,59 @@
       }
     }
   },
+  "faq": {
+    "badge": "Dúvidas Frequentes",
+    "title": {
+      "before": "Perguntas",
+      "highlight": "Frequentes"
+    },
+    "subtitle": "Reunimos as perguntas mais comuns dos nossos pacientes. Se não encontrar a resposta que procura, não hesite em contactar-nos.",
+    "cta": {
+      "text": "Ainda tem dúvidas? Estamos aqui para ajudar!"
+    },
+    "items": {
+      "hours": {
+        "q": "Qual é o horário de funcionamento da clínica?",
+        "a": "A nossa clínica está aberta de Segunda a Sexta das 9h às 19h, e aos Sábados das 9h às 13h. Estamos encerrados aos Domingos e Feriados."
+      },
+      "appointment": {
+        "q": "É necessário marcar consulta?",
+        "a": "Sim, recomendamos sempre a marcação prévia para garantir o melhor atendimento. No entanto, em casos de urgência, faremos o possível para atendê-lo no próprio dia."
+      },
+      "payments": {
+        "q": "Quais são as formas de pagamento aceites?",
+        "a": "Aceitamos pagamento em dinheiro, Multibanco, MBWay e transferência bancária. Também oferecemos facilidades de pagamento e financiamento para tratamentos mais extensos."
+      },
+      "insurance": {
+        "q": "A clínica trabalha com seguros de saúde?",
+        "a": "Sim, trabalhamos com a maioria dos seguros de saúde e subsistemas. Consulte-nos para verificar se o seu seguro está incluído na nossa lista de convenções."
+      },
+      "routine_duration": {
+        "q": "Quanto tempo dura uma consulta de rotina?",
+        "a": "Uma consulta de rotina, incluindo check-up e destartarização, dura aproximadamente 45 minutos a 1 hora, dependendo das necessidades de cada paciente."
+      },
+      "pain": {
+        "q": "Os tratamentos são dolorosos?",
+        "a": "Utilizamos técnicas modernas e anestesia local para garantir o máximo conforto durante todos os procedimentos. A maioria dos pacientes não sente dor durante os tratamentos."
+      },
+      "kids_first_visit": {
+        "q": "A partir de que idade as crianças devem ir ao dentista?",
+        "a": "Recomendamos a primeira visita ao dentista por volta do primeiro ano de idade ou quando nascem os primeiros dentes. Consultas regulares ajudam a prevenir problemas futuros."
+      },
+      "implant_duration": {
+        "q": "Quanto tempo dura um implante dentário?",
+        "a": "Com os cuidados adequados, um implante dentário pode durar toda a vida. É fundamental manter uma boa higiene oral e realizar consultas de controlo regulares."
+      },
+      "whitening": {
+        "q": "O branqueamento dentário danifica os dentes?",
+        "a": "Não, quando realizado por profissionais qualificados com produtos adequados, o branqueamento é seguro e não danifica o esmalte dentário."
+      },
+      "booking": {
+        "q": "Como posso marcar uma consulta?",
+        "a": "Pode marcar a sua consulta através do telefone 924 123 784, por email para geral@silvioaraujo.com, ou através do formulário de marcação aqui no nosso site."
+      }
+    }
+  },
   "appointment": {
     "tag": "Marcar Consulta",
     "title": "Agende a sua consulta",
@@ -287,6 +340,8 @@
     "viewAll": "Ver Todos os Artigos",
     "readMore": "Ler Mais",
     "readTime": "leitura",
+    "back": "Voltar ao Blog",
+    "share": "Partilhar",
     "articles": {
       "article1": {
         "title": "Como manter uma boa higiene oral diária",
@@ -307,6 +362,139 @@
         "title": "Implantes dentários: guia completo",
         "excerpt": "Tudo o que precisa saber sobre implantes dentários, desde o procedimento até à recuperação.",
         "category": "Implantes"
+      }
+    },
+    "higiene": {
+      "category": "Higiene Oral",
+      "title": "Como manter uma boa higiene oral diária",
+      "description": "Descubra as melhores práticas para escovar os dentes corretamente e manter uma higiene oral impecável todos os dias.",
+      "date": "20 Dez 2024",
+      "readTime": "5 min leitura",
+      "imageAlt": "Higiene oral",
+      "intro": "A higiene oral é fundamental para manter dentes e gengivas saudáveis ao longo da vida.",
+      "whyTitle": "Por que a higiene oral é tão importante?",
+      "whyText": "A boca é a porta de entrada para o nosso organismo. Quando negligenciamos a higiene oral, permitimos que bactérias nocivas se acumulem.",
+      "pillarsTitle": "Os pilares de uma boa higiene oral",
+      "brushingTitle": "Escovagem correta",
+      "brushingText": "Escove os dentes pelo menos duas vezes por dia com movimentos suaves.",
+      "flossTitle": "Uso do fio dental",
+      "flossText": "O fio dental remove restos de comida e placa bacteriana entre os dentes.",
+      "mouthwashTitle": "Elixir bucal",
+      "mouthwashText": "O elixir ajuda a eliminar bactérias e reforça o esmalte dentário.",
+      "tipsTitle": "Dicas adicionais",
+      "tipsText": "Evite açúcar, beba água, não fume e visite o dentista regularmente.",
+      "conclusionTitle": "Conclusão",
+      "conclusionText": "Uma boa higiene oral garante um sorriso saudável por toda a vida.",
+      "ctaTitle": "Precisa de orientação?",
+      "ctaText": "Agende uma consulta para uma avaliação completa.",
+      "ctaButton": "Marcar Consulta",
+      "lead": "Pequenos hábitos diários fazem uma grande diferença. Aqui fica um guia prático para manter dentes e gengivas saudáveis — em casa e entre consultas.",
+      "toc": {
+        "title": "Neste artigo",
+        "note": "Precisa de um plano personalizado? Podemos avaliar a sua rotina e recomendar os melhores produtos e técnicas.",
+        "why": "Porque é importante",
+        "daily": "Rotina diária (passo a passo)",
+        "technique": "Técnica de escovagem (guia rápido)",
+        "floss": "Fio dentário e limpeza interdentária",
+        "diet": "Alimentação e hábitos",
+        "warning": "Sinais de alerta",
+        "faq": "Mitos e dúvidas"
+      },
+      "takeaways": {
+        "title": "Pontos-chave",
+        "one": "Escove 2×/dia durante 2 minutos com técnica suave e pasta com flúor.",
+        "two": "Limpe entre os dentes diariamente (fio ou escovilhões) — é aí que muitas cáries começam.",
+        "three": "Reduza açúcar entre refeições e evite “picar” constantemente; água é a sua melhor aliada."
+      },
+      "whyCards": {
+        "cavities": {
+          "title": "Menos cáries",
+          "text": "Placa e açúcar alimentam bactérias que enfraquecem o esmalte."
+        },
+        "gums": {
+          "title": "Gengivas mais saudáveis",
+          "text": "Sangramento não é normal — é sinal de inflamação."
+        },
+        "breath": {
+          "title": "Hálito mais fresco",
+          "text": "Limpar língua + zonas interdentárias reduz odor."
+        }
+      },
+      "dailyTitle": "Rotina diária (passo a passo)",
+      "daily": {
+        "1": {
+          "title": "Escovar (2 minutos)",
+          "text": "Use escova macia e pasta com flúor. Foque a linha da gengiva e todas as superfícies."
+        },
+        "2": {
+          "title": "Limpar entre os dentes",
+          "text": "Use fio dentário ou escovilhões 1×/dia. Remove placa onde a escova não chega."
+        },
+        "3": {
+          "title": "Limpeza da língua",
+          "text": "Limpe a língua suavemente para reduzir bactérias e melhorar o hálito."
+        },
+        "4": {
+          "title": "Elixir (opcional)",
+          "text": "Use elixir sem álcool quando recomendado. Evite bochechar logo após escovar para manter o flúor por mais tempo."
+        }
+      },
+      "checklist": {
+        "title": "Checklist diário rápido",
+        "a": "Escovar 2×/dia",
+        "b": "Limpeza interdentária 1×/dia",
+        "c": "Beber água ao longo do dia",
+        "d": "Reduzir açúcar entre refeições"
+      },
+      "techTitle": "Técnica de escovagem (guia rápido)",
+      "tech": {
+        "doTitle": "Faça",
+        "do1": "Use movimentos pequenos e circulares com pressão suave.",
+        "do2": "Incline a escova ~45° em direção à linha da gengiva.",
+        "do3": "Troque a escova/cabeça a cada ~3 meses (ou antes se as cerdas abrirem).",
+        "avoidTitle": "Evite",
+        "avoid1": "Escovar com muita força (pode causar recessão gengival e sensibilidade).",
+        "avoid2": "Ignorar a linha da gengiva — é onde a placa se acumula mais.",
+        "avoid3": "Escovar imediatamente após bebidas ácidas; espere ~30 minutos."
+      },
+      "flossSectionTitle": "Fio dentário e limpeza interdentária",
+      "flossSectionText": "Muitas cáries e problemas gengivais começam entre os dentes. Se o fio for difícil, os escovilhões interdentários podem ser uma ótima alternativa — pergunte qual o tamanho ideal para si.",
+      "flossHowTitle": "Como usar fio dentário (em 3 passos)",
+      "flossHow1": "Passe suavemente entre os dentes e faça um “C” em volta do dente.",
+      "flossHow2": "Movimente para cima e para baixo em ambos os lados do dente.",
+      "flossHow3": "Use uma parte limpa do fio para cada espaço.",
+      "dietTitle": "Alimentação e hábitos",
+      "diet": {
+        "goodTitle": "Bons hábitos",
+        "good1": "Beber água ao longo do dia.",
+        "good2": "Preferir snacks com menos açúcar (frutos secos, queijo, iogurte).",
+        "good3": "Mastigar pastilha sem açúcar após refeições (se indicado) para estimular saliva.",
+        "limitTitle": "Reduza",
+        "limit1": "Snacks e bebidas açucaradas frequentes.",
+        "limit2": "Beber refrigerantes/sumos aos poucos durante muito tempo (ácido constante).",
+        "limit3": "Tabaco (aumenta risco de doença gengival e manchas)."
+      },
+      "warningTitle": "Sinais de alerta",
+      "warningSubtitle": "Se notar algum destes sinais, considere marcar uma avaliação:",
+      "warning": {
+        "1": "Gengivas a sangrar ao escovar ou usar fio",
+        "2": "Mau hálito persistente",
+        "3": "Sensibilidade ou dor dentária",
+        "4": "Gengivas inchadas ou retração gengival",
+        "5": "Dor ao mastigar ou desconforto na mandíbula"
+      },
+      "faqTitle": "Mitos e dúvidas",
+      "faq": {
+        "q1": "Se as gengivas sangram, devo parar o fio dentário?",
+        "a1": "Normalmente não. O sangramento costuma ser sinal de inflamação. Use fio com suavidade e consistência; se persistir após 1–2 semanas, faça avaliação.",
+        "q2": "O elixir é obrigatório?",
+        "a2": "Nem sempre. Pode ajudar em casos específicos (gengivite, alto risco de cárie). O essencial é escovagem + limpeza interdentária.",
+        "q3": "Escova elétrica vale a pena?",
+        "a3": "Para muitas pessoas, sim — melhora a consistência e a remoção de placa. Ainda assim, a técnica é importante."
+      },
+      "finalCta": {
+        "title": "Quer um plano de higiene oral personalizado?",
+        "text": "Podemos avaliar as gengivas, o risco de cárie e recomendar produtos e técnicas ajustados ao seu caso."
       }
     }
   },
@@ -365,8 +553,7 @@
     "tooltip": "Fale connosco no WhatsApp",
     "message": "Olá! 😊 Vim pelo site e gostaria de falar com a clínica. Podem responder por aqui para me ajudarem a marcar e/ou receber informação?",
     "cta": "Entre em contacto connosco"
-  }
-  ,
+  },
   "notFound": {
     "title": "404",
     "message": "Oops! Página não encontrada",

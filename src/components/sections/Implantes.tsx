@@ -59,12 +59,8 @@ const Implantes = () => {
           </header>
           
           {/* Featured Image */}
-          <div className="w-full h-64 md:h-96 mb-8 rounded-2xl overflow-hidden">
-            <img
-              src="/implantes.png" 
-              alt="Implantes Dentários"
-              className="w-full h-full object-cover rounded-2xl"
-            />
+          <div className="w-full h-64 md:h-96 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl mb-8 flex items-center justify-center">
+            <div className="text-primary/30 text-6xl">🔧</div>
           </div>
           
           {/* Content */}
