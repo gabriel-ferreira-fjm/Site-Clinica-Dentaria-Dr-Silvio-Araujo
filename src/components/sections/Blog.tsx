@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { ArrowRight, Calendar } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -6,38 +7,48 @@ const Blog = () => {
   const { t } = useTranslation();
 
   const articles = [
-    {
-      title: t('blog.articles.article1.title'),
-      excerpt: t('blog.articles.article1.excerpt'),
-      date: '20 Dez 2024',
-      category: t('blog.articles.article1.category'),
-      readTime: '5 min',
-    },
-    {
-      title: t('blog.articles.article2.title'),
-      excerpt: t('blog.articles.article2.excerpt'),
-      date: '15 Dez 2024',
-      category: t('blog.articles.article2.category'),
-      readTime: '7 min',
-    },
-    {
-      title: t('blog.articles.article3.title'),
-      excerpt: t('blog.articles.article3.excerpt'),
-      date: '10 Dez 2024',
-      category: t('blog.articles.article3.category'),
-      readTime: '4 min',
-    },
-    {
-      title: t('blog.articles.article4.title'),
-      excerpt: t('blog.articles.article4.excerpt'),
-      date: '5 Dez 2024',
-      category: t('blog.articles.article4.category'),
-      readTime: '10 min',
-    },
-  ];
+  {
+    title: t('blog.articles.article1.title'),
+    excerpt: t('blog.articles.article1.excerpt'),
+    date: '20 Dez 2025',
+    category: t('blog.articles.article1.category'),
+    readTime: '5 min',
+    link: '/blog/higiene-oral-diaria',
+    image: '/higiene-oral.png',
+  },
+  {
+    title: t('blog.articles.article2.title'),
+    excerpt: t('blog.articles.article2.excerpt'),
+    date: '15 Dez 2024',
+    category: t('blog.articles.article2.category'),
+    readTime: '7 min',
+    link: '/blog/estetica-branqueamento',
+    image: '/branqueamento.png',
+  },
+  {
+    title: t('blog.articles.article3.title'),
+    excerpt: t('blog.articles.article3.excerpt'),
+    date: '10 Dez 2024',
+    category: t('blog.articles.article3.category'),
+    readTime: '4 min',
+    link: '/blog/odontopediatria-criancas',
+    image: '/criancas.png',
+  },
+  {
+    title: t('blog.articles.article4.title'),
+    excerpt: t('blog.articles.article4.excerpt'),
+    date: '5 Dez 2024',
+    category: t('blog.articles.article4.category'),
+    readTime: '10 min',
+    link: '/blog/implantes-guia-completo',
+    image: '/implantes.png',
+  },
+];
+
+
 
   return (
-    <section className="py-24 bg-secondary/30">
+    <section id="blog" className="py-24 bg-secondary/30">
       <div className="container">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
@@ -57,24 +68,31 @@ const Blog = () => {
 
         {/* Articles Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {articles.map((article, index) => (
-            <article
+          {articles.map((article) => (
+            <Link
               key={article.title}
+              to={article.link}
               className="group bg-background rounded-2xl overflow-hidden shadow-sm hover:shadow-dental transition-all duration-300 hover:-translate-y-1 border border-border/50"
             >
-              {/* Image Placeholder */}
-              <div className="aspect-[4/3] bg-gradient-to-br from-primary/10 to-primary/5 relative overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
-                    <span className="text-3xl">📖</span>
-                  </div>
-                </div>
-                <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 bg-primary text-primary-foreground text-xs font-medium rounded-full">
+              {/* Image */}
+              <div className="aspect-[4/3] relative overflow-hidden">
+                <img
+                  src={article.image}
+                  alt={article.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+
+                {/* Categoria por cima da imagem */}
+                <div className="absolute top-4 left-4 z-10">
+                  <span className="px-3 py-1 bg-primary text-primary-foreground text-xs font-medium rounded-full shadow">
                     {article.category}
                   </span>
                 </div>
+
+                {/* Overlay suave */}
+                <div className="absolute inset-0 bg-black/10" />
               </div>
+
 
               {/* Content */}
               <div className="p-5">
@@ -95,12 +113,12 @@ const Blog = () => {
                   {article.excerpt}
                 </p>
 
-                <button className="text-sm font-medium text-primary flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span className="text-sm font-medium text-primary flex items-center gap-1 group-hover:gap-2 transition-all">
                   {t('blog.readMore')}
                   <ArrowRight className="w-4 h-4" />
-                </button>
+                </span>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </div>

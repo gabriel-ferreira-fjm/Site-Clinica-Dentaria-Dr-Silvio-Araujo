@@ -10,6 +10,7 @@ import Amenities from '@/components/sections/Amenities';
 import Appointment from '@/components/sections/Appointment';
 import Testimonials from '@/components/sections/Testimonials';
 import Blog from '@/components/sections/Blog';
+import FAQ from '@/components/sections/FAQ';
 import Contact from '@/components/sections/Contact';
 import FloatingCTA from '@/components/FloatingCTA';
 import WhatsappButton from '@/components/WhatsappButton';
@@ -74,6 +75,7 @@ const Index = () => {
           <Appointment />
           <Testimonials />
           <Blog />
+          <FAQ />
           <Contact />
         </main>
         <Footer />

@@ -10,6 +10,7 @@ const Footer = () => {
     { href: '#sobre', label: t('header.about') },
     { href: '#servicos', label: t('header.services') },
     { href: '#precos', label: t('header.prices') },
+    { href: '#blog', label: t('header.blog') },
     { href: '#contactos', label: t('header.contacts') },
   ];
 

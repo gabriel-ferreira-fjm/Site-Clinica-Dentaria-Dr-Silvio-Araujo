@@ -5,6 +5,7 @@
     "services": "Serviços",
     "team": "Equipa",
     "prices": "Preços",
+    "blog": "Blog",
     "contacts": "Contactos",
     "bookAppointment": "Marcar Consulta",
     "location": "Rua D Sebastião 2050, Quinta do Conde, Portugal",
@@ -361,8 +362,11 @@
     "button": "Marcar Consulta Hoje!"
   },
   "whatsapp": {
-    "tooltip": "Fale connosco no WhatsApp"
-  },
+    "tooltip": "Fale connosco no WhatsApp",
+    "message": "Olá! 😊 Vim pelo site e gostaria de falar com a clínica. Podem responder por aqui para me ajudarem a marcar e/ou receber informação?",
+    "cta": "Entre em contacto connosco"
+  }
+  ,
   "notFound": {
     "title": "404",
     "message": "Oops! Página não encontrada",
