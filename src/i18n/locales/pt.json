@@ -6,6 +6,7 @@
     "team": "Equipa",
     "prices": "Preços",
     "blog": "Blog",
+    "faq": "FAQ's",
     "contacts": "Contactos",
     "bookAppointment": "Marcar Consulta",
     "location": "Rua D Sebastião 2050, Quinta do Conde, Portugal",
@@ -126,6 +127,35 @@
       "guaranteedResults": "Resultados Garantidos"
     }
   },
+
+  "consultadiagnostico": {
+    "hero": {
+      "title": "Consulta e Diagnóstico",
+      "subtitle": "Avaliação completa e precisa da sua saúde oral",
+      "cta": "Marcar Consulta"
+    },
+    "consultation": {
+      "title": "Consulta Dentária",
+      "description": "A consulta dentária é o primeiro passo para garantir uma boca saudável.",
+      "content": "Durante a consulta, o médico dentista realiza uma avaliação detalhada da sua saúde oral, analisando dentes, gengivas, mordida e tecidos orais. O objetivo é identificar problemas existentes ou prevenir futuras complicações, criando um plano de tratamento personalizado."
+    },
+    "radiology": {
+      "title": "Radiografias Digitais",
+      "description": "Tecnologia moderna para diagnósticos precisos",
+      "content": "As radiografias digitais permitem visualizar estruturas internas dos dentes e ossos que não são visíveis a olho nu. São rápidas, seguras e utilizam uma dose mínima de radiação, ajudando no diagnóstico de cáries, infeções, problemas ósseos e no planeamento de tratamentos."
+    },
+    "emergency": {
+      "title": "Urgências Dentárias",
+      "description": "Atendimento rápido quando mais precisa",
+      "content": "São consideradas urgências dentárias situações como dor intensa, infeções, traumatismos, fraturas dentárias, sangramento persistente ou inchaço. Nestes casos, deve contactar a clínica o mais rapidamente possível. Até ser avaliado, evite automedicação excessiva e, se houver sangramento, faça compressão suave com gaze limpa."
+    },
+    "cta": {
+      "title": "Cuide da sua saúde oral",
+      "subtitle": "Não espere pela dor. Agende a sua consulta hoje mesmo.",
+      "button": "Agendar Agora"
+    }
+  },
+
   "prices": {
     "tag": "Tabela de Preços",
     "title": "Tratamentos",

@@ -27,6 +27,7 @@ const Header = () => {
     { href: '#equipa', label: t('header.team') },
     { href: '#precos', label: t('header.prices') },
     { href: '#blog', label: t('header.blog') },
+    { href: '#faq', label: t('header.faq') },
     { href: '#contactos', label: t('header.contacts') },
   ];
 

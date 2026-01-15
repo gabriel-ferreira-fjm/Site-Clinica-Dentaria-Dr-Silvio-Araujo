@@ -11,6 +11,7 @@ import HigieneOral from "./components/sections/HigieneOral";
 import Estetica from "./components/sections/Estetica";
 import Odontopediatria from "./components/sections/Odontopediatria";
 import Implantes from "./components/sections/Implantes";
+import ConsultaDiagnostico from "./components/sections/ConsultaDiagnostico"; // ✅ NOVO
 
 const queryClient = new QueryClient();
 
@@ -24,11 +25,25 @@ const App = () => (
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Index />} />
+
+            {/* Pages */}
+            <Route
+              path="/ConsultaDiagnostico"
+              element={<ConsultaDiagnostico />}
+            />
+
             {/* Blog Routes */}
             <Route path="/blog/higiene-oral-diaria" element={<HigieneOral />} />
             <Route path="/blog/estetica-branqueamento" element={<Estetica />} />
-            <Route path="/blog/odontopediatria-criancas" element={<Odontopediatria />} />
-            <Route path="/blog/implantes-guia-completo" element={<Implantes />} />
+            <Route
+              path="/blog/odontopediatria-criancas"
+              element={<Odontopediatria />}
+            />
+            <Route
+              path="/blog/implantes-guia-completo"
+              element={<Implantes />}
+            />
+
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

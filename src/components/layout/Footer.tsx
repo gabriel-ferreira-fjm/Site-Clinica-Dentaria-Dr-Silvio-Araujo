@@ -36,6 +36,7 @@ const Footer = () => {
     { id: "servicos", label: t("header.services") },
     { id: "precos", label: t("header.prices") },
     { id: "blog", label: t("header.blog") },
+    { id: "faq", label: t("header.faq") },
     { id: "contactos", label: t("header.contacts") },
   ];
 

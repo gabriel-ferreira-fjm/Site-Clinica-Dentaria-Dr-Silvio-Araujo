@@ -1,5 +1,15 @@
 import { useTranslation } from 'react-i18next';
-import { Stethoscope, Sparkles, Shield, Heart, Smile, Baby, Activity, Clock } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import {
+  Stethoscope,
+  Sparkles,
+  Shield,
+  Heart,
+  Smile,
+  Baby,
+  Activity,
+  Clock,
+} from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Services = () => {
@@ -10,15 +20,20 @@ const Services = () => {
       icon: Stethoscope,
       title: t('services.categories.consultation.title'),
       description: t('services.categories.consultation.description'),
-      services: t('services.categories.consultation.services', { returnObjects: true }) as string[],
+      services: t('services.categories.consultation.services', {
+        returnObjects: true,
+      }) as string[],
       color: 'bg-blue-50',
       iconColor: 'text-blue-600',
+      href: '/ConsultaDiagnostico', // ✅ ligado à nova página
     },
     {
       icon: Shield,
       title: t('services.categories.prevention.title'),
       description: t('services.categories.prevention.description'),
-      services: t('services.categories.prevention.services', { returnObjects: true }) as string[],
+      services: t('services.categories.prevention.services', {
+        returnObjects: true,
+      }) as string[],
       color: 'bg-green-50',
       iconColor: 'text-green-600',
     },
@@ -26,7 +41,9 @@ const Services = () => {
       icon: Sparkles,
       title: t('services.categories.aesthetics.title'),
       description: t('services.categories.aesthetics.description'),
-      services: t('services.categories.aesthetics.services', { returnObjects: true }) as string[],
+      services: t('services.categories.aesthetics.services', {
+        returnObjects: true,
+      }) as string[],
       color: 'bg-purple-50',
       iconColor: 'text-purple-600',
     },
@@ -34,7 +51,9 @@ const Services = () => {
       icon: Heart,
       title: t('services.categories.implants.title'),
       description: t('services.categories.implants.description'),
-      services: t('services.categories.implants.services', { returnObjects: true }) as string[],
+      services: t('services.categories.implants.services', {
+        returnObjects: true,
+      }) as string[],
       color: 'bg-red-50',
       iconColor: 'text-red-600',
     },
@@ -42,7 +61,9 @@ const Services = () => {
       icon: Activity,
       title: t('services.categories.specialized.title'),
       description: t('services.categories.specialized.description'),
-      services: t('services.categories.specialized.services', { returnObjects: true }) as string[],
+      services: t('services.categories.specialized.services', {
+        returnObjects: true,
+      }) as string[],
       color: 'bg-amber-50',
       iconColor: 'text-amber-600',
     },
@@ -50,7 +71,9 @@ const Services = () => {
       icon: Baby,
       title: t('services.categories.pediatric.title'),
       description: t('services.categories.pediatric.description'),
-      services: t('services.categories.pediatric.services', { returnObjects: true }) as string[],
+      services: t('services.categories.pediatric.services', {
+        returnObjects: true,
+      }) as string[],
       color: 'bg-pink-50',
       iconColor: 'text-pink-600',
     },
@@ -73,7 +96,9 @@ const Services = () => {
           </span>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">
             {t('services.title')}{' '}
-            <span className="text-primary">{t('services.titleHighlight')}</span>
+            <span className="text-primary">
+              {t('services.titleHighlight')}
+            </span>
           </h2>
           <p className="text-muted-foreground text-lg">
             {t('services.description')}
@@ -82,33 +107,60 @@ const Services = () => {
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {categories.map((category, index) => (
-            <div
-              key={category.title}
-              className="group bg-background rounded-2xl p-6 shadow-sm hover:shadow-dental-lg transition-all duration-300 hover:-translate-y-1 border border-border/50"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className={`w-14 h-14 rounded-xl ${category.color} flex items-center justify-center mb-5 group-hover:scale-110 transition-transform`}>
-                <category.icon className={`w-7 h-7 ${category.iconColor}`} />
+          {categories.map((category, index) => {
+            const Card = (
+              <div
+                className="group bg-background rounded-2xl p-6 shadow-sm hover:shadow-dental-lg transition-all duration-300 hover:-translate-y-1 border border-border/50 h-full"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div
+                  className={`w-14 h-14 rounded-xl ${category.color} flex items-center justify-center mb-5 group-hover:scale-110 transition-transform`}
+                >
+                  <category.icon
+                    className={`w-7 h-7 ${category.iconColor}`}
+                  />
+                </div>
+
+                <h3 className="font-heading font-semibold text-xl text-foreground mb-2">
+                  {category.title}
+                </h3>
+                <p className="text-muted-foreground text-sm mb-4">
+                  {category.description}
+                </p>
+
+                <ul className="space-y-2">
+                  {category.services.map((service) => (
+                    <li
+                      key={service}
+                      className="flex items-center gap-2 text-sm text-muted-foreground"
+                    >
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      {service}
+                    </li>
+                  ))}
+                </ul>
               </div>
-              
-              <h3 className="font-heading font-semibold text-xl text-foreground mb-2">
-                {category.title}
-              </h3>
-              <p className="text-muted-foreground text-sm mb-4">
-                {category.description}
-              </p>
-              
-              <ul className="space-y-2">
-                {category.services.map((service) => (
-                  <li key={service} className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                    {service}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+            );
+
+            if (category.href) {
+              return (
+                <Link
+                  key={category.title}
+                  to={category.href}
+                  className="block h-full focus:outline-none focus:ring-2 focus:ring-primary rounded-2xl"
+                  aria-label={category.title}
+                >
+                  {Card}
+                </Link>
+              );
+            }
+
+            return (
+              <div key={category.title} className="h-full">
+                {Card}
+              </div>
+            );
+          })}
         </div>
 
         {/* Extra Services */}
@@ -129,19 +181,24 @@ const Services = () => {
                 {t('services.tmj.learnMore')}
               </Button>
             </div>
+
             <div className="flex items-center justify-center">
               <div className="flex items-center gap-6">
                 <div className="text-center">
                   <div className="w-16 h-16 rounded-full bg-primary-foreground/20 flex items-center justify-center mb-2">
                     <Clock className="w-8 h-8 text-primary-foreground" />
                   </div>
-                  <p className="text-primary-foreground/80 text-sm">{t('services.tmj.quickConsultations')}</p>
+                  <p className="text-primary-foreground/80 text-sm">
+                    {t('services.tmj.quickConsultations')}
+                  </p>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 rounded-full bg-primary-foreground/20 flex items-center justify-center mb-2">
                     <Smile className="w-8 h-8 text-primary-foreground" />
                   </div>
-                  <p className="text-primary-foreground/80 text-sm">{t('services.tmj.guaranteedResults')}</p>
+                  <p className="text-primary-foreground/80 text-sm">
+                    {t('services.tmj.guaranteedResults')}
+                  </p>
                 </div>
               </div>
             </div>

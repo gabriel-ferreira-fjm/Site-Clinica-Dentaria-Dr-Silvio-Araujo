@@ -10,7 +10,6 @@ const Blog = () => {
   {
     title: t('blog.articles.article1.title'),
     excerpt: t('blog.articles.article1.excerpt'),
-    date: '20 Dez 2025',
     category: t('blog.articles.article1.category'),
     readTime: '5 min',
     link: '/blog/higiene-oral-diaria',
@@ -19,7 +18,6 @@ const Blog = () => {
   {
     title: t('blog.articles.article2.title'),
     excerpt: t('blog.articles.article2.excerpt'),
-    date: '15 Dez 2024',
     category: t('blog.articles.article2.category'),
     readTime: '7 min',
     link: '/blog/estetica-branqueamento',
@@ -28,7 +26,6 @@ const Blog = () => {
   {
     title: t('blog.articles.article3.title'),
     excerpt: t('blog.articles.article3.excerpt'),
-    date: '10 Dez 2024',
     category: t('blog.articles.article3.category'),
     readTime: '4 min',
     link: '/blog/odontopediatria-criancas',
@@ -37,7 +34,6 @@ const Blog = () => {
   {
     title: t('blog.articles.article4.title'),
     excerpt: t('blog.articles.article4.excerpt'),
-    date: '5 Dez 2024',
     category: t('blog.articles.article4.category'),
     readTime: '10 min',
     link: '/blog/implantes-guia-completo',
@@ -97,11 +93,6 @@ const Blog = () => {
               {/* Content */}
               <div className="p-5">
                 <div className="flex items-center gap-3 text-xs text-muted-foreground mb-3">
-                  <span className="flex items-center gap-1">
-                    <Calendar className="w-3 h-3" />
-                    {article.date}
-                  </span>
-                  <span>•</span>
                   <span>{article.readTime} {t('blog.readTime')}</span>
                 </div>
 
