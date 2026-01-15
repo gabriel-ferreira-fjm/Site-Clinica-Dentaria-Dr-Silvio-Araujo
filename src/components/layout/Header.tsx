@@ -1,11 +1,14 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Phone, MapPin } from 'lucide-react';
 import LanguageSelector from '@/components/LanguageSelector';
 
 const Header = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -28,9 +31,33 @@ const Header = () => {
   ];
 
   const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    setIsMobileMenuOpen(false);
+    
+    // Se não estiver na home, navegar primeiro para a home
+    if (location.pathname !== '/') {
+      navigate('/');
+      // Aguardar navegação completar antes de fazer scroll
+      setTimeout(() => {
+        const element = document.querySelector(href);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      // Se já estiver na home, apenas fazer scroll
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
+  const handleLogoClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (location.pathname !== '/') {
+      navigate('/');
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     setIsMobileMenuOpen(false);
   };
@@ -66,7 +93,7 @@ const Header = () => {
       >
         <div className="container flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-3">
+          <a href="/" onClick={handleLogoClick} className="flex items-center gap-3">
             <img 
               src="/logo-clinica.png" 
               alt="Logo Clínica Dentária Dr. Sílvio Araújo" 

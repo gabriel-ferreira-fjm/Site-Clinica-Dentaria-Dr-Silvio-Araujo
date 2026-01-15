@@ -17,7 +17,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 const HigieneOral = () => {
-  const { t } = useTranslation(); // ✅ usa namespace padrão "translation"
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
   const scrollToId = useCallback((id: string) => {
@@ -79,8 +79,6 @@ const HigieneOral = () => {
         return;
       }
       await navigator.clipboard.writeText(url);
-      // opcional: aqui você pode disparar um toast do seu shadcn/ui
-      // toast({ title: "Link copied", description: "The article link was copied to clipboard." });
     } catch {
       // fallback silencioso
     }
@@ -91,13 +89,13 @@ const HigieneOral = () => {
       <Helmet>
         <title>{title}</title>
         <meta name="description" content={description} />
+        <meta charSet="utf-8" />
       </Helmet>
 
       <Header />
 
       <main className="pt-24 pb-16">
         <article className="container mx-auto px-4 max-w-5xl">
-          {/* Back */}
           <button
             type="button"
             onClick={handleBackToBlog}
@@ -107,19 +105,13 @@ const HigieneOral = () => {
             {t("blog.back", { defaultValue: "Back to Blog" })}
           </button>
 
-          {/* Hero header */}
           <header className="mb-8">
             <div className="flex flex-wrap items-center gap-3 mb-4">
               <span className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
                 <Sparkles className="w-4 h-4" />
                 {t("blog.higiene.category", { defaultValue: "Oral Hygiene" })}
               </span>
-
-              <span className="inline-flex items-center gap-2 bg-muted px-3 py-1 rounded-full text-sm">
-                <Calendar className="w-4 h-4" />
-                {t("blog.higiene.date", { defaultValue: "20 Dec 2024" })}
-              </span>
-
+              
               <span className="inline-flex items-center gap-2 bg-muted px-3 py-1 rounded-full text-sm">
                 <Clock className="w-4 h-4" />
                 {t("blog.higiene.readTime", { defaultValue: "5 min read" })}
@@ -133,12 +125,11 @@ const HigieneOral = () => {
             <p className="mt-4 text-lg text-muted-foreground max-w-3xl">
               {t("blog.higiene.lead", {
                 defaultValue:
-                  "Small daily habits make a big difference. Here’s a practical guide to keep your teeth and gums healthy — at home and between check-ups.",
+                  "Small daily habits make a big difference. Here's a practical guide to keep your teeth and gums healthy — at home and between check-ups.",
               })}
             </p>
           </header>
 
-          {/* Cover image */}
           <div className="w-full h-64 md:h-[420px] mb-10 rounded-3xl overflow-hidden border bg-muted">
             <img
               src="/higiene-oral.png"
@@ -148,9 +139,7 @@ const HigieneOral = () => {
             />
           </div>
 
-          {/* Layout: TOC + content */}
           <div className="grid grid-cols-1 lg:grid-cols-[320px_1fr] gap-8">
-            {/* TOC */}
             <aside className="lg:sticky lg:top-28 h-fit">
               <div className="rounded-2xl border bg-background p-5 shadow-sm">
                 <p className="font-semibold mb-3">
@@ -184,235 +173,158 @@ const HigieneOral = () => {
               </div>
             </aside>
 
-            {/* Content */}
             <section className="space-y-10">
-              {/* Key takeaways */}
               <div className="rounded-2xl border bg-primary/5 p-6">
                 <div className="flex items-start gap-3">
-                  <HeartPulse className="w-5 h-5 mt-0.5 text-primary" />
+                  <HeartPulse className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-semibold">
-                      {t("blog.higiene.takeaways.title", { defaultValue: "Key takeaways" })}
+                      {t("blog.higiene.keyTakeawaysTitle", {
+                        defaultValue: "Key takeaways",
+                      })}
                     </p>
-                    <ul className="mt-3 space-y-2 text-muted-foreground">
-                      <li className="flex gap-2">
-                        <CheckCircle2 className="w-4 h-4 mt-1 text-primary" />
-                        <span>
-                          {t("blog.higiene.takeaways.one", {
-                            defaultValue:
-                              "Brush 2×/day for 2 minutes using a gentle technique and fluoride toothpaste.",
-                          })}
-                        </span>
+                    <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
+                      <li>
+                        • {t("blog.higiene.keyTakeaway1", {
+                          defaultValue: "Brush 2× daily (2 min) + interdental cleaning",
+                        })}
                       </li>
-                      <li className="flex gap-2">
-                        <CheckCircle2 className="w-4 h-4 mt-1 text-primary" />
-                        <span>
-                          {t("blog.higiene.takeaways.two", {
-                            defaultValue:
-                              "Clean between teeth daily (floss or interdental brushes) — this is where cavities often start.",
-                          })}
-                        </span>
+                      <li>
+                        • {t("blog.higiene.keyTakeaway2", {
+                          defaultValue: "Limit sugary snacks & drinks",
+                        })}
                       </li>
-                      <li className="flex gap-2">
-                        <CheckCircle2 className="w-4 h-4 mt-1 text-primary" />
-                        <span>
-                          {t("blog.higiene.takeaways.three", {
-                            defaultValue:
-                              "Limit sugary snacks and frequent sipping; water is your best friend.",
-                          })}
-                        </span>
+                      <li>
+                        • {t("blog.higiene.keyTakeaway3", {
+                          defaultValue: "Don't skip professional cleanings",
+                        })}
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
 
-              {/* Why */}
               <div id="why" className="space-y-4">
                 <h2 className="text-2xl md:text-3xl font-bold">
-                  {t("blog.higiene.whyTitle", { defaultValue: "Why is oral hygiene so important?" })}
+                  {t("blog.higiene.whyTitle", { defaultValue: "Why it matters" })}
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  {t("blog.higiene.whyText", {
+                  {t("blog.higiene.whyText1", {
                     defaultValue:
-                      "Your mouth is the gateway to your body. When plaque builds up, it can lead to cavities, gum inflammation, bad breath, and even affect overall health. Good daily hygiene helps prevent problems early and keeps treatments simpler and more affordable.",
+                      "Oral health goes beyond aesthetics. Gum disease and tooth decay can lead to pain, tooth loss, and are linked to systemic conditions like cardiovascular disease and diabetes.",
                   })}
                 </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  {t("blog.higiene.whyText2", {
+                    defaultValue:
+                      "The good news? Prevention is simple with the right daily habits. Here's what actually makes a difference.",
+                  })}
+                </p>
+              </div>
 
-                <div className="grid sm:grid-cols-3 gap-4">
+              <div id="daily" className="space-y-4">
+                <h2 className="text-2xl md:text-3xl font-bold">
+                  {t("blog.higiene.dailyTitle", {
+                    defaultValue: "Daily routine (step-by-step)",
+                  })}
+                </h2>
+
+                <div className="space-y-3">
                   {[
                     {
-                      title: t("blog.higiene.whyCards.cavities.title", { defaultValue: "Fewer cavities" }),
-                      text: t("blog.higiene.whyCards.cavities.text", {
-                        defaultValue: "Plaque and sugar feed bacteria that weaken enamel.",
+                      title: t("blog.higiene.daily.step1.title", {
+                        defaultValue: "Morning & Night: Brush for 2 minutes",
+                      }),
+                      text: t("blog.higiene.daily.step1.text", {
+                        defaultValue:
+                          "Use fluoride toothpaste and a soft-bristle brush. Cover all surfaces — outer, inner, chewing.",
                       }),
                     },
                     {
-                      title: t("blog.higiene.whyCards.gums.title", { defaultValue: "Healthier gums" }),
-                      text: t("blog.higiene.whyCards.gums.text", {
-                        defaultValue: "Bleeding is not normal — it’s a sign of inflammation.",
+                      title: t("blog.higiene.daily.step2.title", {
+                        defaultValue: "Interdental cleaning (once a day)",
+                      }),
+                      text: t("blog.higiene.daily.step2.text", {
+                        defaultValue:
+                          "Floss or use interdental brushes. Best done in the evening before brushing.",
                       }),
                     },
                     {
-                      title: t("blog.higiene.whyCards.breath.title", { defaultValue: "Fresher breath" }),
-                      text: t("blog.higiene.whyCards.breath.text", {
-                        defaultValue: "Cleaning tongue + interdental areas reduces odor.",
+                      title: t("blog.higiene.daily.step3.title", {
+                        defaultValue: "Optional: mouthwash",
+                      }),
+                      text: t("blog.higiene.daily.step3.text", {
+                        defaultValue:
+                          "Use only if recommended by your dentist. Not a replacement for brushing/flossing.",
                       }),
                     },
-                  ].map((c) => (
-                    <div key={c.title} className="rounded-2xl border bg-background p-5 shadow-sm">
-                      <p className="font-semibold">{c.title}</p>
-                      <p className="mt-2 text-sm text-muted-foreground">{c.text}</p>
+                    {
+                      title: t("blog.higiene.daily.step4.title", {
+                        defaultValue: "Hydrate & limit sugar",
+                      }),
+                      text: t("blog.higiene.daily.step4.text", {
+                        defaultValue:
+                          "Drink water throughout the day. Limit snacking between meals, especially sugary snacks.",
+                      }),
+                    },
+                  ].map((step) => (
+                    <div
+                      key={step.title}
+                      className="flex gap-3 rounded-2xl border bg-background p-5 shadow-sm"
+                    >
+                      <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                      <div>
+                        <p className="font-semibold">{step.title}</p>
+                        <p className="mt-1 text-sm text-muted-foreground">
+                          {step.text}
+                        </p>
+                      </div>
                     </div>
                   ))}
                 </div>
               </div>
 
-              {/* Daily routine */}
-              <div id="daily" className="space-y-4">
+              <div id="technique" className="space-y-4">
                 <h2 className="text-2xl md:text-3xl font-bold">
-                  {t("blog.higiene.dailyTitle", { defaultValue: "Daily routine (step-by-step)" })}
+                  {t("blog.higiene.techniqueTitle", {
+                    defaultValue: "Brushing technique (quick guide)",
+                  })}
                 </h2>
 
                 <div className="rounded-2xl border bg-background p-6 shadow-sm">
-                  <ol className="space-y-4">
-                    {[
-                      {
-                        title: t("blog.higiene.daily.1.title", { defaultValue: "Brush (2 minutes)" }),
-                        text: t("blog.higiene.daily.1.text", {
-                          defaultValue:
-                            "Use a soft brush and fluoride toothpaste. Focus on the gumline and all tooth surfaces.",
-                        }),
-                      },
-                      {
-                        title: t("blog.higiene.daily.2.title", { defaultValue: "Clean between teeth" }),
-                        text: t("blog.higiene.daily.2.text", {
-                          defaultValue:
-                            "Floss or use interdental brushes once a day. This removes plaque your toothbrush can’t reach.",
-                        }),
-                      },
-                      {
-                        title: t("blog.higiene.daily.3.title", { defaultValue: "Tongue cleaning" }),
-                        text: t("blog.higiene.daily.3.text", {
-                          defaultValue:
-                            "Gently clean the tongue to reduce bacteria and improve breath.",
-                        }),
-                      },
-                      {
-                        title: t("blog.higiene.daily.4.title", { defaultValue: "Mouthwash (optional)" }),
-                        text: t("blog.higiene.daily.4.text", {
-                          defaultValue:
-                            "Use alcohol-free mouthwash when recommended. Don’t rinse immediately after brushing to keep fluoride on teeth longer.",
-                        }),
-                      },
-                    ].map((step, idx) => (
-                      <li key={idx} className="flex gap-3">
-                        <span className="mt-0.5 inline-flex h-7 w-7 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-semibold">
-                          {idx + 1}
-                        </span>
-                        <div>
-                          <p className="font-semibold">{step.title}</p>
-                          <p className="text-muted-foreground">{step.text}</p>
-                        </div>
-                      </li>
-                    ))}
-                  </ol>
-                </div>
-
-                <div className="rounded-2xl border bg-muted/40 p-6">
-                  <p className="font-semibold mb-2">
-                    {t("blog.higiene.checklist.title", { defaultValue: "Quick daily checklist" })}
-                  </p>
-                  <div className="grid sm:grid-cols-2 gap-3 text-muted-foreground">
-                    {[
-                      t("blog.higiene.checklist.a", { defaultValue: "Brush 2×/day" }),
-                      t("blog.higiene.checklist.b", { defaultValue: "Interdental cleaning 1×/day" }),
-                      t("blog.higiene.checklist.c", { defaultValue: "Drink water regularly" }),
-                      t("blog.higiene.checklist.d", { defaultValue: "Limit sugar between meals" }),
-                    ].map((x) => (
-                      <div key={x} className="flex items-center gap-2">
-                        <CheckCircle2 className="w-4 h-4 text-primary" />
-                        <span>{x}</span>
-                      </div>
-                    ))}
-                  </div>
+                  <ul className="space-y-3 text-muted-foreground">
+                    <li>
+                      <strong>Angle:</strong>{" "}
+                      {t("blog.higiene.tech1", {
+                        defaultValue:
+                          "Hold brush at 45° to gum line (where teeth meet gums).",
+                      })}
+                    </li>
+                    <li>
+                      <strong>Motion:</strong>{" "}
+                      {t("blog.higiene.tech2", {
+                        defaultValue:
+                          "Use short, gentle strokes — no aggressive scrubbing.",
+                      })}
+                    </li>
+                    <li>
+                      <strong>Coverage:</strong>{" "}
+                      {t("blog.higiene.tech3", {
+                        defaultValue:
+                          "Outer, inner, and chewing surfaces of all teeth.",
+                      })}
+                    </li>
+                    <li>
+                      <strong>Tongue:</strong>{" "}
+                      {t("blog.higiene.tech4", {
+                        defaultValue:
+                          "Gently brush or scrape to remove bacteria and freshen breath.",
+                      })}
+                    </li>
+                  </ul>
                 </div>
               </div>
 
-              {/* Technique */}
-              <div id="technique" className="space-y-4">
-                <h2 className="text-2xl md:text-3xl font-bold">
-                  {t("blog.higiene.techTitle", { defaultValue: "Brushing technique (quick guide)" })}
-                </h2>
-
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="rounded-2xl border bg-background p-6 shadow-sm">
-                    <p className="font-semibold mb-2">
-                      {t("blog.higiene.tech.doTitle", { defaultValue: "Do" })}
-                    </p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex gap-2">
-                        <CheckCircle2 className="w-4 h-4 mt-1 text-primary" />
-                        <span>
-                          {t("blog.higiene.tech.do1", {
-                            defaultValue: "Use gentle pressure and small circular motions.",
-                          })}
-                        </span>
-                      </li>
-                      <li className="flex gap-2">
-                        <CheckCircle2 className="w-4 h-4 mt-1 text-primary" />
-                        <span>
-                          {t("blog.higiene.tech.do2", {
-                            defaultValue: "Angle the brush ~45° toward the gumline.",
-                          })}
-                        </span>
-                      </li>
-                      <li className="flex gap-2">
-                        <CheckCircle2 className="w-4 h-4 mt-1 text-primary" />
-                        <span>
-                          {t("blog.higiene.tech.do3", {
-                            defaultValue: "Replace the brush head every ~3 months (or sooner if frayed).",
-                          })}
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className="rounded-2xl border bg-background p-6 shadow-sm">
-                    <p className="font-semibold mb-2">
-                      {t("blog.higiene.tech.avoidTitle", { defaultValue: "Avoid" })}
-                    </p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex gap-2">
-                        <AlertTriangle className="w-4 h-4 mt-1 text-destructive" />
-                        <span>
-                          {t("blog.higiene.tech.avoid1", {
-                            defaultValue: "Brushing too hard (can cause gum recession and sensitivity).",
-                          })}
-                        </span>
-                      </li>
-                      <li className="flex gap-2">
-                        <AlertTriangle className="w-4 h-4 mt-1 text-destructive" />
-                        <span>
-                          {t("blog.higiene.tech.avoid2", {
-                            defaultValue: "Skipping the gumline — plaque loves the edges.",
-                          })}
-                        </span>
-                      </li>
-                      <li className="flex gap-2">
-                        <AlertTriangle className="w-4 h-4 mt-1 text-destructive" />
-                        <span>
-                          {t("blog.higiene.tech.avoid3", {
-                            defaultValue: "Brushing immediately after acidic drinks; wait ~30 minutes.",
-                          })}
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              {/* Floss */}
               <div id="floss" className="space-y-4">
                 <h2 className="text-2xl md:text-3xl font-bold">
                   {t("blog.higiene.flossSectionTitle", {
@@ -433,7 +345,7 @@ const HigieneOral = () => {
                   <ol className="mt-3 space-y-2 text-muted-foreground list-decimal pl-5">
                     <li>
                       {t("blog.higiene.flossHow1", {
-                        defaultValue: "Slide gently between teeth and curve into a “C” shape.",
+                        defaultValue: "Slide gently between teeth and curve into a C shape.",
                       })}
                     </li>
                     <li>
@@ -450,7 +362,6 @@ const HigieneOral = () => {
                 </div>
               </div>
 
-              {/* Diet */}
               <div id="diet" className="space-y-4">
                 <h2 className="text-2xl md:text-3xl font-bold">
                   {t("blog.higiene.dietTitle", { defaultValue: "Food & habits" })}
@@ -481,7 +392,6 @@ const HigieneOral = () => {
                 </div>
               </div>
 
-              {/* Warning */}
               <div id="warning" className="space-y-4">
                 <h2 className="text-2xl md:text-3xl font-bold">
                   {t("blog.higiene.warningTitle", { defaultValue: "Warning signs to watch for" })}
@@ -510,7 +420,6 @@ const HigieneOral = () => {
                 </div>
               </div>
 
-              {/* FAQ / Myths */}
               <div id="faq" className="space-y-4">
                 <h2 className="text-2xl md:text-3xl font-bold">
                   {t("blog.higiene.faqTitle", { defaultValue: "Myths & FAQs" })}
@@ -554,7 +463,6 @@ const HigieneOral = () => {
                 </div>
               </div>
 
-              {/* Final CTA */}
               <div className="rounded-3xl border bg-primary text-primary-foreground p-8">
                 <p className="text-xl md:text-2xl font-bold">
                   {t("blog.higiene.finalCta.title", { defaultValue: "Want a personalized oral hygiene plan?" })}
@@ -577,7 +485,6 @@ const HigieneOral = () => {
                 </div>
               </div>
 
-              {/* Bottom share row */}
               <div className="flex items-center gap-4 pt-2">
                 <span className="text-muted-foreground">
                   {t("blog.share", { defaultValue: "Share" })}

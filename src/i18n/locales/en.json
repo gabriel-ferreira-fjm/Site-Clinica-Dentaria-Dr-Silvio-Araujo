@@ -66,32 +66,56 @@
       "consultation": {
         "title": "Consultation & Diagnosis",
         "description": "Complete oral health assessment",
-        "services": ["Dental consultation", "Digital X-rays", "Dental emergencies"]
+        "services": [
+          "Dental consultation",
+          "Digital X-rays",
+          "Dental emergencies"
+        ]
       },
       "prevention": {
         "title": "Prevention & Hygiene",
         "description": "Essential preventive care",
-        "services": ["Scaling (cleaning)", "Dental polishing", "Preventive dentistry"]
+        "services": [
+          "Scaling (cleaning)",
+          "Dental polishing",
+          "Preventive dentistry"
+        ]
       },
       "aesthetics": {
         "title": "Aesthetics & Orthodontics",
         "description": "A perfect, aligned smile",
-        "services": ["Teeth whitening", "Metal braces", "Invisible orthodontics"]
+        "services": [
+          "Teeth whitening",
+          "Metal braces",
+          "Invisible orthodontics"
+        ]
       },
       "implants": {
         "title": "Implants & Prosthetics",
         "description": "Solutions for missing teeth",
-        "services": ["Dental implants", "Fixed prosthetics", "Removable prosthetics"]
+        "services": [
+          "Dental implants",
+          "Fixed prosthetics",
+          "Removable prosthetics"
+        ]
       },
       "specialized": {
         "title": "Specialized Treatments",
         "description": "Advanced, specific care",
-        "services": ["Endodontics", "Oral surgery", "Periodontics"]
+        "services": [
+          "Endodontics",
+          "Oral surgery",
+          "Periodontics"
+        ]
       },
       "pediatric": {
         "title": "Pediatric Dentistry",
         "description": "Dental care for children",
-        "services": ["Pediatric consultation", "Sealants", "Oral hygiene education"]
+        "services": [
+          "Pediatric consultation",
+          "Sealants",
+          "Oral hygiene education"
+        ]
       }
     },
     "tmj": {
@@ -315,7 +339,6 @@
       "category": "Oral Hygiene",
       "title": "How to maintain good daily oral hygiene",
       "description": "Discover best practices for proper brushing and keeping impeccable oral hygiene every day.",
-      "date": "Dec 20, 2024",
       "readTime": "5 min read",
       "imageAlt": "Oral hygiene",
       "intro": "Oral hygiene is essential to keep teeth and gums healthy throughout life.",
@@ -442,6 +465,282 @@
       "finalCta": {
         "title": "Want a personalized oral hygiene plan?",
         "text": "We can assess your gums, cavity risk, and recommend products and techniques tailored to your needs."
+      }
+    },
+    "estetica": {
+      "category": "Aesthetics",
+      "title": "All about teeth whitening",
+      "description": "Learn about the different types of teeth whitening and which one is best for you. Complete guide to dental aesthetics.",
+      "readTime": "7 min read",
+      "lead": "Teeth whitening is one of the most sought-after aesthetic procedures in dental clinics. A whiter smile can significantly boost self-confidence and improve your overall facial appearance.",
+      "ctaButton": "Book Appointment",
+      "toc": {
+        "title": "In this article",
+        "note": "Want a whiter smile? Schedule an evaluation to find out which type of whitening is best for you.",
+        "causes": "What causes darkening",
+        "types": "Types of whitening",
+        "safety": "Safety",
+        "aftercare": "Post-treatment care",
+        "duration": "Duration of results"
+      },
+      "takeaways": {
+        "title": "Key takeaways",
+        "one": "Professional whitening is safe and effective",
+        "two": "Results can last 1 to 3 years",
+        "three": "Always consult a qualified professional"
+      },
+      "causesTitle": "What causes tooth discoloration?",
+      "causesText": "Teeth can darken for various reasons over time. Understanding the causes helps prevent and choose the most appropriate treatment.",
+      "causes": {
+        "food": {
+          "title": "Food and drinks",
+          "text": "Coffee, tea, red wine, and drinks with colorings"
+        },
+        "tobacco": {
+          "title": "Tobacco",
+          "text": "Smoking is one of the main causes of tooth stains"
+        },
+        "age": {
+          "title": "Age",
+          "text": "Enamel naturally wears down, revealing the more yellowish dentin"
+        },
+        "medication": {
+          "title": "Medications",
+          "text": "Certain antibiotics and treatments can cause discoloration"
+        },
+        "hygiene": {
+          "title": "Poor hygiene",
+          "text": "Plaque and tartar buildup"
+        }
+      },
+      "typesTitle": "Types of teeth whitening",
+      "types": {
+        "office": {
+          "title": "1. In-office whitening",
+          "text": "Performed by the dentist, it uses products with a higher concentration of whitening agents, providing visible results in a single session. It's the fastest and most effective method.",
+          "duration": "Duration: 1 to 2 hours",
+          "results": "Results: Up to 8 shades lighter",
+          "safety": "Safety: Monitored by a professional"
+        },
+        "home": {
+          "title": "2. Supervised at-home whitening",
+          "text": "The dentist creates custom trays and provides the whitening gel for home use. It's a more economical and comfortable option, although results take longer to appear.",
+          "duration": "Duration: 2 to 4 weeks of treatment",
+          "application": "Application: A few hours a day or overnight",
+          "advantage": "Advantage: Touch-ups when needed"
+        },
+        "combined": {
+          "title": "3. Combined whitening",
+          "text": "Combines an in-office session with at-home maintenance treatment, offering the best of both methods: fast and long-lasting results."
+        }
+      },
+      "safetyTitle": "Is whitening safe?",
+      "safetyText": "Yes, when performed or supervised by a qualified dentist. Products used in clinics are safe and tested. There may be some temporary sensitivity, which disappears after treatment.",
+      "aftercareTitle": "Post-whitening care",
+      "aftercare": {
+        "1": "Avoid intensely colored foods and drinks in the first 48 hours",
+        "2": "Don't smoke during the treatment period",
+        "3": "Maintain good oral hygiene",
+        "4": "Schedule regular dentist visits for maintenance"
+      },
+      "durationTitle": "How long do results last?",
+      "durationText": "Results can last 1 to 3 years, depending on eating habits, oral hygiene, and lifestyle. Periodic maintenance treatments help prolong the effect.",
+      "finalCta": {
+        "title": "Want a whiter smile?",
+        "text": "Schedule an evaluation to find out which type of whitening is best for you."
+      }
+    },
+    "implantes": {
+      "category": "Implants",
+      "title": "Dental implants: complete guide",
+      "description": "Everything you need to know about dental implants, from the procedure to recovery. Complete guide to implantology.",
+      "readTime": "10 min read",
+      "lead": "Dental implants are the most modern and effective solution for replacing missing teeth. They work as artificial roots that support crowns, bridges, or prostheses, providing natural and long-lasting results.",
+      "ctaButton": "Book Appointment",
+      "toc": {
+        "title": "In this article",
+        "note": "Want to restore your smile? Schedule a free evaluation to find out if implants are right for you.",
+        "what": "What is an implant",
+        "advantages": "Advantages",
+        "eligibility": "Who can get them",
+        "procedure": "The procedure",
+        "recovery": "Recovery",
+        "success": "Success rate",
+        "cost": "Costs"
+      },
+      "takeaways": {
+        "title": "Key takeaways",
+        "one": "Success rate over 95%",
+        "two": "Can last a lifetime with proper care",
+        "three": "Preserve jawbone and adjacent teeth"
+      },
+      "whatTitle": "What is a dental implant?",
+      "whatText": "A dental implant is a small titanium screw that is surgically inserted into the jawbone. Titanium is a biocompatible material, meaning the body accepts it and bone grows around it, creating a solid foundation for the new tooth.",
+      "parts": {
+        "implant": {
+          "title": "Implant",
+          "text": "Titanium screw inserted into bone"
+        },
+        "abutment": {
+          "title": "Abutment",
+          "text": "Connection piece between implant and crown"
+        },
+        "crown": {
+          "title": "Crown",
+          "text": "Visible artificial tooth"
+        }
+      },
+      "advantagesTitle": "Advantages of dental implants",
+      "advantages": {
+        "1": "Natural look and feel",
+        "2": "Durability - can last a lifetime with proper care",
+        "3": "Preserve the jawbone",
+        "4": "Don't affect adjacent teeth",
+        "5": "Allow normal eating and speaking",
+        "6": "Don't require removal for cleaning",
+        "7": "Improve self-esteem and quality of life"
+      },
+      "eligibilityTitle": "Who can get implants?",
+      "eligibilityText1": "Most adults in good general health can receive dental implants. However, a careful evaluation is necessary to determine if you're a good candidate.",
+      "eligibilityText2": "Factors that may affect eligibility include:",
+      "eligibility": {
+        "1": "Quantity and quality of available bone",
+        "2": "General health and medical conditions (diabetes, osteoporosis)",
+        "3": "Habits like smoking",
+        "4": "Oral hygiene",
+        "5": "Medications in use"
+      },
+      "procedureTitle": "What is the procedure like?",
+      "procedure": {
+        "phase1": {
+          "title": "Phase 1: Evaluation and planning",
+          "text": "The dentist performs detailed clinical and radiographic exams, including 3D CT scan, to evaluate the bone and plan the ideal implant position."
+        },
+        "phase2": {
+          "title": "Phase 2: Implant placement",
+          "text": "Under local anesthesia, the implant is inserted into the bone. The procedure is usually painless. A temporary tooth may be placed the same day (immediate loading) in selected cases."
+        },
+        "phase3": {
+          "title": "Phase 3: Osseointegration",
+          "text": "During 3 to 6 months, the bone integrates with the implant. This period is crucial for long-term success."
+        },
+        "phase4": {
+          "title": "Phase 4: Final crown placement",
+          "text": "After healing, the abutment and final crown are placed, custom-made to perfectly match your natural teeth."
+        }
+      },
+      "recoveryTitle": "Recovery and care",
+      "recoveryText": "Initial recovery lasts a few days to a week. During this period:",
+      "recovery": {
+        "1": "There may be some swelling and mild discomfort",
+        "2": "Take prescribed medication as directed",
+        "3": "Avoid hard foods in the operated area",
+        "4": "Maintain good oral hygiene",
+        "5": "Avoid smoking and alcohol"
+      },
+      "successTitle": "Success rate",
+      "successText": "Dental implants have a success rate of over 95% when placed by experienced professionals with proper care. With regular maintenance, they can last a lifetime.",
+      "costTitle": "How much do implants cost?",
+      "costText": "The cost varies depending on the number of implants, type of crown, and additional procedures needed (such as bone graft). We offer financing options to make treatment accessible.",
+      "finalCta": {
+        "title": "Want to restore your smile?",
+        "text": "Schedule a free evaluation to find out if dental implants are the ideal solution for you."
+      }
+    },
+    "odontopediatria": {
+      "category": "Pediatric Dentistry",
+      "title": "When to take children to the dentist?",
+      "description": "Learn the ideal age for the first appointment and how to prepare little ones for a positive experience at the dentist.",
+      "readTime": "4 min read",
+      "lead": "Children's oral health is fundamental to their development. Many parents wonder when to take their children to the dentist for the first time and how to make the experience positive.",
+      "ctaButton": "Book Appointment",
+      "toc": {
+        "title": "In this article",
+        "note": "Our team is ready to welcome the little ones with all the care and attention.",
+        "idealAge": "Ideal age",
+        "preparation": "Preparing for the appointment",
+        "problems": "Common problems",
+        "hygiene": "Hygiene by age",
+        "frequency": "Appointment frequency"
+      },
+      "takeaways": {
+        "title": "Key takeaways",
+        "one": "First appointment by the 1st birthday",
+        "two": "Talk positively about the dentist",
+        "three": "Regular appointments every 6 months"
+      },
+      "idealAgeTitle": "What is the ideal age for the first appointment?",
+      "idealAgeText": "The first visit to the dentist should occur when the first tooth appears or, at the latest, by the child's first birthday. This initial appointment is essential for:",
+      "idealAge": {
+        "1": "Evaluating teeth and jaw development",
+        "2": "Identifying potential problems early",
+        "3": "Guiding parents on infant oral hygiene",
+        "4": "Creating a positive relationship between child and dentist"
+      },
+      "preparationTitle": "How to prepare your child for the appointment?",
+      "preparation": {
+        "beforeTitle": "Before the appointment",
+        "before": {
+          "1": {
+            "title": "Speak positively:",
+            "text": "Avoid using words like \"pain\", \"injection\", or \"pull out\""
+          },
+          "2": {
+            "title": "Read books:",
+            "text": "There are children's stories about dentist visits"
+          },
+          "3": {
+            "title": "Play dentist:",
+            "text": "Simulate an appointment at home with dolls"
+          },
+          "4": {
+            "title": "Choose the right time:",
+            "text": "Prefer times when the child is rested"
+          }
+        },
+        "duringTitle": "During the appointment",
+        "during": {
+          "1": "Stay calm and convey security",
+          "2": "Let the dentist communicate directly with the child",
+          "3": "Avoid making promises of excessive rewards",
+          "4": "Praise the child's behavior after the appointment"
+        }
+      },
+      "problemsTitle": "Common dental problems in children",
+      "problems": {
+        "bottle": {
+          "title": "Baby bottle tooth decay",
+          "text": "Occurs when the child falls asleep with a bottle of milk or juice in their mouth. To prevent, clean teeth after each feeding and avoid sugary drinks in the bottle."
+        },
+        "thumb": {
+          "title": "Thumb sucking",
+          "text": "It's natural in the early years but should be discouraged after age 4 to avoid changes in tooth positioning and dental arch development."
+        },
+        "trauma": {
+          "title": "Dental trauma",
+          "text": "Falls and accidents are common in childhood. In case of dental trauma, see a dentist immediately, even if there appears to be no visible damage."
+        }
+      },
+      "hygieneTitle": "Children's oral hygiene by age",
+      "hygiene": {
+        "0to2": {
+          "title": "0-2 years",
+          "text": "Clean gums with a damp gauze. When first teeth appear, use a baby toothbrush with water."
+        },
+        "2to6": {
+          "title": "2-6 years",
+          "text": "Use fluoride toothpaste (pea-sized amount). Parents should supervise and help with brushing."
+        },
+        "6plus": {
+          "title": "6+ years",
+          "text": "The child can brush alone, but parents should check. Introduce flossing when teeth start touching."
+        }
+      },
+      "frequencyTitle": "How often should you visit the dentist?",
+      "frequencyText": "After the first appointment, it's recommended to visit the dentist every 6 months for routine check-ups. This frequency allows detecting and treating problems early, when they're easier to resolve.",
+      "finalCta": {
+        "title": "Is it time for your child's first appointment?",
+        "text": "Our team is ready to welcome the little ones with all the care and attention."
       }
     }
   },

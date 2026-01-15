@@ -66,32 +66,56 @@
       "consultation": {
         "title": "Consulta e Diagnóstico",
         "description": "Avaliação completa da saúde oral",
-        "services": ["Consulta dentária", "Radiografias digitais", "Urgências dentárias"]
+        "services": [
+          "Consulta dentária",
+          "Radiografias digitais",
+          "Urgências dentárias"
+        ]
       },
       "prevention": {
         "title": "Prevenção & Higiene",
         "description": "Cuidados preventivos essenciais",
-        "services": ["Destartarização", "Polimento dentário", "Odontologia preventiva"]
+        "services": [
+          "Destartarização",
+          "Polimento dentário",
+          "Odontologia preventiva"
+        ]
       },
       "aesthetics": {
         "title": "Estética e Ortodontia",
         "description": "Sorriso perfeito e alinhado",
-        "services": ["Branqueamento dentário", "Aparelhos metálicos", "Ortodontia invisível"]
+        "services": [
+          "Branqueamento dentário",
+          "Aparelhos metálicos",
+          "Ortodontia invisível"
+        ]
       },
       "implants": {
         "title": "Implantes e Próteses",
         "description": "Soluções para dentes em falta",
-        "services": ["Implantes dentários", "Próteses fixas", "Próteses removíveis"]
+        "services": [
+          "Implantes dentários",
+          "Próteses fixas",
+          "Próteses removíveis"
+        ]
       },
       "specialized": {
         "title": "Tratamentos Especializados",
         "description": "Cuidados avançados e específicos",
-        "services": ["Endodontia", "Cirurgia oral", "Periodontologia"]
+        "services": [
+          "Endodontia",
+          "Cirurgia oral",
+          "Periodontologia"
+        ]
       },
       "pediatric": {
         "title": "Odontopediatria",
         "description": "Cuidados dentários para crianças",
-        "services": ["Consulta pediátrica", "Selantes", "Educação para higiene oral"]
+        "services": [
+          "Consulta pediátrica",
+          "Selantes",
+          "Educação para higiene oral"
+        ]
       }
     },
     "tmj": {
@@ -368,7 +392,6 @@
       "category": "Higiene Oral",
       "title": "Como manter uma boa higiene oral diária",
       "description": "Descubra as melhores práticas para escovar os dentes corretamente e manter uma higiene oral impecável todos os dias.",
-      "date": "20 Dez 2024",
       "readTime": "5 min leitura",
       "imageAlt": "Higiene oral",
       "intro": "A higiene oral é fundamental para manter dentes e gengivas saudáveis ao longo da vida.",
@@ -495,6 +518,282 @@
       "finalCta": {
         "title": "Quer um plano de higiene oral personalizado?",
         "text": "Podemos avaliar as gengivas, o risco de cárie e recomendar produtos e técnicas ajustados ao seu caso."
+      }
+    },
+    "estetica": {
+      "category": "Estética",
+      "title": "Tudo sobre branqueamento dentário",
+      "description": "Conheça os diferentes tipos de branqueamento dentário e qual é o mais indicado para si. Guia completo sobre estética dentária.",
+      "readTime": "7 min leitura",
+      "lead": "O branqueamento dentário é um dos procedimentos estéticos mais procurados nas clínicas dentárias. Um sorriso mais branco pode aumentar significativamente a autoconfiança e melhorar a aparência geral do rosto.",
+      "ctaButton": "Marcar Consulta",
+      "toc": {
+        "title": "Neste artigo",
+        "note": "Quer um sorriso mais branco? Agende uma avaliação para descobrir qual o melhor tipo de branqueamento para si.",
+        "causes": "O que causa o escurecimento",
+        "types": "Tipos de branqueamento",
+        "safety": "Segurança",
+        "aftercare": "Cuidados após o tratamento",
+        "duration": "Duração dos resultados"
+      },
+      "takeaways": {
+        "title": "Pontos-chave",
+        "one": "Branqueamento profissional é seguro e eficaz",
+        "two": "Resultados podem durar de 1 a 3 anos",
+        "three": "Consulte sempre um profissional qualificado"
+      },
+      "causesTitle": "O que causa o escurecimento dos dentes?",
+      "causesText": "Os dentes podem escurecer por diversas razões ao longo do tempo. Entender as causas ajuda a prevenir e a escolher o tratamento mais adequado.",
+      "causes": {
+        "food": {
+          "title": "Alimentos e bebidas",
+          "text": "Café, chá, vinho tinto e refrigerantes com corantes"
+        },
+        "tobacco": {
+          "title": "Tabaco",
+          "text": "O fumo é uma das principais causas de manchas nos dentes"
+        },
+        "age": {
+          "title": "Idade",
+          "text": "O esmalte desgasta-se naturalmente, revelando a dentina mais amarelada"
+        },
+        "medication": {
+          "title": "Medicamentos",
+          "text": "Certos antibióticos e tratamentos podem causar descoloração"
+        },
+        "hygiene": {
+          "title": "Higiene inadequada",
+          "text": "Acumulação de placa e tártaro"
+        }
+      },
+      "typesTitle": "Tipos de branqueamento dentário",
+      "types": {
+        "office": {
+          "title": "1. Branqueamento em consultório",
+          "text": "Realizado pelo dentista, utiliza produtos com concentração mais elevada de agentes branqueadores, proporcionando resultados visíveis numa única sessão. É o método mais rápido e eficaz.",
+          "duration": "Duração: 1 a 2 horas",
+          "results": "Resultados: Até 8 tons mais claro",
+          "safety": "Segurança: Monitorizado por profissional"
+        },
+        "home": {
+          "title": "2. Branqueamento caseiro supervisionado",
+          "text": "O dentista confeciona moldeiras personalizadas e fornece o gel branqueador para uso em casa. É uma opção mais económica e confortável, embora os resultados demorem mais tempo a aparecer.",
+          "duration": "Duração: 2 a 4 semanas de tratamento",
+          "application": "Aplicação: Algumas horas por dia ou durante a noite",
+          "advantage": "Vantagem: Pode retocar quando necessário"
+        },
+        "combined": {
+          "title": "3. Branqueamento combinado",
+          "text": "Combina uma sessão em consultório com tratamento caseiro de manutenção, oferecendo o melhor dos dois métodos: resultados rápidos e duradouros."
+        }
+      },
+      "safetyTitle": "O branqueamento é seguro?",
+      "safetyText": "Sim, quando realizado ou supervisionado por um dentista qualificado. Os produtos utilizados em clínicas são seguros e testados. Pode haver alguma sensibilidade temporária, que desaparece após o tratamento.",
+      "aftercareTitle": "Cuidados após o branqueamento",
+      "aftercare": {
+        "1": "Evite alimentos e bebidas com cor intensa nas primeiras 48 horas",
+        "2": "Não fume durante o período de tratamento",
+        "3": "Mantenha uma boa higiene oral",
+        "4": "Faça visitas regulares ao dentista para manutenção"
+      },
+      "durationTitle": "Quanto tempo duram os resultados?",
+      "durationText": "Os resultados podem durar de 1 a 3 anos, dependendo dos hábitos alimentares, higiene oral e estilo de vida. Tratamentos de manutenção periódicos ajudam a prolongar o efeito.",
+      "finalCta": {
+        "title": "Quer um sorriso mais branco?",
+        "text": "Agende uma avaliação para descobrir qual o melhor tipo de branqueamento para si."
+      }
+    },
+    "implantes": {
+      "category": "Implantes",
+      "title": "Implantes dentários: guia completo",
+      "description": "Tudo o que precisa saber sobre implantes dentários, desde o procedimento até à recuperação. Guia completo sobre implantologia.",
+      "readTime": "10 min leitura",
+      "lead": "Os implantes dentários são a solução mais moderna e eficaz para substituir dentes perdidos. Funcionam como raízes artificiais que suportam coroas, pontes ou próteses, proporcionando resultados naturais e duradouros.",
+      "ctaButton": "Marcar Consulta",
+      "toc": {
+        "title": "Neste artigo",
+        "note": "Quer recuperar o seu sorriso? Agende uma avaliação gratuita para saber se os implantes são indicados para si.",
+        "what": "O que é um implante",
+        "advantages": "Vantagens",
+        "eligibility": "Quem pode fazer",
+        "procedure": "O procedimento",
+        "recovery": "Recuperação",
+        "success": "Taxa de sucesso",
+        "cost": "Custos"
+      },
+      "takeaways": {
+        "title": "Pontos-chave",
+        "one": "Taxa de sucesso superior a 95%",
+        "two": "Podem durar toda a vida com cuidados adequados",
+        "three": "Preservam o osso maxilar e dentes adjacentes"
+      },
+      "whatTitle": "O que é um implante dentário?",
+      "whatText": "Um implante dentário é um pequeno parafuso de titânio que é inserido cirurgicamente no osso maxilar ou mandibular. O titânio é um material biocompatível, o que significa que o corpo o aceita e o osso cresce à sua volta, criando uma base sólida para o novo dente.",
+      "parts": {
+        "implant": {
+          "title": "Implante",
+          "text": "Parafuso de titânio inserido no osso"
+        },
+        "abutment": {
+          "title": "Pilar",
+          "text": "Peça de ligação entre implante e coroa"
+        },
+        "crown": {
+          "title": "Coroa",
+          "text": "Dente artificial visível"
+        }
+      },
+      "advantagesTitle": "Vantagens dos implantes dentários",
+      "advantages": {
+        "1": "Aspeto e sensação natural",
+        "2": "Durabilidade - podem durar toda a vida com cuidados adequados",
+        "3": "Preservam o osso maxilar",
+        "4": "Não afetam os dentes adjacentes",
+        "5": "Permitem comer e falar normalmente",
+        "6": "Não requerem remoção para limpeza",
+        "7": "Melhoram a autoestima e qualidade de vida"
+      },
+      "eligibilityTitle": "Quem pode fazer implantes?",
+      "eligibilityText1": "A maioria dos adultos com boa saúde geral pode receber implantes dentários. No entanto, é necessária uma avaliação cuidadosa para determinar se é um bom candidato.",
+      "eligibilityText2": "Fatores que podem afetar a elegibilidade incluem:",
+      "eligibility": {
+        "1": "Quantidade e qualidade do osso disponível",
+        "2": "Saúde geral e condições médicas (diabetes, osteoporose)",
+        "3": "Hábitos como fumar",
+        "4": "Higiene oral",
+        "5": "Medicamentos em uso"
+      },
+      "procedureTitle": "Como é o procedimento?",
+      "procedure": {
+        "phase1": {
+          "title": "Fase 1: Avaliação e planeamento",
+          "text": "O dentista realiza exames clínicos e radiográficos detalhados, incluindo TAC 3D, para avaliar o osso e planear a posição ideal do implante."
+        },
+        "phase2": {
+          "title": "Fase 2: Colocação do implante",
+          "text": "Sob anestesia local, o implante é inserido no osso. O procedimento é geralmente indolor. Pode ser colocado um dente provisório no mesmo dia (carga imediata) em casos selecionados."
+        },
+        "phase3": {
+          "title": "Fase 3: Osteointegração",
+          "text": "Durante 3 a 6 meses, o osso integra-se com o implante. Este período é crucial para o sucesso a longo prazo."
+        },
+        "phase4": {
+          "title": "Fase 4: Colocação da coroa definitiva",
+          "text": "Após a cicatrização, é colocado o pilar e a coroa definitiva, feita à medida para combinar perfeitamente com os seus dentes naturais."
+        }
+      },
+      "recoveryTitle": "Recuperação e cuidados",
+      "recoveryText": "A recuperação inicial dura alguns dias a uma semana. Durante este período:",
+      "recovery": {
+        "1": "Pode haver algum inchaço e desconforto leve",
+        "2": "Tome a medicação prescrita conforme indicado",
+        "3": "Evite alimentos duros na zona operada",
+        "4": "Mantenha uma boa higiene oral",
+        "5": "Evite fumar e álcool"
+      },
+      "successTitle": "Taxa de sucesso",
+      "successText": "Os implantes dentários têm uma taxa de sucesso superior a 95% quando colocados por profissionais experientes e com cuidados adequados. Com manutenção regular, podem durar toda a vida.",
+      "costTitle": "Quanto custam os implantes?",
+      "costText": "O custo varia dependendo do número de implantes, tipo de coroa e procedimentos adicionais necessários (como enxerto ósseo). Oferecemos opções de financiamento para tornar o tratamento acessível.",
+      "finalCta": {
+        "title": "Quer recuperar o seu sorriso?",
+        "text": "Agende uma avaliação gratuita para saber se os implantes dentários são a solução ideal para si."
+      }
+    },
+    "odontopediatria": {
+      "category": "Odontopediatria",
+      "title": "Quando levar as crianças ao dentista?",
+      "description": "Saiba qual a idade ideal para a primeira consulta e como preparar os mais pequenos para uma experiência positiva no dentista.",
+      "readTime": "4 min leitura",
+      "lead": "A saúde oral das crianças é fundamental para o seu desenvolvimento. Muitos pais perguntam-se quando devem levar os filhos ao dentista pela primeira vez e como tornar essa experiência positiva.",
+      "ctaButton": "Marcar Consulta",
+      "toc": {
+        "title": "Neste artigo",
+        "note": "A nossa equipa está preparada para receber os mais pequenos com todo o carinho e atenção.",
+        "idealAge": "Idade ideal",
+        "preparation": "Preparar a consulta",
+        "problems": "Problemas comuns",
+        "hygiene": "Higiene por idade",
+        "frequency": "Frequência das consultas"
+      },
+      "takeaways": {
+        "title": "Pontos-chave",
+        "one": "Primeira consulta até ao 1º aniversário",
+        "two": "Fale positivamente sobre o dentista",
+        "three": "Consultas regulares a cada 6 meses"
+      },
+      "idealAgeTitle": "Qual a idade ideal para a primeira consulta?",
+      "idealAgeText": "A primeira visita ao dentista deve ocorrer quando nasce o primeiro dente ou, no máximo, até ao primeiro aniversário da criança. Esta consulta inicial é essencial para:",
+      "idealAge": {
+        "1": "Avaliar o desenvolvimento dos dentes e maxilares",
+        "2": "Identificar precocemente possíveis problemas",
+        "3": "Orientar os pais sobre higiene oral infantil",
+        "4": "Criar uma relação positiva entre a criança e o dentista"
+      },
+      "preparationTitle": "Como preparar a criança para a consulta?",
+      "preparation": {
+        "beforeTitle": "Antes da consulta",
+        "before": {
+          "1": {
+            "title": "Fale positivamente:",
+            "text": "Evite usar palavras como \"dor\", \"injeção\" ou \"arrancar\""
+          },
+          "2": {
+            "title": "Leia livros:",
+            "text": "Existem histórias infantis sobre visitas ao dentista"
+          },
+          "3": {
+            "title": "Brinque de dentista:",
+            "text": "Simule uma consulta em casa com bonecos"
+          },
+          "4": {
+            "title": "Escolha o horário certo:",
+            "text": "Prefira horários em que a criança está descansada"
+          }
+        },
+        "duringTitle": "Durante a consulta",
+        "during": {
+          "1": "Mantenha a calma e transmita segurança",
+          "2": "Deixe o dentista comunicar diretamente com a criança",
+          "3": "Evite fazer promessas de recompensas exageradas",
+          "4": "Elogie o comportamento da criança após a consulta"
+        }
+      },
+      "problemsTitle": "Problemas dentários comuns em crianças",
+      "problems": {
+        "bottle": {
+          "title": "Cáries de biberão",
+          "text": "Ocorrem quando a criança adormece com o biberão de leite ou sumo na boca. Para prevenir, limpe os dentes após cada mamada e evite bebidas açucaradas no biberão."
+        },
+        "thumb": {
+          "title": "Chuchar no dedo",
+          "text": "É natural nos primeiros anos, mas deve ser desencorajado após os 4 anos para evitar alterações no posicionamento dos dentes e no desenvolvimento da arcada dentária."
+        },
+        "trauma": {
+          "title": "Traumatismos dentários",
+          "text": "Quedas e acidentes são comuns na infância. Em caso de trauma dentário, procure imediatamente um dentista, mesmo que pareça não haver danos visíveis."
+        }
+      },
+      "hygieneTitle": "Higiene oral infantil por idade",
+      "hygiene": {
+        "0to2": {
+          "title": "0-2 anos",
+          "text": "Limpe as gengivas com uma gaze húmida. Quando surgirem os primeiros dentes, use uma escova de bebé com água."
+        },
+        "2to6": {
+          "title": "2-6 anos",
+          "text": "Use pasta de dentes com flúor (quantidade do tamanho de uma ervilha). Os pais devem supervisionar e ajudar na escovagem."
+        },
+        "6plus": {
+          "title": "6+ anos",
+          "text": "A criança pode escovar sozinha, mas os pais devem verificar. Introduza o uso de fio dental quando os dentes começarem a tocar-se."
+        }
+      },
+      "frequencyTitle": "Com que frequência ir ao dentista?",
+      "frequencyText": "Após a primeira consulta, recomenda-se visitar o dentista a cada 6 meses para check-ups de rotina. Esta frequência permite detetar e tratar problemas precocemente, quando são mais fáceis de resolver.",
+      "finalCta": {
+        "title": "Está na hora da primeira consulta do seu filho?",
+        "text": "A nossa equipa está preparada para receber os mais pequenos com todo o carinho e atenção."
       }
     }
   },
