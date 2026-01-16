@@ -125,9 +125,89 @@
       "learnMore": "Saber Mais",
       "quickConsultations": "Consultas Rápidas",
       "guaranteedResults": "Resultados Garantidos"
+    },
+    "prevencao": {
+      "meta": {
+        "title": "Prevenção e Higiene Oral | Dr. Sílvio Araújo - Clínica Dentária",
+        "description": "Serviços de prevenção e higiene oral incluindo destartarização, polimento dentário e odontologia preventiva."
+      },
+      "hero": {
+        "backLink": "Voltar à página de Serviços",
+        "badge": "Cuidados Preventivos",
+        "badge2": "100% Indolor",
+        "title": {
+          "part1": "Prevenção",
+          "part2": "Higiene"
+        },
+        "subtitle": "A melhor forma de tratamento é a prevenção. Mantenha a sua saúde oral em dia com cuidados especializados.",
+        "ctaButton": "Agendar Limpeza",
+        "callButton": "Ligar Agora",
+        "imageAlt": "Higienista dental realizando limpeza profissional em paciente na Clínica Dentária Dr. Sílvio Araújo",
+        "duration": "30–45 min",
+        "durationLabel": "Tempo médio"
+      },
+      "servicesSection": {
+        "title": "Serviços de Higiene Profissional",
+        "subtitle": "Tratamentos essenciais para manter a sua saúde oral."
+      },
+      "services": {
+        "destartarizacao": {
+          "title": "Destartarização",
+          "description": "Remoção profissional de tártaro e placa bacteriana acumulada, essencial para prevenir doenças gengivais.",
+          "benefits": {
+            "1": "Remove tártaro endurecido",
+            "2": "Previne gengivite",
+            "3": "Melhora o hálito",
+            "4": "Deixa os dentes mais brilhantes"
+          }
+        },
+        "polimento": {
+          "title": "Polimento Dentário",
+          "description": "Tratamento que deixa a superfície dos dentes lisa e brilhante, dificultando a aderência de placa bacteriana.",
+          "benefits": {
+            "1": "Superfície mais lisa",
+            "2": "Dentes mais brilhantes",
+            "3": "Reduz manchas",
+            "4": "Sensação de limpeza profunda"
+          }
+        },
+        "preventiva": {
+          "title": "Odontologia Preventiva",
+          "description": "Conjunto de práticas e tratamentos focados em prevenir problemas dentários antes que ocorram.",
+          "benefits": {
+            "1": "Aplicação de flúor",
+            "2": "Selantes dentários",
+            "3": "Educação em higiene oral",
+            "4": "Check-ups regulares"
+          }
+        }
+      },
+      "tips": {
+        "escovagem": {
+          "title": "Escovagem Regular",
+          "description": "Escove os dentes pelo menos 2 vezes ao dia, durante 2 minutos"
+        },
+        "fio": {
+          "title": "Fio Dental Diário",
+          "description": "Use fio dental uma vez ao dia para limpar entre os dentes"
+        },
+        "elixir": {
+          "title": "Elixir Bucal",
+          "description": "Complete a higiene com um elixir antibacteriano"
+        },
+        "consultas": {
+          "title": "Consultas Regulares",
+          "description": "Visite o dentista a cada 6 meses para limpeza profissional"
+        }
+      },
+      "finalCta": {
+        "title": "Previna Problemas Futuros",
+        "subtitle": "A prevenção é o melhor investimento na sua saúde oral.",
+        "ctaButton": "Agendar Limpeza",
+        "callButton": "Ligar: +351 924 123 784"
+      }
     }
   },
-
   "consultadiagnostico": {
     "hero": {
       "title": "Consulta e Diagnóstico",
@@ -155,7 +235,6 @@
       "button": "Agendar Agora"
     }
   },
-
   "prices": {
     "tag": "Tabela de Preços",
     "title": "Tratamentos",
@@ -457,7 +536,7 @@
         "title": "Pontos-chave",
         "one": "Escove 2×/dia durante 2 minutos com técnica suave e pasta com flúor.",
         "two": "Limpe entre os dentes diariamente (fio ou escovilhões) — é aí que muitas cáries começam.",
-        "three": "Reduza açúcar entre refeições e evite “picar” constantemente; água é a sua melhor aliada."
+        "three": "Reduza açúcar entre refeições e evite 'picar' constantemente; água é a sua melhor aliada."
       },
       "whyCards": {
         "cavities": {
@@ -513,7 +592,7 @@
       "flossSectionTitle": "Fio dentário e limpeza interdentária",
       "flossSectionText": "Muitas cáries e problemas gengivais começam entre os dentes. Se o fio for difícil, os escovilhões interdentários podem ser uma ótima alternativa — pergunte qual o tamanho ideal para si.",
       "flossHowTitle": "Como usar fio dentário (em 3 passos)",
-      "flossHow1": "Passe suavemente entre os dentes e faça um “C” em volta do dente.",
+      "flossHow1": "Passe suavemente entre os dentes e faça um 'C' em volta do dente.",
       "flossHow2": "Movimente para cima e para baixo em ambos os lados do dente.",
       "flossHow3": "Use uma parte limpa do fio para cada espaço.",
       "dietTitle": "Alimentação e hábitos",
@@ -632,6 +711,9 @@
         "title": "Quer um sorriso mais branco?",
         "text": "Agende uma avaliação para descobrir qual o melhor tipo de branqueamento para si."
       }
+    },
+    "branqueamento": {
+      "imageAlt": "Branqueamento dentário"
     },
     "implantes": {
       "category": "Implantes",

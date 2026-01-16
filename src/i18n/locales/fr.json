@@ -11,15 +11,15 @@
     "bookAppointment": "Prendre Rendez-vous",
     "location": "Rua D Sebastião 2050, Quinta do Conde, Portugal",
     "phone": "924 123 784",
-    "schedule": "Lun - Ven : 9h - 19h | Sam : 9h - 13h"
+    "schedule": "Lun - Ven: 9h - 19h | Sam: 9h - 13h"
   },
   "hero": {
-    "welcome": "Bienvenue sur notre site !",
+    "welcome": "Bienvenue sur notre site web!",
     "title": "Clinique Dentaire",
     "titleHighlight": "Dr. Sílvio Araújo",
-    "subtitle": "Un sourire sain commence par des soins spécialisés !",
+    "subtitle": "Un sourire sain commence par des soins spécialisés!",
     "description": "Nous combinons expérience, technologie moderne et attention personnalisée pour offrir les meilleurs soins dentaires à toute la famille.",
-    "bookNow": "Prendre Rendez-vous",
+    "bookNow": "Prendre Rendez-vous Maintenant",
     "viewServices": "Voir les Services",
     "happyPatients": "Patients Satisfaits",
     "averageRating": "Note Moyenne",
@@ -55,7 +55,7 @@
     },
     "stats": {
       "patients": "Patients",
-      "years": "Ans"
+      "years": "Années"
     }
   },
   "services": {
@@ -74,7 +74,7 @@
         ]
       },
       "prevention": {
-        "title": "Prévention & Hygiène",
+        "title": "Prévention et Hygiène",
         "description": "Soins préventifs essentiels",
         "services": [
           "Détartrage",
@@ -93,7 +93,7 @@
       },
       "implants": {
         "title": "Implants et Prothèses",
-        "description": "Solutions pour les dents manquantes",
+        "description": "Solutions pour dents manquantes",
         "services": [
           "Implants dentaires",
           "Prothèses fixes",
@@ -105,7 +105,7 @@
         "description": "Soins avancés et spécifiques",
         "services": [
           "Endodontie",
-          "Chirurgie orale",
+          "Chirurgie buccale",
           "Parodontologie"
         ]
       },
@@ -120,11 +120,92 @@
       }
     },
     "tmj": {
-      "title": "Traitement des Troubles Temporo-Mandibulaires",
-      "description": "Traitement spécialisé pour les douleurs de l'articulation de la mâchoire, les maux de tête et les tensions musculaires liées aux problèmes dentaires.",
+      "title": "Traitement des Dysfonctions Temporo-Mandibulaires",
+      "description": "Traitement spécialisé pour les douleurs articulaires de la mâchoire, les maux de tête et la tension musculaire liés aux problèmes dentaires.",
       "learnMore": "En Savoir Plus",
       "quickConsultations": "Consultations Rapides",
       "guaranteedResults": "Résultats Garantis"
+    },
+    "prevencao": {
+      "meta": {
+        "title": "Prévention et Hygiène Bucco-dentaire | Dr. Sílvio Araújo - Clinique Dentaire",
+        "description": "Services de prévention et d'hygiène bucco-dentaire incluant le détartrage, le polissage dentaire et la dentisterie préventive."
+      },
+      "hero": {
+        "backLink": "Retour à la page Services",
+        "badge": "Soins Préventifs",
+        "badge2": "100% Indolore",
+        "title": {
+          "part1": "Prévention",
+          "part2": "Hygiène"
+        },
+        "subtitle": "La meilleure forme de traitement est la prévention. Maintenez votre santé bucco-dentaire à jour avec des soins spécialisés.",
+        "ctaButton": "Réserver Nettoyage",
+        "callButton": "Appeler Maintenant",
+        "imageAlt": "Hygiéniste dentaire effectuant un nettoyage professionnel sur un patient à la Clinique Dentaire Dr. Sílvio Araújo",
+        "duration": "30–45 min",
+        "durationLabel": "Temps moyen"
+      },
+      "servicesSection": {
+        "title": "Services d'Hygiène Professionnelle",
+        "subtitle": "Traitements essentiels pour maintenir votre santé bucco-dentaire."
+      },
+      "services": {
+        "destartarizacao": {
+          "title": "Détartrage",
+          "description": "Élimination professionnelle du tartre et de la plaque bactérienne accumulée, essentielle pour prévenir les maladies des gencives.",
+          "benefits": {
+            "1": "Élimine le tartre durci",
+            "2": "Prévient la gingivite",
+            "3": "Améliore l'haleine",
+            "4": "Rend les dents plus brillantes"
+          }
+        },
+        "polimento": {
+          "title": "Polissage Dentaire",
+          "description": "Traitement qui laisse la surface des dents lisse et brillante, rendant difficile l'adhésion de la plaque bactérienne.",
+          "benefits": {
+            "1": "Surface plus lisse",
+            "2": "Dents plus brillantes",
+            "3": "Réduit les taches",
+            "4": "Sensation de propreté profonde"
+          }
+        },
+        "preventiva": {
+          "title": "Dentisterie Préventive",
+          "description": "Ensemble de pratiques et de traitements axés sur la prévention des problèmes dentaires avant qu'ils ne surviennent.",
+          "benefits": {
+            "1": "Application de fluor",
+            "2": "Scellants dentaires",
+            "3": "Éducation à l'hygiène bucco-dentaire",
+            "4": "Bilans réguliers"
+          }
+        }
+      },
+      "tips": {
+        "escovagem": {
+          "title": "Brossage Régulier",
+          "description": "Brossez-vous les dents au moins 2 fois par jour pendant 2 minutes"
+        },
+        "fio": {
+          "title": "Fil Dentaire Quotidien",
+          "description": "Utilisez du fil dentaire une fois par jour pour nettoyer entre les dents"
+        },
+        "elixir": {
+          "title": "Bain de Bouche",
+          "description": "Complétez l'hygiène avec un bain de bouche antibactérien"
+        },
+        "consultas": {
+          "title": "Visites Régulières",
+          "description": "Visitez le dentiste tous les 6 mois pour un nettoyage professionnel"
+        }
+      },
+      "finalCta": {
+        "title": "Prévenez les Problèmes Futurs",
+        "subtitle": "La prévention est le meilleur investissement dans votre santé bucco-dentaire.",
+        "ctaButton": "Réserver Nettoyage",
+        "callButton": "Appeler: +351 924 123 784"
+      }
     }
   },
   "consultadiagnostico": {
@@ -136,7 +217,7 @@
     "consultation": {
       "title": "Consultation Dentaire",
       "description": "La consultation dentaire est la première étape pour garantir une bouche saine.",
-      "content": "Lors de la consultation, le dentiste effectue une évaluation détaillée de votre santé bucco-dentaire, analysant les dents, les gencives, l'occlusion et les tissus buccaux. L'objectif est d'identifier les problèmes existants ou de prévenir les complications futures, en créant un plan de traitement personnalisé."
+      "content": "Lors de la consultation, le dentiste effectue une évaluation détaillée de votre santé bucco-dentaire, en analysant les dents, les gencives, l'occlusion et les tissus buccaux. L'objectif est d'identifier les problèmes existants ou de prévenir les complications futures, en créant un plan de traitement personnalisé."
     },
     "radiology": {
       "title": "Radiographies Numériques",
@@ -146,23 +227,23 @@
     "emergency": {
       "title": "Urgences Dentaires",
       "description": "Soins rapides quand vous en avez le plus besoin",
-      "content": "Les urgences dentaires comprennent des situations telles que douleur intense, infections, traumatismes, fractures dentaires, saignements persistants ou gonflements. Dans ces cas, vous devez contacter la clinique dès que possible. En attendant d'être évalué, évitez l'automédication excessive et, en cas de saignement, appliquez une pression douce avec une compresse propre."
+      "content": "Sont considérées comme urgences dentaires des situations telles que douleur intense, infections, traumatismes, fractures dentaires, saignement persistant ou gonflement. Dans ces cas, vous devez contacter la clinique dès que possible. En attendant d'être évalué, évitez l'automédication excessive et, en cas de saignement, appliquez une compression douce avec une gaze propre."
     },
     "cta": {
       "title": "Prenez soin de votre santé bucco-dentaire",
-      "subtitle": "N'attendez pas la douleur. Prenez rendez-vous dès aujourd'hui.",
-      "button": "Prendre Rendez-vous"
+      "subtitle": "N'attendez pas la douleur. Prenez rendez-vous aujourd'hui.",
+      "button": "Réserver Maintenant"
     }
   },
   "prices": {
-    "tag": "Grille Tarifaire",
+    "tag": "Liste de Prix",
     "title": "Traitements",
     "titleHighlight": "accessibles",
     "titleEnd": "pour tous",
     "description": "Nous offrons des prix compétitifs et des réductions spéciales pour les membres. Prendre soin de votre sourire n'a jamais été aussi accessible.",
     "table": {
       "treatment": "Traitement",
-      "regularPrice": "Prix Normal",
+      "regularPrice": "Prix Régulier",
       "memberPrice": "Prix Membre"
     },
     "treatments": {
@@ -171,36 +252,36 @@
       "whitening": "Blanchiment dentaire",
       "braces": "Appareil métallique (par arcade)",
       "implant": "Implant dentaire",
-      "prosthesis": "Prothèse en résine acrylique (3 dents)"
+      "prosthesis": "Prothèse résine acrylique (3 dents)"
     },
     "membership": {
       "title": "Devenez Membre et Économisez",
-      "description": "Avec notre plan d'adhésion, vous bénéficiez de réductions exclusives sur tous les traitements, de consultations gratuites et d'une priorité de rendez-vous.",
+      "description": "Avec notre plan membre, vous avez accès à des réductions exclusives sur tous les traitements, des consultations gratuites et une priorité de rendez-vous.",
       "benefits": {
         "freeConsultations": "Consultations de routine gratuites",
-        "discounts": "Jusqu'à 60% de réduction sur les traitements",
-        "priority": "Rendez-vous prioritaire",
+        "discounts": "Réductions jusqu'à 60% sur les traitements",
+        "priority": "Rendez-vous prioritaires",
         "flexiblePayment": "Paiement flexible"
       },
       "startingFrom": "À partir de",
       "perMonth": "par mois",
       "learnMore": "En Savoir Plus"
     },
-    "note": "* Les prix indiqués sont indicatifs et peuvent varier selon la complexité du traitement. Contactez-nous pour un devis personnalisé."
+    "note": "* Les prix présentés sont indicatifs et peuvent varier selon la complexité du traitement. Consultez-nous pour un devis personnalisé."
   },
   "team": {
     "tag": "Notre Équipe",
     "title": "Professionnels",
     "titleHighlight": "dévoués",
     "titleEnd": "à votre sourire",
-    "description": "Découvrez l'équipe qui prend soin de vous et de votre famille avec professionnalisme, expérience et une touche d'attention.",
+    "description": "Rencontrez l'équipe qui prend soin de vous et de votre famille avec professionnalisme, expérience et une touche d'affection.",
     "member": {
       "name": "Dr. Sílvio Araújo",
       "role": "Directeur Clinique",
       "specialty": "Dentisterie Générale et Orthodontie",
       "description": "Spécialiste en dentisterie générale et orthodontie, avec une vaste expérience et un dévouement aux soins de chaque patient. Diplômé de la Faculté de Médecine Dentaire, il dirige l'équipe avec professionnalisme et empathie.",
       "achievements": [
-        "Membre de l'Ordre des Dentistes Portugais",
+        "Membre de l'Ordre des Dentistes",
         "Spécialisation en Orthodontie",
         "Formation continue en implantologie"
       ],
@@ -219,7 +300,7 @@
       },
       "parking": {
         "title": "Parking à Proximité",
-        "description": "Places de stationnement à quelques mètres"
+        "description": "Places de parking à quelques mètres"
       },
       "climate": {
         "title": "Climatisation",
@@ -238,12 +319,12 @@
         "description": "Paiement par carte disponible"
       },
       "transport": {
-        "title": "Transports en Commun",
+        "title": "Transports Publics",
         "description": "Arrêts de bus à proximité"
       },
       "accessibility": {
         "title": "Accessibilité",
-        "description": "Installations adaptées aux personnes à mobilité réduite"
+        "description": "Installations adaptées à la mobilité réduite"
       }
     }
   },
@@ -255,63 +336,63 @@
     },
     "subtitle": "Nous avons rassemblé les questions les plus courantes de nos patients. Si vous ne trouvez pas la réponse que vous cherchez, n'hésitez pas à nous contacter.",
     "cta": {
-      "text": "Vous avez encore des questions ? Nous sommes là pour vous aider !"
+      "text": "Vous avez encore des questions? Nous sommes là pour vous aider!"
     },
     "items": {
       "hours": {
-        "q": "Quels sont les horaires d'ouverture de la clinique ?",
-        "a": "Notre clinique est ouverte du lundi au vendredi de 9h à 19h, et le samedi de 9h à 13h. Nous sommes fermés les dimanches et jours fériés."
+        "q": "Quelles sont les heures d'ouverture de la clinique?",
+        "a": "Notre clinique est ouverte du Lundi au Vendredi de 9h à 19h, et le Samedi de 9h à 13h. Nous sommes fermés les Dimanches et jours fériés."
       },
       "appointment": {
-        "q": "Faut-il prendre rendez-vous ?",
-        "a": "Oui, nous recommandons toujours de prendre rendez-vous à l'avance pour garantir le meilleur service. Cependant, en cas d'urgence, nous ferons notre possible pour vous recevoir le jour même."
+        "q": "Est-il nécessaire de prendre rendez-vous?",
+        "a": "Oui, nous recommandons toujours de prendre rendez-vous à l'avance pour garantir le meilleur service. Cependant, en cas d'urgence, nous ferons de notre mieux pour vous recevoir le jour même."
       },
       "payments": {
-        "q": "Quels modes de paiement acceptez-vous ?",
-        "a": "Nous acceptons les espèces, les cartes bancaires, les paiements mobiles et les virements bancaires. Nous proposons également des facilités de paiement et un financement pour les traitements plus importants."
+        "q": "Quels modes de paiement acceptez-vous?",
+        "a": "Nous acceptons le paiement en espèces, par carte, MBWay et virement bancaire. Nous offrons également des facilités de paiement et du financement pour les traitements plus étendus."
       },
       "insurance": {
-        "q": "La clinique travaille-t-elle avec les assurances santé ?",
-        "a": "Oui, nous travaillons avec la plupart des assurances santé et mutuelles. Contactez-nous pour vérifier si votre assurance figure dans notre liste de conventions."
+        "q": "La clinique travaille-t-elle avec des assurances santé?",
+        "a": "Oui, nous travaillons avec la plupart des assurances santé et mutuelles. Consultez-nous pour vérifier si votre assurance figure dans notre liste de conventions."
       },
       "routine_duration": {
-        "q": "Combien de temps dure une consultation de routine ?",
+        "q": "Combien de temps dure une consultation de routine?",
         "a": "Une consultation de routine, incluant bilan et détartrage, dure environ 45 minutes à 1 heure, selon les besoins de chaque patient."
       },
       "pain": {
-        "q": "Les traitements sont-ils douloureux ?",
-        "a": "Nous utilisons des techniques modernes et une anesthésie locale pour garantir un confort maximal pendant toutes les procédures. La plupart des patients ne ressentent aucune douleur pendant les traitements."
+        "q": "Les traitements sont-ils douloureux?",
+        "a": "Nous utilisons des techniques modernes et l'anesthésie locale pour garantir un confort maximal pendant tous les procédures. La plupart des patients ne ressentent pas de douleur pendant les traitements."
       },
       "kids_first_visit": {
-        "q": "À quel âge les enfants doivent-ils aller chez le dentiste ?",
-        "a": "Nous recommandons la première visite chez le dentiste vers l'âge d'un an ou dès l'apparition des premières dents. Des consultations régulières aident à prévenir les problèmes futurs."
+        "q": "À partir de quel âge les enfants doivent-ils aller chez le dentiste?",
+        "a": "Nous recommandons la première visite chez le dentiste vers le premier anniversaire de l'enfant ou quand les premières dents apparaissent. Les consultations régulières aident à prévenir les problèmes futurs."
       },
       "implant_duration": {
-        "q": "Combien de temps dure un implant dentaire ?",
-        "a": "Avec des soins appropriés, un implant dentaire peut durer toute la vie. Il est essentiel de maintenir une bonne hygiène bucco-dentaire et d'effectuer des contrôles réguliers."
+        "q": "Combien de temps dure un implant dentaire?",
+        "a": "Avec des soins appropriés, un implant dentaire peut durer toute la vie. Il est essentiel de maintenir une bonne hygiène bucco-dentaire et d'effectuer des consultations de contrôle régulières."
       },
       "whitening": {
-        "q": "Le blanchiment dentaire abîme-t-il les dents ?",
-        "a": "Non, lorsqu'il est réalisé par des professionnels qualifiés avec des produits appropriés, le blanchiment est sûr et n'endommage pas l'émail dentaire."
+        "q": "Le blanchiment dentaire endommage-t-il les dents?",
+        "a": "Non, lorsqu'il est effectué par des professionnels qualifiés avec des produits appropriés, le blanchiment est sûr et n'endommage pas l'émail dentaire."
       },
       "booking": {
-        "q": "Comment puis-je prendre rendez-vous ?",
-        "a": "Vous pouvez prendre rendez-vous par téléphone au 924 123 784, par email à geral@silvioaraujo.com, ou via le formulaire de réservation sur notre site."
+        "q": "Comment puis-je prendre rendez-vous?",
+        "a": "Vous pouvez prendre rendez-vous par téléphone au 924 123 784, par email à geral@silvioaraujo.com, ou via le formulaire de réservation sur notre site web."
       }
     }
   },
   "appointment": {
     "tag": "Prendre Rendez-vous",
-    "title": "Planifiez votre rendez-vous",
+    "title": "Prenez rendez-vous",
     "titleHighlight": "aujourd'hui",
     "description": "Remplissez le formulaire et notre équipe vous contactera pour confirmer votre rendez-vous.",
     "benefits": {
-      "response": "Réponse sous 24 heures",
+      "response": "Réponse en moins de 24 heures",
       "flexible": "Horaires flexibles",
       "personalized": "Service personnalisé"
     },
     "directContact": {
-      "title": "Préférez-vous nous contacter directement ?",
+      "title": "Vous préférez nous contacter directement?",
       "phone": "924 123 784",
       "email": "geral@silvioaraujo.com"
     },
@@ -324,11 +405,11 @@
       "phonePlaceholder": "+351 XXX XXX XXX",
       "consultationType": "Type de Consultation",
       "consultationTypePlaceholder": "Sélectionnez le type de consultation",
-      "preferredDate": "Date Souhaitée",
-      "preferredTime": "Heure Souhaitée",
+      "preferredDate": "Date Préférée",
+      "preferredTime": "Heure Préférée",
       "preferredTimePlaceholder": "Sélectionnez l'heure",
       "preferredDentist": "Dentiste Préféré (optionnel)",
-      "noPreference": "Pas de préférence",
+      "noPreference": "Sans préférence",
       "submit": "Prendre Rendez-vous",
       "privacyNote": "En soumettant, vous acceptez notre politique de confidentialité."
     },
@@ -342,15 +423,15 @@
       "other": "Autre"
     },
     "toast": {
-      "title": "Demande de Rendez-vous Envoyée !",
-      "description": "Nous vous contacterons prochainement pour confirmer votre rendez-vous."
+      "title": "Demande de Rendez-vous Envoyée!",
+      "description": "Nous vous contactons sous peu pour confirmer votre rendez-vous."
     }
   },
   "testimonials": {
     "tag": "Témoignages",
     "title": "Ce que disent nos",
     "titleHighlight": "patients",
-    "description": "La satisfaction de nos patients est notre plus grande récompense. Découvrez ce qu'ils disent de leur expérience dans notre clinique.",
+    "description": "La satisfaction de nos patients est notre plus grande récompense. Voyez ce qu'ils disent de leur expérience dans notre clinique.",
     "stats": {
       "averageRating": "Note Moyenne",
       "happyPatients": "Patients Satisfaits",
@@ -361,12 +442,12 @@
       "review1": {
         "name": "Maria Santos",
         "role": "Patiente depuis 5 ans",
-        "text": "Excellent service ! Le Dr. Sílvio est très professionnel et attentionné. Je me suis toujours sentie à l'aise pendant les traitements. Je recommande à tous !"
+        "text": "Excellent service! Le Dr. Sílvio est très professionnel et attentionné. Je me suis toujours sentie à l'aise pendant les traitements. Je recommande à tous!"
       },
       "review2": {
         "name": "João Ferreira",
         "role": "Patient depuis 3 ans",
-        "text": "J'ai fait mon traitement orthodontique ici et je suis très satisfait des résultats. Équipe très sympathique et compétente."
+        "text": "J'ai fait mon traitement d'orthodontie ici et je suis très satisfait des résultats. Équipe très sympathique et compétente."
       },
       "review3": {
         "name": "Ana Costa",
@@ -376,29 +457,29 @@
       "review4": {
         "name": "Pedro Oliveira",
         "role": "Patient depuis 4 ans",
-        "text": "J'avais très peur d'aller chez le dentiste, mais le Dr. Sílvio m'a mis complètement à l'aise. Maintenant je viens aux rendez-vous sans aucune crainte."
+        "text": "J'avais très peur d'aller chez le dentiste, mais le Dr. Sílvio m'a mis complètement à l'aise. Maintenant je viens aux consultations sans aucune crainte."
       },
       "review5": {
         "name": "Sofia Martins",
         "role": "Patiente depuis 1 an",
-        "text": "J'ai fait un implant dentaire et tout s'est parfaitement déroulé. Le processus a été bien expliqué et le suivi excellent. Très satisfaite !"
+        "text": "J'ai fait un implant dentaire et tout s'est parfaitement passé. Processus bien expliqué et excellent suivi. Très satisfaite!"
       }
     }
   },
   "blog": {
     "tag": "Blog",
     "title": "Conseils de",
-    "titleHighlight": "Santé Bucco-Dentaire",
+    "titleHighlight": "Santé Bucco-dentaire",
     "viewAll": "Voir Tous les Articles",
     "readMore": "Lire Plus",
-    "readTime": "de lecture",
+    "readTime": "lecture",
     "back": "Retour au Blog",
     "share": "Partager",
     "articles": {
       "article1": {
         "title": "Comment maintenir une bonne hygiène bucco-dentaire quotidienne",
-        "excerpt": "Découvrez les meilleures pratiques pour vous brosser les dents correctement et garder votre bouche saine tous les jours.",
-        "category": "Hygiène Bucco-Dentaire"
+        "excerpt": "Découvrez les meilleures pratiques pour se brosser les dents correctement et garder votre bouche saine tous les jours.",
+        "category": "Hygiène Bucco-dentaire"
       },
       "article2": {
         "title": "Tout sur le blanchiment dentaire",
@@ -406,43 +487,43 @@
         "category": "Esthétique"
       },
       "article3": {
-        "title": "Quand emmener les enfants chez le dentiste ?",
+        "title": "Quand emmener les enfants chez le dentiste?",
         "excerpt": "Découvrez l'âge idéal pour la première consultation et comment préparer les plus petits pour la visite.",
         "category": "Dentisterie Pédiatrique"
       },
       "article4": {
-        "title": "Implants dentaires : guide complet",
+        "title": "Implants dentaires: guide complet",
         "excerpt": "Tout ce que vous devez savoir sur les implants dentaires, de la procédure à la récupération.",
         "category": "Implants"
       }
     },
     "higiene": {
-      "category": "Hygiène Bucco-Dentaire",
+      "category": "Hygiène Bucco-dentaire",
       "title": "Comment maintenir une bonne hygiène bucco-dentaire quotidienne",
-      "description": "Découvrez les meilleures pratiques pour vous brosser les dents correctement et maintenir une hygiène bucco-dentaire impeccable tous les jours.",
-      "readTime": "5 min de lecture",
+      "description": "Découvrez les meilleures pratiques pour se brosser les dents correctement et maintenir une hygiène bucco-dentaire impeccable tous les jours.",
+      "readTime": "5 min lecture",
       "imageAlt": "Hygiène bucco-dentaire",
-      "intro": "L'hygiène bucco-dentaire est essentielle pour maintenir des dents et des gencives saines tout au long de la vie.",
-      "whyTitle": "Pourquoi l'hygiène bucco-dentaire est-elle si importante ?",
-      "whyText": "La bouche est la porte d'entrée de notre organisme. Lorsque nous négligeons l'hygiène bucco-dentaire, nous permettons aux bactéries nocives de s'accumuler.",
+      "intro": "L'hygiène bucco-dentaire est fondamentale pour maintenir des dents et des gencives saines tout au long de la vie.",
+      "whyTitle": "Pourquoi l'hygiène bucco-dentaire est-elle si importante?",
+      "whyText": "La bouche est la porte d'entrée de notre organisme. Quand nous négligeons l'hygiène bucco-dentaire, nous permettons aux bactéries nocives de s'accumuler.",
       "pillarsTitle": "Les piliers d'une bonne hygiène bucco-dentaire",
       "brushingTitle": "Brossage correct",
       "brushingText": "Brossez-vous les dents au moins deux fois par jour avec des mouvements doux.",
       "flossTitle": "Utilisation du fil dentaire",
-      "flossText": "Le fil dentaire élimine les débris alimentaires et la plaque entre les dents.",
+      "flossText": "Le fil dentaire élimine les débris alimentaires et la plaque bactérienne entre les dents.",
       "mouthwashTitle": "Bain de bouche",
       "mouthwashText": "Le bain de bouche aide à éliminer les bactéries et renforce l'émail dentaire.",
       "tipsTitle": "Conseils supplémentaires",
-      "tipsText": "Évitez le sucre, buvez de l'eau, ne fumez pas et consultez régulièrement le dentiste.",
+      "tipsText": "Évitez le sucre, buvez de l'eau, ne fumez pas et visitez régulièrement le dentiste.",
       "conclusionTitle": "Conclusion",
       "conclusionText": "Une bonne hygiène bucco-dentaire garantit un sourire sain pour la vie.",
-      "ctaTitle": "Besoin de conseils ?",
+      "ctaTitle": "Besoin de conseils?",
       "ctaText": "Prenez rendez-vous pour une évaluation complète.",
       "ctaButton": "Prendre Rendez-vous",
-      "lead": "Les petites habitudes quotidiennes font une grande différence. Voici un guide pratique pour garder dents et gencives en bonne santé — à la maison et entre les rendez-vous.",
+      "lead": "Les petites habitudes quotidiennes font une grande différence. Voici un guide pratique pour garder dents et gencives saines — à la maison et entre les rendez-vous.",
       "toc": {
         "title": "Dans cet article",
-        "note": "Besoin d'un plan personnalisé ? Nous pouvons évaluer votre routine et recommander les meilleurs produits et techniques.",
+        "note": "Besoin d'un plan personnalisé? Nous pouvons évaluer votre routine et recommander les meilleurs produits et techniques.",
         "why": "Pourquoi c'est important",
         "daily": "Routine quotidienne (étape par étape)",
         "technique": "Technique de brossage (guide rapide)",
@@ -453,14 +534,14 @@
       },
       "takeaways": {
         "title": "Points clés",
-        "one": "Brossez 2×/jour pendant 2 minutes avec une technique douce et un dentifrice fluoré.",
-        "two": "Nettoyez entre les dents quotidiennement (fil ou brossettes) — c'est là que beaucoup de caries commencent.",
-        "three": "Réduisez le sucre entre les repas et évitez le grignotage constant ; l'eau est votre meilleure alliée."
+        "one": "Brossez 2×/jour pendant 2 minutes avec une technique douce et un dentifrice au fluor.",
+        "two": "Nettoyez entre les dents quotidiennement (fil ou brossettes) — c'est là que de nombreuses caries commencent.",
+        "three": "Réduisez le sucre entre les repas et évitez de 'grignoter' constamment; l'eau est votre meilleure alliée."
       },
       "whyCards": {
         "cavities": {
           "title": "Moins de caries",
-          "text": "La plaque et le sucre nourrissent les bactéries qui affaiblissent l'émail."
+          "text": "La plaque et le sucre alimentent les bactéries qui affaiblissent l'émail."
         },
         "gums": {
           "title": "Gencives plus saines",
@@ -468,18 +549,18 @@
         },
         "breath": {
           "title": "Haleine plus fraîche",
-          "text": "Nettoyer la langue + les zones interdentaires réduit les odeurs."
+          "text": "Nettoyer la langue + zones interdentaires réduit l'odeur."
         }
       },
       "dailyTitle": "Routine quotidienne (étape par étape)",
       "daily": {
         "1": {
           "title": "Brosser (2 minutes)",
-          "text": "Utilisez une brosse souple et un dentifrice fluoré. Concentrez-vous sur la ligne des gencives et toutes les surfaces."
+          "text": "Utilisez une brosse douce et un dentifrice au fluor. Concentrez-vous sur la ligne gingivale et toutes les surfaces."
         },
         "2": {
           "title": "Nettoyer entre les dents",
-          "text": "Utilisez du fil dentaire ou des brossettes 1×/jour. Élimine la plaque là où la brosse ne peut pas atteindre."
+          "text": "Utilisez du fil dentaire ou des brossettes 1×/jour. Élimine la plaque là où la brosse n'atteint pas."
         },
         "3": {
           "title": "Nettoyage de la langue",
@@ -487,11 +568,11 @@
         },
         "4": {
           "title": "Bain de bouche (optionnel)",
-          "text": "Utilisez un bain de bouche sans alcool si recommandé. Évitez de rincer juste après le brossage pour garder le fluor plus longtemps."
+          "text": "Utilisez un bain de bouche sans alcool si recommandé. Évitez de rincer juste après le brossage pour conserver le fluor plus longtemps."
         }
       },
       "checklist": {
-        "title": "Liste de contrôle quotidienne rapide",
+        "title": "Checklist quotidienne rapide",
         "a": "Brosser 2×/jour",
         "b": "Nettoyage interdentaire 1×/jour",
         "c": "Boire de l'eau tout au long de la journée",
@@ -499,69 +580,69 @@
       },
       "techTitle": "Technique de brossage (guide rapide)",
       "tech": {
-        "doTitle": "À faire",
-        "do1": "Utilisez de petits mouvements circulaires avec une pression douce.",
-        "do2": "Inclinez la brosse à ~45° vers la ligne des gencives.",
-        "do3": "Remplacez la brosse/tête tous les ~3 mois (ou plus tôt si les poils s'écartent).",
-        "avoidTitle": "À éviter",
-        "avoid1": "Brosser trop fort (peut causer une récession gingivale et une sensibilité).",
-        "avoid2": "Ignorer la ligne des gencives — c'est là que la plaque s'accumule le plus.",
-        "avoid3": "Brosser immédiatement après des boissons acides ; attendez ~30 minutes."
+        "doTitle": "Faites",
+        "do1": "Utilisez des mouvements petits et circulaires avec une pression douce.",
+        "do2": "Inclinez la brosse ~45° vers la ligne gingivale.",
+        "do3": "Changez la brosse/tête tous les ~3 mois (ou avant si les poils s'ouvrent).",
+        "avoidTitle": "Évitez",
+        "avoid1": "Brosser avec trop de force (peut causer une récession gingivale et sensibilité).",
+        "avoid2": "Ignorer la ligne gingivale — c'est là que la plaque s'accumule le plus.",
+        "avoid3": "Brosser immédiatement après des boissons acides; attendez ~30 minutes."
       },
       "flossSectionTitle": "Fil dentaire et nettoyage interdentaire",
-      "flossSectionText": "Beaucoup de caries et de problèmes de gencives commencent entre les dents. Si le fil est difficile, les brossettes interdentaires peuvent être une excellente alternative — demandez quelle taille est idéale pour vous.",
+      "flossSectionText": "De nombreuses caries et problèmes gingivaux commencent entre les dents. Si le fil est difficile, les brossettes interdentaires peuvent être une excellente alternative — demandez quelle taille est idéale pour vous.",
       "flossHowTitle": "Comment utiliser le fil dentaire (en 3 étapes)",
-      "flossHow1": "Glissez doucement entre les dents et faites un 'C' autour de la dent.",
-      "flossHow2": "Montez et descendez des deux côtés de la dent.",
+      "flossHow1": "Passez doucement entre les dents et faites un 'C' autour de la dent.",
+      "flossHow2": "Déplacez de haut en bas des deux côtés de la dent.",
       "flossHow3": "Utilisez une partie propre du fil pour chaque espace.",
       "dietTitle": "Alimentation et habitudes",
       "diet": {
         "goodTitle": "Bonnes habitudes",
         "good1": "Boire de l'eau tout au long de la journée.",
-        "good2": "Préférer les en-cas moins sucrés (noix, fromage, yaourt).",
-        "good3": "Mâcher un chewing-gum sans sucre après les repas (si indiqué) pour stimuler la salive.",
-        "limitTitle": "À réduire",
-        "limit1": "En-cas et boissons sucrés fréquents.",
-        "limit2": "Siroter des sodas/jus lentement pendant longtemps (acide constant).",
-        "limit3": "Tabac (augmente le risque de maladie des gencives et de taches)."
+        "good2": "Préférer les collations avec moins de sucre (noix, fromage, yaourt).",
+        "good3": "Mâcher du chewing-gum sans sucre après les repas (si indiqué) pour stimuler la salive.",
+        "limitTitle": "Réduisez",
+        "limit1": "Collations et boissons sucrées fréquentes.",
+        "limit2": "Boire des sodas/jus lentement pendant longtemps (acide constant).",
+        "limit3": "Tabac (augmente le risque de maladie gingivale et taches)."
       },
       "warningTitle": "Signes d'alerte",
-      "warningSubtitle": "Si vous remarquez l'un de ces signes, envisagez de prendre rendez-vous pour une évaluation :",
+      "warningSubtitle": "Si vous remarquez l'un de ces signes, envisagez de prendre rendez-vous:",
       "warning": {
-        "1": "Gencives qui saignent au brossage ou à l'utilisation du fil",
+        "1": "Gencives saignant lors du brossage ou de l'utilisation du fil",
         "2": "Mauvaise haleine persistante",
         "3": "Sensibilité ou douleur dentaire",
         "4": "Gencives gonflées ou récession gingivale",
-        "5": "Douleur à la mastication ou inconfort de la mâchoire"
+        "5": "Douleur lors de la mastication ou inconfort de la mâchoire"
       },
       "faqTitle": "Mythes et questions",
       "faq": {
-        "q1": "Si mes gencives saignent, dois-je arrêter le fil dentaire ?",
-        "a1": "Généralement non. Le saignement est souvent un signe d'inflammation. Utilisez le fil doucement et régulièrement ; si cela persiste après 1-2 semaines, faites-vous évaluer.",
-        "q2": "Le bain de bouche est-il obligatoire ?",
-        "a2": "Pas toujours. Il peut aider dans des cas spécifiques (gingivite, risque élevé de carie). L'essentiel est le brossage + le nettoyage interdentaire.",
-        "q3": "Une brosse à dents électrique vaut-elle le coup ?",
-        "a3": "Pour beaucoup de gens, oui — elle améliore la régularité et l'élimination de la plaque. La technique reste importante."
+        "q1": "Si les gencives saignent, dois-je arrêter le fil dentaire?",
+        "a1": "Normalement non. Le saignement est généralement un signe d'inflammation. Utilisez le fil avec douceur et constance; si cela persiste après 1–2 semaines, consultez.",
+        "q2": "Le bain de bouche est-il obligatoire?",
+        "a2": "Pas toujours. Il peut aider dans des cas spécifiques (gingivite, risque élevé de caries). L'essentiel est brossage + nettoyage interdentaire.",
+        "q3": "La brosse électrique vaut-elle la peine?",
+        "a3": "Pour beaucoup de gens, oui — elle améliore la constance et l'élimination de la plaque. Cependant, la technique reste importante."
       },
       "finalCta": {
-        "title": "Vous voulez un plan d'hygiène bucco-dentaire personnalisé ?",
-        "text": "Nous pouvons évaluer vos gencives, votre risque de carie et recommander des produits et techniques adaptés à votre cas."
+        "title": "Vous voulez un plan d'hygiène bucco-dentaire personnalisé?",
+        "text": "Nous pouvons évaluer les gencives, le risque de caries et recommander des produits et techniques adaptés à votre cas."
       }
     },
     "estetica": {
       "category": "Esthétique",
       "title": "Tout sur le blanchiment dentaire",
-      "description": "Découvrez les différents types de blanchiment dentaire et lequel vous convient le mieux. Guide complet sur l'esthétique dentaire.",
-      "readTime": "7 min de lecture",
-      "lead": "Le blanchiment dentaire est l'une des procédures esthétiques les plus demandées dans les cabinets dentaires. Un sourire plus blanc peut augmenter considérablement la confiance en soi et améliorer l'apparence générale du visage.",
+      "description": "Découvrez les différents types de blanchiment dentaire et lequel est le plus adapté à vous. Guide complet sur l'esthétique dentaire.",
+      "readTime": "7 min lecture",
+      "lead": "Le blanchiment dentaire est l'une des procédures esthétiques les plus demandées dans les cliniques dentaires. Un sourire plus blanc peut augmenter considérablement la confiance en soi et améliorer l'apparence générale du visage.",
       "ctaButton": "Prendre Rendez-vous",
       "toc": {
         "title": "Dans cet article",
-        "note": "Vous voulez un sourire plus blanc ? Prenez rendez-vous pour découvrir quel type de blanchiment vous convient le mieux.",
-        "causes": "Causes de l'assombrissement",
+        "note": "Vous voulez un sourire plus blanc? Prenez rendez-vous pour découvrir quel type de blanchiment est le meilleur pour vous.",
+        "causes": "Ce qui cause l'assombrissement",
         "types": "Types de blanchiment",
         "safety": "Sécurité",
-        "aftercare": "Soins post-traitement",
+        "aftercare": "Soins après le traitement",
         "duration": "Durée des résultats"
       },
       "takeaways": {
@@ -570,16 +651,16 @@
         "two": "Les résultats peuvent durer de 1 à 3 ans",
         "three": "Consultez toujours un professionnel qualifié"
       },
-      "causesTitle": "Quelles sont les causes de l'assombrissement des dents ?",
+      "causesTitle": "Qu'est-ce qui cause l'assombrissement des dents?",
       "causesText": "Les dents peuvent s'assombrir pour diverses raisons au fil du temps. Comprendre les causes aide à prévenir et à choisir le traitement le plus approprié.",
       "causes": {
         "food": {
           "title": "Aliments et boissons",
-          "text": "Café, thé, vin rouge et boissons avec colorants"
+          "text": "Café, thé, vin rouge et sodas avec colorants"
         },
         "tobacco": {
           "title": "Tabac",
-          "text": "Fumer est l'une des principales causes de taches sur les dents"
+          "text": "Le tabagisme est l'une des principales causes de taches sur les dents"
         },
         "age": {
           "title": "Âge",
@@ -591,72 +672,75 @@
         },
         "hygiene": {
           "title": "Hygiène inadéquate",
-          "text": "Accumulation de plaque et de tartre"
+          "text": "Accumulation de plaque et tartre"
         }
       },
       "typesTitle": "Types de blanchiment dentaire",
       "types": {
         "office": {
-          "title": "1. Blanchiment au cabinet",
-          "text": "Réalisé par le dentiste, il utilise des produits avec une concentration plus élevée d'agents blanchissants, offrant des résultats visibles en une seule séance. C'est la méthode la plus rapide et efficace.",
-          "duration": "Durée : 1 à 2 heures",
-          "results": "Résultats : Jusqu'à 8 teintes plus clair",
-          "safety": "Sécurité : Supervisé par un professionnel"
+          "title": "1. Blanchiment en cabinet",
+          "text": "Réalisé par le dentiste, utilise des produits avec une concentration plus élevée d'agents blanchissants, fournissant des résultats visibles en une seule séance. C'est la méthode la plus rapide et efficace.",
+          "duration": "Durée: 1 à 2 heures",
+          "results": "Résultats: Jusqu'à 8 teintes plus claires",
+          "safety": "Sécurité: Surveillé par un professionnel"
         },
         "home": {
           "title": "2. Blanchiment à domicile supervisé",
-          "text": "Le dentiste confectionne des gouttières personnalisées et fournit le gel blanchissant pour utilisation à domicile. C'est une option plus économique et confortable, bien que les résultats prennent plus de temps à apparaître.",
-          "duration": "Durée : 2 à 4 semaines de traitement",
-          "application": "Application : Quelques heures par jour ou pendant la nuit",
-          "advantage": "Avantage : Retouches possibles si nécessaire"
+          "text": "Le dentiste confectionne des gouttières personnalisées et fournit le gel blanchissant pour une utilisation à domicile. C'est une option plus économique et confortable, bien que les résultats prennent plus de temps à apparaître.",
+          "duration": "Durée: 2 à 4 semaines de traitement",
+          "application": "Application: Quelques heures par jour ou pendant la nuit",
+          "advantage": "Avantage: Peut retoucher quand nécessaire"
         },
         "combined": {
           "title": "3. Blanchiment combiné",
-          "text": "Combine une séance au cabinet avec un traitement d'entretien à domicile, offrant le meilleur des deux méthodes : résultats rapides et durables."
+          "text": "Combine une séance en cabinet avec un traitement à domicile de maintenance, offrant le meilleur des deux méthodes: résultats rapides et durables."
         }
       },
-      "safetyTitle": "Le blanchiment est-il sûr ?",
-      "safetyText": "Oui, lorsqu'il est réalisé ou supervisé par un dentiste qualifié. Les produits utilisés en cabinet sont sûrs et testés. Il peut y avoir une sensibilité temporaire, qui disparaît après le traitement.",
+      "safetyTitle": "Le blanchiment est-il sûr?",
+      "safetyText": "Oui, lorsqu'il est effectué ou supervisé par un dentiste qualifié. Les produits utilisés en cliniques sont sûrs et testés. Il peut y avoir une certaine sensibilité temporaire, qui disparaît après le traitement.",
       "aftercareTitle": "Soins après le blanchiment",
       "aftercare": {
-        "1": "Évitez les aliments et boissons fortement colorés dans les premières 48 heures",
+        "1": "Évitez les aliments et boissons de couleur intense dans les premières 48 heures",
         "2": "Ne fumez pas pendant la période de traitement",
         "3": "Maintenez une bonne hygiène bucco-dentaire",
         "4": "Faites des visites régulières chez le dentiste pour l'entretien"
       },
-      "durationTitle": "Combien de temps durent les résultats ?",
-      "durationText": "Les résultats peuvent durer de 1 à 3 ans, selon les habitudes alimentaires, l'hygiène bucco-dentaire et le style de vie. Des traitements d'entretien périodiques aident à prolonger l'effet.",
+      "durationTitle": "Combien de temps durent les résultats?",
+      "durationText": "Les résultats peuvent durer de 1 à 3 ans, selon les habitudes alimentaires, l'hygiène bucco-dentaire et le mode de vie. Les traitements de maintenance périodiques aident à prolonger l'effet.",
       "finalCta": {
-        "title": "Vous voulez un sourire plus blanc ?",
-        "text": "Prenez rendez-vous pour découvrir quel type de blanchiment vous convient le mieux."
+        "title": "Vous voulez un sourire plus blanc?",
+        "text": "Prenez rendez-vous pour découvrir quel type de blanchiment est le meilleur pour vous."
       }
+    },
+    "branqueamento": {
+      "imageAlt": "Blanchiment dentaire"
     },
     "implantes": {
       "category": "Implants",
-      "title": "Implants dentaires : guide complet",
+      "title": "Implants dentaires: guide complet",
       "description": "Tout ce que vous devez savoir sur les implants dentaires, de la procédure à la récupération. Guide complet sur l'implantologie.",
-      "readTime": "10 min de lecture",
-      "lead": "Les implants dentaires sont la solution la plus moderne et efficace pour remplacer les dents manquantes. Ils fonctionnent comme des racines artificielles qui supportent des couronnes, des bridges ou des prothèses, offrant des résultats naturels et durables.",
+      "readTime": "10 min lecture",
+      "lead": "Les implants dentaires sont la solution la plus moderne et efficace pour remplacer les dents manquantes. Ils fonctionnent comme des racines artificielles qui supportent des couronnes, des ponts ou des prothèses, fournissant des résultats naturels et durables.",
       "ctaButton": "Prendre Rendez-vous",
       "toc": {
         "title": "Dans cet article",
-        "note": "Vous voulez retrouver votre sourire ? Prenez rendez-vous pour une évaluation gratuite afin de savoir si les implants vous conviennent.",
+        "note": "Vous voulez récupérer votre sourire? Prenez rendez-vous pour une évaluation gratuite pour savoir si les implants sont indiqués pour vous.",
         "what": "Qu'est-ce qu'un implant",
         "advantages": "Avantages",
-        "eligibility": "Qui peut en bénéficier",
+        "eligibility": "Qui peut le faire",
         "procedure": "La procédure",
         "recovery": "Récupération",
-        "success": "Taux de réussite",
+        "success": "Taux de succès",
         "cost": "Coûts"
       },
       "takeaways": {
         "title": "Points clés",
-        "one": "Taux de réussite supérieur à 95%",
+        "one": "Taux de succès supérieur à 95%",
         "two": "Peuvent durer toute la vie avec des soins appropriés",
         "three": "Préservent l'os maxillaire et les dents adjacentes"
       },
-      "whatTitle": "Qu'est-ce qu'un implant dentaire ?",
-      "whatText": "Un implant dentaire est une petite vis en titane qui est insérée chirurgicalement dans l'os de la mâchoire. Le titane est un matériau biocompatible, ce qui signifie que le corps l'accepte et que l'os se développe autour, créant une base solide pour la nouvelle dent.",
+      "whatTitle": "Qu'est-ce qu'un implant dentaire?",
+      "whatText": "Un implant dentaire est une petite vis en titane qui est insérée chirurgicalement dans l'os maxillaire ou mandibulaire. Le titane est un matériau biocompatible, ce qui signifie que le corps l'accepte et que l'os se développe autour de lui, créant une base solide pour la nouvelle dent.",
       "parts": {
         "implant": {
           "title": "Implant",
@@ -673,7 +757,7 @@
       },
       "advantagesTitle": "Avantages des implants dentaires",
       "advantages": {
-        "1": "Aspect et sensation naturels",
+        "1": "Apparence et sensation naturelles",
         "2": "Durabilité - peuvent durer toute la vie avec des soins appropriés",
         "3": "Préservent l'os maxillaire",
         "4": "N'affectent pas les dents adjacentes",
@@ -681,9 +765,9 @@
         "6": "Ne nécessitent pas de retrait pour le nettoyage",
         "7": "Améliorent l'estime de soi et la qualité de vie"
       },
-      "eligibilityTitle": "Qui peut avoir des implants ?",
+      "eligibilityTitle": "Qui peut se faire poser des implants?",
       "eligibilityText1": "La plupart des adultes en bonne santé générale peuvent recevoir des implants dentaires. Cependant, une évaluation minutieuse est nécessaire pour déterminer si vous êtes un bon candidat.",
-      "eligibilityText2": "Les facteurs pouvant affecter l'éligibilité incluent :",
+      "eligibilityText2": "Les facteurs qui peuvent affecter l'éligibilité incluent:",
       "eligibility": {
         "1": "Quantité et qualité de l'os disponible",
         "2": "Santé générale et conditions médicales (diabète, ostéoporose)",
@@ -691,54 +775,53 @@
         "4": "Hygiène bucco-dentaire",
         "5": "Médicaments en cours"
       },
-      "procedureTitle": "Comment se déroule la procédure ?",
+      "procedureTitle": "Comment se déroule la procédure?",
       "procedure": {
         "phase1": {
-          "title": "Phase 1 : Évaluation et planification",
-          "text": "Le dentiste réalise des examens cliniques et radiographiques détaillés, y compris un scanner 3D, pour évaluer l'os et planifier la position idéale de l'implant."
+          "title": "Phase 1: Évaluation et planification",
+          "text": "Le dentiste effectue des examens cliniques et radiographiques détaillés, y compris un scanner 3D, pour évaluer l'os et planifier la position idéale de l'implant."
         },
         "phase2": {
-          "title": "Phase 2 : Pose de l'implant",
-          "text": "Sous anesthésie locale, l'implant est inséré dans l'os. La procédure est généralement indolore. Une dent provisoire peut être posée le même jour (mise en charge immédiate) dans certains cas."
+          "title": "Phase 2: Pose de l'implant",
+          "text": "Sous anesthésie locale, l'implant est inséré dans l'os. La procédure est généralement indolore. Une dent provisoire peut être placée le jour même (charge immédiate) dans certains cas sélectionnés."
         },
         "phase3": {
-          "title": "Phase 3 : Ostéo-intégration",
-          "text": "Pendant 3 à 6 mois, l'os s'intègre à l'implant. Cette période est cruciale pour le succès à long terme."
+          "title": "Phase 3: Ostéointégration",
+          "text": "Pendant 3 à 6 mois, l'os s'intègre avec l'implant. Cette période est cruciale pour le succès à long terme."
         },
         "phase4": {
-          "title": "Phase 4 : Pose de la couronne définitive",
-          "text": "Après la cicatrisation, le pilier et la couronne définitive sont posés, fabriqués sur mesure pour correspondre parfaitement à vos dents naturelles."
+          "title": "Phase 4: Pose de la couronne définitive",
+          "text": "Après la guérison, le pilier et la couronne définitive sont posés, faits sur mesure pour s'harmoniser parfaitement avec vos dents naturelles."
         }
       },
       "recoveryTitle": "Récupération et soins",
-      "recoveryText": "La récupération initiale dure quelques jours à une semaine. Pendant cette période :",
+      "recoveryText": "La récupération initiale dure quelques jours à une semaine. Pendant cette période:",
       "recovery": {
-        "1": "Il peut y avoir un léger gonflement et inconfort",
+        "1": "Il peut y avoir un gonflement et un inconfort léger",
         "2": "Prenez les médicaments prescrits comme indiqué",
         "3": "Évitez les aliments durs dans la zone opérée",
         "4": "Maintenez une bonne hygiène bucco-dentaire",
-        "5": "Évitez le tabac et l'alcool"
+        "5": "Évitez de fumer et l'alcool"
       },
-      "successTitle": "Taux de réussite",
-      "successText": "Les implants dentaires ont un taux de réussite supérieur à 95% lorsqu'ils sont posés par des professionnels expérimentés avec des soins appropriés. Avec un entretien régulier, ils peuvent durer toute la vie.",
-      "costTitle": "Combien coûtent les implants ?",
-      "costText": "Le coût varie selon le nombre d'implants, le type de couronne et les procédures supplémentaires nécessaires (comme une greffe osseuse). Nous offrons des options de financement pour rendre le traitement accessible.",
+      "successTitle": "Taux de succès",
+      "successText": "Les implants dentaires ont un taux de succès supérieur à 95% lorsqu'ils sont posés par des professionnels expérimentés et avec des soins appropriés. Avec un entretien régulier, ils peuvent durer toute la vie.",
+      "costTitle": "Combien coûtent les implants?",
+      "costText": "Le coût varie selon le nombre d'implants, le type de couronne et les procédures supplémentaires nécessaires (comme la greffe osseuse). Nous offrons des options de financement pour rendre le traitement accessible.",
       "finalCta": {
-        "title": "Vous voulez retrouver votre sourire ?",
-        "text": "Prenez rendez-vous pour une évaluation gratuite afin de savoir si les implants dentaires sont la solution idéale pour vous."
+        "title": "Vous voulez récupérer votre sourire?",
+        "text": "Prenez rendez-vous pour une évaluation gratuite pour savoir si les implants dentaires sont la solution idéale pour vous."
       }
     },
     "odontopediatria": {
       "category": "Dentisterie Pédiatrique",
-      "title": "Quand emmener les enfants chez le dentiste ?",
-      "description": "Découvrez l'âge idéal pour la première consultation et comment préparer les plus petits à une expérience positive chez le dentiste.",
-      "readTime": "4 min de lecture",
-      "imageAlt": "Enfant chez le dentiste avec ses parents",
-      "lead": "La santé bucco-dentaire des enfants est fondamentale pour leur développement. De nombreux parents se demandent quand emmener leurs enfants chez le dentiste pour la première fois et comment rendre cette expérience positive.",
+      "title": "Quand emmener les enfants chez le dentiste?",
+      "description": "Découvrez l'âge idéal pour la première consultation et comment préparer les plus petits pour une expérience positive chez le dentiste.",
+      "readTime": "4 min lecture",
+      "lead": "La santé bucco-dentaire des enfants est fondamentale pour leur développement. Beaucoup de parents se demandent quand ils doivent emmener leurs enfants chez le dentiste pour la première fois et comment rendre cette expérience positive.",
       "ctaButton": "Prendre Rendez-vous",
       "toc": {
         "title": "Dans cet article",
-        "note": "Notre équipe est prête à accueillir les plus petits avec toute l'attention et le soin nécessaires.",
+        "note": "Notre équipe est prête à accueillir les plus petits avec tout le soin et l'attention.",
         "idealAge": "Âge idéal",
         "preparation": "Préparer la consultation",
         "problems": "Problèmes courants",
@@ -751,32 +834,32 @@
         "two": "Parlez positivement du dentiste",
         "three": "Consultations régulières tous les 6 mois"
       },
-      "idealAgeTitle": "Quel est l'âge idéal pour la première consultation ?",
-      "idealAgeText": "La première visite chez le dentiste devrait avoir lieu lorsque la première dent apparaît ou, au plus tard, avant le premier anniversaire de l'enfant. Cette consultation initiale est essentielle pour :",
+      "idealAgeTitle": "Quel est l'âge idéal pour la première consultation?",
+      "idealAgeText": "La première visite chez le dentiste doit avoir lieu lorsque la première dent apparaît ou, au plus tard, avant le premier anniversaire de l'enfant. Cette consultation initiale est essentielle pour:",
       "idealAge": {
         "1": "Évaluer le développement des dents et des mâchoires",
-        "2": "Identifier précocement d'éventuels problèmes",
-        "3": "Orienter les parents sur l'hygiène bucco-dentaire infantile",
+        "2": "Identifier précocement les problèmes possibles",
+        "3": "Guider les parents sur l'hygiène bucco-dentaire infantile",
         "4": "Créer une relation positive entre l'enfant et le dentiste"
       },
-      "preparationTitle": "Comment préparer l'enfant à la consultation ?",
+      "preparationTitle": "Comment préparer l'enfant pour la consultation?",
       "preparation": {
         "beforeTitle": "Avant la consultation",
         "before": {
           "1": {
-            "title": "Parlez positivement :",
+            "title": "Parlez positivement:",
             "text": "Évitez d'utiliser des mots comme \"douleur\", \"piqûre\" ou \"arracher\""
           },
           "2": {
-            "title": "Lisez des livres :",
+            "title": "Lisez des livres:",
             "text": "Il existe des histoires pour enfants sur les visites chez le dentiste"
           },
           "3": {
-            "title": "Jouez au dentiste :",
+            "title": "Jouez au dentiste:",
             "text": "Simulez une consultation à la maison avec des poupées"
           },
           "4": {
-            "title": "Choisissez le bon moment :",
+            "title": "Choisissez le bon moment:",
             "text": "Préférez les moments où l'enfant est reposé"
           }
         },
@@ -792,44 +875,44 @@
       "problems": {
         "bottle": {
           "title": "Caries du biberon",
-          "text": "Surviennent lorsque l'enfant s'endort avec un biberon de lait ou de jus dans la bouche. Pour prévenir, nettoyez les dents après chaque tétée et évitez les boissons sucrées dans le biberon."
+          "text": "Se produisent lorsque l'enfant s'endort avec le biberon de lait ou de jus dans la bouche. Pour prévenir, nettoyez les dents après chaque tétée et évitez les boissons sucrées dans le biberon."
         },
         "thumb": {
-          "title": "Sucer son pouce",
-          "text": "C'est naturel dans les premières années, mais doit être découragé après 4 ans pour éviter des changements dans le positionnement des dents et le développement de l'arcade dentaire."
+          "title": "Sucer le pouce",
+          "text": "C'est naturel dans les premières années, mais devrait être découragé après 4 ans pour éviter des modifications dans le positionnement des dents et le développement de l'arcade dentaire."
         },
         "trauma": {
           "title": "Traumatismes dentaires",
-          "text": "Les chutes et accidents sont courants pendant l'enfance. En cas de traumatisme dentaire, consultez immédiatement un dentiste, même s'il ne semble pas y avoir de dommages visibles."
+          "text": "Les chutes et accidents sont courants dans l'enfance. En cas de traumatisme dentaire, consultez immédiatement un dentiste, même s'il ne semble pas y avoir de dommages visibles."
         }
       },
-      "hygieneTitle": "Hygiène bucco-dentaire des enfants par âge",
+      "hygieneTitle": "Hygiène bucco-dentaire infantile par âge",
       "hygiene": {
         "0to2": {
           "title": "0-2 ans",
-          "text": "Nettoyez les gencives avec une compresse humide. Quand les premières dents apparaissent, utilisez une brosse à dents pour bébé avec de l'eau."
+          "text": "Nettoyez les gencives avec une gaze humide. Lorsque les premières dents apparaissent, utilisez une brosse pour bébé avec de l'eau."
         },
         "2to6": {
           "title": "2-6 ans",
-          "text": "Utilisez un dentifrice fluoré (quantité de la taille d'un petit pois). Les parents doivent superviser et aider au brossage."
+          "text": "Utilisez un dentifrice au fluor (quantité de la taille d'un petit pois). Les parents doivent superviser et aider au brossage."
         },
         "6plus": {
           "title": "6+ ans",
           "text": "L'enfant peut se brosser seul, mais les parents doivent vérifier. Introduisez l'utilisation du fil dentaire lorsque les dents commencent à se toucher."
         }
       },
-      "frequencyTitle": "À quelle fréquence aller chez le dentiste ?",
-      "frequencyText": "Après la première consultation, il est recommandé de consulter le dentiste tous les 6 mois pour des contrôles de routine. Cette fréquence permet de détecter et traiter les problèmes précocement, quand ils sont plus faciles à résoudre.",
+      "frequencyTitle": "À quelle fréquence aller chez le dentiste?",
+      "frequencyText": "Après la première consultation, il est recommandé de visiter le dentiste tous les 6 mois pour des bilans de routine. Cette fréquence permet de détecter et traiter les problèmes précocement, lorsqu'ils sont plus faciles à résoudre.",
       "finalCta": {
-        "title": "Est-il temps pour la première consultation de votre enfant ?",
-        "text": "Notre équipe est prête à accueillir les plus petits avec toute l'attention et le soin nécessaires."
+        "title": "C'est l'heure de la première consultation de votre enfant?",
+        "text": "Notre équipe est prête à accueillir les plus petits avec tout le soin et l'attention."
       }
     }
   },
   "contact": {
     "tag": "Contacts",
-    "title": "Venez",
-    "titleHighlight": "nous rendre visite",
+    "title": "Venez nous",
+    "titleHighlight": "rendre visite",
     "description": "Nous sommes situés à Quinta do Conde, avec un accès facile et un parking à proximité. Contactez-nous.",
     "info": {
       "address": {
@@ -840,7 +923,7 @@
       "phone": {
         "title": "Téléphone",
         "content": "924 123 784",
-        "action": "Appeler"
+        "action": "Appeler Maintenant"
       },
       "email": {
         "title": "Email",
@@ -849,11 +932,11 @@
       },
       "schedule": {
         "title": "Horaires",
-        "content": "Lun-Ven : 9h-19h | Sam : 9h-13h"
+        "content": "Lun-Ven: 9h-19h | Sam: 9h-13h"
       }
     },
     "cta": {
-      "title": "Prenez Rendez-vous Aujourd'hui !",
+      "title": "Prenez Rendez-vous Aujourd'hui!",
       "description": "N'attendez plus pour prendre soin de votre sourire. Notre équipe est prête à vous accueillir.",
       "button": "Prendre Rendez-vous"
     }
@@ -875,16 +958,16 @@
     "terms": "Conditions d'Utilisation"
   },
   "floatingCTA": {
-    "button": "Prendre Rendez-vous Aujourd'hui !"
+    "button": "Prendre Rendez-vous Aujourd'hui!"
   },
   "whatsapp": {
-    "tooltip": "Contactez-nous sur WhatsApp",
-    "message": "Bonjour ! 😊 J'ai trouvé votre site et j'aimerais parler avec la clinique. Pouvez-vous me répondre ici pour m'aider à prendre rendez-vous et/ou obtenir des informations ?",
+    "tooltip": "Parlez-nous sur WhatsApp",
+    "message": "Bonjour! 😊 Je viens du site web et j'aimerais parler avec la clinique. Pouvez-vous répondre ici pour m'aider à prendre rendez-vous et/ou recevoir des informations?",
     "cta": "Contactez-nous"
   },
   "notFound": {
     "title": "404",
-    "message": "Oups ! Page non trouvée",
+    "message": "Oups! Page non trouvée",
     "backHome": "Retour à l'Accueil"
   }
 }

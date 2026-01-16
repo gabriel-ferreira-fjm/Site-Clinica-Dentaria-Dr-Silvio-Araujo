@@ -25,7 +25,7 @@ const Services = () => {
       }) as string[],
       color: 'bg-blue-50',
       iconColor: 'text-blue-600',
-      href: '/ConsultaDiagnostico', // ✅ ligado à nova página
+      href: '/consulta-diagnostico', // ✅ bate com App.tsx
     },
     {
       icon: Shield,
@@ -36,6 +36,7 @@ const Services = () => {
       }) as string[],
       color: 'bg-green-50',
       iconColor: 'text-green-600',
+      href: '/prevencao-higiene', // ✅
     },
     {
       icon: Sparkles,
@@ -46,6 +47,7 @@ const Services = () => {
       }) as string[],
       color: 'bg-purple-50',
       iconColor: 'text-purple-600',
+      href: '/estetica-ortodontia', // ✅
     },
     {
       icon: Heart,
@@ -56,6 +58,7 @@ const Services = () => {
       }) as string[],
       color: 'bg-red-50',
       iconColor: 'text-red-600',
+      href: '/implantes-proteses', // ✅
     },
     {
       icon: Activity,
@@ -66,6 +69,7 @@ const Services = () => {
       }) as string[],
       color: 'bg-amber-50',
       iconColor: 'text-amber-600',
+      href: '/tratamentos-especializados', // ✅
     },
     {
       icon: Baby,
@@ -76,6 +80,7 @@ const Services = () => {
       }) as string[],
       color: 'bg-pink-50',
       iconColor: 'text-pink-600',
+      href: '/odontopediatria', // ✅ (no App.tsx aponta pro OdontopediatriaServico)
     },
   ];
 
@@ -96,9 +101,7 @@ const Services = () => {
           </span>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">
             {t('services.title')}{' '}
-            <span className="text-primary">
-              {t('services.titleHighlight')}
-            </span>
+            <span className="text-primary">{t('services.titleHighlight')}</span>
           </h2>
           <p className="text-muted-foreground text-lg">
             {t('services.description')}
@@ -116,9 +119,7 @@ const Services = () => {
                 <div
                   className={`w-14 h-14 rounded-xl ${category.color} flex items-center justify-center mb-5 group-hover:scale-110 transition-transform`}
                 >
-                  <category.icon
-                    className={`w-7 h-7 ${category.iconColor}`}
-                  />
+                  <category.icon className={`w-7 h-7 ${category.iconColor}`} />
                 </div>
 
                 <h3 className="font-heading font-semibold text-xl text-foreground mb-2">
@@ -142,23 +143,15 @@ const Services = () => {
               </div>
             );
 
-            if (category.href) {
-              return (
-                <Link
-                  key={category.title}
-                  to={category.href}
-                  className="block h-full focus:outline-none focus:ring-2 focus:ring-primary rounded-2xl"
-                  aria-label={category.title}
-                >
-                  {Card}
-                </Link>
-              );
-            }
-
             return (
-              <div key={category.title} className="h-full">
+              <Link
+                key={category.title}
+                to={category.href}
+                className="block h-full focus:outline-none focus:ring-2 focus:ring-primary rounded-2xl"
+                aria-label={category.title}
+              >
                 {Card}
-              </div>
+              </Link>
             );
           })}
         </div>
@@ -173,11 +166,7 @@ const Services = () => {
               <p className="text-primary-foreground/80 mb-6">
                 {t('services.tmj.description')}
               </p>
-              <Button
-                variant="cta-outline"
-                size="lg"
-                onClick={scrollToAppointment}
-              >
+              <Button variant="cta-outline" size="lg" onClick={scrollToAppointment}>
                 {t('services.tmj.learnMore')}
               </Button>
             </div>
