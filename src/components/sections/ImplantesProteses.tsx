@@ -343,7 +343,7 @@ const ImplantesProteses = () => {
                   />
                 </div>
 
-                {/* ✅ AGORA no canto INFERIOR DIREITO */}
+                {/* */}
                 <div className="absolute bottom-4 right-4 bg-white px-4 py-3 rounded-2xl shadow-xl border border-primary/10">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
@@ -401,12 +401,6 @@ const ImplantesProteses = () => {
                   <p className="text-muted-foreground mb-4">
                     {service.description}
                   </p>
-
-                  <div className="bg-blue-50 rounded-xl p-3 mb-6 border border-primary/10">
-                    <p className="text-sm text-primary font-medium">
-                      💰 {service.price}
-                    </p>
-                  </div>
 
                   <ul className="space-y-3">
                     {service.features.map((feature) => (

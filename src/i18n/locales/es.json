@@ -6,20 +6,20 @@
     "team": "Equipo",
     "prices": "Precios",
     "blog": "Blog",
-    "faq": "Preguntas",
+    "faq": "FAQ's",
     "contacts": "Contactos",
-    "bookAppointment": "Reservar Cita",
+    "bookAppointment": "Pedir Cita",
     "location": "Rua D Sebastião 2050, Quinta do Conde, Portugal",
     "phone": "924 123 784",
     "schedule": "Lun - Vie: 9h - 19h | Sáb: 9h - 13h"
   },
   "hero": {
-    "welcome": "¡Bienvenido(a) a nuestro sitio web!",
+    "welcome": "¡Bienvenido/a a nuestra web!",
     "title": "Clínica Dental",
     "titleHighlight": "Dr. Sílvio Araújo",
     "subtitle": "¡Una sonrisa saludable comienza con cuidado especializado!",
     "description": "Combinamos experiencia, tecnología moderna y atención personalizada para ofrecer el mejor cuidado dental para toda la familia.",
-    "bookNow": "Reservar Cita Ahora",
+    "bookNow": "Pedir Cita Ahora",
     "viewServices": "Ver Servicios",
     "happyPatients": "Pacientes Felices",
     "averageRating": "Valoración Media",
@@ -28,22 +28,13 @@
   },
   "about": {
     "tag": "Sobre Nosotros",
-    "title": "Cuidamos tu sonrisa con",
+    "title": "Cuidamos de tu sonrisa con",
     "titleHighlight": "dedicación",
-    "description": "La Clínica Dental Dr. Sílvio Araújo combina experiencia, tecnología moderna y atención personalizada para ofrecer el mejor cuidado dental. Dirigida por el Dr. Sílvio Araújo, nuestro equipo garantiza tratamientos eficaces y accesibles para toda la familia.",
+    "description": "La Clínica Dental Dr. Sílvio Araújo combina experiencia, tecnología moderna y atención personalizada para ofrecer el mejor cuidado dental. Liderada por el Dr. Sílvio Araújo, nuestro equipo garantiza tratamientos eficaces y accesibles para toda la familia.",
     "features": {
-      "experience": {
-        "title": "Experiencia Probada",
-        "description": "Más de 15 años dedicados a la salud oral"
-      },
-      "team": {
-        "title": "Equipo Especializado",
-        "description": "Profesionales cualificados en formación constante"
-      },
-      "care": {
-        "title": "Cuidado Personalizado",
-        "description": "Tratamientos adaptados a las necesidades de cada paciente"
-      }
+      "experience": { "title": "Experiencia Comprobada", "description": "Más de 15 años dedicados a la salud oral" },
+      "team": { "title": "Equipo Especializado", "description": "Profesionales cualificados en formación continua" },
+      "care": { "title": "Cuidado Personalizado", "description": "Tratamientos adaptados a las necesidades de cada paciente" }
     },
     "highlights": {
       "technology": "Tecnología de última generación",
@@ -53,921 +44,154 @@
       "emergency": "Urgencias dentales",
       "payment": "Facilidades de pago"
     },
-    "stats": {
-      "patients": "Pacientes",
-      "years": "Años"
-    }
+    "stats": { "patients": "Pacientes", "years": "Años" }
   },
   "services": {
     "tag": "Nuestros Servicios",
     "title": "Tratamientos dentales",
     "titleHighlight": "completos",
-    "description": "Ofrecemos una gama completa de servicios dentales para cuidar la salud oral de toda su familia, con tecnología moderna y profesionales cualificados.",
+    "description": "Ofrecemos una gama completa de servicios dentales para cuidar de la salud oral de toda su familia, con tecnología moderna y profesionales cualificados.",
     "categories": {
-      "consultation": {
-        "title": "Consulta y Diagnóstico",
-        "description": "Evaluación completa de la salud oral",
-        "services": [
-          "Consulta dental",
-          "Radiografías digitales",
-          "Urgencias dentales"
-        ]
-      },
-      "prevention": {
-        "title": "Prevención e Higiene",
-        "description": "Cuidados preventivos esenciales",
-        "services": [
-          "Limpieza dental",
-          "Pulido dental",
-          "Odontología preventiva"
-        ]
-      },
-      "aesthetics": {
-        "title": "Estética y Ortodoncia",
-        "description": "Sonrisa perfecta y alineada",
-        "services": [
-          "Blanqueamiento dental",
-          "Brackets metálicos",
-          "Ortodoncia invisible"
-        ]
-      },
-      "implants": {
-        "title": "Implantes y Prótesis",
-        "description": "Soluciones para dientes faltantes",
-        "services": [
-          "Implantes dentales",
-          "Prótesis fijas",
-          "Prótesis removibles"
-        ]
-      },
-      "specialized": {
-        "title": "Tratamientos Especializados",
-        "description": "Cuidados avanzados y específicos",
-        "services": [
-          "Endodoncia",
-          "Cirugía oral",
-          "Periodoncia"
-        ]
-      },
-      "pediatric": {
-        "title": "Odontopediatría",
-        "description": "Cuidado dental para niños",
-        "services": [
-          "Consulta pediátrica",
-          "Selladores",
-          "Educación en higiene oral"
-        ]
-      }
+      "consultation": { "title": "Consulta y Diagnóstico", "description": "Evaluación completa de la salud oral", "services": ["Consulta dental", "Radiografías digitales", "Urgencias dentales"] },
+      "prevention": { "title": "Prevención e Higiene", "description": "Cuidados preventivos esenciales", "services": ["Limpieza dental", "Pulido dental", "Odontología preventiva"] },
+      "aesthetics": { "title": "Estética y Ortodoncia", "description": "Sonrisa perfecta y alineada", "services": ["Blanqueamiento dental", "Brackets metálicos", "Ortodoncia invisible"] },
+      "implants": { "title": "Implantes y Prótesis", "description": "Soluciones para dientes perdidos", "services": ["Implantes dentales", "Prótesis fijas", "Prótesis removibles"] },
+      "specialized": { "title": "Tratamientos Especializados", "description": "Cuidados avanzados y específicos", "services": ["Endodoncia", "Cirugía oral", "Periodoncia"] },
+      "pediatric": { "title": "Odontopediatría", "description": "Cuidados dentales para niños", "services": ["Consulta pediátrica", "Sellantes", "Educación para higiene oral"] }
     },
-    "tmj": {
-      "title": "Tratamiento de Disfunción Temporomandibular",
-      "description": "Tratamiento especializado para dolores en la articulación de la mandíbula, dolores de cabeza y tensión muscular relacionada con problemas dentales.",
+    "tmj": { "title": "Tratamiento de Disfunción Temporomandibular", "description": "Tratamiento especializado para dolores en la articulación de la mandíbula, dolores de cabeza y tensión muscular relacionada con problemas dentales.", "learnMore": "Saber Más", "quickConsultations": "Consultas Rápidas", "guaranteedResults": "Resultados Garantizados" },
+    "estetica": {
+      "meta": { "title": "Estética y Ortodoncia | Dr. Sílvio Araújo - Clínica Dental", "description": "Blanqueamiento dental, brackets metálicos y ortodoncia invisible. Transforma tu sonrisa en la Clínica Dr. Sílvio Araújo." },
+      "hero": { "backLink": "Volver a Servicios", "badge": "Transforma Tu Sonrisa", "title": { "part1": "Estética y ", "part2": "Ortodoncia" }, "subtitle": "Dientes más blancos y perfectamente alineados. Descubre las soluciones estéticas que transformarán tu confianza.", "rating": "4.9/5 Valoración", "transformed": "+200 sonrisas transformadas", "ctaButton": "Agendar Evaluación", "callButton": "Llamar Ahora", "imageAlt": "Consulta odontológica - estética y ortodoncia" },
+      "servicesSection": { "title": "Tratamientos Estéticos Disponibles", "subtitle": "Elige el tratamiento ideal para conseguir la sonrisa de tus sueños." },
+      "services": {
+        "branqueamento": { "title": "Blanqueamiento Dental", "description": "Tratamiento profesional para blanquear los dientes y devolver el brillo a tu sonrisa de forma segura y eficaz.", "features": { "1": "Hasta 8 tonos más claro", "2": "Técnica LED avanzada", "3": "Sin daños al esmalte" }, "duration": "1-2 horas", "tag": "Más Popular" },
+        "metalicos": { "title": "Brackets Metálicos", "description": "Ortodoncia tradicional con brackets metálicos de alta calidad para corrección eficiente del alineamiento dental.", "features": { "1": "Corrección completa", "2": "Resistentes y duraderos", "3": "Seguimiento mensual", "4": "Resultados definitivos" }, "duration": "12-24 meses", "tag": "Eficacia Comprobada" },
+        "invisivel": { "title": "Ortodoncia Invisible", "description": "Alineadores transparentes removibles que corrigen tu sonrisa de forma discreta y cómoda.", "features": { "1": "Prácticamente invisibles", "2": "Removibles para comer", "3": "Sin restricciones alimentarias", "4": "Menos citas" }, "duration": "6-18 meses", "tag": "Discreto" }
+      },
+      "durationLabel": "Duración",
       "learnMore": "Saber Más",
-      "quickConsultations": "Consultas Rápidas",
-      "guaranteedResults": "Resultados Garantizados"
+      "transformations": { "title": "Transformaciones Reales", "subtitle": "Ve los cambios que nuestros tratamientos pueden proporcionar.", "before": "Antes", "after": "Después", "items": { "1": { "before": "Dientes amarillentos", "after": "Sonrisa brillante y natural" }, "2": { "before": "Dientes desalineados", "after": "Mordida perfecta" }, "3": { "before": "Espacios entre dientes", "after": "Sonrisa armoniosa" }, "4": { "before": "Dientes apiñados", "after": "Alineación impecable" } } },
+      "finalCta": { "title": "¿Listo para transformar tu sonrisa?", "subtitle": "Agenda una evaluación gratuita y descubre el tratamiento ideal para ti.", "ctaButton": "Evaluación Gratuita", "callButton": "Llamar: +351 924 123 784" }
+    },
+    "implantes": {
+      "meta": { "title": "Implantes y Prótesis Dentales | Dr. Sílvio Araújo - Clínica Dental", "description": "Implantes dentales, prótesis fijas y removibles. Soluciones completas para dientes perdidos en la Clínica Dr. Sílvio Araújo." },
+      "hero": { "backLink": "Volver a Servicios", "badge": "Soluciones Definitivas", "title": { "part1": "Implantes y ", "part2": "Prótesis" }, "subtitle": "Recupera tu capacidad de masticar, hablar y sonreír con confianza. Soluciones modernas y duraderas para dientes perdidos.", "stats": { "1": { "value": "95%", "label": "Tasa de Éxito" }, "2": { "value": "20+", "label": "Años de Experiencia" }, "3": { "value": "1000+", "label": "Implantes Colocados" } }, "ctaButton": "Consulta de Evaluación", "callButton": "Llamar Ahora", "imageAlt": "Implantes y prótesis dentales en la Clínica Dr. Sílvio Araújo", "badge2": { "title": "Atención Especializada", "subtitle": "Enfocados en tu comodidad" } },
+      "servicesSection": { "title": "Soluciones Para Dientes Perdidos", "subtitle": "Ofrecemos varias opciones para restaurar tu sonrisa, adaptadas a tus necesidades." },
+      "services": {
+        "implantes": { "title": "Implantes Dentales", "description": "Solución permanente y natural para sustituir dientes perdidos. Los implantes son raíces artificiales de titanio que soportan coronas dentales.", "features": { "1": "Durabilidad de por vida", "2": "Apariencia natural", "3": "Preserva el hueso", "4": "Función masticatoria completa" }, "price": "Desde €800" },
+        "fixas": { "title": "Prótesis Fijas", "description": "Puentes y coronas fijas cementadas sobre dientes naturales o implantes, ofreciendo máxima estabilidad y comodidad.", "features": { "1": "No removibles", "2": "Alta estética", "3": "Cómodas", "4": "Resistentes" }, "price": "Desde €400" },
+        "removiveis": { "title": "Prótesis Removibles", "description": "Soluciones removibles flexibles y económicas para sustituir varios dientes, con materiales de alta calidad.", "features": { "1": "Económicas", "2": "Fácil higienización", "3": "Adaptables", "4": "Estéticas" }, "price": "Desde €300" }
+      },
+      "processSection": { "title": "El Proceso de Colocación de Implantes", "subtitle": "Un tratamiento bien planificado para resultados excepcionales." },
+      "process": { "01": { "step": "01", "title": "Evaluación Inicial", "description": "Examen completo con radiografías y TAC para evaluar la estructura ósea." }, "02": { "step": "02", "title": "Planificación Digital", "description": "Creación de un plan de tratamiento personalizado con tecnología 3D." }, "03": { "step": "03", "title": "Cirugía de Colocación", "description": "Procedimiento mínimamente invasivo para colocación del implante." }, "04": { "step": "04", "title": "Período de Cicatrización", "description": "3-6 meses para osteointegración completa del implante al hueso." }, "05": { "step": "05", "title": "Colocación de la Corona", "description": "Instalación de la corona definitiva, personalizada para tu sonrisa." } },
+      "faqSection": { "title": "Preguntas Frecuentes" },
+      "faqs": { "1": { "q": "¿Duelen los implantes?", "a": "El procedimiento se realiza con anestesia local, siendo prácticamente indoloro. El postoperatorio implica molestias leves controladas con medicación." }, "2": { "q": "¿Cuánto dura un implante?", "a": "Con los cuidados adecuados, un implante puede durar toda la vida. La tasa de éxito es superior al 95%." }, "3": { "q": "¿Puedo ponerme implantes si tengo poco hueso?", "a": "Sí, existen técnicas de injerto óseo e implantes especiales para casos de reabsorción ósea." } },
+      "finalCta": { "title": "Recupera Tu Sonrisa Completa", "subtitle": "Agenda una consulta de evaluación gratuita y descubre la mejor solución para tu caso.", "ctaButton": "Agendar Evaluación Gratuita", "callButton": "Llamar: +351 924 123 784" }
     },
     "prevencao": {
-      "meta": {
-        "title": "Prevención e Higiene Oral | Dr. Sílvio Araújo - Clínica Dental",
-        "description": "Servicios de prevención e higiene oral incluyendo limpieza dental, pulido dental y odontología preventiva."
-      },
-      "hero": {
-        "backLink": "Volver a la página de Servicios",
-        "badge": "Cuidados Preventivos",
-        "badge2": "100% Indoloro",
-        "title": {
-          "part1": "Prevención",
-          "part2": "Higiene"
-        },
-        "subtitle": "La mejor forma de tratamiento es la prevención. Mantenga su salud oral al día con cuidados especializados.",
-        "ctaButton": "Reservar Limpieza",
-        "callButton": "Llamar Ahora",
-        "imageAlt": "Higienista dental realizando limpieza profesional en paciente en la Clínica Dental Dr. Sílvio Araújo",
-        "duration": "30–45 min",
-        "durationLabel": "Tiempo promedio"
-      },
-      "servicesSection": {
-        "title": "Servicios de Higiene Profesional",
-        "subtitle": "Tratamientos esenciales para mantener su salud oral."
-      },
+      "meta": { "title": "Prevención e Higiene Oral | Dr. Sílvio Araújo - Clínica Dental", "description": "Servicios de prevención e higiene oral incluyendo limpieza dental, pulido dental y odontología preventiva." },
+      "hero": { "backLink": "Volver a la página de Servicios", "badge": "Cuidados Preventivos", "title": { "part1": "Prevención", "part2": "Higiene" }, "subtitle": "La mejor forma de tratamiento es la prevención. Mantén tu salud oral al día con cuidados especializados.", "ctaButton": "Agendar Limpieza", "callButton": "Llamar Ahora", "imageAlt": "Higienista dental realizando limpieza profesional a paciente en la Clínica Dental Dr. Sílvio Araújo", "badge2": "100% Indoloro", "duration": "30–45 min", "durationLabel": "Tiempo promedio" },
+      "servicesSection": { "title": "Servicios de Higiene Profesional", "subtitle": "Tratamientos esenciales para mantener tu salud oral." },
       "services": {
-        "destartarizacao": {
-          "title": "Limpieza Dental",
-          "description": "Eliminación profesional del sarro y placa bacteriana acumulada, esencial para prevenir enfermedades de las encías.",
-          "benefits": {
-            "1": "Elimina el sarro endurecido",
-            "2": "Previene la gingivitis",
-            "3": "Mejora el aliento",
-            "4": "Deja los dientes más brillantes"
-          }
-        },
-        "polimento": {
-          "title": "Pulido Dental",
-          "description": "Tratamiento que deja la superficie de los dientes lisa y brillante, dificultando la adherencia de placa bacteriana.",
-          "benefits": {
-            "1": "Superficie más lisa",
-            "2": "Dientes más brillantes",
-            "3": "Reduce manchas",
-            "4": "Sensación de limpieza profunda"
-          }
-        },
-        "preventiva": {
-          "title": "Odontología Preventiva",
-          "description": "Conjunto de prácticas y tratamientos enfocados en prevenir problemas dentales antes de que ocurran.",
-          "benefits": {
-            "1": "Aplicación de flúor",
-            "2": "Selladores dentales",
-            "3": "Educación en higiene oral",
-            "4": "Revisiones regulares"
-          }
-        }
+        "destartarizacao": { "title": "Limpieza Dental", "description": "Remoción profesional de sarro y placa bacteriana acumulada, esencial para prevenir enfermedades de las encías.", "benefits": { "1": "Elimina el sarro endurecido", "2": "Previene gingivitis", "3": "Mejora el aliento", "4": "Deja los dientes más brillantes" } },
+        "polimento": { "title": "Pulido Dental", "description": "Tratamiento que deja la superficie de los dientes lisa y brillante, dificultando la adherencia de placa bacteriana.", "benefits": { "1": "Superficie más lisa", "2": "Dientes más brillantes", "3": "Reduce manchas", "4": "Sensación de limpieza profunda" } },
+        "preventiva": { "title": "Odontología Preventiva", "description": "Conjunto de prácticas y tratamientos enfocados en prevenir problemas dentales antes de que ocurran.", "benefits": { "1": "Aplicación de flúor", "2": "Sellantes dentales", "3": "Educación en higiene oral", "4": "Revisiones regulares" } }
       },
-      "tips": {
-        "escovagem": {
-          "title": "Cepillado Regular",
-          "description": "Cepille sus dientes al menos 2 veces al día durante 2 minutos"
-        },
-        "fio": {
-          "title": "Hilo Dental Diario",
-          "description": "Use hilo dental una vez al día para limpiar entre los dientes"
-        },
-        "elixir": {
-          "title": "Enjuague Bucal",
-          "description": "Complete la higiene con un enjuague antibacteriano"
-        },
-        "consultas": {
-          "title": "Visitas Regulares",
-          "description": "Visite al dentista cada 6 meses para limpieza profesional"
-        }
+      "tips": { "escovagem": { "title": "Cepillado Regular", "description": "Cepilla tus dientes al menos 2 veces al día, durante 2 minutos" }, "fio": { "title": "Hilo Dental Diario", "description": "Usa hilo dental una vez al día para limpiar entre los dientes" }, "elixir": { "title": "Enjuague Bucal", "description": "Completa la higiene con un enjuague antibacteriano" }, "consultas": { "title": "Consultas Regulares", "description": "Visita al dentista cada 6 meses para limpieza profesional" } },
+      "finalCta": { "title": "Prevén Problemas Futuros", "subtitle": "La prevención es la mejor inversión en tu salud oral.", "ctaButton": "Agendar Limpieza", "callButton": "Llamar: +351 924 123 784" }
+    },
+    "odontopediatria": {
+      "meta": { "title": "Odontopediatría - Dentista para Niños | Dr. Sílvio Araújo - Clínica Dental", "description": "Odontopediatría especializada para niños. Consultas pediátricas, sellantes y educación para higiene oral en la Clínica Dr. Sílvio Araújo." },
+      "hero": { "backLink": "Volver a la página de Servicios", "badge": "Para los Más Pequeños", "title": { "part1": "Odonto", "part2": "pediatría" }, "subtitle": "Cuidados dentales especiales para niños, en un ambiente acogedor y divertido. ¡Creamos sonrisas felices desde temprano!", "stats": { "number": "+500 niños atendidos", "description": "¡Todos adoran venir al dentista!" }, "ctaButton": "Pedir Cita", "callButton": "Llamar Ahora", "badge2": { "text": "Ambiente Divertido" }, "badge3": { "title": "Seguimiento", "subtitle": "con cariño y paciencia" } },
+      "servicesSection": { "title": "Servicios para Niños", "subtitle": "Tratamientos especializados y adaptados para cada fase de la infancia.", "cta": "Pedir Cita" },
+      "services": {
+        "consulta": { "title": "Consulta Pediátrica", "description": "Primera consulta especial para niños, enfocada en crear una experiencia positiva y establecer confianza con el dentista.", "features": { "1": "Ambiente acogedor", "2": "Examen suave y divertido", "3": "Orientación a los padres", "4": "Sin traumas" } },
+        "selantes": { "title": "Sellantes Dentales", "description": "Aplicación de sellantes protectores en los surcos de los dientes para prevenir caries, especialmente en los molares definitivos.", "features": { "1": "Protección duradera", "2": "Procedimiento indoloro", "3": "Aplicación rápida", "4": "Prevención de caries" } },
+        "educacao": { "title": "Educación para Higiene Oral", "description": "Programa educativo divertido para enseñar a los niños la importancia del cepillado y cuidados con los dientes.", "features": { "1": "Técnicas de cepillado", "2": "Alimentación saludable", "3": "Material educativo", "4": "Participación de los padres" } }
       },
-      "finalCta": {
-        "title": "Prevenga Problemas Futuros",
-        "subtitle": "La prevención es la mejor inversión en su salud oral.",
-        "ctaButton": "Reservar Limpieza",
-        "callButton": "Llamar: +351 924 123 784"
-      }
+      "ageGuideSection": { "title": "Guía por Edad", "subtitle": "Cuidados recomendados para cada fase del crecimiento." },
+      "ageGuide": { "infant": { "age": "0-2 años", "title": "Primera Infancia", "tips": { "1": "Primera visita al 1er año", "2": "Limpieza con gasa húmeda", "3": "Evitar azúcar en el biberón" } }, "preschool": { "age": "3-5 años", "title": "Preescolar", "tips": { "1": "Cepillado supervisado", "2": "Pasta con flúor (grano de arroz)", "3": "Visitas semestrales" } }, "school": { "age": "6-12 años", "title": "Edad Escolar", "tips": { "1": "Aplicación de sellantes", "2": "Ortodoncia preventiva", "3": "Independencia en el cepillado" } }, "teen": { "age": "13+ años", "title": "Adolescencia", "tips": { "1": "Cuidados con brackets", "2": "Prevención de traumas", "3": "Estética de la sonrisa" } } },
+      "funFactsSection": { "title": "¿Sabías que... 🤔" },
+      "funFacts": { "1": "Los niños tienen 20 dientes de leche", "2": "Cepillar 2 minutos, 2 veces al día", "3": "Queso y leche fortalecen los dientes", "4": "El agua es la mejor bebida para los dientes" },
+      "parentTipsSection": { "title": "Consejos para los Padres" },
+      "parentTips": { "fun": { "title": "Hacer el cepillado divertido", "description": "Usa canciones, aplicaciones o cepillos coloridos para hacer la rutina más atractiva." }, "example": { "title": "Dar el ejemplo", "description": "Cepilla tus dientes con tu hijo para que aprenda la importancia de la higiene oral." }, "fears": { "title": "Evitar miedos", "description": "No uses al dentista como amenaza. Habla positivamente sobre las visitas a la consulta." }, "rewards": { "title": "Recompensar buenos hábitos", "description": "Crea un cuadro de recompensas para motivar el cepillado regular." } },
+      "finalCta": { "title": "¡El primer paso para una sonrisa saludable! 😊", "subtitle": "Agenda la primera consulta de tu hijo y déjanos cuidar de su sonrisa desde temprano.", "ctaButton": "Pedir Cita Pediátrica", "callButton": "Llamar: +351 924 123 784" }
+    },
+    "especializados": {
+      "meta": { "title": "Tratamientos Especializados | Dr. Sílvio Araújo - Clínica Dental", "description": "Endodoncia, cirugía oral y periodoncia. Tratamientos avanzados y especializados en la Clínica Dr. Sílvio Araújo." },
+      "hero": { "backLink": "Volver a Servicios", "badge": "Cuidados Avanzados", "title": { "part1": "Tratamientos", "part2": "Especializados" }, "subtitle": "Cuando el problema es más complejo, nuestro equipo especializado está listo para ofrecer soluciones avanzadas y eficaces.", "ctaButton": "Pedir Cita", "urgencyButton": "Urgencias", "imageAlt": "Tratamientos dentales especializados en la Clínica Dr. Sílvio Araújo.", "badge2": { "title": "Especialistas", "subtitle": "Equipo cualificado" } },
+      "servicesSection": { "title": "Especialidades Disponibles", "subtitle": "Tratamientos avanzados para resolver los problemas más complejos.", "alerts": "Señales de Alerta" },
+      "services": {
+        "endodontia": { "title": "Endodoncia", "description": "Tratamiento de conducto radicular para salvar dientes con pulpa dental infectada o dañada, eliminando dolor y preservando el diente natural.", "symptoms": { "1": "Dolor intenso y persistente", "2": "Sensibilidad al calor/frío", "3": "Hinchazón en la encía", "4": "Oscurecimiento del diente" }, "features": { "1": "Técnicas microscópicas", "2": "Anestesia avanzada", "3": "Alta tasa de éxito", "4": "Preservación del diente" } },
+        "cirurgia": { "title": "Cirugía Oral", "description": "Procedimientos quirúrgicos especializados incluyendo extracciones complejas, remoción de muelas del juicio y cirugías correctivas.", "symptoms": { "1": "Dientes impactados", "2": "Muelas del juicio problemáticas", "3": "Quistes o lesiones", "4": "Preparación para implantes" }, "features": { "1": "Técnicas mínimamente invasivas", "2": "Sedación disponible", "3": "Recuperación rápida", "4": "Equipo experimentado" } },
+        "periodontologia": { "title": "Periodoncia", "description": "Tratamiento especializado de enfermedades de las encías, desde gingivitis leve hasta periodontitis avanzada.", "symptoms": { "1": "Encías rojas o hinchadas", "2": "Sangrado al cepillar", "3": "Mal aliento persistente", "4": "Retracción de encías" }, "features": { "1": "Raspado y alisado radicular", "2": "Cirugía periodontal", "3": "Regeneración ósea", "4": "Mantenimiento preventivo" } }
+      },
+      "emergencySymptoms": { "1": "Dolor de muelas intenso", "2": "Hinchazón facial", "3": "Sangrado que no para", "4": "Diente roto o avulsionado", "5": "Absceso dental" },
+      "emergency": { "title": "Urgencias Dentales", "subtitle": "Situaciones de emergencia requieren atención inmediata. Si presentas alguno de estos síntomas, contáctanos de inmediato.", "callNow": "Llamar Ahora: +351 924 123 784", "whatToDo": { "title": "Qué Hacer en Caso de Urgencia", "1": { "title": "Mantén la calma", "subtitle": "La ansiedad puede empeorar el dolor" }, "2": { "title": "Contáctanos inmediatamente", "subtitle": "Tenemos slots de urgencia reservados" }, "3": { "title": "Sigue las instrucciones", "subtitle": "Te daremos orientaciones hasta que llegues" } } },
+      "finalCta": { "title": "¿Necesitas Tratamiento Especializado?", "subtitle": "Nuestro equipo de especialistas está listo para ayudarte. Agenda una consulta de evaluación.", "ctaButton": "Pedir Cita", "callButton": "Llamar: +351 924 123 784" }
     }
   },
   "consultadiagnostico": {
-    "hero": {
-      "title": "Consulta y Diagnóstico",
-      "subtitle": "Evaluación completa y precisa de su salud oral",
-      "cta": "Reservar Cita"
-    },
-    "consultation": {
-      "title": "Consulta Dental",
-      "description": "La consulta dental es el primer paso para garantizar una boca saludable.",
-      "content": "Durante la consulta, el dentista realiza una evaluación detallada de su salud oral, analizando dientes, encías, mordida y tejidos orales. El objetivo es identificar problemas existentes o prevenir futuras complicaciones, creando un plan de tratamiento personalizado."
-    },
-    "radiology": {
-      "title": "Radiografías Digitales",
-      "description": "Tecnología moderna para diagnósticos precisos",
-      "content": "Las radiografías digitales permiten visualizar estructuras internas de los dientes y huesos que no son visibles a simple vista. Son rápidas, seguras y utilizan una dosis mínima de radiación, ayudando en el diagnóstico de caries, infecciones, problemas óseos y en la planificación de tratamientos."
-    },
-    "emergency": {
-      "title": "Urgencias Dentales",
-      "description": "Atención rápida cuando más la necesita",
-      "content": "Se consideran urgencias dentales situaciones como dolor intenso, infecciones, traumatismos, fracturas dentales, sangrado persistente o hinchazón. En estos casos, debe contactar la clínica lo más rápido posible. Hasta ser evaluado, evite la automedicación excesiva y, si hay sangrado, haga compresión suave con gasa limpia."
-    },
-    "cta": {
-      "title": "Cuide su salud oral",
-      "subtitle": "No espere al dolor. Agende su consulta hoy mismo.",
-      "button": "Reservar Ahora"
-    }
+    "hero": { "title": "Consulta y Diagnóstico", "subtitle": "Evaluación completa y precisa de tu salud oral", "cta": "Pedir Cita" },
+    "consultation": { "title": "Consulta Dental", "description": "La consulta dental es el primer paso para garantizar una boca saludable.", "content": "Durante la consulta, el dentista realiza una evaluación detallada de tu salud oral, analizando dientes, encías, mordida y tejidos orales. El objetivo es identificar problemas existentes o prevenir futuras complicaciones, creando un plan de tratamiento personalizado." },
+    "radiology": { "title": "Radiografías Digitales", "description": "Tecnología moderna para diagnósticos precisos", "content": "Las radiografías digitales permiten visualizar estructuras internas de dientes y huesos que no son visibles a simple vista. Son rápidas, seguras y utilizan una dosis mínima de radiación, ayudando en el diagnóstico de caries, infecciones, problemas óseos y en la planificación de tratamientos." },
+    "emergency": { "title": "Urgencias Dentales", "description": "Atención rápida cuando más lo necesitas", "content": "Consideramos urgencias dentales: dolor intenso, infecciones, traumas, fracturas dentales, sangrado persistente o hinchazón. En estos casos, contacta la clínica lo antes posible. Mientras esperas la evaluación, evita automedicarte en exceso y, en caso de sangrado, aplica presión suave con una gasa limpia." },
+    "cta": { "title": "Cuida de Tu Salud Oral", "subtitle": "No esperes al dolor. Pide tu cita hoy.", "button": "Agendar Ahora" }
   },
   "prices": {
-    "tag": "Tabla de Precios",
-    "title": "Tratamientos",
-    "titleHighlight": "accesibles",
-    "titleEnd": "para todos",
-    "description": "Ofrecemos precios competitivos y descuentos especiales para miembros. Cuidar su sonrisa nunca ha sido tan accesible.",
-    "table": {
-      "treatment": "Tratamiento",
-      "regularPrice": "Precio Regular",
-      "memberPrice": "Precio Miembro"
-    },
-    "treatments": {
-      "consultation": "Consulta dental",
-      "cleaning": "Limpieza dental",
-      "whitening": "Blanqueamiento dental",
-      "braces": "Brackets metálicos (por arcada)",
-      "implant": "Implante dental",
-      "prosthesis": "Prótesis resina acrílica (3 dientes)"
-    },
-    "membership": {
-      "title": "Hazte Miembro y Ahorra",
-      "description": "Con nuestro plan de miembro, tiene acceso a descuentos exclusivos en todos los tratamientos, consultas gratuitas y prioridad en la programación.",
-      "benefits": {
-        "freeConsultations": "Consultas de rutina gratuitas",
-        "discounts": "Descuentos hasta 60% en tratamientos",
-        "priority": "Programación prioritaria",
-        "flexiblePayment": "Pago flexible"
-      },
-      "startingFrom": "Desde",
-      "perMonth": "por mes",
-      "learnMore": "Saber Más"
-    },
-    "note": "* Los precios presentados son indicativos y pueden variar según la complejidad del tratamiento. Consúltenos para un presupuesto personalizado."
+    "tag": "Tabla de Precios", "title": "Tratamientos", "titleHighlight": "accesibles", "titleEnd": "para todos",
+    "description": "Ofrecemos precios competitivos y descuentos especiales para miembros. Cuidar de tu sonrisa nunca fue tan accesible.",
+    "table": { "treatment": "Tratamiento", "regularPrice": "Precio Normal", "memberPrice": "Precio Miembro" },
+    "treatments": { "consultation": "Consulta dental", "cleaning": "Limpieza dental", "whitening": "Blanqueamiento dental", "braces": "Brackets metálicos (por arcada)", "implant": "Implante dental", "prosthesis": "Prótesis acrílica (3 dientes)" },
+    "membership": { "title": "Hazte Miembro y Ahorra", "description": "Con nuestro plan de miembro, tienes descuentos exclusivos en todos los tratamientos, consultas de rutina gratuitas y prioridad en el agendamiento.", "benefits": { "freeConsultations": "Consultas de rutina gratuitas", "discounts": "Hasta 60% de descuento en tratamientos", "priority": "Agendamiento prioritario", "flexiblePayment": "Pago flexible" }, "startingFrom": "Desde", "perMonth": "por mes", "learnMore": "Saber Más" },
+    "note": "* Los precios mostrados son indicativos y pueden variar según la complejidad del tratamiento. Contáctanos para un presupuesto personalizado."
   },
   "team": {
-    "tag": "Nuestro Equipo",
-    "title": "Profesionales",
-    "titleHighlight": "dedicados",
-    "titleEnd": "a tu sonrisa",
-    "description": "Conozca al equipo que cuida de usted y su familia con profesionalismo, experiencia y un toque de cariño.",
-    "member": {
-      "name": "Dr. Sílvio Araújo",
-      "role": "Director Clínico",
-      "specialty": "Odontología General y Ortodoncia",
-      "description": "Especialista en odontología general y ortodoncia, con vasta experiencia y dedicación al cuidado de cada paciente. Graduado en la Facultad de Medicina Dental, lidera el equipo con profesionalismo y empatía.",
-      "achievements": [
-        "Miembro de la Orden de Dentistas",
-        "Especialización en Ortodoncia",
-        "Formación continua en implantología"
-      ],
-      "quote": "Nuestro compromiso es proporcionar el mejor cuidado dental, con tecnología avanzada y una atención humana y personalizada."
-    }
+    "tag": "Nuestro Equipo", "title": "Profesionales", "titleHighlight": "dedicados", "titleEnd": "a tu sonrisa",
+    "description": "Conoce al equipo que cuida de ti y de tu familia con profesionalismo, experiencia y un toque de cariño.",
+    "member": { "name": "Dr. Sílvio Araújo", "role": "Director Clínico", "specialty": "Medicina Dental General y Ortodoncia", "description": "Especialista en medicina dental general y ortodoncia, con amplia experiencia y dedicación al cuidado de cada paciente. Graduado de la Facultad de Medicina Dental, lidera el equipo con profesionalismo y empatía.", "achievements": ["Miembro del Colegio de Dentistas", "Especialización en Ortodoncia", "Formación continua en implantología"], "quote": "Nuestro compromiso es proporcionar el mejor cuidado dental, con tecnología avanzada y atención humana y personalizada." }
   },
   "amenities": {
-    "tag": "Comodidades",
-    "title": "Pensamos en tu",
-    "titleHighlight": "comodidad",
-    "description": "Nuestra clínica ofrece varias comodidades para hacer su visita lo más agradable posible.",
-    "items": {
-      "wifi": {
-        "title": "Wi-Fi Gratis",
-        "description": "Internet gratuito durante su visita"
-      },
-      "parking": {
-        "title": "Estacionamiento Cercano",
-        "description": "Plazas de estacionamiento a pocos metros"
-      },
-      "climate": {
-        "title": "Ambiente Climatizado",
-        "description": "Temperatura agradable todo el año"
-      },
-      "waitingRoom": {
-        "title": "Sala de Espera Confortable",
-        "description": "Espacio acogedor y relajante"
-      },
-      "kids": {
-        "title": "Área para Niños",
-        "description": "Zona de entretenimiento para los más pequeños"
-      },
-      "card": {
-        "title": "Tarjeta",
-        "description": "Pago con tarjeta disponible"
-      },
-      "transport": {
-        "title": "Transporte Público",
-        "description": "Paradas de autobús cercanas"
-      },
-      "accessibility": {
-        "title": "Accesibilidad",
-        "description": "Instalaciones adaptadas para movilidad reducida"
-      }
-    }
-  },
-  "faq": {
-    "badge": "Preguntas Frecuentes",
-    "title": {
-      "before": "Preguntas",
-      "highlight": "Frecuentes"
-    },
-    "subtitle": "Reunimos las preguntas más comunes de nuestros pacientes. Si no encuentra la respuesta que busca, no dude en contactarnos.",
-    "cta": {
-      "text": "¿Aún tiene dudas? ¡Estamos aquí para ayudar!"
-    },
-    "items": {
-      "hours": {
-        "q": "¿Cuál es el horario de funcionamiento de la clínica?",
-        "a": "Nuestra clínica está abierta de Lunes a Viernes de 9h a 19h, y los Sábados de 9h a 13h. Estamos cerrados los Domingos y festivos."
-      },
-      "appointment": {
-        "q": "¿Es necesario reservar cita?",
-        "a": "Sí, siempre recomendamos la reserva previa para garantizar la mejor atención. Sin embargo, en casos de urgencia, haremos lo posible para atenderle el mismo día."
-      },
-      "payments": {
-        "q": "¿Qué formas de pago aceptan?",
-        "a": "Aceptamos pago en efectivo, tarjeta, MBWay y transferencia bancaria. También ofrecemos facilidades de pago y financiamiento para tratamientos más extensos."
-      },
-      "insurance": {
-        "q": "¿La clínica trabaja con seguros de salud?",
-        "a": "Sí, trabajamos con la mayoría de los seguros de salud y subsistemas. Consúltenos para verificar si su seguro está incluido en nuestra lista de convenios."
-      },
-      "routine_duration": {
-        "q": "¿Cuánto tiempo dura una consulta de rutina?",
-        "a": "Una consulta de rutina, incluyendo revisión y limpieza dental, dura aproximadamente 45 minutos a 1 hora, dependiendo de las necesidades de cada paciente."
-      },
-      "pain": {
-        "q": "¿Los tratamientos son dolorosos?",
-        "a": "Utilizamos técnicas modernas y anestesia local para garantizar el máximo confort durante todos los procedimientos. La mayoría de los pacientes no siente dolor durante los tratamientos."
-      },
-      "kids_first_visit": {
-        "q": "¿A partir de qué edad deben ir los niños al dentista?",
-        "a": "Recomendamos la primera visita al dentista alrededor del primer año de edad o cuando aparecen los primeros dientes. Las consultas regulares ayudan a prevenir problemas futuros."
-      },
-      "implant_duration": {
-        "q": "¿Cuánto tiempo dura un implante dental?",
-        "a": "Con los cuidados adecuados, un implante dental puede durar toda la vida. Es fundamental mantener una buena higiene oral y realizar consultas de control regulares."
-      },
-      "whitening": {
-        "q": "¿El blanqueamiento dental daña los dientes?",
-        "a": "No, cuando es realizado por profesionales cualificados con productos adecuados, el blanqueamiento es seguro y no daña el esmalte dental."
-      },
-      "booking": {
-        "q": "¿Cómo puedo reservar una cita?",
-        "a": "Puede reservar su cita por teléfono 924 123 784, por email a geral@silvioaraujo.com, o a través del formulario de reserva en nuestro sitio web."
-      }
-    }
+    "tag": "Comodidades", "title": "Pensamos en tu", "titleHighlight": "comodidad",
+    "description": "Nuestra clínica ofrece diversas comodidades para hacer tu visita lo más agradable posible.",
+    "items": { "wifi": { "title": "Wi-Fi Gratuito", "description": "Mantente conectado durante tu visita" }, "tv": { "title": "TV en Sala de Espera", "description": "Entretenimiento mientras esperas" }, "coffee": { "title": "Café y Agua", "description": "Bebidas gratuitas para tu comodidad" }, "parking": { "title": "Estacionamiento", "description": "Estacionamiento gratuito cercano" }, "accessibility": { "title": "Accesibilidad", "description": "Acceso para personas con movilidad reducida" }, "payment": { "title": "Múltiples Formas de Pago", "description": "Tarjeta, MB Way, transferencia y efectivo" } }
   },
   "appointment": {
-    "tag": "Reservar Cita",
-    "title": "Agende su cita",
-    "titleHighlight": "hoy",
-    "description": "Complete el formulario y nuestro equipo se pondrá en contacto para confirmar la programación de su cita.",
-    "benefits": {
-      "response": "Respuesta en menos de 24 horas",
-      "flexible": "Horarios flexibles",
-      "personalized": "Atención personalizada"
-    },
-    "directContact": {
-      "title": "¿Prefiere contactarnos directamente?",
-      "phone": "924 123 784",
-      "email": "geral@silvioaraujo.com"
-    },
-    "form": {
-      "fullName": "Nombre Completo",
-      "fullNamePlaceholder": "Su nombre",
-      "email": "Email",
-      "emailPlaceholder": "su@email.com",
-      "phone": "Teléfono",
-      "phonePlaceholder": "+351 XXX XXX XXX",
-      "consultationType": "Tipo de Consulta",
-      "consultationTypePlaceholder": "Seleccione el tipo de consulta",
-      "preferredDate": "Fecha Preferida",
-      "preferredTime": "Hora Preferida",
-      "preferredTimePlaceholder": "Seleccione la hora",
-      "preferredDentist": "Dentista Preferido (opcional)",
-      "noPreference": "Sin preferencia",
-      "submit": "Reservar Cita",
-      "privacyNote": "Al enviar, acepta nuestra política de privacidad."
-    },
-    "consultationTypes": {
-      "general": "Consulta General",
-      "cleaning": "Limpieza Dental",
-      "orthodontics": "Ortodoncia",
-      "implants": "Implantes",
-      "whitening": "Blanqueamiento",
-      "emergency": "Urgencia",
-      "other": "Otro"
-    },
-    "toast": {
-      "title": "¡Solicitud de Reserva Enviada!",
-      "description": "Nos pondremos en contacto con usted en breve para confirmar su cita."
-    }
+    "tag": "Pedir Cita", "title": "Agenda tu", "titleHighlight": "cita",
+    "description": "Rellena el formulario y te contactaremos para confirmar tu cita.",
+    "form": { "name": "Nombre Completo", "namePlaceholder": "Tu nombre", "phone": "Teléfono", "phonePlaceholder": "912 345 678", "email": "Email", "emailPlaceholder": "tu@email.com", "service": "Servicio Deseado", "servicePlaceholder": "Selecciona un servicio", "services": { "consultation": "Consulta General", "cleaning": "Limpieza", "whitening": "Blanqueamiento", "orthodontics": "Ortodoncia", "implants": "Implantes", "other": "Otro" }, "date": "Fecha Preferida", "datePlaceholder": "Selecciona una fecha", "time": "Horario Preferido", "timePlaceholder": "Selecciona un horario", "times": { "morning": "Mañana (9h-12h)", "afternoon": "Tarde (14h-17h)", "evening": "Final de la Tarde (17h-19h)" }, "message": "Mensaje (Opcional)", "messagePlaceholder": "¿Alguna observación o pedido especial?", "submit": "Enviar Solicitud", "submitting": "Enviando...", "success": "¡Solicitud enviada con éxito! Te contactaremos pronto.", "error": "Error al enviar la solicitud. Por favor, intenta de nuevo." },
+    "info": { "title": "Información Útil", "response": { "title": "Respuesta Rápida", "description": "Respondemos a todas las solicitudes en menos de 24 horas hábiles." }, "emergency": { "title": "Urgencias", "description": "Para urgencias, llama directamente a nuestro número." }, "hours": { "title": "Horario de Funcionamiento", "weekdays": "Lunes a Viernes: 9h - 19h", "saturday": "Sábado: 9h - 13h", "sunday": "Domingo: Cerrado" }, "contact": { "title": "Contacto Directo", "phone": "Teléfono: 924 123 784", "email": "Email: geral@silvioaraujo.com" }, "button": "Llamar Ahora" }
   },
   "testimonials": {
-    "tag": "Testimonios",
-    "title": "Lo que dicen nuestros",
-    "titleHighlight": "pacientes",
-    "description": "La satisfacción de nuestros pacientes es nuestra mayor recompensa. Vea lo que dicen sobre la experiencia en nuestra clínica.",
-    "stats": {
-      "averageRating": "Valoración Media",
-      "happyPatients": "Pacientes Satisfechos",
-      "satisfactionRate": "Tasa de Satisfacción",
-      "yearsExperience": "Años de Experiencia"
-    },
-    "reviews": {
-      "review1": {
-        "name": "Maria Santos",
-        "role": "Paciente hace 5 años",
-        "text": "¡Excelente atención! El Dr. Sílvio es muy profesional y atento. Siempre me sentí cómoda durante los tratamientos. ¡Lo recomiendo a todos!"
-      },
-      "review2": {
-        "name": "João Ferreira",
-        "role": "Paciente hace 3 años",
-        "text": "Hice mi tratamiento de ortodoncia aquí y estoy muy satisfecho con los resultados. Equipo muy amable y competente."
-      },
-      "review3": {
-        "name": "Ana Costa",
-        "role": "Paciente hace 2 años",
-        "text": "La clínica es muy moderna y acogedora. Los precios son justos y la atención es siempre puntual. Toda mi familia es atendida aquí."
-      },
-      "review4": {
-        "name": "Pedro Oliveira",
-        "role": "Paciente hace 4 años",
-        "text": "Tenía mucho miedo de ir al dentista, pero el Dr. Sílvio me hizo sentir completamente cómodo. Ahora vengo a las consultas sin ningún temor."
-      },
-      "review5": {
-        "name": "Sofia Martins",
-        "role": "Paciente hace 1 año",
-        "text": "Hice un implante dental y todo fue perfecto. Proceso bien explicado y excelente seguimiento. ¡Muy satisfecha!"
-      }
-    }
+    "tag": "Testimonios", "title": "Lo que dicen nuestros", "titleHighlight": "pacientes",
+    "description": "Ve lo que dicen sobre la experiencia en nuestra clínica.",
+    "stats": { "averageRating": "Valoración Media", "happyPatients": "Pacientes Satisfechos", "satisfactionRate": "Tasa de Satisfacción", "yearsExperience": "Años de Experiencia" },
+    "reviews": { "review1": { "name": "Maria Santos", "role": "Paciente hace 5 años", "text": "¡Excelente atención! El Dr. Sílvio es muy profesional y atento. Siempre me sentí cómoda durante los tratamientos. ¡Lo recomiendo a todos!" }, "review2": { "name": "João Ferreira", "role": "Paciente hace 3 años", "text": "Hice mi tratamiento de ortodoncia aquí y estoy muy satisfecho con los resultados. Equipo muy simpático y competente." }, "review3": { "name": "Ana Costa", "role": "Paciente hace 2 años", "text": "La clínica es muy moderna y acogedora. Los precios son justos y la atención siempre es puntual. Toda mi familia se trata aquí." }, "review4": { "name": "Pedro Oliveira", "role": "Paciente hace 4 años", "text": "Tenía mucho miedo de ir al dentista, pero el Dr. Sílvio me hizo sentir completamente cómodo. Ahora vengo a las citas sin ningún miedo." }, "review5": { "name": "Sofia Martins", "role": "Paciente hace 1 año", "text": "Me puse un implante dental y todo salió perfecto. Proceso bien explicado y seguimiento excelente. ¡Muy satisfecha!" } }
   },
   "blog": {
-    "tag": "Blog",
-    "title": "Consejos de",
-    "titleHighlight": "Salud Oral",
-    "viewAll": "Ver Todos los Artículos",
-    "readMore": "Leer Más",
-    "readTime": "lectura",
-    "back": "Volver al Blog",
-    "share": "Compartir",
-    "articles": {
-      "article1": {
-        "title": "Cómo mantener una buena higiene oral diaria",
-        "excerpt": "Descubra las mejores prácticas para cepillar los dientes correctamente y mantener su boca saludable todos los días.",
-        "category": "Higiene Oral"
-      },
-      "article2": {
-        "title": "Todo sobre blanqueamiento dental",
-        "excerpt": "Conozca los diferentes tipos de blanqueamiento y cuál es el más indicado para su caso.",
-        "category": "Estética"
-      },
-      "article3": {
-        "title": "¿Cuándo llevar a los niños al dentista?",
-        "excerpt": "Sepa cuál es la edad ideal para la primera consulta y cómo preparar a los más pequeños para la visita.",
-        "category": "Odontopediatría"
-      },
-      "article4": {
-        "title": "Implantes dentales: guía completa",
-        "excerpt": "Todo lo que necesita saber sobre implantes dentales, desde el procedimiento hasta la recuperación.",
-        "category": "Implantes"
-      }
-    },
-    "higiene": {
-      "category": "Higiene Oral",
-      "title": "Cómo mantener una buena higiene oral diaria",
-      "description": "Descubra las mejores prácticas para cepillar los dientes correctamente y mantener una higiene oral impecable todos los días.",
-      "readTime": "5 min lectura",
-      "imageAlt": "Higiene oral",
-      "intro": "La higiene oral es fundamental para mantener dientes y encías saludables a lo largo de la vida.",
-      "whyTitle": "¿Por qué es tan importante la higiene oral?",
-      "whyText": "La boca es la puerta de entrada a nuestro organismo. Cuando descuidamos la higiene oral, permitimos que se acumulen bacterias nocivas.",
-      "pillarsTitle": "Los pilares de una buena higiene oral",
-      "brushingTitle": "Cepillado correcto",
-      "brushingText": "Cepille los dientes al menos dos veces al día con movimientos suaves.",
-      "flossTitle": "Uso del hilo dental",
-      "flossText": "El hilo dental elimina restos de comida y placa bacteriana entre los dientes.",
-      "mouthwashTitle": "Enjuague bucal",
-      "mouthwashText": "El enjuague ayuda a eliminar bacterias y refuerza el esmalte dental.",
-      "tipsTitle": "Consejos adicionales",
-      "tipsText": "Evite el azúcar, beba agua, no fume y visite al dentista regularmente.",
-      "conclusionTitle": "Conclusión",
-      "conclusionText": "Una buena higiene oral garantiza una sonrisa saludable de por vida.",
-      "ctaTitle": "¿Necesita orientación?",
-      "ctaText": "Agende una consulta para una evaluación completa.",
-      "ctaButton": "Reservar Cita",
-      "lead": "Pequeños hábitos diarios hacen una gran diferencia. Aquí está una guía práctica para mantener dientes y encías saludables — en casa y entre citas.",
-      "toc": {
-        "title": "En este artículo",
-        "note": "¿Necesita un plan personalizado? Podemos evaluar su rutina y recomendar los mejores productos y técnicas.",
-        "why": "Por qué es importante",
-        "daily": "Rutina diaria (paso a paso)",
-        "technique": "Técnica de cepillado (guía rápida)",
-        "floss": "Hilo dental y limpieza interdental",
-        "diet": "Alimentación y hábitos",
-        "warning": "Señales de alerta",
-        "faq": "Mitos y dudas"
-      },
-      "takeaways": {
-        "title": "Puntos clave",
-        "one": "Cepille 2×/día durante 2 minutos con técnica suave y pasta con flúor.",
-        "two": "Limpie entre los dientes diariamente (hilo o cepillos interdentales) — ahí es donde comienzan muchas caries.",
-        "three": "Reduzca el azúcar entre comidas y evite 'picar' constantemente; el agua es su mejor aliada."
-      },
-      "whyCards": {
-        "cavities": {
-          "title": "Menos caries",
-          "text": "La placa y el azúcar alimentan bacterias que debilitan el esmalte."
-        },
-        "gums": {
-          "title": "Encías más saludables",
-          "text": "El sangrado no es normal — es señal de inflamación."
-        },
-        "breath": {
-          "title": "Aliento más fresco",
-          "text": "Limpiar lengua + zonas interdentales reduce el olor."
-        }
-      },
-      "dailyTitle": "Rutina diaria (paso a paso)",
-      "daily": {
-        "1": {
-          "title": "Cepillar (2 minutos)",
-          "text": "Use cepillo suave y pasta con flúor. Enfóquese en la línea de la encía y todas las superficies."
-        },
-        "2": {
-          "title": "Limpiar entre los dientes",
-          "text": "Use hilo dental o cepillos interdentales 1×/día. Elimina placa donde el cepillo no llega."
-        },
-        "3": {
-          "title": "Limpieza de la lengua",
-          "text": "Limpie la lengua suavemente para reducir bacterias y mejorar el aliento."
-        },
-        "4": {
-          "title": "Enjuague (opcional)",
-          "text": "Use enjuague sin alcohol cuando sea recomendado. Evite enjuagar justo después de cepillar para mantener el flúor más tiempo."
-        }
-      },
-      "checklist": {
-        "title": "Checklist diario rápido",
-        "a": "Cepillar 2×/día",
-        "b": "Limpieza interdental 1×/día",
-        "c": "Beber agua a lo largo del día",
-        "d": "Reducir azúcar entre comidas"
-      },
-      "techTitle": "Técnica de cepillado (guía rápida)",
-      "tech": {
-        "doTitle": "Haga",
-        "do1": "Use movimientos pequeños y circulares con presión suave.",
-        "do2": "Incline el cepillo ~45° hacia la línea de la encía.",
-        "do3": "Cambie el cepillo/cabezal cada ~3 meses (o antes si las cerdas se abren).",
-        "avoidTitle": "Evite",
-        "avoid1": "Cepillar con mucha fuerza (puede causar retracción gingival y sensibilidad).",
-        "avoid2": "Ignorar la línea de la encía — ahí es donde se acumula más placa.",
-        "avoid3": "Cepillar inmediatamente después de bebidas ácidas; espere ~30 minutos."
-      },
-      "flossSectionTitle": "Hilo dental y limpieza interdental",
-      "flossSectionText": "Muchas caries y problemas gingivales comienzan entre los dientes. Si el hilo es difícil, los cepillos interdentales pueden ser una excelente alternativa — pregunte cuál es el tamaño ideal para usted.",
-      "flossHowTitle": "Cómo usar hilo dental (en 3 pasos)",
-      "flossHow1": "Pase suavemente entre los dientes y haga una 'C' alrededor del diente.",
-      "flossHow2": "Mueva hacia arriba y hacia abajo en ambos lados del diente.",
-      "flossHow3": "Use una parte limpia del hilo para cada espacio.",
-      "dietTitle": "Alimentación y hábitos",
-      "diet": {
-        "goodTitle": "Buenos hábitos",
-        "good1": "Beber agua a lo largo del día.",
-        "good2": "Preferir snacks con menos azúcar (frutos secos, queso, yogur).",
-        "good3": "Masticar chicle sin azúcar después de las comidas (si está indicado) para estimular la saliva.",
-        "limitTitle": "Reduzca",
-        "limit1": "Snacks y bebidas azucaradas frecuentes.",
-        "limit2": "Beber refrescos/jugos lentamente durante mucho tiempo (ácido constante).",
-        "limit3": "Tabaco (aumenta riesgo de enfermedad gingival y manchas)."
-      },
-      "warningTitle": "Señales de alerta",
-      "warningSubtitle": "Si nota alguna de estas señales, considere reservar una evaluación:",
-      "warning": {
-        "1": "Encías sangrando al cepillar o usar hilo",
-        "2": "Mal aliento persistente",
-        "3": "Sensibilidad o dolor dental",
-        "4": "Encías hinchadas o retracción gingival",
-        "5": "Dolor al masticar o incomodidad en la mandíbula"
-      },
-      "faqTitle": "Mitos y dudas",
-      "faq": {
-        "q1": "Si las encías sangran, ¿debo dejar de usar hilo dental?",
-        "a1": "Normalmente no. El sangrado suele ser señal de inflamación. Use hilo con suavidad y consistencia; si persiste después de 1–2 semanas, haga una evaluación.",
-        "q2": "¿El enjuague es obligatorio?",
-        "a2": "No siempre. Puede ayudar en casos específicos (gingivitis, alto riesgo de caries). Lo esencial es cepillado + limpieza interdental.",
-        "q3": "¿Vale la pena el cepillo eléctrico?",
-        "a3": "Para muchas personas, sí — mejora la consistencia y la eliminación de placa. Aun así, la técnica es importante."
-      },
-      "finalCta": {
-        "title": "¿Quiere un plan de higiene oral personalizado?",
-        "text": "Podemos evaluar las encías, el riesgo de caries y recomendar productos y técnicas ajustados a su caso."
-      }
-    },
-    "estetica": {
-      "category": "Estética",
-      "title": "Todo sobre blanqueamiento dental",
-      "description": "Conozca los diferentes tipos de blanqueamiento dental y cuál es el más indicado para usted. Guía completa sobre estética dental.",
-      "readTime": "7 min lectura",
-      "lead": "El blanqueamiento dental es uno de los procedimientos estéticos más solicitados en las clínicas dentales. Una sonrisa más blanca puede aumentar significativamente la autoconfianza y mejorar la apariencia general del rostro.",
-      "ctaButton": "Reservar Cita",
-      "toc": {
-        "title": "En este artículo",
-        "note": "¿Quiere una sonrisa más blanca? Agende una evaluación para descubrir cuál es el mejor tipo de blanqueamiento para usted.",
-        "causes": "Qué causa el oscurecimiento",
-        "types": "Tipos de blanqueamiento",
-        "safety": "Seguridad",
-        "aftercare": "Cuidados después del tratamiento",
-        "duration": "Duración de los resultados"
-      },
-      "takeaways": {
-        "title": "Puntos clave",
-        "one": "El blanqueamiento profesional es seguro y eficaz",
-        "two": "Los resultados pueden durar de 1 a 3 años",
-        "three": "Consulte siempre a un profesional cualificado"
-      },
-      "causesTitle": "¿Qué causa el oscurecimiento de los dientes?",
-      "causesText": "Los dientes pueden oscurecerse por diversas razones a lo largo del tiempo. Entender las causas ayuda a prevenir y a elegir el tratamiento más adecuado.",
-      "causes": {
-        "food": {
-          "title": "Alimentos y bebidas",
-          "text": "Café, té, vino tinto y refrescos con colorantes"
-        },
-        "tobacco": {
-          "title": "Tabaco",
-          "text": "El humo es una de las principales causas de manchas en los dientes"
-        },
-        "age": {
-          "title": "Edad",
-          "text": "El esmalte se desgasta naturalmente, revelando la dentina más amarillenta"
-        },
-        "medication": {
-          "title": "Medicamentos",
-          "text": "Ciertos antibióticos y tratamientos pueden causar decoloración"
-        },
-        "hygiene": {
-          "title": "Higiene inadecuada",
-          "text": "Acumulación de placa y sarro"
-        }
-      },
-      "typesTitle": "Tipos de blanqueamiento dental",
-      "types": {
-        "office": {
-          "title": "1. Blanqueamiento en consultorio",
-          "text": "Realizado por el dentista, utiliza productos con mayor concentración de agentes blanqueadores, proporcionando resultados visibles en una sola sesión. Es el método más rápido y eficaz.",
-          "duration": "Duración: 1 a 2 horas",
-          "results": "Resultados: Hasta 8 tonos más claro",
-          "safety": "Seguridad: Monitoreado por profesional"
-        },
-        "home": {
-          "title": "2. Blanqueamiento casero supervisado",
-          "text": "El dentista confecciona férulas personalizadas y proporciona el gel blanqueador para uso en casa. Es una opción más económica y cómoda, aunque los resultados tardan más en aparecer.",
-          "duration": "Duración: 2 a 4 semanas de tratamiento",
-          "application": "Aplicación: Algunas horas al día o durante la noche",
-          "advantage": "Ventaja: Puede retocar cuando sea necesario"
-        },
-        "combined": {
-          "title": "3. Blanqueamiento combinado",
-          "text": "Combina una sesión en consultorio con tratamiento casero de mantenimiento, ofreciendo lo mejor de ambos métodos: resultados rápidos y duraderos."
-        }
-      },
-      "safetyTitle": "¿El blanqueamiento es seguro?",
-      "safetyText": "Sí, cuando es realizado o supervisado por un dentista cualificado. Los productos utilizados en clínicas son seguros y probados. Puede haber alguna sensibilidad temporal, que desaparece después del tratamiento.",
-      "aftercareTitle": "Cuidados después del blanqueamiento",
-      "aftercare": {
-        "1": "Evite alimentos y bebidas con color intenso en las primeras 48 horas",
-        "2": "No fume durante el período de tratamiento",
-        "3": "Mantenga una buena higiene oral",
-        "4": "Haga visitas regulares al dentista para mantenimiento"
-      },
-      "durationTitle": "¿Cuánto tiempo duran los resultados?",
-      "durationText": "Los resultados pueden durar de 1 a 3 años, dependiendo de los hábitos alimentarios, higiene oral y estilo de vida. Los tratamientos de mantenimiento periódicos ayudan a prolongar el efecto.",
-      "finalCta": {
-        "title": "¿Quiere una sonrisa más blanca?",
-        "text": "Agende una evaluación para descubrir cuál es el mejor tipo de blanqueamiento para usted."
-      }
-    },
-    "branqueamento": {
-      "imageAlt": "Blanqueamiento dental"
-    },
-    "implantes": {
-      "category": "Implantes",
-      "title": "Implantes dentales: guía completa",
-      "description": "Todo lo que necesita saber sobre implantes dentales, desde el procedimiento hasta la recuperación. Guía completa sobre implantología.",
-      "readTime": "10 min lectura",
-      "lead": "Los implantes dentales son la solución más moderna y eficaz para reemplazar dientes perdidos. Funcionan como raíces artificiales que soportan coronas, puentes o prótesis, proporcionando resultados naturales y duraderos.",
-      "ctaButton": "Reservar Cita",
-      "toc": {
-        "title": "En este artículo",
-        "note": "¿Quiere recuperar su sonrisa? Agende una evaluación gratuita para saber si los implantes son indicados para usted.",
-        "what": "Qué es un implante",
-        "advantages": "Ventajas",
-        "eligibility": "Quién puede hacerlo",
-        "procedure": "El procedimiento",
-        "recovery": "Recuperación",
-        "success": "Tasa de éxito",
-        "cost": "Costos"
-      },
-      "takeaways": {
-        "title": "Puntos clave",
-        "one": "Tasa de éxito superior al 95%",
-        "two": "Pueden durar toda la vida con cuidados adecuados",
-        "three": "Preservan el hueso maxilar y dientes adyacentes"
-      },
-      "whatTitle": "¿Qué es un implante dental?",
-      "whatText": "Un implante dental es un pequeño tornillo de titanio que se inserta quirúrgicamente en el hueso maxilar o mandibular. El titanio es un material biocompatible, lo que significa que el cuerpo lo acepta y el hueso crece a su alrededor, creando una base sólida para el nuevo diente.",
-      "parts": {
-        "implant": {
-          "title": "Implante",
-          "text": "Tornillo de titanio insertado en el hueso"
-        },
-        "abutment": {
-          "title": "Pilar",
-          "text": "Pieza de conexión entre implante y corona"
-        },
-        "crown": {
-          "title": "Corona",
-          "text": "Diente artificial visible"
-        }
-      },
-      "advantagesTitle": "Ventajas de los implantes dentales",
-      "advantages": {
-        "1": "Aspecto y sensación natural",
-        "2": "Durabilidad - pueden durar toda la vida con cuidados adecuados",
-        "3": "Preservan el hueso maxilar",
-        "4": "No afectan los dientes adyacentes",
-        "5": "Permiten comer y hablar normalmente",
-        "6": "No requieren remoción para limpieza",
-        "7": "Mejoran la autoestima y calidad de vida"
-      },
-      "eligibilityTitle": "¿Quién puede hacerse implantes?",
-      "eligibilityText1": "La mayoría de los adultos con buena salud general pueden recibir implantes dentales. Sin embargo, es necesaria una evaluación cuidadosa para determinar si es un buen candidato.",
-      "eligibilityText2": "Factores que pueden afectar la elegibilidad incluyen:",
-      "eligibility": {
-        "1": "Cantidad y calidad del hueso disponible",
-        "2": "Salud general y condiciones médicas (diabetes, osteoporosis)",
-        "3": "Hábitos como fumar",
-        "4": "Higiene oral",
-        "5": "Medicamentos en uso"
-      },
-      "procedureTitle": "¿Cómo es el procedimiento?",
-      "procedure": {
-        "phase1": {
-          "title": "Fase 1: Evaluación y planificación",
-          "text": "El dentista realiza exámenes clínicos y radiográficos detallados, incluyendo TAC 3D, para evaluar el hueso y planificar la posición ideal del implante."
-        },
-        "phase2": {
-          "title": "Fase 2: Colocación del implante",
-          "text": "Bajo anestesia local, el implante se inserta en el hueso. El procedimiento es generalmente indoloro. Se puede colocar un diente provisional el mismo día (carga inmediata) en casos seleccionados."
-        },
-        "phase3": {
-          "title": "Fase 3: Osteointegración",
-          "text": "Durante 3 a 6 meses, el hueso se integra con el implante. Este período es crucial para el éxito a largo plazo."
-        },
-        "phase4": {
-          "title": "Fase 4: Colocación de la corona definitiva",
-          "text": "Después de la cicatrización, se coloca el pilar y la corona definitiva, hecha a medida para combinar perfectamente con sus dientes naturales."
-        }
-      },
-      "recoveryTitle": "Recuperación y cuidados",
-      "recoveryText": "La recuperación inicial dura algunos días a una semana. Durante este período:",
-      "recovery": {
-        "1": "Puede haber algo de hinchazón e incomodidad leve",
-        "2": "Tome la medicación prescrita según lo indicado",
-        "3": "Evite alimentos duros en la zona operada",
-        "4": "Mantenga una buena higiene oral",
-        "5": "Evite fumar y alcohol"
-      },
-      "successTitle": "Tasa de éxito",
-      "successText": "Los implantes dentales tienen una tasa de éxito superior al 95% cuando son colocados por profesionales experimentados y con cuidados adecuados. Con mantenimiento regular, pueden durar toda la vida.",
-      "costTitle": "¿Cuánto cuestan los implantes?",
-      "costText": "El costo varía dependiendo del número de implantes, tipo de corona y procedimientos adicionales necesarios (como injerto óseo). Ofrecemos opciones de financiamiento para hacer el tratamiento accesible.",
-      "finalCta": {
-        "title": "¿Quiere recuperar su sonrisa?",
-        "text": "Agende una evaluación gratuita para saber si los implantes dentales son la solución ideal para usted."
-      }
-    },
-    "odontopediatria": {
-      "category": "Odontopediatría",
-      "title": "¿Cuándo llevar a los niños al dentista?",
-      "description": "Sepa cuál es la edad ideal para la primera consulta y cómo preparar a los más pequeños para una experiencia positiva en el dentista.",
-      "readTime": "4 min lectura",
-      "lead": "La salud oral de los niños es fundamental para su desarrollo. Muchos padres se preguntan cuándo deben llevar a sus hijos al dentista por primera vez y cómo hacer esta experiencia positiva.",
-      "ctaButton": "Reservar Cita",
-      "toc": {
-        "title": "En este artículo",
-        "note": "Nuestro equipo está preparado para recibir a los más pequeños con todo el cariño y atención.",
-        "idealAge": "Edad ideal",
-        "preparation": "Preparar la consulta",
-        "problems": "Problemas comunes",
-        "hygiene": "Higiene por edad",
-        "frequency": "Frecuencia de las consultas"
-      },
-      "takeaways": {
-        "title": "Puntos clave",
-        "one": "Primera consulta hasta el 1er cumpleaños",
-        "two": "Hable positivamente sobre el dentista",
-        "three": "Consultas regulares cada 6 meses"
-      },
-      "idealAgeTitle": "¿Cuál es la edad ideal para la primera consulta?",
-      "idealAgeText": "La primera visita al dentista debe ocurrir cuando aparece el primer diente o, como máximo, hasta el primer cumpleaños del niño. Esta consulta inicial es esencial para:",
-      "idealAge": {
-        "1": "Evaluar el desarrollo de los dientes y maxilares",
-        "2": "Identificar precozmente posibles problemas",
-        "3": "Orientar a los padres sobre higiene oral infantil",
-        "4": "Crear una relación positiva entre el niño y el dentista"
-      },
-      "preparationTitle": "¿Cómo preparar al niño para la consulta?",
-      "preparation": {
-        "beforeTitle": "Antes de la consulta",
-        "before": {
-          "1": {
-            "title": "Hable positivamente:",
-            "text": "Evite usar palabras como \"dolor\", \"inyección\" o \"sacar\""
-          },
-          "2": {
-            "title": "Lea libros:",
-            "text": "Existen historias infantiles sobre visitas al dentista"
-          },
-          "3": {
-            "title": "Juegue al dentista:",
-            "text": "Simule una consulta en casa con muñecos"
-          },
-          "4": {
-            "title": "Elija el horario correcto:",
-            "text": "Prefiera horarios en que el niño esté descansado"
-          }
-        },
-        "duringTitle": "Durante la consulta",
-        "during": {
-          "1": "Mantenga la calma y transmita seguridad",
-          "2": "Deje que el dentista se comunique directamente con el niño",
-          "3": "Evite hacer promesas de recompensas exageradas",
-          "4": "Elogie el comportamiento del niño después de la consulta"
-        }
-      },
-      "problemsTitle": "Problemas dentales comunes en niños",
-      "problems": {
-        "bottle": {
-          "title": "Caries del biberón",
-          "text": "Ocurren cuando el niño se duerme con el biberón de leche o jugo en la boca. Para prevenir, limpie los dientes después de cada toma y evite bebidas azucaradas en el biberón."
-        },
-        "thumb": {
-          "title": "Chuparse el dedo",
-          "text": "Es natural en los primeros años, pero debe ser desalentado después de los 4 años para evitar alteraciones en el posicionamiento de los dientes y en el desarrollo del arco dental."
-        },
-        "trauma": {
-          "title": "Traumatismos dentales",
-          "text": "Caídas y accidentes son comunes en la infancia. En caso de trauma dental, busque inmediatamente un dentista, incluso si parece no haber daños visibles."
-        }
-      },
-      "hygieneTitle": "Higiene oral infantil por edad",
-      "hygiene": {
-        "0to2": {
-          "title": "0-2 años",
-          "text": "Limpie las encías con una gasa húmeda. Cuando aparezcan los primeros dientes, use un cepillo de bebé con agua."
-        },
-        "2to6": {
-          "title": "2-6 años",
-          "text": "Use pasta de dientes con flúor (cantidad del tamaño de un guisante). Los padres deben supervisar y ayudar en el cepillado."
-        },
-        "6plus": {
-          "title": "6+ años",
-          "text": "El niño puede cepillar solo, pero los padres deben verificar. Introduzca el uso de hilo dental cuando los dientes comiencen a tocarse."
-        }
-      },
-      "frequencyTitle": "¿Con qué frecuencia ir al dentista?",
-      "frequencyText": "Después de la primera consulta, se recomienda visitar al dentista cada 6 meses para revisiones de rutina. Esta frecuencia permite detectar y tratar problemas precozmente, cuando son más fáciles de resolver.",
-      "finalCta": {
-        "title": "¿Es hora de la primera consulta de su hijo?",
-        "text": "Nuestro equipo está preparado para recibir a los más pequeños con todo el cariño y atención."
-      }
-    }
+    "tag": "Blog", "title": "Consejos de", "titleHighlight": "Salud Oral", "viewAll": "Ver Todos los Artículos", "readMore": "Leer Más", "readTime": "lectura", "back": "Volver al Blog", "share": "Compartir",
+    "articles": { "article1": { "title": "Cómo mantener una buena higiene oral diaria", "excerpt": "Descubre las mejores prácticas para cepillar los dientes correctamente y mantener tu boca saludable todos los días.", "category": "Higiene Oral" }, "article2": { "title": "Todo sobre blanqueamiento dental", "excerpt": "Conoce los diferentes tipos de blanqueamiento y cuál es el más indicado para tu caso.", "category": "Estética" }, "article3": { "title": "¿Cuándo llevar a los niños al dentista?", "excerpt": "Descubre la edad ideal para la primera consulta y cómo preparar a los más pequeños para la visita.", "category": "Odontopediatría" }, "article4": { "title": "Implantes dentales: guía completa", "excerpt": "Todo lo que necesitas saber sobre implantes dentales, desde el procedimiento hasta la recuperación.", "category": "Implantes" } }
+  },
+  "faq": {
+    "tag": "FAQ", "title": "Preguntas", "titleHighlight": "Frecuentes",
+    "description": "Encuentra respuestas a las dudas más comunes sobre nuestros servicios.",
+    "items": { "item1": { "question": "¿Qué métodos de pago aceptan?", "answer": "Aceptamos pagos en efectivo, tarjeta de débito/crédito, MB Way y transferencia bancaria. También ofrecemos facilidades de pago para tratamientos más extensos." }, "item2": { "question": "¿La clínica tiene estacionamiento?", "answer": "Sí, existe estacionamiento gratuito en la zona que rodea la clínica, con fácil acceso." }, "item3": { "question": "¿Con qué frecuencia debo ir al dentista?", "answer": "Recomendamos consultas de rutina cada 6 meses para mantenimiento de la salud oral y detección precoz de problemas." }, "item4": { "question": "¿La primera consulta es gratuita?", "answer": "Sí, ofrecemos consulta de evaluación gratuita para nuevos pacientes, donde evaluamos tu situación y presentamos un plan de tratamiento." }, "item5": { "question": "¿Atienden urgencias?", "answer": "Sí, reservamos espacios diarios para urgencias dentales. En caso de emergencia, contáctanos por teléfono para agendamiento prioritario." }, "item6": { "question": "¿Atienden a niños?", "answer": "Sí, tenemos experiencia en odontopediatría y creamos un ambiente acogedor para que los más pequeños se sientan cómodos durante las consultas." } },
+    "cta": { "text": "¿No encontraste tu duda?", "button": "Contáctanos" }
   },
   "contact": {
-    "tag": "Contactos",
-    "title": "Venga a",
-    "titleHighlight": "visitarnos",
-    "description": "Estamos ubicados en Quinta do Conde, con fácil acceso y estacionamiento cercano. Póngase en contacto con nosotros.",
-    "info": {
-      "address": {
-        "title": "Dirección",
-        "content": "Quinta do Conde, Sesimbra, Portugal",
-        "action": "Ver en el Mapa"
-      },
-      "phone": {
-        "title": "Teléfono",
-        "content": "924 123 784",
-        "action": "Llamar Ahora"
-      },
-      "email": {
-        "title": "Email",
-        "content": "geral@silvioaraujo.com",
-        "action": "Enviar Email"
-      },
-      "schedule": {
-        "title": "Horario",
-        "content": "Lun-Vie: 9h-19h | Sáb: 9h-13h"
-      }
-    },
-    "cta": {
-      "title": "¡Reserve su Cita Hoy!",
-      "description": "No espere más para cuidar su sonrisa. Nuestro equipo está listo para recibirle.",
-      "button": "Reservar Cita"
-    }
+    "tag": "Contactos", "title": "Ven a", "titleHighlight": "visitarnos",
+    "description": "Estamos ubicados en Quinta do Conde, con fácil acceso y estacionamiento cercano. Ponte en contacto con nosotros.",
+    "info": { "address": { "title": "Dirección", "content": "Quinta do Conde, Sesimbra, Portugal", "action": "Ver en el Mapa" }, "phone": { "title": "Teléfono", "content": "924 123 784", "action": "Llamar Ahora" }, "email": { "title": "Email", "content": "geral@silvioaraujo.com", "action": "Enviar Email" }, "schedule": { "title": "Horario", "content": "Lun-Vie: 9h-19h | Sáb: 9h-13h" } },
+    "cta": { "title": "¡Pide Tu Cita Hoy!", "description": "No esperes más para cuidar de tu sonrisa. Nuestro equipo está listo para recibirte.", "button": "Pedir Cita" }
   },
   "footer": {
-    "description": "Cuidamos su sonrisa con dedicación, tecnología moderna y tratamientos personalizados para toda la familia.",
-    "quickLinks": "Enlaces Rápidos",
-    "services": "Servicios",
-    "contacts": "Contactos",
-    "servicesList": {
-      "consultation": "Consulta Dental",
-      "orthodontics": "Ortodoncia",
-      "implants": "Implantes Dentales",
-      "whitening": "Blanqueamiento",
-      "cleaning": "Limpieza Dental"
-    },
-    "copyright": "Clínica Dental Dr. Sílvio Araújo. Todos los derechos reservados.",
-    "privacy": "Política de Privacidad",
-    "terms": "Términos de Uso"
+    "description": "Cuidamos de tu sonrisa con dedicación, tecnología moderna y tratamientos personalizados para toda la familia.",
+    "quickLinks": "Enlaces Rápidos", "services": "Servicios", "contacts": "Contactos",
+    "servicesList": { "consultation": "Consulta Dental", "orthodontics": "Ortodoncia", "implants": "Implantes Dentales", "whitening": "Blanqueamiento", "cleaning": "Limpieza Dental" },
+    "copyright": "Clínica Dental Dr. Sílvio Araújo. Todos los derechos reservados.", "privacy": "Política de Privacidad", "terms": "Términos de Uso"
   },
-  "floatingCTA": {
-    "button": "¡Reservar Cita Hoy!"
-  },
-  "whatsapp": {
-    "tooltip": "Hable con nosotros en WhatsApp",
-    "message": "¡Hola! 😊 Vine por el sitio web y me gustaría hablar con la clínica. ¿Pueden responder por aquí para ayudarme a reservar y/o recibir información?",
-    "cta": "Póngase en contacto con nosotros"
-  },
-  "notFound": {
-    "title": "404",
-    "message": "¡Ups! Página no encontrada",
-    "backHome": "Volver al Inicio"
-  }
+  "floatingCTA": { "button": "¡Pedir Cita Hoy!" },
+  "whatsapp": { "tooltip": "Habla con nosotros en WhatsApp", "message": "¡Hola! 😊 Vine por la web y me gustaría hablar con la clínica. ¿Pueden responder por aquí para ayudarme a agendar y/o recibir información?", "cta": "Ponte en contacto con nosotros" },
+  "notFound": { "title": "404", "message": "¡Ups! Página no encontrada", "backHome": "Volver al Inicio" }
 }
