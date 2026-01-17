@@ -101,6 +101,7 @@ const Header = () => {
   };
 
   const scrollToSection = (href: string) => {
+    // Fecha tudo primeiro
     closeAll();
 
     if (location.pathname !== "/") {
@@ -298,39 +299,35 @@ const Header = () => {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="lg:hidden bg-background border-t border-border animate-fade-in">
-            <nav className="container py-4 flex flex-col gap-2 max-h-[70vh] overflow-y-auto">
+            <nav className="container py-4 flex flex-col gap-2 max-h-[calc(100vh-5rem)] overflow-y-auto">
               {navLinks.map((link) => {
-                // Mobile - Serviços accordion
+                // Mobile - Serviços com dropdown
                 if (link.isServices) {
                   return (
-                    <div key={link.href} className="px-1">
-                      <div className="flex flex-col gap-1">
-                        {/* Botão principal que faz scroll */}
+                    <div key={link.href}>
+                      {/* Botão principal - vai para secção */}
+                      <button
+                        type="button"
+                        onClick={() => scrollToSection(link.href)}
+                        className="w-full px-4 py-3 text-left text-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors font-medium flex items-center justify-between"
+                      >
+                        <span>{link.label}</span>
                         <button
                           type="button"
-                          onClick={() => scrollToSection(link.href)}
-                          className="w-full px-3 py-3 text-left text-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors font-medium"
-                        >
-                          {link.label}
-                        </button>
-                        
-                        {/* Botão de toggle do accordion */}
-                        <button
-                          type="button"
-                          onClick={() => {
-                            setIsServicesOpen((v) => !v);
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setIsServicesOpen(!isServicesOpen);
                             setIsBlogOpen(false);
                           }}
-                          className="w-full px-3 py-2 text-left text-sm text-muted-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors flex items-center justify-between"
-                          aria-expanded={isServicesOpen}
+                          className="p-1 hover:bg-accent rounded"
                         >
-                          <span>Ver todas as opções</span>
-                          <ChevronDown className={`w-4 h-4 transition-transform ${isServicesOpen ? "rotate-180" : ""}`} />
+                          <ChevronDown className={`w-5 h-5 transition-transform ${isServicesOpen ? "rotate-180" : ""}`} />
                         </button>
-                      </div>
+                      </button>
 
+                      {/* Dropdown com serviços específicos */}
                       {isServicesOpen && (
-                        <div className="mt-1 ml-2 border-l-2 border-primary/20 pl-2 space-y-1">
+                        <div className="mt-1 ml-4 pl-4 border-l-2 border-primary/20 space-y-1">
                           {servicesDropdown.map((item) => (
                             <Link
                               key={item.to}
@@ -347,37 +344,33 @@ const Header = () => {
                   );
                 }
 
-                // Mobile - Blog accordion
+                // Mobile - Blog com dropdown
                 if (link.isBlog) {
                   return (
-                    <div key={link.href} className="px-1">
-                      <div className="flex flex-col gap-1">
-                        {/* Botão principal que faz scroll */}
+                    <div key={link.href}>
+                      {/* Botão principal - vai para secção */}
+                      <button
+                        type="button"
+                        onClick={() => scrollToSection(link.href)}
+                        className="w-full px-4 py-3 text-left text-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors font-medium flex items-center justify-between"
+                      >
+                        <span>{link.label}</span>
                         <button
                           type="button"
-                          onClick={() => scrollToSection(link.href)}
-                          className="w-full px-3 py-3 text-left text-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors font-medium"
-                        >
-                          {link.label}
-                        </button>
-                        
-                        {/* Botão de toggle do accordion */}
-                        <button
-                          type="button"
-                          onClick={() => {
-                            setIsBlogOpen((v) => !v);
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setIsBlogOpen(!isBlogOpen);
                             setIsServicesOpen(false);
                           }}
-                          className="w-full px-3 py-2 text-left text-sm text-muted-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors flex items-center justify-between"
-                          aria-expanded={isBlogOpen}
+                          className="p-1 hover:bg-accent rounded"
                         >
-                          <span>Ver artigos</span>
-                          <ChevronDown className={`w-4 h-4 transition-transform ${isBlogOpen ? "rotate-180" : ""}`} />
+                          <ChevronDown className={`w-5 h-5 transition-transform ${isBlogOpen ? "rotate-180" : ""}`} />
                         </button>
-                      </div>
+                      </button>
 
+                      {/* Dropdown com artigos */}
                       {isBlogOpen && (
-                        <div className="mt-1 ml-2 border-l-2 border-primary/20 pl-2 space-y-1">
+                        <div className="mt-1 ml-4 pl-4 border-l-2 border-primary/20 space-y-1">
                           {blogDropdown.map((item) => (
                             <Link
                               key={item.to}
