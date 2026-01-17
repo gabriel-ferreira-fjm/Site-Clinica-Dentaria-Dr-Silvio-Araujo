@@ -13,9 +13,13 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Dropdowns
+  // Dropdowns Desktop
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isBlogOpen, setIsBlogOpen] = useState(false);
+
+  // Dropdowns Mobile (separados para evitar conflitos)
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
+  const [isMobileBlogOpen, setIsMobileBlogOpen] = useState(false);
 
   // Timers anti-flicker (mantém aberto ao cruzar o espaço)
   const servicesCloseTimerRef = useRef<number | null>(null);
@@ -27,7 +31,7 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Fecha dropdowns ao clicar fora
+  // Fecha dropdowns ao clicar fora (apenas desktop)
   useEffect(() => {
     const onDocMouseDown = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
@@ -38,6 +42,14 @@ const Header = () => {
     return () => document.removeEventListener("mousedown", onDocMouseDown);
   }, []);
 
+  // Reset mobile dropdowns quando menu fecha
+  useEffect(() => {
+    if (!isMobileMenuOpen) {
+      setIsMobileServicesOpen(false);
+      setIsMobileBlogOpen(false);
+    }
+  }, [isMobileMenuOpen]);
+
   const clearTimer = (ref: React.MutableRefObject<number | null>) => {
     if (ref.current) {
       window.clearTimeout(ref.current);
@@ -45,7 +57,7 @@ const Header = () => {
     }
   };
 
-  // Serviços handlers
+  // Serviços handlers (Desktop)
   const openServices = () => {
     clearTimer(servicesCloseTimerRef);
     setIsServicesOpen(true);
@@ -56,7 +68,7 @@ const Header = () => {
     servicesCloseTimerRef.current = window.setTimeout(() => setIsServicesOpen(false), 200);
   };
 
-  // Blog handlers
+  // Blog handlers (Desktop)
   const openBlog = () => {
     clearTimer(blogCloseTimerRef);
     setIsBlogOpen(true);
@@ -98,6 +110,8 @@ const Header = () => {
     setIsMobileMenuOpen(false);
     setIsServicesOpen(false);
     setIsBlogOpen(false);
+    setIsMobileServicesOpen(false);
+    setIsMobileBlogOpen(false);
   };
 
   const scrollToSection = (href: string) => {
@@ -114,6 +128,25 @@ const Header = () => {
       const element = document.querySelector(href);
       if (element) element.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  // Handler para navegação mobile para páginas
+  const handleMobileNavigate = (to: string) => {
+    closeAll();
+    navigate(to);
+  };
+
+  // Toggle mobile dropdowns
+  const toggleMobileServices = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setIsMobileServicesOpen(!isMobileServicesOpen);
+    setIsMobileBlogOpen(false);
+  };
+
+  const toggleMobileBlog = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setIsMobileBlogOpen(!isMobileBlogOpen);
+    setIsMobileServicesOpen(false);
   };
 
   return (
@@ -305,41 +338,48 @@ const Header = () => {
                 if (link.isServices) {
                   return (
                     <div key={link.href}>
-                      {/* Botão principal - vai para secção */}
-                      <button
-                        type="button"
-                        onClick={() => scrollToSection(link.href)}
-                        className="w-full px-4 py-3 text-left text-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors font-medium flex items-center justify-between"
-                      >
-                        <span>{link.label}</span>
+                      {/* Linha com botão de scroll + botão de toggle */}
+                      <div className="flex items-center justify-between px-4 py-3 hover:bg-accent rounded-lg transition-colors">
                         <button
                           type="button"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setIsServicesOpen(!isServicesOpen);
-                            setIsBlogOpen(false);
-                          }}
-                          className="p-1 hover:bg-accent rounded"
+                          onClick={() => scrollToSection(link.href)}
+                          className="flex-1 text-left text-foreground hover:text-primary font-medium"
                         >
-                          <ChevronDown className={`w-5 h-5 transition-transform ${isServicesOpen ? "rotate-180" : ""}`} />
+                          {link.label}
                         </button>
-                      </button>
+                        <button
+                          type="button"
+                          onClick={toggleMobileServices}
+                          className="p-2 hover:bg-primary/10 rounded-lg transition-colors"
+                          aria-label={isMobileServicesOpen ? "Fechar submenu" : "Abrir submenu"}
+                        >
+                          <ChevronDown 
+                            className={`w-5 h-5 text-primary transition-transform duration-200 ${
+                              isMobileServicesOpen ? "rotate-180" : ""
+                            }`} 
+                          />
+                        </button>
+                      </div>
 
                       {/* Dropdown com serviços específicos */}
-                      {isServicesOpen && (
-                        <div className="mt-1 ml-4 pl-4 border-l-2 border-primary/20 space-y-1">
+                      <div
+                        className={`overflow-hidden transition-all duration-200 ${
+                          isMobileServicesOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                        }`}
+                      >
+                        <div className="mt-1 ml-4 pl-4 border-l-2 border-primary/20 space-y-1 pb-2">
                           {servicesDropdown.map((item) => (
-                            <Link
+                            <button
                               key={item.to}
-                              to={item.to}
-                              onClick={closeAll}
-                              className="block px-3 py-2 text-sm text-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors"
+                              type="button"
+                              onClick={() => handleMobileNavigate(item.to)}
+                              className="block w-full text-left px-3 py-2.5 text-sm text-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors"
                             >
                               {item.label}
-                            </Link>
+                            </button>
                           ))}
                         </div>
-                      )}
+                      </div>
                     </div>
                   );
                 }
@@ -348,41 +388,48 @@ const Header = () => {
                 if (link.isBlog) {
                   return (
                     <div key={link.href}>
-                      {/* Botão principal - vai para secção */}
-                      <button
-                        type="button"
-                        onClick={() => scrollToSection(link.href)}
-                        className="w-full px-4 py-3 text-left text-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors font-medium flex items-center justify-between"
-                      >
-                        <span>{link.label}</span>
+                      {/* Linha com botão de scroll + botão de toggle */}
+                      <div className="flex items-center justify-between px-4 py-3 hover:bg-accent rounded-lg transition-colors">
                         <button
                           type="button"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setIsBlogOpen(!isBlogOpen);
-                            setIsServicesOpen(false);
-                          }}
-                          className="p-1 hover:bg-accent rounded"
+                          onClick={() => scrollToSection(link.href)}
+                          className="flex-1 text-left text-foreground hover:text-primary font-medium"
                         >
-                          <ChevronDown className={`w-5 h-5 transition-transform ${isBlogOpen ? "rotate-180" : ""}`} />
+                          {link.label}
                         </button>
-                      </button>
+                        <button
+                          type="button"
+                          onClick={toggleMobileBlog}
+                          className="p-2 hover:bg-primary/10 rounded-lg transition-colors"
+                          aria-label={isMobileBlogOpen ? "Fechar submenu" : "Abrir submenu"}
+                        >
+                          <ChevronDown 
+                            className={`w-5 h-5 text-primary transition-transform duration-200 ${
+                              isMobileBlogOpen ? "rotate-180" : ""
+                            }`} 
+                          />
+                        </button>
+                      </div>
 
                       {/* Dropdown com artigos */}
-                      {isBlogOpen && (
-                        <div className="mt-1 ml-4 pl-4 border-l-2 border-primary/20 space-y-1">
+                      <div
+                        className={`overflow-hidden transition-all duration-200 ${
+                          isMobileBlogOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                        }`}
+                      >
+                        <div className="mt-1 ml-4 pl-4 border-l-2 border-primary/20 space-y-1 pb-2">
                           {blogDropdown.map((item) => (
-                            <Link
+                            <button
                               key={item.to}
-                              to={item.to}
-                              onClick={closeAll}
-                              className="block px-3 py-2 text-sm text-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors"
+                              type="button"
+                              onClick={() => handleMobileNavigate(item.to)}
+                              className="block w-full text-left px-3 py-2.5 text-sm text-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors"
                             >
                               {item.label}
-                            </Link>
+                            </button>
                           ))}
                         </div>
-                      )}
+                      </div>
                     </div>
                   );
                 }
