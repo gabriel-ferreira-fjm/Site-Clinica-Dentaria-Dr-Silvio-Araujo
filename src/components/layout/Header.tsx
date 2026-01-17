@@ -121,14 +121,22 @@ const Header = () => {
       <div className="hidden lg:block bg-primary text-primary-foreground py-2">
         <div className="container flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
-            <span className="flex items-center gap-2">
+            <a 
+              href="https://maps.google.com/?q=Rua+D+Sebastião+2050,+Quinta+do+Conde,+Portugal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-primary-foreground/80 transition-colors"
+            >
               <MapPin className="w-4 h-4" />
               {t("header.location")}
-            </span>
-            <span className="flex items-center gap-2">
+            </a>
+            <a 
+              href="tel:+351924123784"
+              className="flex items-center gap-2 hover:text-primary-foreground/80 transition-colors"
+            >
               <Phone className="w-4 h-4" />
               {t("header.phone")}
-            </span>
+            </a>
           </div>
           <div className="text-primary-foreground/80">{t("header.schedule")}</div>
         </div>
@@ -145,14 +153,14 @@ const Header = () => {
           <Link to="/" onClick={closeAll} className="flex items-center gap-3">
             <img
               src="/logo-clinica.png"
-              alt="Logo Clínica Dentária Dr. Sílvio Araújo"
+              alt={`${t("hero.titleHighlight")} - ${t("hero.title")}`}
               className="h-20 w-auto"
             />
             <div className="hidden sm:block">
               <h1 className="font-heading font-bold text-lg text-foreground leading-tight">
-                Dr. Sílvio Araújo
+                {t("hero.titleHighlight")}
               </h1>
-              <p className="text-xs text-muted-foreground">Clínica Dentária</p>
+              <p className="text-xs text-muted-foreground">{t("hero.title")}</p>
             </div>
           </Link>
 
@@ -290,33 +298,45 @@ const Header = () => {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="lg:hidden bg-background border-t border-border animate-fade-in">
-            <nav className="container py-4 flex flex-col gap-2">
+            <nav className="container py-4 flex flex-col gap-2 max-h-[70vh] overflow-y-auto">
               {navLinks.map((link) => {
                 // Mobile - Serviços accordion
                 if (link.isServices) {
                   return (
                     <div key={link.href} className="px-1">
-                      <button
-                        type="button"
-                        onClick={() => {
-                          setIsServicesOpen((v) => !v);
-                          setIsBlogOpen(false);
-                        }}
-                        className="w-full px-3 py-3 text-left text-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors flex items-center justify-between"
-                        aria-expanded={isServicesOpen}
-                      >
-                        <span>{link.label}</span>
-                        <ChevronDown className={`w-5 h-5 transition-transform ${isServicesOpen ? "rotate-180" : ""}`} />
-                      </button>
+                      <div className="flex flex-col gap-1">
+                        {/* Botão principal que faz scroll */}
+                        <button
+                          type="button"
+                          onClick={() => scrollToSection(link.href)}
+                          className="w-full px-3 py-3 text-left text-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors font-medium"
+                        >
+                          {link.label}
+                        </button>
+                        
+                        {/* Botão de toggle do accordion */}
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setIsServicesOpen((v) => !v);
+                            setIsBlogOpen(false);
+                          }}
+                          className="w-full px-3 py-2 text-left text-sm text-muted-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors flex items-center justify-between"
+                          aria-expanded={isServicesOpen}
+                        >
+                          <span>Ver todas as opções</span>
+                          <ChevronDown className={`w-4 h-4 transition-transform ${isServicesOpen ? "rotate-180" : ""}`} />
+                        </button>
+                      </div>
 
                       {isServicesOpen && (
-                        <div className="mt-1 ml-2 border-l border-border">
+                        <div className="mt-1 ml-2 border-l-2 border-primary/20 pl-2 space-y-1">
                           {servicesDropdown.map((item) => (
                             <Link
                               key={item.to}
                               to={item.to}
                               onClick={closeAll}
-                              className="block px-4 py-3 text-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors"
+                              className="block px-3 py-2 text-sm text-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors"
                             >
                               {item.label}
                             </Link>
@@ -331,27 +351,39 @@ const Header = () => {
                 if (link.isBlog) {
                   return (
                     <div key={link.href} className="px-1">
-                      <button
-                        type="button"
-                        onClick={() => {
-                          setIsBlogOpen((v) => !v);
-                          setIsServicesOpen(false);
-                        }}
-                        className="w-full px-3 py-3 text-left text-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors flex items-center justify-between"
-                        aria-expanded={isBlogOpen}
-                      >
-                        <span>{link.label}</span>
-                        <ChevronDown className={`w-5 h-5 transition-transform ${isBlogOpen ? "rotate-180" : ""}`} />
-                      </button>
+                      <div className="flex flex-col gap-1">
+                        {/* Botão principal que faz scroll */}
+                        <button
+                          type="button"
+                          onClick={() => scrollToSection(link.href)}
+                          className="w-full px-3 py-3 text-left text-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors font-medium"
+                        >
+                          {link.label}
+                        </button>
+                        
+                        {/* Botão de toggle do accordion */}
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setIsBlogOpen((v) => !v);
+                            setIsServicesOpen(false);
+                          }}
+                          className="w-full px-3 py-2 text-left text-sm text-muted-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors flex items-center justify-between"
+                          aria-expanded={isBlogOpen}
+                        >
+                          <span>Ver artigos</span>
+                          <ChevronDown className={`w-4 h-4 transition-transform ${isBlogOpen ? "rotate-180" : ""}`} />
+                        </button>
+                      </div>
 
                       {isBlogOpen && (
-                        <div className="mt-1 ml-2 border-l border-border">
+                        <div className="mt-1 ml-2 border-l-2 border-primary/20 pl-2 space-y-1">
                           {blogDropdown.map((item) => (
                             <Link
                               key={item.to}
                               to={item.to}
                               onClick={closeAll}
-                              className="block px-4 py-3 text-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors"
+                              className="block px-3 py-2 text-sm text-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors"
                             >
                               {item.label}
                             </Link>
@@ -367,7 +399,7 @@ const Header = () => {
                   <button
                     key={link.href}
                     onClick={() => scrollToSection(link.href)}
-                    className="px-4 py-3 text-left text-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors"
+                    className="px-4 py-3 text-left text-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors font-medium"
                   >
                     {link.label}
                   </button>

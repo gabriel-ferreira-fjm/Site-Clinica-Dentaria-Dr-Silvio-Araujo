@@ -58,12 +58,12 @@ const Footer = () => {
             <div className="flex items-center gap-3">
               <img
                 src="/logo-clinica.png"
-                alt="Logo Clínica Dentária Dr. Sílvio Araújo"
+                alt={`${t("hero.titleHighlight")} - ${t("hero.title")}`}
                 className="h-12 w-auto"
               />
               <div>
-                <h3 className="text-sm text-background/60">Dr. Sílvio Araújo</h3>
-                <p className="text-sm text-background/60">Clínica Dentária</p>
+                <h3 className="text-sm text-background/60">{t("hero.titleHighlight")}</h3>
+                <p className="text-sm text-background/60">{t("hero.title")}</p>
               </div>
             </div>
 
@@ -146,17 +146,22 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-background/70 text-sm">
+                <a
+                  href="https://maps.google.com/?q=Rua+D+Sebastião+2050,+Quinta+do+Conde,+Portugal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-background/70 hover:text-primary text-sm transition-colors"
+                >
                   Rua D Sebastião 2050, Quinta do Conde, Sesimbra
                   <br />
                   Portugal
-                </span>
+                </a>
               </li>
 
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                 <a
-                  href="tel:924123784"
+                  href="tel:+351924123784"
                   className="text-background/70 hover:text-primary text-sm transition-colors"
                 >
                   924 123 784
