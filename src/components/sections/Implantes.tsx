@@ -16,7 +16,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 const Implantes = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation("translation");
   const navigate = useNavigate();
 
   const scrollToId = useCallback((id: string) => {
@@ -52,8 +52,7 @@ const Implantes = () => {
       { id: "success", label: t("blog.implantes.toc.success", { defaultValue: "Taxa de sucesso" }) },
       { id: "cost", label: t("blog.implantes.toc.cost", { defaultValue: "Custos" }) },
     ],
-    [t]
-  );
+    [t, i18n.resolvedLanguage]);
 
   const share = useCallback(async () => {
     const url = window.location.href;
@@ -71,6 +70,7 @@ const Implantes = () => {
   return (
     <>
       <Helmet>
+        <html lang={i18n.resolvedLanguage || i18n.language} />
         <title>{title} | Dr. Sílvio Araújo</title>
         <meta name="description" content={description} />
         <meta charSet="utf-8" />

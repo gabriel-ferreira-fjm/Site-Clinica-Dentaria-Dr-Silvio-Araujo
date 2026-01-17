@@ -67,20 +67,20 @@ const Header = () => {
     blogCloseTimerRef.current = window.setTimeout(() => setIsBlogOpen(false), 200);
   };
 
+  // ✅ Dropdowns agora usam traduções
   const servicesDropdown = [
-    { label: "Consulta e Diagnóstico", to: "/consulta-diagnostico" },
-    { label: "Prevenção & Higiene", to: "/prevencao-higiene" },
-    { label: "Estética e Ortodontia", to: "/estetica-ortodontia" },
-    { label: "Implantes e Próteses", to: "/implantes-proteses" },
-    { label: "Tratamentos especializados", to: "/tratamentos-especializados" },
+    { label: t('header.servicesDropdown.consultaDiagnostico'), to: "/consulta-diagnostico" },
+    { label: t('header.servicesDropdown.prevencaoHigiene'), to: "/prevencao-higiene" },
+    { label: t('header.servicesDropdown.esteticaOrtodontia'), to: "/estetica-ortodontia" },
+    { label: t('header.servicesDropdown.implantesProteses'), to: "/implantes-proteses" },
+    { label: t('header.servicesDropdown.tratamentosEspecializados'), to: "/tratamentos-especializados" },
   ];
 
-  // ✅ rotas do Blog exatamente como no seu App.tsx
   const blogDropdown = [
-    { label: "Higiene Oral", to: "/blog/higiene-oral-diaria" },
-    { label: "Estética", to: "/blog/estetica-branqueamento" },
-    { label: "Odontopediatria", to: "/blog/odontopediatria-criancas" },
-    { label: "Implantes", to: "/blog/implantes-guia-completo" },
+    { label: t('header.blogDropdown.higieneOral'), to: "/blog/higiene-oral-diaria" },
+    { label: t('header.blogDropdown.estetica'), to: "/blog/estetica-branqueamento" },
+    { label: t('header.blogDropdown.odontopediatria'), to: "/blog/odontopediatria-criancas" },
+    { label: t('header.blogDropdown.implantes'), to: "/blog/implantes-guia-completo" },
   ];
 
   const navLinks = [
@@ -206,7 +206,7 @@ const Header = () => {
                 );
               }
 
-              // BLOG (✅ sem negrito)
+              // BLOG
               if (link.isBlog) {
                 return (
                   <div
@@ -327,7 +327,7 @@ const Header = () => {
                   );
                 }
 
-                // Mobile - Blog accordion (✅ sem negrito)
+                // Mobile - Blog accordion
                 if (link.isBlog) {
                   return (
                     <div key={link.href} className="px-1">

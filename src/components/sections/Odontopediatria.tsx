@@ -17,7 +17,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 const Odontopediatria = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation("translation");
   const navigate = useNavigate();
 
   const scrollToId = useCallback((id: string) => {
@@ -51,8 +51,7 @@ const Odontopediatria = () => {
       { id: "hygiene", label: t("blog.odontopediatria.toc.hygiene", { defaultValue: "Higiene por idade" }) },
       { id: "frequency", label: t("blog.odontopediatria.toc.frequency", { defaultValue: "Frequência das consultas" }) },
     ],
-    [t]
-  );
+    [t, i18n.resolvedLanguage]);
 
   const share = useCallback(async () => {
     const url = window.location.href;
@@ -70,6 +69,7 @@ const Odontopediatria = () => {
   return (
     <>
       <Helmet>
+        <html lang={i18n.resolvedLanguage || i18n.language} />
         <title>{title} | Dr. Sílvio Araújo</title>
         <meta name="description" content={description} />
         <meta charSet="utf-8" />

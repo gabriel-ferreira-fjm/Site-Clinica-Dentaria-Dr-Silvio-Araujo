@@ -4,7 +4,6 @@ import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
 import {
   ArrowLeft,
-  Calendar,
   Clock,
   Share2,
   CheckCircle2,
@@ -16,7 +15,8 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 const Estetica = () => {
-  const { t } = useTranslation();
+  // ✅ igual ao HigieneOral: namespace + resolvedLanguage usado corretamente
+  const { t, i18n } = useTranslation("translation");
   const navigate = useNavigate();
 
   const scrollToId = useCallback((id: string) => {
@@ -37,20 +37,51 @@ const Estetica = () => {
   const title = t("blog.estetica.title", {
     defaultValue: "Tudo sobre branqueamento dentário",
   });
+
   const description = t("blog.estetica.description", {
     defaultValue:
       "Conheça os diferentes tipos de branqueamento dentário e qual é o mais indicado para si. Guia completo sobre estética dentária.",
   });
 
+  // ✅ atualiza TOC ao trocar idioma (igual HigieneOral)
   const toc = useMemo(
     () => [
-      { id: "causes", label: t("blog.estetica.toc.causes", { defaultValue: "O que causa o escurecimento" }) },
-      { id: "types", label: t("blog.estetica.toc.types", { defaultValue: "Tipos de branqueamento" }) },
-      { id: "safety", label: t("blog.estetica.toc.safety", { defaultValue: "Segurança" }) },
-      { id: "aftercare", label: t("blog.estetica.toc.aftercare", { defaultValue: "Cuidados após o tratamento" }) },
-      { id: "duration", label: t("blog.estetica.toc.duration", { defaultValue: "Duração dos resultados" }) },
+      {
+        id: "causes",
+        label: t("blog.estetica.toc.causes", {
+          defaultValue: "O que causa o escurecimento",
+        }),
+      },
+      {
+        id: "types",
+        label: t("blog.estetica.toc.types", {
+          defaultValue: "Tipos de branqueamento",
+        }),
+      },
+      {
+        id: "safety",
+        label: t("blog.estetica.toc.safety", { defaultValue: "Segurança" }),
+      },
+      {
+        id: "aftercare",
+        label: t("blog.estetica.toc.aftercare", {
+          defaultValue: "Cuidados após o tratamento",
+        }),
+      },
+      {
+        id: "duration",
+        label: t("blog.estetica.toc.duration", {
+          defaultValue: "Duração dos resultados",
+        }),
+      },
+      {
+        id: "faq",
+        label: t("blog.estetica.toc.faq", {
+          defaultValue: "Perguntas frequentes",
+        }),
+      },
     ],
-    [t]
+    [t, i18n.resolvedLanguage]
   );
 
   const share = useCallback(async () => {
@@ -69,7 +100,8 @@ const Estetica = () => {
   return (
     <>
       <Helmet>
-        <title>{title} | Dr. Sílvio Araújo</title>
+        <html lang={i18n.resolvedLanguage || i18n.language} />
+        <title>{title}</title>
         <meta name="description" content={description} />
         <meta charSet="utf-8" />
       </Helmet>
@@ -93,7 +125,7 @@ const Estetica = () => {
                 <Sparkles className="w-4 h-4" />
                 {t("blog.estetica.category", { defaultValue: "Estética" })}
               </span>
-              
+
               <span className="inline-flex items-center gap-2 bg-muted px-3 py-1 rounded-full text-sm">
                 <Clock className="w-4 h-4" />
                 {t("blog.estetica.readTime", { defaultValue: "7 min leitura" })}
@@ -115,7 +147,10 @@ const Estetica = () => {
           <div className="w-full h-64 md:h-[420px] mb-10 rounded-3xl overflow-hidden border bg-muted">
             <img
               src="/branqueamento.png"
-              alt={t("blog.branqueamento.imageAlt", { defaultValue: "Branqueamento dentário" })}
+              // ✅ CORRIGIDO: chave consistente com a página (antes era blog.branqueamento.imageAlt)
+              alt={t("blog.estetica.imageAlt", {
+                defaultValue: "Branqueamento dentário",
+              })}
               className="w-full h-full object-cover"
               loading="lazy"
             />
@@ -143,7 +178,9 @@ const Estetica = () => {
 
                 <div className="mt-5 pt-5 border-t">
                   <Button className="w-full" variant="cta" onClick={handleCTA}>
-                    {t("blog.estetica.ctaButton", { defaultValue: "Marcar Consulta" })}
+                    {t("blog.estetica.ctaButton", {
+                      defaultValue: "Marcar Consulta",
+                    })}
                   </Button>
                   <p className="mt-3 text-xs text-muted-foreground">
                     {t("blog.estetica.toc.note", {
@@ -168,18 +205,23 @@ const Estetica = () => {
                     </p>
                     <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
                       <li>
-                        • {t("blog.estetica.takeaways.one", {
-                          defaultValue: "Branqueamento profissional é seguro e eficaz",
+                        •{" "}
+                        {t("blog.estetica.takeaways.one", {
+                          defaultValue:
+                            "Branqueamento profissional é seguro e eficaz",
                         })}
                       </li>
                       <li>
-                        • {t("blog.estetica.takeaways.two", {
+                        •{" "}
+                        {t("blog.estetica.takeaways.two", {
                           defaultValue: "Resultados podem durar de 1 a 3 anos",
                         })}
                       </li>
                       <li>
-                        • {t("blog.estetica.takeaways.three", {
-                          defaultValue: "Consulte sempre um profissional qualificado",
+                        •{" "}
+                        {t("blog.estetica.takeaways.three", {
+                          defaultValue:
+                            "Consulte sempre um profissional qualificado",
                         })}
                       </li>
                     </ul>
@@ -190,7 +232,9 @@ const Estetica = () => {
               {/* Causes Section */}
               <div id="causes" className="space-y-4">
                 <h2 className="text-2xl md:text-3xl font-bold">
-                  {t("blog.estetica.causesTitle", { defaultValue: "O que causa o escurecimento dos dentes?" })}
+                  {t("blog.estetica.causesTitle", {
+                    defaultValue: "O que causa o escurecimento dos dentes?",
+                  })}
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
                   {t("blog.estetica.causesText", {
@@ -202,24 +246,48 @@ const Estetica = () => {
                 <div className="space-y-3">
                   {[
                     {
-                      title: t("blog.estetica.causes.food.title", { defaultValue: "Alimentos e bebidas" }),
-                      text: t("blog.estetica.causes.food.text", { defaultValue: "Café, chá, vinho tinto e refrigerantes com corantes" }),
+                      title: t("blog.estetica.causes.food.title", {
+                        defaultValue: "Alimentos e bebidas",
+                      }),
+                      text: t("blog.estetica.causes.food.text", {
+                        defaultValue:
+                          "Café, chá, vinho tinto e refrigerantes com corantes",
+                      }),
                     },
                     {
-                      title: t("blog.estetica.causes.tobacco.title", { defaultValue: "Tabaco" }),
-                      text: t("blog.estetica.causes.tobacco.text", { defaultValue: "O fumo é uma das principais causas de manchas nos dentes" }),
+                      title: t("blog.estetica.causes.tobacco.title", {
+                        defaultValue: "Tabaco",
+                      }),
+                      text: t("blog.estetica.causes.tobacco.text", {
+                        defaultValue:
+                          "O fumo é uma das principais causas de manchas nos dentes",
+                      }),
                     },
                     {
-                      title: t("blog.estetica.causes.age.title", { defaultValue: "Idade" }),
-                      text: t("blog.estetica.causes.age.text", { defaultValue: "O esmalte desgasta-se naturalmente, revelando a dentina mais amarelada" }),
+                      title: t("blog.estetica.causes.age.title", {
+                        defaultValue: "Idade",
+                      }),
+                      text: t("blog.estetica.causes.age.text", {
+                        defaultValue:
+                          "O esmalte desgasta-se naturalmente, revelando a dentina mais amarelada",
+                      }),
                     },
                     {
-                      title: t("blog.estetica.causes.medication.title", { defaultValue: "Medicamentos" }),
-                      text: t("blog.estetica.causes.medication.text", { defaultValue: "Certos antibióticos e tratamentos podem causar descoloração" }),
+                      title: t("blog.estetica.causes.medication.title", {
+                        defaultValue: "Medicamentos",
+                      }),
+                      text: t("blog.estetica.causes.medication.text", {
+                        defaultValue:
+                          "Certos antibióticos e tratamentos podem causar descoloração",
+                      }),
                     },
                     {
-                      title: t("blog.estetica.causes.hygiene.title", { defaultValue: "Higiene inadequada" }),
-                      text: t("blog.estetica.causes.hygiene.text", { defaultValue: "Acumulação de placa e tártaro" }),
+                      title: t("blog.estetica.causes.hygiene.title", {
+                        defaultValue: "Higiene inadequada",
+                      }),
+                      text: t("blog.estetica.causes.hygiene.text", {
+                        defaultValue: "Acumulação de placa e tártaro",
+                      }),
                     },
                   ].map((item) => (
                     <div
@@ -229,7 +297,9 @@ const Estetica = () => {
                       <AlertTriangle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-semibold">{item.title}</p>
-                        <p className="mt-1 text-sm text-muted-foreground">{item.text}</p>
+                        <p className="mt-1 text-sm text-muted-foreground">
+                          {item.text}
+                        </p>
                       </div>
                     </div>
                   ))}
@@ -239,14 +309,18 @@ const Estetica = () => {
               {/* Types Section */}
               <div id="types" className="space-y-4">
                 <h2 className="text-2xl md:text-3xl font-bold">
-                  {t("blog.estetica.typesTitle", { defaultValue: "Tipos de branqueamento dentário" })}
+                  {t("blog.estetica.typesTitle", {
+                    defaultValue: "Tipos de branqueamento dentário",
+                  })}
                 </h2>
 
                 <div className="space-y-6">
                   {/* Office Whitening */}
                   <div className="rounded-2xl border bg-background p-6 shadow-sm">
                     <h3 className="text-xl font-semibold mb-3">
-                      {t("blog.estetica.types.office.title", { defaultValue: "1. Branqueamento em consultório" })}
+                      {t("blog.estetica.types.office.title", {
+                        defaultValue: "1. Branqueamento em consultório",
+                      })}
                     </h3>
                     <p className="text-muted-foreground mb-4">
                       {t("blog.estetica.types.office.text", {
@@ -257,15 +331,21 @@ const Estetica = () => {
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-center gap-2">
                         <CheckCircle2 className="w-4 h-4 text-primary" />
-                        {t("blog.estetica.types.office.duration", { defaultValue: "Duração: 1 a 2 horas" })}
+                        {t("blog.estetica.types.office.duration", {
+                          defaultValue: "Duração: 1 a 2 horas",
+                        })}
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle2 className="w-4 h-4 text-primary" />
-                        {t("blog.estetica.types.office.results", { defaultValue: "Resultados: Até 8 tons mais claro" })}
+                        {t("blog.estetica.types.office.results", {
+                          defaultValue: "Resultados: Até 8 tons mais claro",
+                        })}
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle2 className="w-4 h-4 text-primary" />
-                        {t("blog.estetica.types.office.safety", { defaultValue: "Segurança: Monitorizado por profissional" })}
+                        {t("blog.estetica.types.office.safety", {
+                          defaultValue: "Segurança: Monitorizado por profissional",
+                        })}
                       </li>
                     </ul>
                   </div>
@@ -273,7 +353,9 @@ const Estetica = () => {
                   {/* Home Whitening */}
                   <div className="rounded-2xl border bg-background p-6 shadow-sm">
                     <h3 className="text-xl font-semibold mb-3">
-                      {t("blog.estetica.types.home.title", { defaultValue: "2. Branqueamento caseiro supervisionado" })}
+                      {t("blog.estetica.types.home.title", {
+                        defaultValue: "2. Branqueamento caseiro supervisionado",
+                      })}
                     </h3>
                     <p className="text-muted-foreground mb-4">
                       {t("blog.estetica.types.home.text", {
@@ -284,15 +366,22 @@ const Estetica = () => {
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-center gap-2">
                         <CheckCircle2 className="w-4 h-4 text-primary" />
-                        {t("blog.estetica.types.home.duration", { defaultValue: "Duração: 2 a 4 semanas de tratamento" })}
+                        {t("blog.estetica.types.home.duration", {
+                          defaultValue: "Duração: 2 a 4 semanas de tratamento",
+                        })}
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle2 className="w-4 h-4 text-primary" />
-                        {t("blog.estetica.types.home.application", { defaultValue: "Aplicação: Algumas horas por dia ou durante a noite" })}
+                        {t("blog.estetica.types.home.application", {
+                          defaultValue:
+                            "Aplicação: Algumas horas por dia ou durante a noite",
+                        })}
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle2 className="w-4 h-4 text-primary" />
-                        {t("blog.estetica.types.home.advantage", { defaultValue: "Vantagem: Pode retocar quando necessário" })}
+                        {t("blog.estetica.types.home.advantage", {
+                          defaultValue: "Vantagem: Pode retocar quando necessário",
+                        })}
                       </li>
                     </ul>
                   </div>
@@ -300,7 +389,9 @@ const Estetica = () => {
                   {/* Combined Whitening */}
                   <div className="rounded-2xl border bg-background p-6 shadow-sm">
                     <h3 className="text-xl font-semibold mb-3">
-                      {t("blog.estetica.types.combined.title", { defaultValue: "3. Branqueamento combinado" })}
+                      {t("blog.estetica.types.combined.title", {
+                        defaultValue: "3. Branqueamento combinado",
+                      })}
                     </h3>
                     <p className="text-muted-foreground">
                       {t("blog.estetica.types.combined.text", {
@@ -315,7 +406,9 @@ const Estetica = () => {
               {/* Safety Section */}
               <div id="safety" className="space-y-4">
                 <h2 className="text-2xl md:text-3xl font-bold">
-                  {t("blog.estetica.safetyTitle", { defaultValue: "O branqueamento é seguro?" })}
+                  {t("blog.estetica.safetyTitle", {
+                    defaultValue: "O branqueamento é seguro?",
+                  })}
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
                   {t("blog.estetica.safetyText", {
@@ -328,27 +421,35 @@ const Estetica = () => {
               {/* Aftercare Section */}
               <div id="aftercare" className="space-y-4">
                 <h2 className="text-2xl md:text-3xl font-bold">
-                  {t("blog.estetica.aftercareTitle", { defaultValue: "Cuidados após o branqueamento" })}
+                  {t("blog.estetica.aftercareTitle", {
+                    defaultValue: "Cuidados após o branqueamento",
+                  })}
                 </h2>
 
                 <div className="rounded-2xl border bg-background p-6 shadow-sm">
                   <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      {t("blog.estetica.aftercare.1", { defaultValue: "Evite alimentos e bebidas com cor intensa nas primeiras 48 horas" })}
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      {t("blog.estetica.aftercare.2", { defaultValue: "Não fume durante o período de tratamento" })}
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      {t("blog.estetica.aftercare.3", { defaultValue: "Mantenha uma boa higiene oral" })}
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      {t("blog.estetica.aftercare.4", { defaultValue: "Faça visitas regulares ao dentista para manutenção" })}
-                    </li>
+                    {[
+                      t("blog.estetica.aftercare.1", {
+                        defaultValue:
+                          "Evite alimentos e bebidas com cor intensa nas primeiras 48 horas",
+                      }),
+                      t("blog.estetica.aftercare.2", {
+                        defaultValue:
+                          "Não fume durante o período de tratamento",
+                      }),
+                      t("blog.estetica.aftercare.3", {
+                        defaultValue: "Mantenha uma boa higiene oral",
+                      }),
+                      t("blog.estetica.aftercare.4", {
+                        defaultValue:
+                          "Faça visitas regulares ao dentista para manutenção",
+                      }),
+                    ].map((x) => (
+                      <li key={x} className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                        <span>{x}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
@@ -356,7 +457,9 @@ const Estetica = () => {
               {/* Duration Section */}
               <div id="duration" className="space-y-4">
                 <h2 className="text-2xl md:text-3xl font-bold">
-                  {t("blog.estetica.durationTitle", { defaultValue: "Quanto tempo duram os resultados?" })}
+                  {t("blog.estetica.durationTitle", {
+                    defaultValue: "Quanto tempo duram os resultados?",
+                  })}
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
                   {t("blog.estetica.durationText", {
@@ -366,10 +469,64 @@ const Estetica = () => {
                 </p>
               </div>
 
+              {/* FAQ Section (adicionado para ficar no mesmo nível do HigieneOral) */}
+              <div id="faq" className="space-y-4">
+                <h2 className="text-2xl md:text-3xl font-bold">
+                  {t("blog.estetica.faqTitle", {
+                    defaultValue: "Perguntas frequentes",
+                  })}
+                </h2>
+
+                <div className="space-y-4">
+                  {[
+                    {
+                      q: t("blog.estetica.faq.q1", {
+                        defaultValue:
+                          "O branqueamento estraga o esmalte dos dentes?",
+                      }),
+                      a: t("blog.estetica.faq.a1", {
+                        defaultValue:
+                          "Quando realizado por um profissional e com indicação adequada, o branqueamento é seguro. Pode haver sensibilidade temporária, mas não deve causar danos ao esmalte.",
+                      }),
+                    },
+                    {
+                      q: t("blog.estetica.faq.q2", {
+                        defaultValue:
+                          "Posso fazer branqueamento com restaurações (massas/coroas)?",
+                      }),
+                      a: t("blog.estetica.faq.a2", {
+                        defaultValue:
+                          "O gel branqueador atua no dente natural. Restaurações não mudam de cor, por isso pode ser necessário substituir algumas para harmonizar o resultado.",
+                      }),
+                    },
+                    {
+                      q: t("blog.estetica.faq.q3", {
+                        defaultValue:
+                          "O que fazer se eu tiver sensibilidade?",
+                      }),
+                      a: t("blog.estetica.faq.a3", {
+                        defaultValue:
+                          "É comum ter alguma sensibilidade durante ou após o tratamento. O dentista pode recomendar gel dessensibilizante e ajustar a concentração/duração.",
+                      }),
+                    },
+                  ].map((item) => (
+                    <div
+                      key={item.q}
+                      className="rounded-2xl border bg-background p-6 shadow-sm"
+                    >
+                      <p className="font-semibold">{item.q}</p>
+                      <p className="mt-2 text-muted-foreground">{item.a}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
               {/* Final CTA */}
               <div className="rounded-3xl border bg-primary text-primary-foreground p-8">
                 <p className="text-xl md:text-2xl font-bold">
-                  {t("blog.estetica.finalCta.title", { defaultValue: "Quer um sorriso mais branco?" })}
+                  {t("blog.estetica.finalCta.title", {
+                    defaultValue: "Quer um sorriso mais branco?",
+                  })}
                 </p>
                 <p className="mt-2 text-primary-foreground/90 max-w-2xl">
                   {t("blog.estetica.finalCta.text", {
@@ -380,9 +537,15 @@ const Estetica = () => {
 
                 <div className="mt-6 flex flex-col sm:flex-row gap-3">
                   <Button variant="secondary" onClick={handleCTA}>
-                    {t("blog.estetica.ctaButton", { defaultValue: "Marcar Consulta" })}
+                    {t("blog.estetica.ctaButton", {
+                      defaultValue: "Marcar Consulta",
+                    })}
                   </Button>
-                  <Button variant="outline" onClick={share} className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+                  <Button
+                    variant="outline"
+                    onClick={share}
+                    className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
+                  >
                     <Share2 className="w-4 h-4 mr-2" />
                     {t("blog.share", { defaultValue: "Partilhar" })}
                   </Button>
@@ -393,7 +556,13 @@ const Estetica = () => {
                 <span className="text-muted-foreground">
                   {t("blog.share", { defaultValue: "Partilhar" })}
                 </span>
-                <Button variant="outline" size="icon" type="button" onClick={share} aria-label={t("blog.share", { defaultValue: "Partilhar" })}>
+                <Button
+                  variant="outline"
+                  size="icon"
+                  type="button"
+                  onClick={share}
+                  aria-label={t("blog.share", { defaultValue: "Partilhar" })}
+                >
                   <Share2 className="w-4 h-4" />
                 </Button>
               </div>

@@ -11,7 +11,20 @@
     "bookAppointment": "Book Appointment",
     "location": "Rua D Sebastião 2050, Quinta do Conde, Portugal",
     "phone": "924 123 784",
-    "schedule": "Mon - Fri: 9am - 7pm | Sat: 9am - 1pm"
+    "schedule": "Mon - Fri: 9am - 7pm | Sat: 9am - 1pm",
+    "servicesDropdown": {
+      "consultaDiagnostico": "Consultation and Diagnosis",
+      "prevencaoHigiene": "Prevention & Hygiene",
+      "esteticaOrtodontia": "Aesthetics and Orthodontics",
+      "implantesProteses": "Implants and Prostheses",
+      "tratamentosEspecializados": "Specialized Treatments"
+    },
+    "blogDropdown": {
+      "higieneOral": "Oral Hygiene",
+      "estetica": "Aesthetics",
+      "odontopediatria": "Pediatric Dentistry",
+      "implantes": "Implants"
+    }
   },
   "hero": {
     "welcome": "Welcome to our website!",
@@ -32,9 +45,18 @@
     "titleHighlight": "dedication",
     "description": "Dr. Sílvio Araújo Dental Clinic combines experience, modern technology, and personalized attention to offer the best dental care. Led by Dr. Sílvio Araújo, our team ensures effective and affordable treatments for the whole family.",
     "features": {
-      "experience": { "title": "Proven Experience", "description": "Over 15 years dedicated to oral health" },
-      "team": { "title": "Specialized Team", "description": "Qualified professionals in continuous training" },
-      "care": { "title": "Personalized Care", "description": "Treatments tailored to each patient's needs" }
+      "experience": {
+        "title": "Proven Experience",
+        "description": "Over 15 years dedicated to oral health"
+      },
+      "team": {
+        "title": "Specialized Team",
+        "description": "Qualified professionals in continuous training"
+      },
+      "care": {
+        "title": "Personalized Care",
+        "description": "Treatments tailored to each patient's needs"
+      }
     },
     "highlights": {
       "technology": "State-of-the-art technology",
@@ -44,7 +66,10 @@
       "emergency": "Dental emergencies",
       "payment": "Flexible payment options"
     },
-    "stats": { "patients": "Patients", "years": "Years" }
+    "stats": {
+      "patients": "Patients",
+      "years": "Years"
+    }
   },
   "services": {
     "tag": "Our Services",
@@ -52,146 +77,1401 @@
     "titleHighlight": "treatments",
     "description": "We offer a full range of dental services to care for your family's oral health, with modern technology and qualified professionals.",
     "categories": {
-      "consultation": { "title": "Consultation and Diagnosis", "description": "Complete oral health evaluation", "services": ["Dental consultation", "Digital X-rays", "Dental emergencies"] },
-      "prevention": { "title": "Prevention & Hygiene", "description": "Essential preventive care", "services": ["Scaling (cleaning)", "Dental polishing", "Preventive dentistry"] },
-      "aesthetics": { "title": "Aesthetics and Orthodontics", "description": "Perfect and aligned smile", "services": ["Teeth whitening", "Metal braces", "Invisible orthodontics"] },
-      "implants": { "title": "Implants and Prostheses", "description": "Solutions for missing teeth", "services": ["Dental implants", "Fixed prostheses", "Removable prostheses"] },
-      "specialized": { "title": "Specialized Treatments", "description": "Advanced and specific care", "services": ["Endodontics", "Oral surgery", "Periodontics"] },
-      "pediatric": { "title": "Pediatric Dentistry", "description": "Dental care for children", "services": ["Pediatric consultation", "Sealants", "Oral hygiene education"] }
+      "consultation": {
+        "title": "Consultation and Diagnosis",
+        "description": "Complete oral health evaluation",
+        "services": [
+          "Dental consultation",
+          "Digital X-rays",
+          "Dental emergencies"
+        ]
+      },
+      "prevention": {
+        "title": "Prevention & Hygiene",
+        "description": "Essential preventive care",
+        "services": [
+          "Scaling (cleaning)",
+          "Dental polishing",
+          "Preventive dentistry"
+        ]
+      },
+      "aesthetics": {
+        "title": "Aesthetics and Orthodontics",
+        "description": "Perfect and aligned smile",
+        "services": [
+          "Teeth whitening",
+          "Metal braces",
+          "Invisible orthodontics"
+        ]
+      },
+      "implants": {
+        "title": "Implants and Prostheses",
+        "description": "Solutions for missing teeth",
+        "services": [
+          "Dental implants",
+          "Fixed prostheses",
+          "Removable prostheses"
+        ]
+      },
+      "specialized": {
+        "title": "Specialized Treatments",
+        "description": "Advanced and specific care",
+        "services": [
+          "Endodontics",
+          "Oral surgery",
+          "Periodontics"
+        ]
+      },
+      "pediatric": {
+        "title": "Pediatric Dentistry",
+        "description": "Dental care for children",
+        "services": [
+          "Pediatric consultation",
+          "Sealants",
+          "Oral hygiene education"
+        ]
+      }
     },
-    "tmj": { "title": "Temporomandibular Disorder Treatment", "description": "Specialized treatment for jaw joint pain, headaches, and muscle tension related to dental problems.", "learnMore": "Learn More", "quickConsultations": "Quick Consultations", "guaranteedResults": "Guaranteed Results" },
+    "tmj": {
+      "title": "Temporomandibular Disorder Treatment",
+      "description": "Specialized treatment for jaw joint pain, headaches, and muscle tension related to dental problems.",
+      "learnMore": "Learn More",
+      "quickConsultations": "Quick Consultations",
+      "guaranteedResults": "Guaranteed Results"
+    },
     "estetica": {
-      "meta": { "title": "Aesthetics and Orthodontics | Dr. Sílvio Araújo - Dental Clinic", "description": "Teeth whitening, metal braces and invisible orthodontics. Transform your smile at Dr. Sílvio Araújo Clinic." },
-      "hero": { "backLink": "Back to Services", "badge": "Transform Your Smile", "title": { "part1": "Aesthetics and ", "part2": "Orthodontics" }, "subtitle": "Whiter and perfectly aligned teeth. Discover the aesthetic solutions that will transform your confidence.", "rating": "4.9/5 Rating", "transformed": "+200 smiles transformed", "ctaButton": "Schedule Evaluation", "callButton": "Call Now", "imageAlt": "Dental consultation - aesthetics and orthodontics" },
-      "servicesSection": { "title": "Available Aesthetic Treatments", "subtitle": "Choose the ideal treatment to achieve the smile of your dreams." },
+      "meta": {
+        "title": "Aesthetics and Orthodontics | Dr. Sílvio Araújo - Dental Clinic",
+        "description": "Teeth whitening, metal braces and invisible orthodontics. Transform your smile at Dr. Sílvio Araújo Clinic."
+      },
+      "hero": {
+        "backLink": "Back to Services",
+        "badge": "Transform Your Smile",
+        "title": {
+          "part1": "Aesthetics and ",
+          "part2": "Orthodontics"
+        },
+        "subtitle": "Whiter and perfectly aligned teeth. Discover the aesthetic solutions that will transform your confidence.",
+        "rating": "4.9/5 Rating",
+        "transformed": "+200 smiles transformed",
+        "ctaButton": "Schedule Evaluation",
+        "callButton": "Call Now",
+        "imageAlt": "Dental consultation - aesthetics and orthodontics"
+      },
+      "servicesSection": {
+        "title": "Available Aesthetic Treatments",
+        "subtitle": "Choose the ideal treatment to achieve the smile of your dreams."
+      },
       "services": {
-        "branqueamento": { "title": "Teeth Whitening", "description": "Professional treatment to whiten teeth and restore the shine to your smile safely and effectively.", "features": { "1": "Up to 8 shades whiter", "2": "Advanced LED technique", "3": "No damage to enamel" }, "duration": "1-2 hours", "tag": "Most Popular" },
-        "metalicos": { "title": "Metal Braces", "description": "Traditional orthodontics with high-quality metal brackets for efficient correction of dental alignment.", "features": { "1": "Complete correction", "2": "Resistant and durable", "3": "Monthly follow-up", "4": "Definitive results" }, "duration": "12-24 months", "tag": "Proven Effectiveness" },
-        "invisivel": { "title": "Invisible Orthodontics", "description": "Removable transparent aligners that correct your smile discreetly and comfortably.", "features": { "1": "Virtually invisible", "2": "Removable for eating", "3": "No food restrictions", "4": "Fewer appointments" }, "duration": "6-18 months", "tag": "Discreet" }
+        "branqueamento": {
+          "title": "Teeth Whitening",
+          "description": "Professional treatment to whiten teeth and restore the shine to your smile safely and effectively.",
+          "features": {
+            "1": "Up to 8 shades whiter",
+            "2": "Advanced LED technique",
+            "3": "No damage to enamel"
+          },
+          "duration": "1-2 hours",
+          "tag": "Most Popular"
+        },
+        "metalicos": {
+          "title": "Metal Braces",
+          "description": "Traditional orthodontics with high-quality metal brackets for efficient correction of dental alignment.",
+          "features": {
+            "1": "Complete correction",
+            "2": "Resistant and durable",
+            "3": "Monthly follow-up",
+            "4": "Definitive results"
+          },
+          "duration": "12-24 months",
+          "tag": "Proven Effectiveness"
+        },
+        "invisivel": {
+          "title": "Invisible Orthodontics",
+          "description": "Removable transparent aligners that correct your smile discreetly and comfortably.",
+          "features": {
+            "1": "Virtually invisible",
+            "2": "Removable for eating",
+            "3": "No food restrictions",
+            "4": "Fewer appointments"
+          },
+          "duration": "6-18 months",
+          "tag": "Discreet"
+        }
       },
       "durationLabel": "Duration",
       "learnMore": "Learn More",
-      "transformations": { "title": "Real Transformations", "subtitle": "See the changes our treatments can provide.", "before": "Before", "after": "After", "items": { "1": { "before": "Yellowed teeth", "after": "Bright and natural smile" }, "2": { "before": "Misaligned teeth", "after": "Perfect bite" }, "3": { "before": "Gaps between teeth", "after": "Harmonious smile" }, "4": { "before": "Crowded teeth", "after": "Impeccable alignment" } } },
-      "finalCta": { "title": "Ready to transform your smile?", "subtitle": "Schedule a free evaluation and discover the ideal treatment for you.", "ctaButton": "Free Evaluation", "callButton": "Call: +351 924 123 784" }
+      "transformations": {
+        "title": "Real Transformations",
+        "subtitle": "See the changes our treatments can provide.",
+        "before": "Before",
+        "after": "After",
+        "items": {
+          "1": {
+            "before": "Yellowed teeth",
+            "after": "Bright and natural smile"
+          },
+          "2": {
+            "before": "Misaligned teeth",
+            "after": "Perfect bite"
+          },
+          "3": {
+            "before": "Gaps between teeth",
+            "after": "Harmonious smile"
+          },
+          "4": {
+            "before": "Crowded teeth",
+            "after": "Impeccable alignment"
+          }
+        }
+      },
+      "finalCta": {
+        "title": "Ready to transform your smile?",
+        "subtitle": "Schedule a free evaluation and discover the ideal treatment for you.",
+        "ctaButton": "Free Evaluation",
+        "callButton": "Call: +351 924 123 784"
+      }
     },
     "implantes": {
-      "meta": { "title": "Dental Implants and Prostheses | Dr. Sílvio Araújo - Dental Clinic", "description": "Dental implants, fixed and removable prostheses. Complete solutions for missing teeth at Dr. Sílvio Araújo Clinic." },
-      "hero": { "backLink": "Back to Services", "badge": "Definitive Solutions", "title": { "part1": "Implants and ", "part2": "Prostheses" }, "subtitle": "Restore your ability to chew, speak and smile with confidence. Modern and durable solutions for missing teeth.", "stats": { "1": { "value": "95%", "label": "Success Rate" }, "2": { "value": "20+", "label": "Years of Experience" }, "3": { "value": "1000+", "label": "Implants Placed" } }, "ctaButton": "Evaluation Consultation", "callButton": "Call Now", "imageAlt": "Dental implants and prostheses at Dr. Sílvio Araújo Clinic", "badge2": { "title": "Specialized Care", "subtitle": "Focus on your comfort" } },
-      "servicesSection": { "title": "Solutions For Missing Teeth", "subtitle": "We offer several options to restore your smile, tailored to your needs." },
-      "services": {
-        "implantes": { "title": "Dental Implants", "description": "Permanent and natural solution to replace lost teeth. Implants are artificial titanium roots that support dental crowns.", "features": { "1": "Lifetime durability", "2": "Natural appearance", "3": "Preserves bone", "4": "Complete chewing function" }, "price": "Starting from €800" },
-        "fixas": { "title": "Fixed Prostheses", "description": "Fixed bridges and crowns cemented on natural teeth or implants, offering maximum stability and comfort.", "features": { "1": "Non-removable", "2": "High aesthetics", "3": "Comfortable", "4": "Resistant" }, "price": "Starting from €400" },
-        "removiveis": { "title": "Removable Prostheses", "description": "Flexible and economical removable solutions to replace multiple teeth, with high-quality materials.", "features": { "1": "Economical", "2": "Easy to clean", "3": "Adaptable", "4": "Aesthetic" }, "price": "Starting from €300" }
+      "meta": {
+        "title": "Dental Implants and Prostheses | Dr. Sílvio Araújo - Dental Clinic",
+        "description": "Dental implants, fixed and removable prostheses. Complete solutions for missing teeth at Dr. Sílvio Araújo Clinic."
       },
-      "processSection": { "title": "The Implant Placement Process", "subtitle": "A well-planned treatment for exceptional results." },
-      "process": { "01": { "step": "01", "title": "Initial Evaluation", "description": "Complete examination with X-rays and CT scan to assess bone structure." }, "02": { "step": "02", "title": "Digital Planning", "description": "Creation of a personalized treatment plan with 3D technology." }, "03": { "step": "03", "title": "Placement Surgery", "description": "Minimally invasive procedure for implant placement." }, "04": { "step": "04", "title": "Healing Period", "description": "3-6 months for complete osseointegration of the implant to the bone." }, "05": { "step": "05", "title": "Crown Placement", "description": "Installation of the definitive crown, customized for your smile." } },
-      "faqSection": { "title": "Frequently Asked Questions" },
-      "faqs": { "1": { "q": "Do implants hurt?", "a": "The procedure is performed with local anesthesia, being virtually painless. Post-operative involves mild discomfort controlled with medication." }, "2": { "q": "How long does an implant last?", "a": "With proper care, an implant can last a lifetime. The success rate is over 95%." }, "3": { "q": "Can I get implants if I have little bone?", "a": "Yes, there are bone grafting techniques and special implants for cases of bone resorption." } },
-      "finalCta": { "title": "Restore Your Complete Smile", "subtitle": "Schedule a free evaluation consultation and discover the best solution for your case.", "ctaButton": "Schedule Free Evaluation", "callButton": "Call: +351 924 123 784" }
+      "hero": {
+        "backLink": "Back to Services",
+        "badge": "Definitive Solutions",
+        "title": {
+          "part1": "Implants and ",
+          "part2": "Prostheses"
+        },
+        "subtitle": "Restore your ability to chew, speak and smile with confidence. Modern and durable solutions for missing teeth.",
+        "stats": {
+          "1": {
+            "value": "95%",
+            "label": "Success Rate"
+          },
+          "2": {
+            "value": "20+",
+            "label": "Years of Experience"
+          },
+          "3": {
+            "value": "1000+",
+            "label": "Implants Placed"
+          }
+        },
+        "ctaButton": "Evaluation Consultation",
+        "callButton": "Call Now",
+        "imageAlt": "Dental implants and prostheses at Dr. Sílvio Araújo Clinic",
+        "badge2": {
+          "title": "Specialized Care",
+          "subtitle": "Focus on your comfort"
+        }
+      },
+      "servicesSection": {
+        "title": "Solutions For Missing Teeth",
+        "subtitle": "We offer several options to restore your smile, tailored to your needs."
+      },
+      "services": {
+        "implantes": {
+          "title": "Dental Implants",
+          "description": "Permanent and natural solution to replace lost teeth. Implants are artificial titanium roots that support dental crowns.",
+          "features": {
+            "1": "Lifetime durability",
+            "2": "Natural appearance",
+            "3": "Preserves bone",
+            "4": "Complete chewing function"
+          },
+          "price": "Starting from €800"
+        },
+        "fixas": {
+          "title": "Fixed Prostheses",
+          "description": "Fixed bridges and crowns cemented on natural teeth or implants, offering maximum stability and comfort.",
+          "features": {
+            "1": "Non-removable",
+            "2": "High aesthetics",
+            "3": "Comfortable",
+            "4": "Resistant"
+          },
+          "price": "Starting from €400"
+        },
+        "removiveis": {
+          "title": "Removable Prostheses",
+          "description": "Flexible and economical removable solutions to replace multiple teeth, with high-quality materials.",
+          "features": {
+            "1": "Economical",
+            "2": "Easy to clean",
+            "3": "Adaptable",
+            "4": "Aesthetic"
+          },
+          "price": "Starting from €300"
+        }
+      },
+      "processSection": {
+        "title": "The Implant Placement Process",
+        "subtitle": "A well-planned treatment for exceptional results."
+      },
+      "process": {
+        "01": {
+          "step": "01",
+          "title": "Initial Evaluation",
+          "description": "Complete examination with X-rays and CT scan to assess bone structure."
+        },
+        "02": {
+          "step": "02",
+          "title": "Digital Planning",
+          "description": "Creation of a personalized treatment plan with 3D technology."
+        },
+        "03": {
+          "step": "03",
+          "title": "Placement Surgery",
+          "description": "Minimally invasive procedure for implant placement."
+        },
+        "04": {
+          "step": "04",
+          "title": "Healing Period",
+          "description": "3-6 months for complete osseointegration of the implant to the bone."
+        },
+        "05": {
+          "step": "05",
+          "title": "Crown Placement",
+          "description": "Installation of the definitive crown, customized for your smile."
+        }
+      },
+      "faqSection": {
+        "title": "Frequently Asked Questions"
+      },
+      "faqs": {
+        "1": {
+          "q": "Do implants hurt?",
+          "a": "The procedure is performed with local anesthesia, being virtually painless. Post-operative involves mild discomfort controlled with medication."
+        },
+        "2": {
+          "q": "How long does an implant last?",
+          "a": "With proper care, an implant can last a lifetime. The success rate is over 95%."
+        },
+        "3": {
+          "q": "Can I get implants if I have little bone?",
+          "a": "Yes, there are bone grafting techniques and special implants for cases of bone resorption."
+        }
+      },
+      "finalCta": {
+        "title": "Restore Your Complete Smile",
+        "subtitle": "Schedule a free evaluation consultation and discover the best solution for your case.",
+        "ctaButton": "Schedule Free Evaluation",
+        "callButton": "Call: +351 924 123 784"
+      }
     },
     "prevencao": {
-      "meta": { "title": "Prevention and Oral Hygiene | Dr. Sílvio Araújo - Dental Clinic", "description": "Prevention and oral hygiene services including scaling, dental polishing and preventive dentistry." },
-      "hero": { "backLink": "Back to Services page", "badge": "Preventive Care", "title": { "part1": "Prevention", "part2": "Hygiene" }, "subtitle": "The best form of treatment is prevention. Keep your oral health up to date with specialized care.", "ctaButton": "Schedule Cleaning", "callButton": "Call Now", "imageAlt": "Dental hygienist performing professional cleaning on patient at Dr. Sílvio Araújo Dental Clinic", "badge2": "100% Painless", "duration": "30–45 min", "durationLabel": "Average time" },
-      "servicesSection": { "title": "Professional Hygiene Services", "subtitle": "Essential treatments to maintain your oral health." },
-      "services": {
-        "destartarizacao": { "title": "Scaling", "description": "Professional removal of accumulated tartar and bacterial plaque, essential to prevent gum disease.", "benefits": { "1": "Removes hardened tartar", "2": "Prevents gingivitis", "3": "Improves breath", "4": "Makes teeth brighter" } },
-        "polimento": { "title": "Dental Polishing", "description": "Treatment that leaves the tooth surface smooth and shiny, making it harder for bacterial plaque to adhere.", "benefits": { "1": "Smoother surface", "2": "Brighter teeth", "3": "Reduces stains", "4": "Deep clean feeling" } },
-        "preventiva": { "title": "Preventive Dentistry", "description": "Set of practices and treatments focused on preventing dental problems before they occur.", "benefits": { "1": "Fluoride application", "2": "Dental sealants", "3": "Oral hygiene education", "4": "Regular check-ups" } }
+      "meta": {
+        "title": "Prevention and Oral Hygiene | Dr. Sílvio Araújo - Dental Clinic",
+        "description": "Prevention and oral hygiene services including scaling, dental polishing and preventive dentistry."
       },
-      "tips": { "escovagem": { "title": "Regular Brushing", "description": "Brush your teeth at least 2 times a day, for 2 minutes" }, "fio": { "title": "Daily Flossing", "description": "Use dental floss once a day to clean between teeth" }, "elixir": { "title": "Mouthwash", "description": "Complete hygiene with an antibacterial mouthwash" }, "consultas": { "title": "Regular Appointments", "description": "Visit the dentist every 6 months for professional cleaning" } },
-      "finalCta": { "title": "Prevent Future Problems", "subtitle": "Prevention is the best investment in your oral health.", "ctaButton": "Schedule Cleaning", "callButton": "Call: +351 924 123 784" }
+      "hero": {
+        "backLink": "Back to Services page",
+        "badge": "Preventive Care",
+        "title": {
+          "part1": "Prevention",
+          "part2": "Hygiene"
+        },
+        "subtitle": "The best form of treatment is prevention. Keep your oral health up to date with specialized care.",
+        "ctaButton": "Schedule Cleaning",
+        "callButton": "Call Now",
+        "imageAlt": "Dental hygienist performing professional cleaning on patient at Dr. Sílvio Araújo Dental Clinic",
+        "badge2": "100% Painless",
+        "duration": "30–45 min",
+        "durationLabel": "Average time"
+      },
+      "servicesSection": {
+        "title": "Professional Hygiene Services",
+        "subtitle": "Essential treatments to maintain your oral health."
+      },
+      "services": {
+        "destartarizacao": {
+          "title": "Scaling",
+          "description": "Professional removal of accumulated tartar and bacterial plaque, essential to prevent gum disease.",
+          "benefits": {
+            "1": "Removes hardened tartar",
+            "2": "Prevents gingivitis",
+            "3": "Improves breath",
+            "4": "Makes teeth brighter"
+          }
+        },
+        "polimento": {
+          "title": "Dental Polishing",
+          "description": "Treatment that leaves the tooth surface smooth and shiny, making it harder for bacterial plaque to adhere.",
+          "benefits": {
+            "1": "Smoother surface",
+            "2": "Brighter teeth",
+            "3": "Reduces stains",
+            "4": "Deep clean feeling"
+          }
+        },
+        "preventiva": {
+          "title": "Preventive Dentistry",
+          "description": "Set of practices and treatments focused on preventing dental problems before they occur.",
+          "benefits": {
+            "1": "Fluoride application",
+            "2": "Dental sealants",
+            "3": "Oral hygiene education",
+            "4": "Regular check-ups"
+          }
+        }
+      },
+      "tips": {
+        "escovagem": {
+          "title": "Regular Brushing",
+          "description": "Brush your teeth at least 2 times a day, for 2 minutes"
+        },
+        "fio": {
+          "title": "Daily Flossing",
+          "description": "Use dental floss once a day to clean between teeth"
+        },
+        "elixir": {
+          "title": "Mouthwash",
+          "description": "Complete hygiene with an antibacterial mouthwash"
+        },
+        "consultas": {
+          "title": "Regular Appointments",
+          "description": "Visit the dentist every 6 months for professional cleaning"
+        }
+      },
+      "finalCta": {
+        "title": "Prevent Future Problems",
+        "subtitle": "Prevention is the best investment in your oral health.",
+        "ctaButton": "Schedule Cleaning",
+        "callButton": "Call: +351 924 123 784"
+      }
     },
     "odontopediatria": {
-      "meta": { "title": "Pediatric Dentistry - Children's Dentist | Dr. Sílvio Araújo - Dental Clinic", "description": "Specialized pediatric dentistry for children. Pediatric consultations, sealants and oral hygiene education at Dr. Sílvio Araújo Clinic." },
-      "hero": { "backLink": "Back to Services page", "badge": "For the Little Ones", "title": { "part1": "Pediatric", "part2": "Dentistry" }, "subtitle": "Special dental care for children, in a welcoming and fun environment. We create happy smiles from an early age!", "stats": { "number": "+500 children treated", "description": "They all love coming to the dentist!" }, "ctaButton": "Book Appointment", "callButton": "Call Now", "badge2": { "text": "Fun Environment" }, "badge3": { "title": "Follow-up", "subtitle": "with care and patience" } },
-      "servicesSection": { "title": "Services for Children", "subtitle": "Specialized treatments adapted to each stage of childhood.", "cta": "Book Appointment" },
-      "services": {
-        "consulta": { "title": "Pediatric Consultation", "description": "Special first consultation for children, focused on creating a positive experience and building trust with the dentist.", "features": { "1": "Welcoming environment", "2": "Gentle and fun examination", "3": "Parent guidance", "4": "No trauma" } },
-        "selantes": { "title": "Dental Sealants", "description": "Application of protective sealants in tooth grooves to prevent cavities, especially in permanent molars.", "features": { "1": "Long-lasting protection", "2": "Painless procedure", "3": "Quick application", "4": "Cavity prevention" } },
-        "educacao": { "title": "Oral Hygiene Education", "description": "Fun educational program to teach children the importance of brushing and dental care.", "features": { "1": "Brushing techniques", "2": "Healthy eating", "3": "Educational material", "4": "Parent involvement" } }
+      "meta": {
+        "title": "Pediatric Dentistry - Children's Dentist | Dr. Sílvio Araújo - Dental Clinic",
+        "description": "Specialized pediatric dentistry for children. Pediatric consultations, sealants and oral hygiene education at Dr. Sílvio Araújo Clinic."
       },
-      "ageGuideSection": { "title": "Age Guide", "subtitle": "Recommended care for each growth stage." },
-      "ageGuide": { "infant": { "age": "0-2 years", "title": "Early Childhood", "tips": { "1": "First visit at 1 year old", "2": "Cleaning with damp gauze", "3": "Avoid sugar in bottle" } }, "preschool": { "age": "3-5 years", "title": "Preschool", "tips": { "1": "Supervised brushing", "2": "Fluoride toothpaste (rice grain)", "3": "Semi-annual visits" } }, "school": { "age": "6-12 years", "title": "School Age", "tips": { "1": "Sealant application", "2": "Preventive orthodontics", "3": "Independence in brushing" } }, "teen": { "age": "13+ years", "title": "Adolescence", "tips": { "1": "Braces care", "2": "Trauma prevention", "3": "Smile aesthetics" } } },
-      "funFactsSection": { "title": "Did you know... 🤔" },
-      "funFacts": { "1": "Children have 20 baby teeth", "2": "Brush 2 minutes, 2 times a day", "3": "Cheese and milk strengthen teeth", "4": "Water is the best drink for teeth" },
-      "parentTipsSection": { "title": "Tips for Parents" },
-      "parentTips": { "fun": { "title": "Make brushing fun", "description": "Use songs, apps or colorful toothbrushes to make the routine more appealing." }, "example": { "title": "Lead by example", "description": "Brush your teeth with your child so they learn the importance of oral hygiene." }, "fears": { "title": "Avoid fears", "description": "Don't use the dentist as a threat. Talk positively about visits to the office." }, "rewards": { "title": "Reward good habits", "description": "Create a reward chart to motivate regular brushing." } },
-      "finalCta": { "title": "The first step to a healthy smile! 😊", "subtitle": "Schedule your child's first appointment and let us take care of their smile from an early age.", "ctaButton": "Book Pediatric Appointment", "callButton": "Call: +351 924 123 784" }
+      "hero": {
+        "backLink": "Back to Services page",
+        "badge": "For the Little Ones",
+        "title": {
+          "part1": "Pediatric",
+          "part2": "Dentistry"
+        },
+        "subtitle": "Special dental care for children, in a welcoming and fun environment. We create happy smiles from an early age!",
+        "stats": {
+          "number": "+500 children treated",
+          "description": "They all love coming to the dentist!"
+        },
+        "ctaButton": "Book Appointment",
+        "callButton": "Call Now",
+        "badge2": {
+          "text": "Fun Environment"
+        },
+        "badge3": {
+          "title": "Follow-up",
+          "subtitle": "with care and patience"
+        }
+      },
+      "servicesSection": {
+        "title": "Services for Children",
+        "subtitle": "Specialized treatments adapted to each stage of childhood.",
+        "cta": "Book Appointment"
+      },
+      "services": {
+        "consulta": {
+          "title": "Pediatric Consultation",
+          "description": "Special first consultation for children, focused on creating a positive experience and building trust with the dentist.",
+          "features": {
+            "1": "Welcoming environment",
+            "2": "Gentle and fun examination",
+            "3": "Parent guidance",
+            "4": "No trauma"
+          }
+        },
+        "selantes": {
+          "title": "Dental Sealants",
+          "description": "Application of protective sealants in tooth grooves to prevent cavities, especially in permanent molars.",
+          "features": {
+            "1": "Long-lasting protection",
+            "2": "Painless procedure",
+            "3": "Quick application",
+            "4": "Cavity prevention"
+          }
+        },
+        "educacao": {
+          "title": "Oral Hygiene Education",
+          "description": "Fun educational program to teach children the importance of brushing and dental care.",
+          "features": {
+            "1": "Brushing techniques",
+            "2": "Healthy eating",
+            "3": "Educational material",
+            "4": "Parent involvement"
+          }
+        }
+      },
+      "ageGuideSection": {
+        "title": "Age Guide",
+        "subtitle": "Recommended care for each growth stage."
+      },
+      "ageGuide": {
+        "infant": {
+          "age": "0-2 years",
+          "title": "Early Childhood",
+          "tips": {
+            "1": "First visit at 1 year old",
+            "2": "Cleaning with damp gauze",
+            "3": "Avoid sugar in bottle"
+          }
+        },
+        "preschool": {
+          "age": "3-5 years",
+          "title": "Preschool",
+          "tips": {
+            "1": "Supervised brushing",
+            "2": "Fluoride toothpaste (rice grain)",
+            "3": "Semi-annual visits"
+          }
+        },
+        "school": {
+          "age": "6-12 years",
+          "title": "School Age",
+          "tips": {
+            "1": "Sealant application",
+            "2": "Preventive orthodontics",
+            "3": "Independence in brushing"
+          }
+        },
+        "teen": {
+          "age": "13+ years",
+          "title": "Adolescence",
+          "tips": {
+            "1": "Braces care",
+            "2": "Trauma prevention",
+            "3": "Smile aesthetics"
+          }
+        }
+      },
+      "funFactsSection": {
+        "title": "Did you know... 🤔"
+      },
+      "funFacts": {
+        "1": "Children have 20 baby teeth",
+        "2": "Brush 2 minutes, 2 times a day",
+        "3": "Cheese and milk strengthen teeth",
+        "4": "Water is the best drink for teeth"
+      },
+      "parentTipsSection": {
+        "title": "Tips for Parents"
+      },
+      "parentTips": {
+        "fun": {
+          "title": "Make brushing fun",
+          "description": "Use songs, apps or colorful toothbrushes to make the routine more appealing."
+        },
+        "example": {
+          "title": "Lead by example",
+          "description": "Brush your teeth with your child so they learn the importance of oral hygiene."
+        },
+        "fears": {
+          "title": "Avoid fears",
+          "description": "Don't use the dentist as a threat. Talk positively about visits to the office."
+        },
+        "rewards": {
+          "title": "Reward good habits",
+          "description": "Create a reward chart to motivate regular brushing."
+        }
+      },
+      "finalCta": {
+        "title": "The first step to a healthy smile! 😊",
+        "subtitle": "Schedule your child's first appointment and let us take care of their smile from an early age.",
+        "ctaButton": "Book Pediatric Appointment",
+        "callButton": "Call: +351 924 123 784"
+      }
     },
     "especializados": {
-      "meta": { "title": "Specialized Treatments | Dr. Sílvio Araújo - Dental Clinic", "description": "Endodontics, oral surgery and periodontics. Advanced and specialized treatments at Dr. Sílvio Araújo Clinic." },
-      "hero": { "backLink": "Back to Services", "badge": "Advanced Care", "title": { "part1": "Specialized", "part2": "Treatments" }, "subtitle": "When the problem is more complex, our specialized team is ready to offer advanced and effective solutions.", "ctaButton": "Book Appointment", "urgencyButton": "Emergencies", "imageAlt": "Specialized dental treatments at Dr. Sílvio Araújo Clinic.", "badge2": { "title": "Specialists", "subtitle": "Qualified team" } },
-      "servicesSection": { "title": "Available Specialties", "subtitle": "Advanced treatments to solve the most complex problems.", "alerts": "Warning Signs" },
-      "services": {
-        "endodontia": { "title": "Endodontics", "description": "Root canal treatment to save teeth with infected or damaged dental pulp, eliminating pain and preserving the natural tooth.", "symptoms": { "1": "Intense and persistent pain", "2": "Hot/cold sensitivity", "3": "Gum swelling", "4": "Tooth darkening" }, "features": { "1": "Microscopic techniques", "2": "Advanced anesthesia", "3": "High success rate", "4": "Tooth preservation" } },
-        "cirurgia": { "title": "Oral Surgery", "description": "Specialized surgical procedures including complex extractions, wisdom teeth removal and corrective surgeries.", "symptoms": { "1": "Impacted teeth", "2": "Problematic wisdom teeth", "3": "Cysts or lesions", "4": "Preparation for implants" }, "features": { "1": "Minimally invasive techniques", "2": "Sedation available", "3": "Quick recovery", "4": "Experienced team" } },
-        "periodontologia": { "title": "Periodontics", "description": "Specialized treatment of gum diseases, from mild gingivitis to advanced periodontitis.", "symptoms": { "1": "Red or swollen gums", "2": "Bleeding when brushing", "3": "Persistent bad breath", "4": "Gum recession" }, "features": { "1": "Scaling and root planing", "2": "Periodontal surgery", "3": "Bone regeneration", "4": "Preventive maintenance" } }
+      "meta": {
+        "title": "Specialized Treatments | Dr. Sílvio Araújo - Dental Clinic",
+        "description": "Endodontics, oral surgery and periodontics. Advanced and specialized treatments at Dr. Sílvio Araújo Clinic."
       },
-      "emergencySymptoms": { "1": "Intense toothache", "2": "Facial swelling", "3": "Bleeding that won't stop", "4": "Broken or knocked-out tooth", "5": "Dental abscess" },
-      "emergency": { "title": "Dental Emergencies", "subtitle": "Emergency situations require immediate attention. If you have any of these symptoms, contact us immediately.", "callNow": "Call Now: +351 924 123 784", "whatToDo": { "title": "What To Do In Case of Emergency", "1": { "title": "Stay calm", "subtitle": "Anxiety can worsen the pain" }, "2": { "title": "Contact us immediately", "subtitle": "We have emergency slots reserved" }, "3": { "title": "Follow the instructions", "subtitle": "We'll give guidance until you arrive" } } },
-      "finalCta": { "title": "Need Specialized Treatment?", "subtitle": "Our team of specialists is ready to help you. Schedule an evaluation appointment.", "ctaButton": "Book Appointment", "callButton": "Call: +351 924 123 784" }
+      "hero": {
+        "backLink": "Back to Services",
+        "badge": "Advanced Care",
+        "title": {
+          "part1": "Specialized",
+          "part2": "Treatments"
+        },
+        "subtitle": "When the problem is more complex, our specialized team is ready to offer advanced and effective solutions.",
+        "ctaButton": "Book Appointment",
+        "urgencyButton": "Emergencies",
+        "imageAlt": "Specialized dental treatments at Dr. Sílvio Araújo Clinic.",
+        "badge2": {
+          "title": "Specialists",
+          "subtitle": "Qualified team"
+        }
+      },
+      "servicesSection": {
+        "title": "Available Specialties",
+        "subtitle": "Advanced treatments to solve the most complex problems.",
+        "alerts": "Warning Signs"
+      },
+      "services": {
+        "endodontia": {
+          "title": "Endodontics",
+          "description": "Root canal treatment to save teeth with infected or damaged dental pulp, eliminating pain and preserving the natural tooth.",
+          "symptoms": {
+            "1": "Intense and persistent pain",
+            "2": "Hot/cold sensitivity",
+            "3": "Gum swelling",
+            "4": "Tooth darkening"
+          },
+          "features": {
+            "1": "Microscopic techniques",
+            "2": "Advanced anesthesia",
+            "3": "High success rate",
+            "4": "Tooth preservation"
+          }
+        },
+        "cirurgia": {
+          "title": "Oral Surgery",
+          "description": "Specialized surgical procedures including complex extractions, wisdom teeth removal and corrective surgeries.",
+          "symptoms": {
+            "1": "Impacted teeth",
+            "2": "Problematic wisdom teeth",
+            "3": "Cysts or lesions",
+            "4": "Preparation for implants"
+          },
+          "features": {
+            "1": "Minimally invasive techniques",
+            "2": "Sedation available",
+            "3": "Quick recovery",
+            "4": "Experienced team"
+          }
+        },
+        "periodontologia": {
+          "title": "Periodontics",
+          "description": "Specialized treatment of gum diseases, from mild gingivitis to advanced periodontitis.",
+          "symptoms": {
+            "1": "Red or swollen gums",
+            "2": "Bleeding when brushing",
+            "3": "Persistent bad breath",
+            "4": "Gum recession"
+          },
+          "features": {
+            "1": "Scaling and root planing",
+            "2": "Periodontal surgery",
+            "3": "Bone regeneration",
+            "4": "Preventive maintenance"
+          }
+        }
+      },
+      "emergencySymptoms": {
+        "1": "Intense toothache",
+        "2": "Facial swelling",
+        "3": "Bleeding that won't stop",
+        "4": "Broken or knocked-out tooth",
+        "5": "Dental abscess"
+      },
+      "emergency": {
+        "title": "Dental Emergencies",
+        "subtitle": "Emergency situations require immediate attention. If you have any of these symptoms, contact us immediately.",
+        "callNow": "Call Now: +351 924 123 784",
+        "whatToDo": {
+          "title": "What To Do In Case of Emergency",
+          "1": {
+            "title": "Stay calm",
+            "subtitle": "Anxiety can worsen the pain"
+          },
+          "2": {
+            "title": "Contact us immediately",
+            "subtitle": "We have emergency slots reserved"
+          },
+          "3": {
+            "title": "Follow the instructions",
+            "subtitle": "We'll give guidance until you arrive"
+          }
+        }
+      },
+      "finalCta": {
+        "title": "Need Specialized Treatment?",
+        "subtitle": "Our team of specialists is ready to help you. Schedule an evaluation appointment.",
+        "ctaButton": "Book Appointment",
+        "callButton": "Call: +351 924 123 784"
+      }
     }
   },
   "consultadiagnostico": {
-    "hero": { "title": "Consultation and Diagnosis", "subtitle": "Complete and accurate evaluation of your oral health", "cta": "Book Appointment" },
-    "consultation": { "title": "Dental Consultation", "description": "The dental consultation is the first step to ensure a healthy mouth.", "content": "During the consultation, the dentist performs a detailed evaluation of your oral health, analyzing teeth, gums, bite, and oral tissues. The goal is to identify existing problems or prevent future complications, creating a personalized treatment plan." },
-    "radiology": { "title": "Digital X-rays", "description": "Modern technology for accurate diagnoses", "content": "Digital X-rays allow visualization of internal structures of teeth and bones that are not visible to the naked eye. They are fast, safe, and use a minimal dose of radiation, helping in the diagnosis of cavities, infections, bone problems, and treatment planning." },
-    "emergency": { "title": "Dental Emergencies", "description": "Quick care when you need it most", "content": "We consider dental emergencies: intense pain, infections, trauma, dental fractures, persistent bleeding or swelling. In these cases, contact the clinic as soon as possible. While waiting for evaluation, avoid excessive self-medication and, in case of bleeding, apply gentle pressure with clean gauze." },
-    "cta": { "title": "Take Care of Your Oral Health", "subtitle": "Don't wait for the pain. Book your appointment today.", "button": "Schedule Now" }
+    "meta": {
+      "title": "Consultation and Diagnosis | Dr. Sílvio Araújo - Dental Clinic",
+      "description": "Complete dental consultations, digital x-rays and emergency dental care with accurate diagnosis."
+    },
+    "hero": {
+      "backLink": "Back to Services page",
+      "badge": "Professional Diagnosis",
+      "badge2": "Accurate Diagnosis",
+      "title": {
+        "part1": "Consultation",
+        "part2": "Diagnosis"
+      },
+      "subtitle": "Accurate diagnosis and personalized treatment plan to care for your oral health.",
+      "ctaButton": "Book Appointment",
+      "callButton": "Call Now",
+      "imageAlt": "Dentist performing diagnostic consultation at Dr. Sílvio Araújo Dental Clinic",
+      "duration": "45–60 min",
+      "durationLabel": "Average time"
+    },
+    "servicesSection": {
+      "title": "Consultation and Diagnosis Services",
+      "subtitle": "Complete evaluation to identify and treat dental problems."
+    },
+    "consultation": {
+      "title": "Dental Consultation",
+      "description": "Complete evaluation of your oral health with accurate diagnosis and personalized treatment plan.",
+      "benefits": {
+        "1": "Complete clinical examination",
+        "2": "Detailed diagnosis",
+        "3": "Personalized treatment plan",
+        "4": "Questions clarification"
+      }
+    },
+    "radiology": {
+      "title": "Digital X-rays",
+      "description": "State-of-the-art technology for accurate diagnosis with less radiation exposure.",
+      "benefits": {
+        "1": "High quality images",
+        "2": "Less radiation",
+        "3": "Immediate results",
+        "4": "More accurate diagnosis"
+      }
+    },
+    "emergency": {
+      "title": "Dental Emergencies",
+      "description": "Quick care for dental emergency situations, relieving pain and solving urgent problems.",
+      "benefits": {
+        "1": "Priority care",
+        "2": "Immediate pain relief",
+        "3": "Extended availability",
+        "4": "Quick resolution"
+      }
+    },
+    "tips": {
+      "regular": {
+        "title": "Regular Check-ups",
+        "description": "Visit the dentist every 6 months for prevention and early diagnosis"
+      },
+      "symptoms": {
+        "title": "Pay Attention to Symptoms",
+        "description": "Don't ignore pain, bleeding or tooth sensitivity"
+      },
+      "history": {
+        "title": "Medical History",
+        "description": "Inform the dentist about health conditions and medications"
+      },
+      "questions": {
+        "title": "Ask Questions",
+        "description": "Don't hesitate to ask about your diagnosis and treatment"
+      }
+    },
+    "finalCta": {
+      "title": "Take Care of Your Oral Health",
+      "subtitle": "Schedule your appointment and get a complete diagnosis.",
+      "ctaButton": "Book Appointment",
+      "callButton": "Call: +351 924 123 784"
+    }
   },
   "prices": {
-    "tag": "Price List", "title": "Affordable", "titleHighlight": "treatments", "titleEnd": "for everyone",
+    "tag": "Price List",
+    "title": "Affordable",
+    "titleHighlight": "treatments",
+    "titleEnd": "for everyone",
     "description": "We offer competitive prices and special discounts for members. Taking care of your smile has never been so affordable.",
-    "table": { "treatment": "Treatment", "regularPrice": "Regular Price", "memberPrice": "Member Price" },
-    "treatments": { "consultation": "Dental consultation", "cleaning": "Scaling (cleaning)", "whitening": "Teeth whitening", "braces": "Metal braces (per arch)", "implant": "Dental implant", "prosthesis": "Acrylic prosthesis (3 teeth)" },
-    "membership": { "title": "Become a Member and Save", "description": "With our membership plan, you get exclusive discounts on all treatments, free routine consultations and priority scheduling.", "benefits": { "freeConsultations": "Free routine consultations", "discounts": "Up to 60% discount on treatments", "priority": "Priority scheduling", "flexiblePayment": "Flexible payment" }, "startingFrom": "Starting from", "perMonth": "per month", "learnMore": "Learn More" },
+    "table": {
+      "treatment": "Treatment",
+      "regularPrice": "Regular Price",
+      "memberPrice": "Member Price"
+    },
+    "treatments": {
+      "consultation": "Dental consultation",
+      "cleaning": "Scaling (cleaning)",
+      "whitening": "Teeth whitening",
+      "braces": "Metal braces (per arch)",
+      "implant": "Dental implant",
+      "prosthesis": "Acrylic prosthesis (3 teeth)"
+    },
+    "membership": {
+      "title": "Become a Member and Save",
+      "description": "With our membership plan, you get exclusive discounts on all treatments, free routine consultations and priority scheduling.",
+      "benefits": {
+        "freeConsultations": "Free routine consultations",
+        "discounts": "Up to 60% discount on treatments",
+        "priority": "Priority scheduling",
+        "flexiblePayment": "Flexible payment"
+      },
+      "startingFrom": "Starting from",
+      "perMonth": "per month",
+      "learnMore": "Learn More"
+    },
     "note": "* Prices shown are indicative and may vary depending on treatment complexity. Contact us for a personalized quote."
   },
   "team": {
-    "tag": "Our Team", "title": "Professionals", "titleHighlight": "dedicated", "titleEnd": "to your smile",
+    "tag": "Our Team",
+    "title": "Professionals",
+    "titleHighlight": "dedicated",
+    "titleEnd": "to your smile",
     "description": "Meet the team that takes care of you and your family with professionalism, experience and a touch of care.",
-    "member": { "name": "Dr. Sílvio Araújo", "role": "Clinical Director", "specialty": "General Dentistry and Orthodontics", "description": "Specialist in general dentistry and orthodontics, with vast experience and dedication to the care of each patient. Graduated from the Faculty of Dental Medicine, he leads the team with professionalism and empathy.", "achievements": ["Member of the Portuguese Dental Association", "Specialization in Orthodontics", "Continuous training in implantology"], "quote": "Our commitment is to provide the best dental care, with advanced technology and human, personalized service." }
+    "member": {
+      "name": "Dr. Sílvio Araújo",
+      "role": "Clinical Director",
+      "specialty": "General Dentistry and Orthodontics",
+      "description": "Specialist in general dentistry and orthodontics, with vast experience and dedication to the care of each patient. Graduated from the Faculty of Dental Medicine, he leads the team with professionalism and empathy.",
+      "achievements": [
+        "Member of the Portuguese Dental Association",
+        "Specialization in Orthodontics",
+        "Continuous training in implantology"
+      ],
+      "quote": "Our commitment is to provide the best dental care, with advanced technology and human, personalized service."
+    }
   },
   "amenities": {
-    "tag": "Amenities", "title": "We think about your", "titleHighlight": "comfort",
+    "tag": "Amenities",
+    "title": "We think about your",
+    "titleHighlight": "comfort",
     "description": "Our clinic offers various amenities to make your visit as pleasant as possible.",
-    "items": { "wifi": { "title": "Free Wi-Fi", "description": "Stay connected during your visit" }, "tv": { "title": "TV in Waiting Room", "description": "Entertainment while you wait" }, "coffee": { "title": "Coffee and Water", "description": "Free beverages for your comfort" }, "parking": { "title": "Parking", "description": "Free parking nearby" }, "accessibility": { "title": "Accessibility", "description": "Access for people with reduced mobility" }, "payment": { "title": "Multiple Payment Methods", "description": "Card, MB Way, transfer and cash" } }
+    "items": {
+      "wifi": {
+        "title": "Free Wi-Fi",
+        "description": "Stay connected during your visit"
+      },
+      "tv": {
+        "title": "TV in Waiting Room",
+        "description": "Entertainment while you wait"
+      },
+      "coffee": {
+        "title": "Coffee and Water",
+        "description": "Free beverages for your comfort"
+      },
+      "parking": {
+        "title": "Parking",
+        "description": "Free parking nearby"
+      },
+      "accessibility": {
+        "title": "Accessibility",
+        "description": "Access for people with reduced mobility"
+      },
+      "payment": {
+        "title": "Multiple Payment Methods",
+        "description": "Card, MB Way, transfer and cash"
+      }
+    }
   },
   "appointment": {
-    "tag": "Book Appointment", "title": "Schedule your", "titleHighlight": "appointment",
+    "tag": "Book Appointment",
+    "title": "Schedule your",
+    "titleHighlight": "appointment",
     "description": "Fill out the form and we'll contact you to confirm your booking.",
-    "form": { "name": "Full Name", "namePlaceholder": "Your name", "phone": "Phone", "phonePlaceholder": "912 345 678", "email": "Email", "emailPlaceholder": "your@email.com", "service": "Desired Service", "servicePlaceholder": "Select a service", "services": { "consultation": "General Consultation", "cleaning": "Scaling", "whitening": "Whitening", "orthodontics": "Orthodontics", "implants": "Implants", "other": "Other" }, "date": "Preferred Date", "datePlaceholder": "Select a date", "time": "Preferred Time", "timePlaceholder": "Select a time", "times": { "morning": "Morning (9am-12pm)", "afternoon": "Afternoon (2pm-5pm)", "evening": "Late Afternoon (5pm-7pm)" }, "message": "Message (Optional)", "messagePlaceholder": "Any observation or special request?", "submit": "Send Request", "submitting": "Sending...", "success": "Request sent successfully! We'll contact you soon.", "error": "Error sending request. Please try again." },
-    "info": { "title": "Useful Information", "response": { "title": "Quick Response", "description": "We respond to all requests within 24 business hours." }, "emergency": { "title": "Emergencies", "description": "For emergencies, call our number directly." }, "hours": { "title": "Opening Hours", "weekdays": "Monday to Friday: 9am - 7pm", "saturday": "Saturday: 9am - 1pm", "sunday": "Sunday: Closed" }, "contact": { "title": "Direct Contact", "phone": "Phone: 924 123 784", "email": "Email: geral@silvioaraujo.com" }, "button": "Call Now" }
+    "benefits": {
+      "response": "Response within 24 hours",
+      "flexible": "Flexible schedules",
+      "personalized": "Personalized service"
+    },
+    "directContact": {
+      "title": "Direct Contact",
+      "phone": "924 123 784",
+      "email": "geral@silvioaraujo.com"
+    },
+    "form": {
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Your full name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "912 345 678",
+      "consultationType": "Consultation Type",
+      "consultationTypePlaceholder": "Select consultation type",
+      "preferredDate": "Preferred Date",
+      "preferredTime": "Preferred Time",
+      "preferredTimePlaceholder": "Select a time",
+      "preferredDentist": "Preferred Dentist",
+      "noPreference": "No preference",
+      "submit": "Book Appointment",
+      "privacyNote": "Your data is protected by our privacy policy"
+    },
+    "consultationTypes": {
+      "general": "General Consultation",
+      "cleaning": "Cleaning",
+      "orthodontics": "Orthodontics",
+      "implants": "Implants",
+      "whitening": "Whitening",
+      "emergency": "Emergency",
+      "other": "Other"
+    },
+    "toast": {
+      "title": "Request Sent!",
+      "description": "We'll contact you soon to confirm your appointment."
+    }
   },
   "testimonials": {
-    "tag": "Testimonials", "title": "What our", "titleHighlight": "patients say",
+    "tag": "Testimonials",
+    "title": "What our",
+    "titleHighlight": "patients say",
     "description": "See what they say about their experience at our clinic.",
-    "stats": { "averageRating": "Average Rating", "happyPatients": "Happy Patients", "satisfactionRate": "Satisfaction Rate", "yearsExperience": "Years of Experience" },
-    "reviews": { "review1": { "name": "Maria Santos", "role": "Patient for 5 years", "text": "Excellent service! Dr. Sílvio is very professional and attentive. I always felt comfortable during treatments. I recommend to everyone!" }, "review2": { "name": "João Ferreira", "role": "Patient for 3 years", "text": "I did my orthodontic treatment here and I'm very satisfied with the results. Very friendly and competent team." }, "review3": { "name": "Ana Costa", "role": "Patient for 2 years", "text": "The clinic is very modern and welcoming. Prices are fair and service is always punctual. My whole family is treated here." }, "review4": { "name": "Pedro Oliveira", "role": "Patient for 4 years", "text": "I was very afraid of going to the dentist, but Dr. Sílvio made me feel completely comfortable. Now I come to appointments without any fear." }, "review5": { "name": "Sofia Martins", "role": "Patient for 1 year", "text": "I had a dental implant and everything went perfectly. Process well explained and excellent follow-up. Very satisfied!" } }
+    "stats": {
+      "averageRating": "Average Rating",
+      "happyPatients": "Happy Patients",
+      "satisfactionRate": "Satisfaction Rate",
+      "yearsExperience": "Years of Experience"
+    },
+    "reviews": {
+      "review1": {
+        "name": "Maria Santos",
+        "role": "Patient for 5 years",
+        "text": "Excellent service! Dr. Sílvio is very professional and attentive. I always felt comfortable during treatments. I recommend to everyone!"
+      },
+      "review2": {
+        "name": "João Ferreira",
+        "role": "Patient for 3 years",
+        "text": "I did my orthodontic treatment here and I'm very satisfied with the results. Very friendly and competent team."
+      },
+      "review3": {
+        "name": "Ana Costa",
+        "role": "Patient for 2 years",
+        "text": "The clinic is very modern and welcoming. Prices are fair and service is always punctual. My whole family is treated here."
+      },
+      "review4": {
+        "name": "Pedro Oliveira",
+        "role": "Patient for 4 years",
+        "text": "I was very afraid of going to the dentist, but Dr. Sílvio made me feel completely comfortable. Now I come to appointments without any fear."
+      },
+      "review5": {
+        "name": "Sofia Martins",
+        "role": "Patient for 1 year",
+        "text": "I had a dental implant and everything went perfectly. Process well explained and excellent follow-up. Very satisfied!"
+      }
+    }
   },
   "blog": {
-    "tag": "Blog", "title": "Oral Health", "titleHighlight": "Tips", "viewAll": "View All Articles", "readMore": "Read More", "readTime": "read", "back": "Back to Blog", "share": "Share",
-    "articles": { "article1": { "title": "How to maintain good daily oral hygiene", "excerpt": "Discover the best practices for brushing your teeth correctly and keeping your mouth healthy every day.", "category": "Oral Hygiene" }, "article2": { "title": "All about teeth whitening", "excerpt": "Learn about the different types of whitening and which is most suitable for your case.", "category": "Aesthetics" }, "article3": { "title": "When to take children to the dentist?", "excerpt": "Find out the ideal age for the first appointment and how to prepare the little ones for the visit.", "category": "Pediatric Dentistry" }, "article4": { "title": "Dental implants: complete guide", "excerpt": "Everything you need to know about dental implants, from the procedure to recovery.", "category": "Implants" } }
+    "tag": "Blog",
+    "title": "Oral Health",
+    "titleHighlight": "Tips",
+    "viewAll": "View All Articles",
+    "readMore": "Read More",
+    "readTime": "read",
+    "back": "Back to Blog",
+    "share": "Share",
+    "articles": {
+      "article1": {
+        "title": "How to maintain good daily oral hygiene",
+        "excerpt": "Discover the best practices for brushing your teeth correctly and keeping your mouth healthy every day.",
+        "category": "Oral Hygiene"
+      },
+      "article2": {
+        "title": "All about teeth whitening",
+        "excerpt": "Learn about the different types of whitening and which is most suitable for your case.",
+        "category": "Aesthetics"
+      },
+      "article3": {
+        "title": "When to take children to the dentist?",
+        "excerpt": "Find out the ideal age for the first appointment and how to prepare the little ones for the visit.",
+        "category": "Pediatric Dentistry"
+      },
+      "article4": {
+        "title": "Dental implants: complete guide",
+        "excerpt": "Everything you need to know about dental implants, from the procedure to recovery.",
+        "category": "Implants"
+      }
+    },
+    "higiene": {
+      "title": "How to maintain good daily oral hygiene",
+      "description": "Practical habits for healthier teeth and gums: brushing technique, flossing, mouthwash, diet and when to see the dentist.",
+      "toc": {
+        "why": "Why it's important",
+        "daily": "Daily routine (step by step)",
+        "technique": "Brushing technique (quick guide)",
+        "floss": "Dental floss and interdental cleaning",
+        "diet": "Diet and habits",
+        "warning": "Warning signs",
+        "faq": "Myths and frequently asked questions",
+        "title": "In this article",
+        "note": "Need a personalized plan? We can evaluate your routine and recommend the best products and techniques."
+      },
+      "category": "Oral Hygiene",
+      "readTime": "5 min read",
+      "lead": "Small daily habits make a big difference. Here's a practical guide to keeping your teeth and gums healthy — at home and between appointments.",
+      "imageAlt": "Daily oral hygiene",
+      "ctaButton": "Book Appointment",
+      "keyTakeawaysTitle": "Key takeaways",
+      "keyTakeaway1": "Brush 2× per day (2 min) + interdental cleaning",
+      "keyTakeaway2": "Use fluoride toothpaste and replace brush every 3 months",
+      "keyTakeaway3": "Regular check-ups every 6 months for early detection",
+      "whyTitle": "Why it's important",
+      "whyText1": "Oral health goes beyond aesthetics. Gum disease and cavities can cause pain and tooth loss, and they are associated with systemic conditions such as cardiovascular disease and diabetes.",
+      "whyText2": "The good news? Prevention is simple with the right habits. Here's what truly makes a difference.",
+      "dailyTitle": "Daily routine (step by step)",
+      "daily": {
+        "step1": {
+          "title": "Morning and night: brush for 2 minutes",
+          "text": "Use fluoride toothpaste and a soft-bristled toothbrush. Cover all surfaces — outer, inner, and chewing surfaces."
+        },
+        "step2": {
+          "title": "Interdental cleaning (1× per day)",
+          "text": "Use dental floss or interdental brushes. Ideally at night, before brushing."
+        },
+        "step3": {
+          "title": "Optional: mouthwash/rinse",
+          "text": "Use only if recommended by your dentist. It does not replace brushing or interdental cleaning."
+        },
+        "step4": {
+          "title": "Hydration and less sugar",
+          "text": "Drink water throughout the day. Avoid frequent snacking between meals, especially sugary foods."
+        }
+      },
+      "techniqueTitle": "Brushing technique (quick guide)",
+      "tech1": "Hold the toothbrush at a 45° angle to the gumline (where the tooth meets the gum).",
+      "tech2": "Use short, gentle strokes — avoid brushing too hard.",
+      "tech3": "Brush the outer, inner, and chewing surfaces of all teeth.",
+      "tech4": "Gently brush your tongue (or use a tongue scraper) to reduce bacteria and improve breath.",
+      "flossSectionTitle": "Dental floss and interdental cleaning",
+      "flossSectionText": "Cavities and gum problems often start between teeth. If flossing is difficult, interdental brushes can be an excellent alternative — ask your dentist for the ideal size.",
+      "flossHowTitle": "How to use dental floss (in 3 steps)",
+      "flossHow1": "Use approximately 45 cm of floss, wrap around middle fingertips.",
+      "flossHow2": "Insert carefully between teeth, curving in C-shape around each tooth.",
+      "flossHow3": "Make up and down movements, cleaning both sides of the tooth.",
+      "dietTitle": "Diet and habits",
+      "diet": {
+        "goodTitle": "Good habits",
+        "good1": "Drink water throughout the day.",
+        "good2": "Prefer snacks with less sugar (nuts, cheese, yogurt).",
+        "good3": "Chew sugar-free gum after meals (if appropriate) to stimulate saliva.",
+        "limitTitle": "Reduce",
+        "limit1": "Frequent sugary snacks and drinks.",
+        "limit2": "Sipping sodas/juices slowly for a long time (constant acid exposure).",
+        "limit3": "Tobacco (major risk for gum disease and stains)."
+      },
+      "warningTitle": "Warning signs",
+      "warningSubtitle": "If you notice any of these signs, consider booking an evaluation:",
+      "warning": {
+        "1": "Gum bleeding when brushing or flossing",
+        "2": "Persistent bad breath",
+        "3": "Tooth sensitivity or pain",
+        "4": "Swollen gums or gum recession",
+        "5": "Pain when chewing or jaw discomfort"
+      },
+      "faqTitle": "Myths and frequently asked questions",
+      "faq": {
+        "q1": "If gums bleed, should I stop flossing?",
+        "a1": "Generally, no. Bleeding is often a sign of inflammation. Use floss gently and consistently; if it persists for 1–2 weeks, book an evaluation.",
+        "q2": "Is mouthwash necessary?",
+        "a2": "Not always. It can help in specific situations (gingivitis, high cavity risk). The base is brushing + interdental cleaning.",
+        "q3": "Electric toothbrush: worth it?",
+        "a3": "For many people, yes — improves consistency and plaque removal. Technique remains important."
+      },
+      "finalCta": {
+        "title": "Want a personalized oral hygiene plan?",
+        "text": "We can evaluate gum health, cavity risk and recommend products and techniques tailored to you."
+      }
+    },
+    "implantes": {
+      "title": "Dental implants: complete guide",
+      "description": "Everything you need to know about dental implants, from the procedure to recovery. Complete guide on implantology.",
+      "toc": {
+        "what": "What is an implant",
+        "advantages": "Advantages",
+        "eligibility": "Who can get implants",
+        "procedure": "The procedure",
+        "recovery": "Recovery",
+        "success": "Success rate",
+        "cost": "Costs",
+        "title": "In this article",
+        "note": "Want to know if you're a candidate for implants? Schedule a free evaluation."
+      },
+      "category": "Implants",
+      "readTime": "7 min read",
+      "lead": "Dental implants are a permanent solution for replacing missing teeth. Here's everything you need to know before making your decision.",
+      "imageAlt": "Dental implants",
+      "ctaButton": "Book Consultation",
+      "takeaways": {
+        "title": "Key takeaways",
+        "one": "Success rate above 95%",
+        "two": "Can last a lifetime with proper care",
+        "three": "Preserve the jawbone and adjacent teeth"
+      },
+      "whatTitle": "What is a dental implant",
+      "whatText": "A dental implant is a titanium screw surgically placed in the jawbone to replace the root of a missing tooth. After osseointegration (fusion with bone), a crown is attached that looks and functions like a natural tooth.",
+      "parts": {
+        "implant": {
+          "title": "Implant",
+          "text": "Titanium screw inserted into the bone"
+        },
+        "abutment": {
+          "title": "Abutment",
+          "text": "Connecting piece between the implant and the crown"
+        },
+        "crown": {
+          "title": "Crown",
+          "text": "Visible artificial tooth"
+        }
+      },
+      "advantagesTitle": "Advantages of implants",
+      "advantages": {
+        "1": "Natural look and feel",
+        "2": "Durability — can last a lifetime with proper care",
+        "3": "Preserve the jawbone",
+        "4": "Do not affect adjacent teeth",
+        "5": "Allow you to eat and speak normally",
+        "6": "Do not require removal for cleaning",
+        "7": "Improve self-esteem and quality of life"
+      },
+      "eligibilityTitle": "Who can get implants",
+      "eligibilityText1": "Most adults in good general health can receive dental implants. However, a careful evaluation is required to determine whether you are a good candidate.",
+      "eligibilityText2": "Factors that can affect eligibility include:",
+      "eligibility": {
+        "1": "Amount and quality of available bone",
+        "2": "General health and medical conditions (diabetes, osteoporosis)",
+        "3": "Habits such as smoking",
+        "4": "Oral hygiene",
+        "5": "Medications you are taking"
+      },
+      "procedureTitle": "The procedure",
+      "procedure": {
+        "phase1": {
+          "title": "Phase 1: Evaluation and planning",
+          "text": "The dentist performs detailed clinical and radiographic examinations, including a 3D CT scan, to assess the bone and plan the ideal implant position."
+        },
+        "phase2": {
+          "title": "Phase 2: Implant placement",
+          "text": "Under local anesthesia, the implant is inserted into the bone. The procedure is usually painless. A temporary tooth may be placed the same day (immediate loading) in selected cases."
+        },
+        "phase3": {
+          "title": "Phase 3: Osseointegration",
+          "text": "Over 3 to 6 months, the bone integrates with the implant. This period is crucial for long-term success."
+        },
+        "phase4": {
+          "title": "Phase 4: Final crown placement",
+          "text": "After healing, the abutment and the final crown are placed, custom-made to match your natural teeth perfectly."
+        }
+      },
+      "recoveryTitle": "Recovery and care",
+      "recoveryText": "Recovery is usually quick. Expected:",
+      "recovery": {
+        "1": "Some swelling and mild discomfort may occur",
+        "2": "Take prescribed medication as instructed",
+        "3": "Avoid hard foods on the operated area",
+        "4": "Maintain good oral hygiene",
+        "5": "Avoid smoking and alcohol"
+      },
+      "successTitle": "Success rate",
+      "successText": "Dental implants have a success rate above 95% when properly performed and maintained. Longevity depends on oral hygiene and regular check-ups.",
+      "costTitle": "Investment and value",
+      "costText": "While the initial cost may be higher than other options, implants are the most economical long-term solution due to their durability and lack of need for replacement.",
+      "finalCta": {
+        "title": "Ready to restore your smile?",
+        "text": "Schedule a free evaluation to determine if you're a candidate for dental implants."
+      }
+    },
+    "estetica": {
+      "title": "Everything about teeth whitening",
+      "description": "Learn about the different types of whitening and which is most suitable for your case. Complete guide on dental aesthetics.",
+      "category": "Aesthetics",
+      "readTime": "6 min read",
+      "imageAlt": "Teeth whitening",
+      "lead": "A white smile boosts confidence. Understand how professional whitening works and what to expect from treatment.",
+      "ctaButton": "Schedule Whitening",
+      "toc": {
+        "title": "In this article",
+        "causes": "What causes discoloration",
+        "types": "Types of whitening",
+        "safety": "Safety and effectiveness",
+        "duration": "Results duration",
+        "aftercare": "Post-whitening care",
+        "faq": "Frequently asked questions",
+        "note": "Want a whiter smile? We can evaluate your case and recommend the best option."
+      },
+      "takeaways": {
+        "title": "Key points",
+        "one": "Professional whitening is safe and effective",
+        "two": "Results visible from first session",
+        "three": "Can lighten up to 8 shades"
+      },
+      "causesTitle": "What causes tooth discoloration?",
+      "causesText": "Several factors can darken or stain teeth over time:",
+      "causes": {
+        "food": {
+          "title": "Food and drinks",
+          "text": "Coffee, tea, red wine, sodas and some foods can stain teeth over time."
+        },
+        "tobacco": {
+          "title": "Tobacco",
+          "text": "Smoking or chewing tobacco causes significant yellowing and brown stains."
+        },
+        "age": {
+          "title": "Aging",
+          "text": "With age, enamel wears thin, revealing the yellowish dentin underneath."
+        },
+        "medication": {
+          "title": "Medications",
+          "text": "Some antibiotics and treatments can cause intrinsic discoloration."
+        },
+        "hygiene": {
+          "title": "Poor hygiene",
+          "text": "Inadequate brushing and flossing allows plaque and stains to accumulate."
+        }
+      },
+      "typesTitle": "Types of whitening",
+      "types": {
+        "office": {
+          "title": "In-office whitening",
+          "text": "Performed at the clinic with LED light activation. The most concentrated gel is applied for fast, visible results.",
+          "duration": "Duration: 1-2 sessions of 45-60 minutes",
+          "results": "Results: Immediate, up to 8 shades lighter",
+          "safety": "Safety: Monitored by professional"
+        },
+        "home": {
+          "title": "At-home whitening",
+          "text": "Custom trays made for you, used at home with professional whitening gel.",
+          "duration": "Duration: 2-4 weeks of daily application",
+          "application": "Application: A few hours per day or overnight",
+          "advantage": "Advantage: More economical and comfortable"
+        },
+        "combined": {
+          "title": "Combined whitening",
+          "text": "Combines an in-office session with at-home maintenance, offering the best of both methods: fast, long-lasting results."
+        }
+      },
+      "safetyTitle": "Safety and effectiveness",
+      "safetyText": "Professional whitening is safe when performed correctly. The dentist evaluates oral health, protects gums and uses appropriate concentrations. It doesn't damage enamel and sensitivity is temporary.",
+      "durationTitle": "Results duration",
+      "durationText": "Results typically last 1-2 years, depending on habits. Avoiding staining foods/drinks and maintaining good hygiene extends whitening.",
+      "aftercareTitle": "Post-whitening care",
+      "aftercare": {
+        "1": "Avoid staining foods for 48 hours after treatment",
+        "2": "Use a straw for colored drinks",
+        "3": "Rinse mouth after consuming staining foods",
+        "4": "Maintain excellent oral hygiene",
+        "5": "Consider touch-up treatments every 6-12 months"
+      },
+      "faqTitle": "Frequently asked questions",
+      "faq": {
+        "q1": "Does whitening hurt?",
+        "a1": "Most people don't feel pain. Some may experience temporary sensitivity, which usually resolves in 24-48 hours.",
+        "q2": "How white will my teeth get?",
+        "a2": "Results vary by person. Generally, you can lighten 4-8 shades. Natural tooth color and stain type influence the outcome.",
+        "q3": "How long does whitening last?",
+        "a3": "With good care, 1-2 years. Touch-ups can extend results. Avoiding staining habits helps maintain whiteness."
+      },
+      "finalCta": {
+        "title": "Ready for a whiter smile?",
+        "text": "Schedule a free evaluation and discover which whitening is ideal for you."
+      }
+    },
+    "odontopediatria": {
+      "title": "When to take children to the dentist?",
+      "description": "Find out the ideal age for the first appointment and how to prepare the little ones for the visit. Complete guide on pediatric dentistry.",
+      "toc": {
+        "idealAge": "Ideal age",
+        "preparation": "Prepare the consultation",
+        "problems": "Common Problems",
+        "hygiene": "Hygiene by age",
+        "frequency": "Frequency of consultations",
+        "title": "In this article",
+        "note": "Have questions about your child's oral health? Schedule a pediatric consultation."
+      },
+      "category": "Pediatric Dentistry",
+      "readTime": "5 min read",
+      "lead": "The first dental visit is an important milestone. Learn when to start and how to make it a positive experience.",
+      "imageAlt": "Pediatric dentistry",
+      "ctaButton": "Schedule Pediatric Appointment",
+      "takeaways": {
+        "title": "Key Points",
+        "one": "First consultation before the 1st birthday",
+        "two": "Speak positively about the dentist.",
+        "three": "Regular check-ups every 6 months"
+      },
+      "idealAgeTitle": "What is the ideal age for the first consultation?",
+      "idealAgeText": "The first visit to the dentist should take place when the first tooth erupts or, at the latest, by the child's first birthday. This initial consultation is essential for:",
+      "idealAge": {
+        "1": "Assess the development of teeth and jaws",
+        "2": "Identify potential problems early",
+        "3": "Guide parents on children's oral hygiene",
+        "4": "Create a positive relationship between the child and the dentist"
+      },
+      "preparationTitle": "How do I prepare my child for the appointment?",
+      "preparation": {
+        "beforeTitle": "Before the consultation",
+        "before": {
+          "1": {
+            "title": "Speak positively:",
+            "text": "Avoid using words like: "
+          },
+          "2": {
+            "title": "Read books:",
+            "text": "There are children's stories about visits to the dentist."
+          },
+          "3": {
+            "title": "Play dentist:",
+            "text": "Simulate a home visit using mannequins."
+          },
+          "4": {
+            "title": "Choose the right time:",
+            "text": "Choose times when the child is rested."
+          }
+        },
+        "duringTitle": "During the consultation",
+        "during": {
+          "1": "Stay calm and convey confidence.",
+          "2": "Let the dentist communicate directly with the child.",
+          "3": "Avoid making promises of exaggerated rewards.",
+          "4": "Praise the child's behavior after the appointment."
+        }
+      },
+      "problemsTitle": "Common dental problems in children",
+      "problems": {
+        "bottle": {
+          "title": "Baby bottle tooth decay",
+          "text": "These occur when a child falls asleep with a bottle of milk or juice in their mouth. To prevent them, clean their teeth after each feeding and avoid sugary drinks in the bottle."
+        },
+        "thumb": {
+          "title": "Sucking your finger",
+          "text": "It is natural in the early years, but should be discouraged after age 4 to avoid changes in tooth positioning and dental arch development."
+        },
+        "trauma": {
+          "title": "Dental trauma",
+          "text": "Falls and accidents are common in childhood. In case of dental trauma, seek immediate dental care, even if there appears to be no visible damage."
+        }
+      },
+      "hygieneTitle": "Oral hygiene for children by age.",
+      "hygiene": {
+        "0to2": {
+          "title": "0-2 years",
+          "text": "Clean the gums with a damp gauze pad. When the first teeth appear, use a baby toothbrush with water."
+        },
+        "2to6": {
+          "title": "2-6 years",
+          "text": "Use fluoride toothpaste (a pea-sized amount). Parents should supervise and assist with brushing."
+        },
+        "6plus": {
+          "title": "6+ years",
+          "text": "The child can brush their teeth independently, but parents should supervise. Introduce flossing when the teeth begin to touch."
+        }
+      },
+      "frequencyTitle": "How often should you go to the dentist?",
+      "frequencyText": "After the initial consultation, it is recommended to visit the dentist every 6 months for routine check-ups. This frequency allows for the early detection and treatment of problems, when they are easier to resolve.",
+      "finalCta": {
+        "title": "Schedule your child's first visit",
+        "text": "We create a welcoming and fun environment for children to have positive dental experiences."
+      }
+    }
   },
   "faq": {
-    "tag": "FAQ", "title": "Frequently", "titleHighlight": "Asked Questions",
+    "badge": "FAQ",
+    "tag": "FAQ",
+    "title": {
+      "before": "Frequently Asked",
+      "highlight": "Questions"
+    },
+    "subtitle": "Find answers to the most common questions about our services",
     "description": "Find answers to the most common questions about our services.",
-    "items": { "item1": { "question": "What payment methods are accepted?", "answer": "We accept cash, debit/credit card, MB Way and bank transfer. We also offer payment facilities for more extensive treatments." }, "item2": { "question": "Does the clinic have parking?", "answer": "Yes, there is free parking in the surrounding area of the clinic, with easy access." }, "item3": { "question": "How often should I go to the dentist?", "answer": "We recommend routine consultations every 6 months for oral health maintenance and early detection of problems." }, "item4": { "question": "Is the first consultation free?", "answer": "Yes, we offer a free evaluation consultation for new patients, where we assess your situation and present a treatment plan." }, "item5": { "question": "Do you attend emergencies?", "answer": "Yes, we reserve daily slots for dental emergencies. In case of emergency, contact us by phone for priority scheduling." }, "item6": { "question": "Do you treat children?", "answer": "Yes, we have experience in pediatric dentistry and create a welcoming environment so that the little ones feel comfortable during consultations." } },
-    "cta": { "text": "Didn't find your question?", "button": "Contact Us" }
+    "items": {
+      "hours": {
+        "q": "What are your opening hours?",
+        "a": "We are open Monday to Friday from 9am to 7pm, and Saturdays from 9am to 1pm. We are closed on Sundays and public holidays."
+      },
+      "appointment": {
+        "q": "How can I book an appointment?",
+        "a": "You can book through our website by clicking 'Book Appointment', calling our phone number, or sending a WhatsApp message. We can usually schedule appointments within 48 hours."
+      },
+      "payments": {
+        "q": "What payment methods do you accept?",
+        "a": "We accept cash, debit cards, credit cards (Visa, Mastercard), MB Way and bank transfers. We also offer customized payment plans for more extensive treatments."
+      },
+      "insurance": {
+        "q": "Do you work with health insurance?",
+        "a": "Yes, we work with major insurance companies in Portugal. Please contact us with your insurance details so we can confirm coverage and procedures."
+      },
+      "routine_duration": {
+        "q": "How long does a routine appointment take?",
+        "a": "A routine appointment (check-up and cleaning) usually takes between 45 to 60 minutes. For the first appointment, we recommend booking around 90 minutes to include a complete evaluation and planning."
+      },
+      "pain": {
+        "q": "Are the treatments painful?",
+        "a": "We use modern anesthesia and sedation techniques to ensure maximum comfort. Most of our patients report little to no discomfort during procedures. We prioritize your well-being in all treatments."
+      },
+      "kids_first_visit": {
+        "q": "At what age should I bring my child to the dentist?",
+        "a": "We recommend the first dental visit soon after the first tooth appears, or at most by the first year of age. Early visits help establish good oral health habits and prevent future problems."
+      },
+      "implant_duration": {
+        "q": "How long does an implant treatment take?",
+        "a": "The complete process usually takes between 3 to 6 months, depending on the case. This includes implant placement, healing period (osseointegration) and placement of the final crown. In some cases, we can offer immediate loading solutions."
+      },
+      "whitening": {
+        "q": "Is teeth whitening safe?",
+        "a": "Yes, professional teeth whitening is completely safe when performed by qualified professionals. We use approved products and techniques that protect the enamel and gums, providing lasting and safe results."
+      },
+      "booking": {
+        "q": "Do I need to pay in advance to book?",
+        "a": "No advance payment is required for routine appointments. For more complex treatments that require specific preparation, a deposit may be requested. We will always inform you in advance if this is the case."
+      }
+    },
+    "cta": {
+      "text": "Didn't find the answer you were looking for?",
+      "button": "Contact us"
+    }
   },
   "contact": {
-    "tag": "Contacts", "title": "Come", "titleHighlight": "visit us",
+    "tag": "Contacts",
+    "title": "Come",
+    "titleHighlight": "visit us",
     "description": "We're located in Quinta do Conde, with easy access and nearby parking. Get in touch with us.",
-    "info": { "address": { "title": "Address", "content": "Quinta do Conde, Sesimbra, Portugal", "action": "View on Map" }, "phone": { "title": "Phone", "content": "924 123 784", "action": "Call Now" }, "email": { "title": "Email", "content": "geral@silvioaraujo.com", "action": "Send Email" }, "schedule": { "title": "Hours", "content": "Mon-Fri: 9am-7pm | Sat: 9am-1pm" } },
-    "cta": { "title": "Book Your Appointment Today!", "description": "Don't wait any longer to take care of your smile. Our team is ready to welcome you.", "button": "Book Appointment" }
+    "info": {
+      "address": {
+        "title": "Address",
+        "content": "Quinta do Conde, Sesimbra, Portugal",
+        "action": "View on Map"
+      },
+      "phone": {
+        "title": "Phone",
+        "content": "924 123 784",
+        "action": "Call Now"
+      },
+      "email": {
+        "title": "Email",
+        "content": "geral@silvioaraujo.com",
+        "action": "Send Email"
+      },
+      "schedule": {
+        "title": "Hours",
+        "content": "Mon-Fri: 9am-7pm | Sat: 9am-1pm"
+      }
+    },
+    "cta": {
+      "title": "Book Your Appointment Today!",
+      "description": "Don't wait any longer to take care of your smile. Our team is ready to welcome you.",
+      "button": "Book Appointment"
+    }
   },
   "footer": {
     "description": "We care for your smile with dedication, modern technology, and personalized treatments for the whole family.",
-    "quickLinks": "Quick Links", "services": "Services", "contacts": "Contacts",
-    "servicesList": { "consultation": "Dental Consultation", "orthodontics": "Orthodontics", "implants": "Dental Implants", "whitening": "Whitening", "cleaning": "Scaling (Cleaning)" },
-    "copyright": "Dr. Sílvio Araújo Dental Clinic. All rights reserved.", "privacy": "Privacy Policy", "terms": "Terms of Use"
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "contacts": "Contacts",
+    "servicesList": {
+      "consultation": "Dental Consultation",
+      "orthodontics": "Orthodontics",
+      "implants": "Dental Implants",
+      "whitening": "Whitening",
+      "cleaning": "Scaling (Cleaning)"
+    },
+    "copyright": "Dr. Sílvio Araújo Dental Clinic. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
   },
-  "floatingCTA": { "button": "Book Appointment Today!" },
-  "whatsapp": { "tooltip": "Chat with us on WhatsApp", "message": "Hello! 😊 I found you through the website and would like to speak with the clinic. Can you reply here to help me book and/or get information?", "cta": "Get in touch with us" },
-  "notFound": { "title": "404", "message": "Oops! Page not found", "backHome": "Back to Home" }
+  "floatingCTA": {
+    "button": "Book Appointment Today!"
+  },
+  "whatsapp": {
+    "tooltip": "Chat with us on WhatsApp",
+    "message": "Hello! 😊 I found you through the website and would like to speak with the clinic. Can you reply here to help me book and/or get information?",
+    "cta": "Get in touch with us"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Oops! Page not found",
+    "backHome": "Back to Home"
+  }
 }
