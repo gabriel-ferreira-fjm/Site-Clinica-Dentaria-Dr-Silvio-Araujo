@@ -1,9 +1,53 @@
 import { useTranslation } from 'react-i18next';
+import { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Phone, MapPin, ArrowRight } from 'lucide-react';
 
 const Hero = () => {
   const { t } = useTranslation();
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  // Força o play do vídeo no iOS/Safari
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    // Função para tentar reproduzir o vídeo
+    const playVideo = async () => {
+      try {
+        await video.play();
+      } catch (error) {
+        // Silenciosamente ignora erro - alguns browsers bloqueiam autoplay
+        console.log('Autoplay prevented:', error);
+      }
+    };
+
+    // Tenta reproduzir imediatamente
+    playVideo();
+
+    // Também tenta reproduzir quando o vídeo estiver carregado
+    video.addEventListener('loadeddata', playVideo);
+
+    // Tenta reproduzir quando o usuário interagir com a página (fallback para iOS restritivo)
+    const handleInteraction = () => {
+      playVideo();
+      // Remove listeners após primeira interação
+      document.removeEventListener('touchstart', handleInteraction);
+      document.removeEventListener('click', handleInteraction);
+      document.removeEventListener('scroll', handleInteraction);
+    };
+
+    document.addEventListener('touchstart', handleInteraction, { passive: true });
+    document.addEventListener('click', handleInteraction, { passive: true });
+    document.addEventListener('scroll', handleInteraction, { passive: true });
+
+    return () => {
+      video.removeEventListener('loadeddata', playVideo);
+      document.removeEventListener('touchstart', handleInteraction);
+      document.removeEventListener('click', handleInteraction);
+      document.removeEventListener('scroll', handleInteraction);
+    };
+  }, []);
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
@@ -17,11 +61,16 @@ const Hero = () => {
       {/* Video Background */}
       <div className="absolute inset-0 w-full h-full overflow-hidden">
         <video
+          ref={videoRef}
           autoPlay
           loop
           muted
           playsInline
+          preload="auto"
+          poster="/video-poster.jpg"
           className="absolute w-full h-full object-cover"
+          webkit-playsinline="true"
+          x5-playsinline="true"
         >
           <source src="/video-hero.mp4" type="video/mp4" />
         </video>
