@@ -91,7 +91,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="space-y-8 text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary font-medium text-sm animate-fade-in">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-white font-medium text-sm animate-fade-in">
               <span className="w-2 h-2 bg-primary rounded-full animate-pulse-soft" />
               {t('hero.welcome')}
             </div>

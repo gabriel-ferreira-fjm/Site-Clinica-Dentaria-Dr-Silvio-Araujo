@@ -8,6 +8,7 @@ import Prices from '@/components/sections/Prices';
 import Team from '@/components/sections/Team';
 import Amenities from '@/components/sections/Amenities';
 import Appointment from '@/components/sections/Appointment';
+import Emergency from '@/components/sections/Emergency';
 import Testimonials from '@/components/sections/Testimonials';
 import Blog from '@/components/sections/Blog';
 import FAQ from '@/components/sections/FAQ';
@@ -73,6 +74,7 @@ const Index = () => {
           <Team />
           <Amenities />
           <Appointment />
+          <Emergency />
           <Testimonials />
           <Blog />
           <FAQ />

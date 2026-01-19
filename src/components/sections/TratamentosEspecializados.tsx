@@ -385,8 +385,8 @@ const TratamentosEspecializados = () => {
           </div>
         </section>
 
-        {/* Emergency Section (igual ao original) */}
-        <section className="py-20 bg-gradient-to-br from-red-600 to-red-700">
+        {/* Emergency Section - ⚠️ ADICIONADO id="urgencias" AQUI */}
+        <section id="urgencias" className="py-20 bg-gradient-to-br from-red-600 to-red-700">
           <div className="container">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="text-white">

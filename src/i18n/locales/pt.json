@@ -148,7 +148,7 @@
         "backLink": "Voltar aos Serviços",
         "badge": "Transforme o Seu Sorriso",
         "title": {
-          "part1": "Estética e ",
+          "part1": "Estética e",
           "part2": "Ortodontia"
         },
         "subtitle": "Dentes mais brancos e perfeitamente alinhados. Descubra as soluções estéticas que vão transformar a sua confiança.",
@@ -156,11 +156,14 @@
         "transformed": "+200 sorrisos transformados",
         "ctaButton": "Agendar Avaliação",
         "callButton": "Ligar Agora",
-        "imageAlt": "Consulta odontológica - estética e ortodontia"
+        "imageAlt": "Consulta odontológica - estética e ortodontia",
+        "ratingSubtitle": "+200 sorrisos transformados"
       },
       "servicesSection": {
         "title": "Tratamentos Estéticos Disponíveis",
-        "subtitle": "Escolha o tratamento ideal para alcançar o sorriso dos seus sonhos."
+        "subtitle": "Escolha o tratamento ideal para alcançar o sorriso dos seus sonhos.",
+        "duration": "Duração",
+        "cta": "Saber Mais"
       },
       "services": {
         "branqueamento": {
@@ -230,6 +233,30 @@
         "subtitle": "Agende uma avaliação gratuita e descubra qual o tratamento ideal para si.",
         "ctaButton": "Avaliação Gratuita",
         "callButton": "Ligar: +351 924 123 784"
+      },
+      "beforeAfterSection": {
+        "title": "Transformações Reais",
+        "subtitle": "Veja as mudanças que os nossos tratamentos podem proporcionar.",
+        "before": "Antes",
+        "after": "Depois"
+      },
+      "beforeAfter": {
+        "1": {
+          "before": "Dentes amarelados",
+          "after": "Sorriso brilhante e natural"
+        },
+        "2": {
+          "before": "Dentes desalinhados",
+          "after": "Mordida perfeita"
+        },
+        "3": {
+          "before": "Espaços entre dentes",
+          "after": "Sorriso harmonioso"
+        },
+        "4": {
+          "before": "Dentes apinhados",
+          "after": "Alinhamento impecável"
+        }
       }
     },
     "implantes": {
@@ -1296,7 +1323,7 @@
         "before": {
           "1": {
             "title": "Fale positivamente:",
-            "text": "Evite usar palavras como \\"
+            "text": "Evite usar palavras como \"dor\" ou \"agulha\""
           },
           "2": {
             "title": "Leia livros:",
@@ -1473,5 +1500,9 @@
     "title": "404",
     "message": "Oops! Página não encontrada",
     "backHome": "Voltar ao Início"
+  },
+  "emergencyButton": {
+    "tooltip": "Consultas Urgentes",
+    "ariaLabel": "Consultas Urgentes"
   }
 }
