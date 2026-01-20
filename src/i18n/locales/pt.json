@@ -1,6 +1,6 @@
 {
   "header": {
-    "home": "Home",
+    "home": "Início",
     "about": "Sobre Nós",
     "services": "Serviços",
     "team": "Equipa",
@@ -865,6 +865,34 @@
         "title": "Wi-Fi Gratuito",
         "description": "Mantenha-se conectado durante a sua visita"
       },
+      "parking": {
+        "title": "Estacionamento",
+        "description": "Estacionamento gratuito próximo"
+      },
+      "climate": {
+        "title": "Ar Condicionado",
+        "description": "Ambiente climatizado para o seu conforto"
+      },
+      "waitingRoom": {
+        "title": "Sala de Espera Confortável",
+        "description": "Espaço moderno e acolhedor enquanto aguarda"
+      },
+      "kids": {
+        "title": "Espaço Infantil",
+        "description": "Área dedicada para entreter os mais pequenos"
+      },
+      "card": {
+        "title": "Pagamento por Cartão",
+        "description": "Aceitamos todos os cartões de débito e crédito"
+      },
+      "transport": {
+        "title": "Transportes Públicos",
+        "description": "Fácil acesso por transportes públicos"
+      },
+      "accessibility": {
+        "title": "Acessibilidade",
+        "description": "Acesso para pessoas com mobilidade reduzida"
+      },
       "tv": {
         "title": "TV na Sala de Espera",
         "description": "Entretenimento enquanto aguarda"
@@ -872,14 +900,6 @@
       "coffee": {
         "title": "Café e Água",
         "description": "Bebidas gratuitas para o seu conforto"
-      },
-      "parking": {
-        "title": "Estacionamento",
-        "description": "Estacionamento gratuito próximo"
-      },
-      "accessibility": {
-        "title": "Acessibilidade",
-        "description": "Acesso para pessoas com mobilidade reduzida"
       },
       "payment": {
         "title": "Múltiplas Formas de Pagamento",
@@ -1056,7 +1076,7 @@
       "flossSectionTitle": "Fio dentário e limpeza interdental",
       "flossSectionText": "Cáries e problemas gengivais começam muitas vezes entre os dentes. Se o fio for difícil, os escovilhões interdentais podem ser uma excelente alternativa — peça ao seu dentista o tamanho ideal.",
       "flossHowTitle": "Como usar fio dentário (em 3 passos)",
-      "flossHow1": "Deslize suavemente entre os dentes e forme um “C” à volta do dente.",
+      "flossHow1": "Deslize suavemente entre os dentes e forme um 'C' à volta do dente.",
       "flossHow2": "Faça movimentos para cima e para baixo, limpando ambos os lados do dente.",
       "flossHow3": "Use uma secção limpa do fio para cada espaço interdental.",
       "dietTitle": "Alimentação e hábitos",

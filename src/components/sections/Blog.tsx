@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const Blog = () => {
   // ✅ força o namespace correto
@@ -57,13 +56,7 @@ const Blog = () => {
             </h2>
           </div>
 
-          {/* ✅ agora navega para /blog */}
-          <Button asChild variant="outline" className="w-fit">
-            <Link to="/blog" className="inline-flex items-center">
-              {t("blog.viewAll")}
-              <ArrowRight className="w-4 h-4 ml-2" />
-            </Link>
-          </Button>
+          {/* ❌ Botão "Ver todos os artigos" removido */}
         </div>
 
         {/* Articles Grid */}

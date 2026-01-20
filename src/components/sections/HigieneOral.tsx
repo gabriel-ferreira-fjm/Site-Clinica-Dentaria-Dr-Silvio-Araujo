@@ -4,7 +4,6 @@ import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
 import {
   ArrowLeft,
-  Calendar,
   Clock,
   Share2,
   CheckCircle2,
@@ -17,7 +16,6 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 const HigieneOral = () => {
-  // ✅ namespace correto + idioma resolvido
   const { t, i18n } = useTranslation("translation");
   const navigate = useNavigate();
 
@@ -70,7 +68,6 @@ const HigieneOral = () => {
         label: t("blog.higiene.toc.faq", { defaultValue: "Mitos e perguntas frequentes" }),
       },
     ],
-    // ✅ atualiza quando troca idioma
     [t, i18n.resolvedLanguage]
   );
 
@@ -293,27 +290,27 @@ const HigieneOral = () => {
                 <div className="rounded-2xl border bg-background p-6 shadow-sm">
                   <ul className="space-y-3 text-muted-foreground">
                     <li>
-                      <strong>Ângulo:</strong>{" "}
+                      <strong>{t("blog.higiene.angleLabel", { defaultValue: "Ângulo:" })}</strong>{" "}
                       {t("blog.higiene.tech1", {
                         defaultValue:
                           "Segure a escova a 45° em relação à linha da gengiva (onde o dente encontra a gengiva).",
                       })}
                     </li>
                     <li>
-                      <strong>Movimento:</strong>{" "}
+                      <strong>{t("blog.higiene.movementLabel", { defaultValue: "Movimento:" })}</strong>{" "}
                       {t("blog.higiene.tech2", {
                         defaultValue: "Faça movimentos curtos e suaves — evite escovar com força.",
                       })}
                     </li>
                     <li>
-                      <strong>Cobertura:</strong>{" "}
+                      <strong>{t("blog.higiene.coverageLabel", { defaultValue: "Cobertura:" })}</strong>{" "}
                       {t("blog.higiene.tech3", {
                         defaultValue:
                           "Escove as superfícies externa, interna e mastigatória de todos os dentes.",
                       })}
                     </li>
                     <li>
-                      <strong>Língua:</strong>{" "}
+                      <strong>{t("blog.higiene.tongueLabel", { defaultValue: "Língua:" })}</strong>{" "}
                       {t("blog.higiene.tech4", {
                         defaultValue:
                           "Escove suavemente a língua (ou use raspador) para reduzir bactérias e melhorar o hálito.",
@@ -342,7 +339,7 @@ const HigieneOral = () => {
                     <li>
                       {t("blog.higiene.flossHow1", {
                         defaultValue:
-                          "Deslize suavemente entre os dentes e forme um “C” à volta do dente.",
+                          "Deslize suavemente entre os dentes e forme um 'C' à volta do dente.",
                       })}
                     </li>
                     <li>
