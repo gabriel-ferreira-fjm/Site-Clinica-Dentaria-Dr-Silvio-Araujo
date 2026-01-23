@@ -7,7 +7,10 @@ import { HelmetProvider } from "react-helmet-async";
 import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import EmergencyButton from '@/components/EmergencyButton';
+import EmergencyButton from "@/components/EmergencyButton";
+
+// ✅ NOVO: mini toast global (fixo em todas as páginas)
+import { BackgroundMusicToast } from "@/components/common/BackgroundMusic";
 
 // Blog
 import HigieneOral from "./components/sections/HigieneOral";
@@ -22,6 +25,7 @@ import EsteticaOrtodontia from "./components/sections/EsteticaOrtodontia";
 import ImplantesProteses from "./components/sections/ImplantesProteses";
 import TratamentosEspecializados from "./components/sections/TratamentosEspecializados";
 import OdontopediatriaServico from "./components/sections/OdontopediatriaServico";
+import EspacoKids from "./components/sections/EspacoKids";
 
 const queryClient = new QueryClient();
 
@@ -31,8 +35,10 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
+
         <BrowserRouter>
           <ScrollToTop />
+
           <Routes>
             <Route path="/" element={<Index />} />
 
@@ -43,6 +49,7 @@ const App = () => (
             <Route path="/implantes-proteses" element={<ImplantesProteses />} />
             <Route path="/tratamentos-especializados" element={<TratamentosEspecializados />} />
             <Route path="/odontopediatria" element={<OdontopediatriaServico />} />
+            <Route path="/espaco-kids" element={<EspacoKids />} />
 
             {/* Blog */}
             <Route path="/blog/higiene-oral-diaria" element={<HigieneOral />} />
@@ -52,8 +59,11 @@ const App = () => (
 
             <Route path="*" element={<NotFound />} />
           </Routes>
-          
-          {/* Botão de Urgências - Renderizado em todas as páginas */}
+
+          {/* ✅ Mini toast de música (fixo em todas as páginas) */}
+          <BackgroundMusicToast />
+
+          {/* ✅ Botão de Urgências - Renderizado em todas as páginas */}
           <EmergencyButton />
         </BrowserRouter>
       </TooltipProvider>

@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {
   ArrowLeft,
   Sparkles,
@@ -348,7 +348,8 @@ const EsteticaOrtodontia = () => {
 
                   <div className="bg-blue-50 rounded-xl p-3 mb-6 border border-primary/10">
                     <p className="text-sm text-primary font-medium">
-                      ⏱ {t("services.estetica.servicesSection.duration", { defaultValue: "Duração" })}: {service.duration}
+                      ⏱ {t("services.estetica.servicesSection.duration", { defaultValue: "Duração" })}:{" "}
+                      {service.duration}
                     </p>
                   </div>
 
@@ -361,17 +362,7 @@ const EsteticaOrtodontia = () => {
                     ))}
                   </ul>
 
-                  <Button
-                    asChild
-                    variant="outline"
-                    className="w-full mt-6 border-primary/20 text-primary hover:bg-blue-50"
-                  >
-                    <Link to="/#marcacao">
-                      {t("services.estetica.servicesSection.cta", {
-                        defaultValue: "Saber Mais",
-                      })}
-                    </Link>
-                  </Button>
+                  {/* ✅ Removidos os 3 botões "Saber Mais" (apenas os botões) */}
                 </div>
               ))}
             </div>

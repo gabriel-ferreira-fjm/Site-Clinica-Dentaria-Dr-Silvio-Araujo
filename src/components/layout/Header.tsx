@@ -5,6 +5,9 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, MapPin, ChevronDown } from "lucide-react";
 import LanguageSelector from "@/components/LanguageSelector";
 
+// ✅ CORRETO: usa o player do topo (menu completo)
+import { BackgroundMusicHeader } from "@/components/common/BackgroundMusic";
+
 const Header = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -17,11 +20,11 @@ const Header = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isBlogOpen, setIsBlogOpen] = useState(false);
 
-  // Dropdowns Mobile (separados para evitar conflitos)
+  // Dropdowns Mobile
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
   const [isMobileBlogOpen, setIsMobileBlogOpen] = useState(false);
 
-  // Timers anti-flicker (mantém aberto ao cruzar o espaço)
+  // Timers anti-flicker
   const servicesCloseTimerRef = useRef<number | null>(null);
   const blogCloseTimerRef = useRef<number | null>(null);
 
@@ -31,7 +34,7 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Fecha dropdowns ao clicar fora (apenas desktop)
+  // Fecha dropdowns ao clicar fora
   useEffect(() => {
     const onDocMouseDown = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
@@ -79,20 +82,20 @@ const Header = () => {
     blogCloseTimerRef.current = window.setTimeout(() => setIsBlogOpen(false), 200);
   };
 
-  // ✅ Dropdowns agora usam traduções
   const servicesDropdown = [
-    { label: t('header.servicesDropdown.consultaDiagnostico'), to: "/consulta-diagnostico" },
-    { label: t('header.servicesDropdown.prevencaoHigiene'), to: "/prevencao-higiene" },
-    { label: t('header.servicesDropdown.esteticaOrtodontia'), to: "/estetica-ortodontia" },
-    { label: t('header.servicesDropdown.implantesProteses'), to: "/implantes-proteses" },
-    { label: t('header.servicesDropdown.tratamentosEspecializados'), to: "/tratamentos-especializados" },
+    { label: t("header.servicesDropdown.consultaDiagnostico"), to: "/consulta-diagnostico" },
+    { label: t("header.servicesDropdown.prevencaoHigiene"), to: "/prevencao-higiene" },
+    { label: t("header.servicesDropdown.esteticaOrtodontia"), to: "/estetica-ortodontia" },
+    { label: t("header.servicesDropdown.implantesProteses"), to: "/implantes-proteses" },
+    { label: t("header.servicesDropdown.tratamentosEspecializados"), to: "/tratamentos-especializados" },
+    { label: t("header.servicesDropdown.espacoKids"), to: "/espaco-kids" },
   ];
 
   const blogDropdown = [
-    { label: t('header.blogDropdown.higieneOral'), to: "/blog/higiene-oral-diaria" },
-    { label: t('header.blogDropdown.estetica'), to: "/blog/estetica-branqueamento" },
-    { label: t('header.blogDropdown.odontopediatria'), to: "/blog/odontopediatria-criancas" },
-    { label: t('header.blogDropdown.implantes'), to: "/blog/implantes-guia-completo" },
+    { label: t("header.blogDropdown.higieneOral"), to: "/blog/higiene-oral-diaria" },
+    { label: t("header.blogDropdown.estetica"), to: "/blog/estetica-branqueamento" },
+    { label: t("header.blogDropdown.odontopediatria"), to: "/blog/odontopediatria-criancas" },
+    { label: t("header.blogDropdown.implantes"), to: "/blog/implantes-guia-completo" },
   ];
 
   const navLinks = [
@@ -115,7 +118,6 @@ const Header = () => {
   };
 
   const scrollToSection = (href: string) => {
-    // Fecha tudo primeiro
     closeAll();
 
     if (location.pathname !== "/") {
@@ -130,13 +132,11 @@ const Header = () => {
     }
   };
 
-  // Handler para navegação mobile para páginas
   const handleMobileNavigate = (to: string) => {
     closeAll();
     navigate(to);
   };
 
-  // Toggle mobile dropdowns
   const toggleMobileServices = (e: React.MouseEvent) => {
     e.stopPropagation();
     setIsMobileServicesOpen(!isMobileServicesOpen);
@@ -155,7 +155,7 @@ const Header = () => {
       <div className="hidden lg:block bg-primary text-primary-foreground py-2">
         <div className="container flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
-            <a 
+            <a
               href="https://maps.google.com/?q=Rua+D+Sebastião+2050,+Quinta+do+Conde,+Portugal"
               target="_blank"
               rel="noopener noreferrer"
@@ -164,7 +164,7 @@ const Header = () => {
               <MapPin className="w-4 h-4" />
               {t("header.location")}
             </a>
-            <a 
+            <a
               href="tel:+351924123784"
               className="flex items-center gap-2 hover:text-primary-foreground/80 transition-colors"
             >
@@ -172,7 +172,14 @@ const Header = () => {
               {t("header.phone")}
             </a>
           </div>
-          <div className="text-primary-foreground/80">{t("header.schedule")}</div>
+
+          {/* ✅ DIREITA: horário + menu de música do topo */}
+          <div className="flex items-center gap-4">
+            <div className="text-primary-foreground/80">{t("header.schedule")}</div>
+            <div className="flex items-center">
+              <BackgroundMusicHeader />
+            </div>
+          </div>
         </div>
       </div>
 
@@ -201,7 +208,6 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1">
             {navLinks.map((link) => {
-              // SERVIÇOS
               if (link.isServices) {
                 return (
                   <div
@@ -224,7 +230,9 @@ const Header = () => {
 
                     <div
                       className={`absolute left-0 top-full mt-2 w-72 rounded-xl border border-border bg-background shadow-lg overflow-hidden transition-all duration-150 ${
-                        isServicesOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-1 pointer-events-none"
+                        isServicesOpen
+                          ? "opacity-100 translate-y-0"
+                          : "opacity-0 -translate-y-1 pointer-events-none"
                       }`}
                       role="menu"
                       onMouseEnter={openServices}
@@ -248,7 +256,6 @@ const Header = () => {
                 );
               }
 
-              // BLOG
               if (link.isBlog) {
                 return (
                   <div
@@ -271,7 +278,9 @@ const Header = () => {
 
                     <div
                       className={`absolute left-0 top-full mt-2 w-72 rounded-xl border border-border bg-background shadow-lg overflow-hidden transition-all duration-150 ${
-                        isBlogOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-1 pointer-events-none"
+                        isBlogOpen
+                          ? "opacity-100 translate-y-0"
+                          : "opacity-0 -translate-y-1 pointer-events-none"
                       }`}
                       role="menu"
                       onMouseEnter={openBlog}
@@ -295,7 +304,6 @@ const Header = () => {
                 );
               }
 
-              // LINKS NORMAIS
               return (
                 <button
                   key={link.href}
@@ -334,11 +342,9 @@ const Header = () => {
           <div className="lg:hidden bg-background border-t border-border animate-fade-in">
             <nav className="container py-4 flex flex-col gap-2 max-h-[calc(100vh-5rem)] overflow-y-auto">
               {navLinks.map((link) => {
-                // Mobile - Serviços com dropdown
                 if (link.isServices) {
                   return (
                     <div key={link.href}>
-                      {/* Linha com botão de scroll + botão de toggle */}
                       <div className="flex items-center justify-between px-4 py-3 hover:bg-accent rounded-lg transition-colors">
                         <button
                           type="button"
@@ -353,15 +359,14 @@ const Header = () => {
                           className="p-2 hover:bg-primary/10 rounded-lg transition-colors"
                           aria-label={isMobileServicesOpen ? "Fechar submenu" : "Abrir submenu"}
                         >
-                          <ChevronDown 
+                          <ChevronDown
                             className={`w-5 h-5 text-primary transition-transform duration-200 ${
                               isMobileServicesOpen ? "rotate-180" : ""
-                            }`} 
+                            }`}
                           />
                         </button>
                       </div>
 
-                      {/* Dropdown com serviços específicos */}
                       <div
                         className={`overflow-hidden transition-all duration-200 ${
                           isMobileServicesOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
@@ -384,11 +389,9 @@ const Header = () => {
                   );
                 }
 
-                // Mobile - Blog com dropdown
                 if (link.isBlog) {
                   return (
                     <div key={link.href}>
-                      {/* Linha com botão de scroll + botão de toggle */}
                       <div className="flex items-center justify-between px-4 py-3 hover:bg-accent rounded-lg transition-colors">
                         <button
                           type="button"
@@ -403,15 +406,14 @@ const Header = () => {
                           className="p-2 hover:bg-primary/10 rounded-lg transition-colors"
                           aria-label={isMobileBlogOpen ? "Fechar submenu" : "Abrir submenu"}
                         >
-                          <ChevronDown 
+                          <ChevronDown
                             className={`w-5 h-5 text-primary transition-transform duration-200 ${
                               isMobileBlogOpen ? "rotate-180" : ""
-                            }`} 
+                            }`}
                           />
                         </button>
                       </div>
 
-                      {/* Dropdown com artigos */}
                       <div
                         className={`overflow-hidden transition-all duration-200 ${
                           isMobileBlogOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
@@ -434,7 +436,6 @@ const Header = () => {
                   );
                 }
 
-                // Mobile - Links normais
                 return (
                   <button
                     key={link.href}
