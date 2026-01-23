@@ -38,6 +38,14 @@ const EspacoKids = () => {
     fr: "/vídeos/espaco-kids.fr.vtt",
   };
 
+  // ✅ Thumbnails (poster) por idioma (public/vídeos)
+  const thumbnailByLang: Record<"pt" | "en" | "es" | "fr", string> = {
+    pt: "/vídeos/espaco-kids-thumb.pt.png",
+    en: "/vídeos/espaco-kids-thumb.en.png",
+    es: "/vídeos/espaco-kids-thumb.es.png",
+    fr: "/vídeos/espaco-kids-thumb.fr.png",
+  };
+
   const features = [
     {
       icon: Palette,
@@ -171,7 +179,7 @@ const EspacoKids = () => {
               {/* ✅ VideoPlayer com caminho corrigido para pasta "vídeos" */}
               <VideoPlayer
                 src="/vídeos/espaco-kids.mp4"
-                poster="/vídeos/espaco-kids-poster.jpg"
+                poster={thumbnailByLang[normalizedLang]}
                 className="w-full"
                 trackSrc={subtitleByLang[normalizedLang]}
                 trackLang={normalizedLang}

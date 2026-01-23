@@ -63,6 +63,9 @@ const VideoPlayer = ({
   // Track se já fizemos bind das legendas
   const [trackBound, setTrackBound] = useState(false);
 
+  // ✅ guarda o cleanup atual do listener do track (pra não duplicar)
+  const trackCleanupRef = useRef<null | (() => void)>(null);
+
   const progress = useMemo(() => {
     if (!duration || !Number.isFinite(duration)) return 0;
     return clamp((currentTime / duration) * 100, 0, 100);
@@ -196,15 +199,19 @@ const VideoPlayer = ({
     setCaptionsEnabled((prev) => !prev);
   };
 
-  // Função para fazer bind do track e escutar cuechange
+  // ✅ Faz bind do track e escuta cuechange (SEM duplicar listeners)
   const bindTrack = useCallback(() => {
     const video = videoRef.current;
-    if (!video || !trackSrc) return null;
+    if (!video || !trackSrc) return;
 
     const tracks = video.textTracks;
-    if (!tracks || tracks.length === 0) return null;
+    if (!tracks || tracks.length === 0) return;
 
     const track = tracks[0];
+
+    // remove listener anterior (se existir)
+    trackCleanupRef.current?.();
+    trackCleanupRef.current = null;
 
     // "hidden" = carrega cues e dispara eventos, mas não desenha nativo
     track.mode = "hidden";
@@ -221,7 +228,6 @@ const VideoPlayer = ({
         return;
       }
 
-      // Junta todas as linhas/itens ativos
       const lines: string[] = [];
       for (let i = 0; i < cues.length; i++) {
         const cue = cues[i] as VTTCue;
@@ -232,16 +238,13 @@ const VideoPlayer = ({
       setCaptionText(lines.join("\n"));
     };
 
-    // Adiciona listener
     track.addEventListener("cuechange", updateFromActiveCues);
-
-    // Faz um primeiro update
     updateFromActiveCues();
 
     setTrackBound(true);
 
-    // Retorna função de cleanup
-    return () => {
+    // guarda cleanup
+    trackCleanupRef.current = () => {
       track.removeEventListener("cuechange", updateFromActiveCues);
     };
   }, [trackSrc, captionsEnabled]);
@@ -250,7 +253,8 @@ const VideoPlayer = ({
   useEffect(() => {
     const onFsChange = () => {
       const d = document as Document & { webkitFullscreenElement?: Element };
-      const fs = Boolean(document.fullscreenElement) || Boolean(d.webkitFullscreenElement);
+      const fs =
+        Boolean(document.fullscreenElement) || Boolean(d.webkitFullscreenElement);
       setIsFullscreen(fs);
     };
 
@@ -272,6 +276,11 @@ const VideoPlayer = ({
     setCurrentTime(0);
     setDuration(0);
     setTrackBound(false);
+
+    // limpa track listener ao trocar vídeo
+    trackCleanupRef.current?.();
+    trackCleanupRef.current = null;
+    setCaptionText("");
 
     const onLoaded = () => {
       const dur = Number.isFinite(video.duration) ? video.duration : 0;
@@ -300,31 +309,39 @@ const VideoPlayer = ({
     };
   }, [src]);
 
-  // ✅ LEGENDAS - Bind quando o track carrega
+  // ✅ LEGENDAS - tenta bind quando o track carrega (com retries)
   useEffect(() => {
     const video = videoRef.current;
+
+    // sempre limpa
+    trackCleanupRef.current?.();
+    trackCleanupRef.current = null;
+    setTrackBound(false);
+
     if (!video || !trackSrc) {
       setCaptionText("");
       return;
     }
 
-    let cleanup: (() => void) | null = null;
     let attempts = 0;
     const maxAttempts = 10;
 
     const tryBind = () => {
       const tracks = video.textTracks;
-      if (tracks && tracks.length > 0 && tracks[0].cues && tracks[0].cues.length > 0) {
-        cleanup = bindTrack();
+      if (
+        tracks &&
+        tracks.length > 0 &&
+        tracks[0].cues &&
+        tracks[0].cues.length > 0
+      ) {
+        bindTrack();
         return true;
       }
       return false;
     };
 
-    // Tenta fazer bind imediatamente
-    if (tryBind()) return () => cleanup?.();
+    if (tryBind()) return;
 
-    // Se não conseguiu, tenta novamente com intervalos
     const intervalId = setInterval(() => {
       attempts++;
       if (tryBind() || attempts >= maxAttempts) {
@@ -334,26 +351,31 @@ const VideoPlayer = ({
 
     return () => {
       clearInterval(intervalId);
-      cleanup?.();
+      trackCleanupRef.current?.();
+      trackCleanupRef.current = null;
       setCaptionText("");
     };
   }, [trackSrc, bindTrack]);
 
-  // Atualiza legendas quando captionsEnabled muda
+  // Quando liga/desliga captions: só atualiza texto/track.mode
   useEffect(() => {
+    if (!trackSrc) return;
+
     if (!captionsEnabled) {
       setCaptionText("");
-    } else if (trackBound) {
-      // Re-bind para atualizar o texto
+      return;
+    }
+
+    // se captions foi ligado e já tem track, força rebind pra atualizar imediatamente
+    if (trackBound) {
       bindTrack();
     }
-  }, [captionsEnabled, trackBound, bindTrack]);
+  }, [captionsEnabled, trackBound, bindTrack, trackSrc]);
 
   // Reset CC quando muda trackSrc
   useEffect(() => {
     const initial = Boolean(trackSrc && showCaptionsByDefault);
     setCaptionsEnabled(initial);
-    setTrackBound(false);
   }, [trackSrc, showCaptionsByDefault]);
 
   return (
@@ -369,8 +391,7 @@ const VideoPlayer = ({
             poster={poster}
             preload="auto"
             playsInline
-            className="absolute inset-0 w-full h-full object-cover cursor-pointer"
-            onClick={togglePlay}
+            className="absolute inset-0 w-full h-full object-cover object-top cursor-pointer"           onClick={togglePlay}
           >
             {trackSrc && (
               <track
@@ -489,7 +510,9 @@ const VideoPlayer = ({
                     e.stopPropagation();
                     toggleCaptions();
                   }}
-                  aria-label={captionsEnabled ? "Desativar legendas" : "Ativar legendas"}
+                  aria-label={
+                    captionsEnabled ? "Desativar legendas" : "Ativar legendas"
+                  }
                   title={captionsEnabled ? "Legendas ligadas" : "Legendas desligadas"}
                 >
                   <Captions
