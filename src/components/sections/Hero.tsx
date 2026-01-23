@@ -90,23 +90,23 @@ const Hero = () => {
       <div className="container relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <div className="space-y-8 text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-white font-medium text-sm animate-fade-in">
-              <span className="w-2 h-2 bg-primary rounded-full animate-pulse-soft" />
-              {t('hero.welcome')}
+          <div className="space-y-8 text-center lg:text-left max-w-full overflow-hidden">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-white font-medium text-sm animate-fade-in max-w-full">
+              <span className="w-2 h-2 bg-primary rounded-full animate-pulse-soft flex-shrink-0" />
+              <span className="break-words hyphens-auto" lang="fr">{t('hero.welcome')}</span>
             </div>
             
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight animate-fade-in stagger-1">
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight animate-fade-in stagger-1 break-words hyphens-auto max-w-full" lang="fr">
               {t('hero.title')}
               <br />
-              <span className="text-primary">{t('hero.titleHighlight')}</span>
+              <span className="text-primary break-words">{t('hero.titleHighlight')}</span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-gray-700 font-light leading-relaxed animate-fade-in stagger-2">
+            <p className="text-xl md:text-2xl text-gray-700 font-light leading-relaxed animate-fade-in stagger-2 break-words hyphens-auto max-w-full" lang="fr">
               {t('hero.subtitle')}
             </p>
             
-            <p className="text-gray-600 max-w-xl mx-auto lg:mx-0 animate-fade-in stagger-3">
+            <p className="text-gray-600 max-w-xl mx-auto lg:mx-0 animate-fade-in stagger-3 break-words hyphens-auto" lang="fr">
               {t('hero.description')}
             </p>
             
@@ -115,17 +115,18 @@ const Hero = () => {
                 variant="cta"
                 size="xl"
                 onClick={() => scrollToSection('#marcacao')}
-                className="group"
+                className="group break-words hyphens-auto"
               >
-                {t('hero.bookNow')}
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <span className="break-words">{t('hero.bookNow')}</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform flex-shrink-0 ml-2" />
               </Button>
               <Button
                 variant="outline"
                 size="xl"
                 onClick={() => scrollToSection('#servicos')}
+                className="break-words hyphens-auto"
               >
-                {t('hero.viewServices')}
+                <span className="break-words">{t('hero.viewServices')}</span>
               </Button>
             </div>
             
@@ -135,7 +136,7 @@ const Hero = () => {
               <a href="tel:924123784"
                 className="flex items-center gap-2 text-gray-700 hover:text-primary transition-colors"
               >
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
                 <span className="font-medium">{t('header.phone')}</span>
@@ -143,12 +144,12 @@ const Hero = () => {
               <a href="https://maps.google.com/?q=Rua+D+Sebastião+2050,+Quinta+do+Conde,+Portugal"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-gray-700 hover:text-primary transition-colors"
+                className="flex items-center gap-2 text-gray-700 hover:text-primary transition-colors max-w-full"
               >
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <MapPin className="w-5 h-5 text-primary" />
                 </div>
-                <span>Rua D Sebastião 2050, Quinta do Conde, Portugal</span>
+                <span className="text-sm break-words">Rua D Sebastião 2050, Quinta do Conde, Portugal</span>
               </a>
             </div>
           </div>
