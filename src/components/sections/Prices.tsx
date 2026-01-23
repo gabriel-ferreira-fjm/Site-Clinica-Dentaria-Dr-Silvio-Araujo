@@ -76,7 +76,6 @@ const Prices = () => {
               <div className="p-4 md:p-6 text-center font-heading font-semibold">{t('prices.table.regularPrice')}</div>
               <div className="p-4 md:p-6 text-center font-heading font-semibold bg-primary-dark">
                 <span className="hidden sm:inline">{t('prices.table.memberPrice')}</span>
-                <span className="sm:hidden">Membro</span>
               </div>
             </div>
 
